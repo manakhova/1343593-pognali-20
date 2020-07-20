@@ -1,179 +1,187 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Погнали</title>
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page__header page-header">
       <a class="page-header__logo logo">
-        <img src="https://via.placeholder.com/150x150" width="96" height="15" alt="Погнали?">
+        <img class="logo__image" src="https://via.placeholder.com/150x150" width="96" height="15" alt="Погнали?">
       </a>
-      <nav class="main-navigation">
-        <button class="main-nav__toggle" type="button">
+      <nav class=".page-header__navigation main-navigation">
+        <button class="main-navigation__toggle navigation-button" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </nav>
+      <div class="page-header__user-actions user-actions">
+        <a href="#" class="user-actions__link user-actions__link--phone button"></a>
+        <a href="#" class="user-actions__link user-actions__link--mail button"></a>
+        <a href="#" class="user-actions__link user-actions__link--authorization button">Авторизация</a>
+      </div>
     </header>
-    <main class="page-main">
+    <main class="page__main">
       <section class="promo">
         <h1 class="promo__title">В путешествие с крутыми попутчиками!</h1>
-        <ul class="promo__list">
-          <li class="promo__item">
-            <a href="#" class="promo__link promo__link--phone button"></a>
-          </li>
-          <li class="promo__item">
-            <a href="#" class="promo__link promo__link--mail button"></a>
-          </li>
-          <li class="promo__item">
-            <a href="#" class="promo__link promo__link--authorization button">Авторизация</a>
-          </li>
-        </ul>
         <div class="promo__review">
-          <blockquote class="promo__review__item">
-            <div class="promo__review__author-info">
-              <p class="promo__review__text">«Лучшее приложение, <br> что я видел в жизни!»</p>
-              <cite class="promo__review__author">Мурат Эльтазин <br> главный редактор <br> газеты «гаджетлайф»</cite>
-            </div>
-          </blockquote>
+          <p class="promo__review-text text">«Лучшее приложение, что я видел в жизни!»</p>
+          <p class="promo__review-author text--emphasis">Мурат Эльтазин главный редактор газеты «гаджетлайф»</p>
         </div>
-        <section class="promo__steps">
-          <ul class="promo__steps__list">
-            <li class="promo__step promo__step--1">Выберите <br> направление</li>
-            <li class="promo__step promo__step--2">Изучите идеи <br> путешественников</li>
-            <li class="promo__step promo__step--3">Находите тех, <br> кто похож на вас</li>
-            <li class="promo__step promo__step--4">Путешествуйте <br> вместе!</li>
-          </ul>
-        </section>
+        <ul class="promo__steps steps-list">
+          <li class="steps-list__item steps-list__item--1">Выберите направление</li>
+          <li class="steps-list__item steps-list__item--2">Изучите идеи путешественников</li>
+          <li class="steps-list__item steps-list__item--3">Находите тех, кто похож на вас</li>
+          <li class="steps-list__item steps-list__item--4">Путешествуйте вместе!</li>
+        </ul>
       </section>
       <section class="about">
-        <h2 class="about__title">О сервисе</h2>
-        <p class="about__info">
-          Любое путешествие веселее <br>
-          с попутчиками, которые на <br>
-          одной волне с тобой! Делитесь <br>
-          своими идеями путешествий и <br>
-          черпайте вдохновение в чужих.
-        </p>
-        <p class="about__info about__info--emphasis">
-          А если найдете кого-то <br>
-          близкого по духу — скорее <br>
-          зовите в совместный трип!
-        </p>
+        <div class="about__info">
+          <h2 class="about__title section-title">О сервисе</h2>
+          <p class="about__teaser text">
+            Любое путешествие веселее
+            с попутчиками, которые на
+            одной волне с тобой! Делитесь
+            своими идеями путешествий и
+            черпайте вдохновение в чужих.
+          </p>
+          <p class="about__teaser  text--emphasis">
+            А если найдете кого-то
+            близкого по духу — скорее
+            зовите в совместный трип!
+          </p>
+        </div>
       </section>
       <section class="countries">
-        <h2 class="countries__title">Направления</h2>
-        <p class="countries__info">
-          Мы не продаем туры <br>
-          и ничего не рекламируем. <br>
-          Люди сами пишут о странах, <br>
-          куда хотели бы отправиться <br>
-          и чем можно там заняться.
-        </p>
+        <div class="countries__info">
+          <h2 class="countries__title">Направления</h2>
+          <p class="countries__teaser">
+            Мы не продаем туры
+            и ничего не рекламируем.
+            Люди сами пишут о странах,
+            куда хотели бы отправиться
+            и чем можно там заняться.
+          </p>
+        </div>
         <div class="countries__list">
-          <div class="country country--thailand">
-            <div class="country__info">
-              <h3 class="country__name">Таиланд</h3>
-              <p class="country__slogan">Джунгли зовут!</p>
-              <span class="country__number">18321</span>
-              <div class="country__flag country__flag--thailand"></div>
+          <div class="coutry-card">
+            <div class="country-card__info">
+              <h3 class="country-card__name">Таиланд</h3>
+              <p class="country-card__slogan">Джунгли зовут!</p>
+              <span class="country-card__number">18321</span>
+              <div class="country-card__flag flag-icon flag-icon--thailand"></div>
             </div>
           </div>
-          <div class="country country--france">
-            <div class="country__info">
-              <h3 class="country__name">Франция</h3>
-              <p class="country__slogan">Трэ бьен, манифик!</p>
-              <span class="country__number">12518</span>
-              <div class="country__flag country__flag--france"></div>
+          <div class="country-card">
+            <div class="country-card__info">
+              <h3 class="country-card__name">Франция</h3>
+              <p class="country-card__slogan">Трэ бьен, манифик!</p>
+              <span class="country-card__number">12518</span>
+              <div class="country-card__flag flag-icon flag-icon--france"></div>
             </div>
           </div>
-          <div class="country country--czech">
-            <div class="country__info">
-              <h3 class="country__name">Чехия</h3>
-              <p class="country__slogan">Закоулки старой Европы</p>
-              <span class="country__number">5326</span>
-              <div class="country__flag country__flag--czech"></div>
+          <div class="country-card">
+            <div class="country-card__info">
+              <h3 class="country-card__name">Чехия</h3>
+              <p class="country-card__slogan">Закоулки старой Европы</p>
+              <span class="country-card__number">5326</span>
+              <div class="country-card__flag flag-icon flag-icon--czech"></div>
             </div>
           </div>
         </div>
-        <a class="countries__to-all button-big" href="#">Показать все</a>
+        <button class="countries__to-all button-big" href="#">Показать все</button>
       </section>
       <section class="users">
-        <h2 class="users__title">Попутчики</h2>
-        <p class="users__info">
-          Все мы индивидуальны и у <br>
-          каждого свой взгляд на <br>
-          идеальный отдых. Одному <br>
-          нужен пляж и коктейль, а <br>
-          другому маршрут для хайкинга.
-        </p>
-        <p class="users__info users__info--emphasis">
-          Теперь можно легко найти <br>
-          единомышленников!
-        </p>
+        <div class="users__info">
+          <h2 class="users__title">Попутчики</h2>
+          <p class="users__teaser text">
+            Все мы индивидуальны и у
+            каждого свой взгляд на
+            идеальный отдых. Одному
+            нужен пляж и коктейль, а
+            другому маршрут для хайкинга.
+          </p>
+          <p class="users__teaser text--emphasis">
+            Теперь можно легко найти
+            единомышленников!
+          </p>
+        </div>
         <div class="users__list">
-          <div class="user__item">
-            <img class="user__pic" src="https://via.placeholder.com/150x150" alt="">
-            <div class="user__mark user__mark--1">
-              <img src="https://via.placeholder.com/150x150" width="60px" height="60px" alt="Уровень участника">
+          <div class="user-card">
+            <img class="user-card__pic" src="https://via.placeholder.com/150x150" alt="">
+            <div class="user-card__level">
+              <span class="user-level">99 level</span>
             </div>
-            <div class="user__info">
-              <h3 class="user__name">Таня Фирсова</h3>
-              <p class="user__hashtag">
-                #ЗОЖ #ПП #Фитнес #пляж <br>
+            <div class="user-card__likes user-card__likes--active visualli-hidden">
+              1,5 М
+            </div>
+            <div class="user-card__info">
+              <h3 class="user-card__name">Таня Фирсова</h3>
+              <p class="user-card__hashtag">
+                #ЗОЖ #ПП #Фитнес #пляж
                 #авокадо #смузи
               </p>
-              <ul class="user__transport__list">
-                <li class="user__transport__item user__transport__item--plane"></li>
-                <li class="user__transport__item user__transport__item--bus"></li>
-                <li class="user__transport__item user__transport__item--bicycle"></li>
-                <li class="user__transport__item user__transport__item--run"></li>
+              <h4 class="user-card__transport-title visualli-hidden">Транспорт</h4>
+              <ul class="user-card__transport-list">
+                <li class="user-card__transport-item user-card__transport-item--plane"></li>
+                <li class="user-card__transport-item user-card__transport-tem--bus"></li>
+                <li class="user-card__transport-item user-card__transport-item--bicycle"></li>
+                <li class="user-card__transport-item user-card__transport-item--run"></li>
               </ul>
-              <ul class="user__countries__list">
-                <li class="country__flag country__flag--sri-lanka"></li>
-                <li class="country__flag country__flag--thailand"></li>
-                <li class="country__flag country__flag--seychelles"></li>
+              <h4 class="user-card__countries-title visualli-hidden">Хочет посетить</h4>
+              <ul class="user-card__countries-list--catalog">
+                <li class="user-card__countries-item flag-icon flag-icon--sri-lanka"><span class="country-name">Шри-Ланка</span></li>
+                <li class="user-card__countries-item flag-icon flag-icon--thailand"><span class="country-name">Таиланд</span></li>
+                <li class="user-card__countries-item flag-icon flag-icon--seychelles"><span class="country-name">Сейшелы</span></li>
               </ul>
+              <button class="user__button button visualli-hidden" type="button">Позвать!</button>
             </div>
           </div>
-          <div class="user__item">
-            <img class="user__pic" src="https://via.placeholder.com/150x150" alt="">
-            <div class="user__mark user__mark--2">
-              <img src="https://via.placeholder.com/150x150" width="60px" height="60px" alt="Уровень участника">
+          <div class="user-card">
+            <img class="user-card__pic" src="https://via.placeholder.com/150x150" alt="">
+            <div class="user-card__level">
+              <span class="user-level">80 level</span>
             </div>
-            <div class="user__info">
-              <h3 class="user__name">Петя Демин</h3>
-              <p class="user__hashtag">
-                #бургер #бар #футбол <br>
+            <div class="user-card__likes visualli-hidden">
+              1500
+            </div>
+            <div class="user-card__info">
+              <h3 class="user-card__name">Петя Демин</h3>
+              <p class="user-card__hashtag">
+                #бургер #бар #футбол
                 #концерт #крафт
               </p>
-              <ul class="user__transport__list">
-                <li class="user__transport__item user__transport__item--plane"></li>
-                <li class="user__transport__item user__transport__item--bus"></li>
-                <li class="user__transport__item user__transport__item--bicycle"></li>
-                <li class="user__transport__item user__transport__item--run"></li>
+              <h4 class="user-card__transport-title visualli-hidden">Транспорт</h4>
+              <ul class="user-card__transport-list">
+                <li class="user-card__transport-item user-card__transport-item--plane"></li>
+                <li class="user-card__transport-item user-card__transport-tem--bus"></li>
+                <li class="user-card__transport-item user-card__transport-item--bicycle"></li>
+                <li class="user-card__transport-item user-card__transport-item--run"></li>
               </ul>
-              <ul class="user__countries__list">
-                <li class="country__flag country__flag--belgium"></li>
-                <li class="country__flag country__flag--czech"></li>
+              <h4 class="user-card__countries-title visualli-hidden">Хочет посетить</h4>
+              <ul class="user-card__countries-list">
+                <li class="user-card__countries-item flag-icon flag-icon--belgium"><span class="country-name">Бельгия</span></li>
+                <li class="user-card__countries-item flag-icon flag-icon--czech"><span class="country-name">Чехия</span></li>
               </ul>
+              <button class="user__button button visualli-hidden" type="button">Позвать!</button>
             </div>
           </div>
         </div>
-        <a class="users__to-all button-big" href="#">Показать всех</a>
+        <button class="users__to-all button-big" href="#">Показать всех</button>
       </section>
-      <section class="profile">
-        <h2 class="profile__title">Добавьте свой профиль</h2>\
-        <div class="profile__rate"></div>
-        <ul class="profile__list">
-          <li class="profile__item">Базовое размещение <span class="profile__item__price">Бесплатно</span></li>
-          <li class="profile__item">Вывод на первых позициях <span class="profile__item__price">99 руб./мес</span></li>
-          <li class="profile__item">Кастомный цвет карточки <span class="profile__item__price">59 руб./мес</span></li>
-        </ul>
-        <a class="profile__to-all profile__link" href="#">Показать тарифы для бизнеса</a>
-      </section>
+      <section class="add-profile">
+        <div class="add-profile__info">
+          <h2 class="add-profile__title">Добавьте свой профиль</h2>
+          <div class="add-profile__pic"></div>
+          <ul class="add-profile__list">
+            <li class="add-profile__item">Базовое размещение Бесплатно</li>
+            <li class="add-profile__item">Вывод на первых позициях 99 руб./мес</li>
+            <li class="add-profile__item">Кастомный цвет карточки 59 руб./мес</li>
+          </ul>
+          <a class="add-profile__to-all add-profile-link" href="#">Показать тарифы для бизнеса</a>
+        </section>
+        </div>
     </main>
-    <footer class="page-footer">
+    <footer class="page__footer page-footer">
       <a class="page-footer__logo logo">
         <img src="https://via.placeholder.com/150x150" width="96" height="15" alt="Погнали?">
       </a>

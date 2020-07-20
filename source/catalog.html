@@ -1,168 +1,157 @@
-<!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Погнали</title>
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page__header page-header">
       <a class="page-header__logo logo">
-        <img src="https://via.placeholder.com/150x150" width="96" height="15" alt="Погнали?">
+        <img class="logo__image" src="https://via.placeholder.com/150x150" width="96" height="15" alt="Погнали?">
       </a>
-      <nav class="main-navigation">
-        <button class="main-nav__toggle" type="button">
+      <nav class=".page-header__navigation main-navigation">
+        <button class="main-navigation__toggle navigation-button" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </nav>
-      <h1 class="page-header__title">Попутчики</h1>
+      <div class="page-header__user-actions user-actions">
+        <a href="#" class="user-actions__link user-actions__link--phone button"></a>
+        <a href="#" class="user-actions__link user-actions__link--mail button"></a>
+        <a href="#" class="user-actions__link user-actions__link--authorization button">Авторизация</a>
+      </div>
     </header>
-    <main class="page-main">
+    <main class="page__main">
+      <section class="page-subheader">
+        <h1 class="page-subheader__title subheader-title">Попутчики</h1>
+      </section>
       <section class="users">
-        <h2 class="users__title visually-hidden">Попутчики</h2>
+        <h2 class="visually-hidden">Попутчики</h2>
         <div class="users__list">
-          <div class="user__item">
-            <div class="user__info">
-              <h3 class="user__name">Таня Фирсова</h3>
-              <img class="user__pic--mini" src="https://via.placeholder.com/150x150" alt="Таня Фирсова">
-              <p class="user__hashtag">
-                #ЗОЖ #ПП #Фитнес #пляж <br>
+          <div class="user-card">
+            <img class="user-card__pic user-card__pic--catalog" src="https://via.placeholder.com/150x150" alt="">
+            <div class="user-card__level user-card__level--catalog">
+              <span class="user-level">99 level</span>
+            </div>
+            <div class="user-card__likes user-card__likes--active">
+              1,5 М
+            </div>
+            <div class="user-card__info user-card__info--catalog">
+              <h3 class="user-card__name user-card__name--catalog">Таня Фирсова</h3>
+              <p class="user-card__hashtag user-card__hashtag--catalog">
+                #ЗОЖ #ПП #Фитнес #пляж
                 #авокадо #смузи
               </p>
-              <fieldset class="user__transport">
-                <legend class="user__transport__title">Транспорт:</legend>
-                <ul class="user__transport__list">
-                  <li class="user__transport__item user__transport__item--plane"></li>
-                  <li class="user__transport__item user__transport__item--bus"></li>
-                  <li class="user__transport__item user__transport__item--bicycle"></li>
-                  <li class="user__transport__item user__transport__item--run"></li>
-                </ul>
-              </fieldset>
-              <fieldset class="user__countries">
-                <legend class="user__countries__title">Хочет посетить:</legend>
-                <ul class="user__countries__list">
-                  <li class="country__flag country__flag--sri-lanka">Шри-Ланка</li>
-                  <li class="country__flag country__flag--thailand">Таиланд</li>
-                  <li class="country__flag country__flag--seychelles">Сейшелы</li>
-                </ul>
-              </fieldset>
-              <fieldset class="user__level">
-                <legend class="user__level__title">Левел:</legend>
-                <div class="user__mark user__mark--1">
-                  <img src="https://via.placeholder.com/150x150" width="60px" height="60px" alt="Уровень участника">
-                </div>
-              </fieldset>
-              <a href="#" class="user__button button">Позвать!</a>
+              <h4 class="user-card__transport-title">Транспорт</h4>
+              <ul class="user-card__transport-list--catalog">
+                <li class="user-card__transport-item user-card__transport-item--plane"></li>
+                <li class="user-card__transport-item user-card__transport-tem--bus"></li>
+                <li class="user-card__transport-item user-card__transport-item--bicycle"></li>
+                <li class="user-card__transport-item user-card__transport-item--run"></li>
+              </ul>
+              <h4 class="user-card__countries-title">Хочет посетить</h4>
+              <ul class="user-card__countries-list--catalog">
+                <li class="user-card__countries-item flag-icon flag-icon--sri-lanka"><span class="country-name">Шри-Ланка</span></li>
+                <li class="user-card__countries-item flag-icon flag-icon--thailand"><span class="country-name">Таиланд</span></li>
+                <li class="user-card__countries-item flag-icon flag-icon--seychelles"><span class="country-name">Сейшелы</span></li>
+              </ul>
+              <button class="user__button button" type="button">Позвать!</button>
             </div>
           </div>
-          <div class="user__item">
-            <div class="user__info">
-              <h3 class="user__name">Петя Демин</h3>
-              <img class="user__pic--mini" src="https://via.placeholder.com/150x150" alt="Петя Демин">
-              <p class="user__hashtag">
-                #бургер #бар #футбол  <br>
+          <div class="user-card">
+            <img class="user-card__pic user-card__pic--catalog" src="https://via.placeholder.com/150x150" alt="">
+            <div class="user-card__level user-card__level--catalog">
+              <span class="user-level">80 level</span>
+            </div>
+            <div class="user-card__likes">
+              1500
+            </div>
+            <div class="user-card__info user-card__info--catalog">
+              <h3 class="user-card__name user-card__name--catalog">Петя Демин</h3>
+              <p class="user-card__hashtag user-card__hashtag--catalog">
+                #бургер #бар #футбол
                 #концерт #крафт
               </p>
-              <fieldset class="user__transport">
-                <legend class="user__transport__title">Транспорт:</legend>
-                <ul class="user__transport__list">
-                  <li class="user__transport__item user__transport__item--plane"></li>
-                  <li class="user__transport__item user__transport__item--bus"></li>
-                  <li class="user__transport__item user__transport__item--bicycle"></li>
-                  <li class="user__transport__item user__transport__item--run"></li>
-                </ul>
-              </fieldset>
-              <fieldset class="user__countries">
-                <legend class="user__countries__title">Хочет посетить:</legend>
-                <ul class="user__countries__list">
-                  <li class="country__flag country__flag--belgium">Бельгия</li>
-                  <li class="country__flag country__flag--czech">Чехия</li>
-                </ul>
-              </fieldset>
-              <fieldset class="user__level">
-                <legend class="user__level__title">Левел:</legend>
-                <div class="user__mark user__mark--1">
-                  <img src="https://via.placeholder.com/150x150" width="60px" height="60px" alt="Уровень участника">
-                </div>
-              </fieldset>
-              <a href="#" class="user__button button">Позвать!</a>
+              <h4 class="user-card__transport-title">Транспорт</h4>
+              <ul class="user-card__transport-list--catalog">
+                <li class="user-card__transport-item user-card__transport-item--plane"></li>
+                <li class="user-card__transport-item user-card__transport-tem--bus"></li>
+                <li class="user-card__transport-item user-card__transport-item--bicycle"></li>
+                <li class="user-card__transport-item user-card__transport-item--run"></li>
+              </ul>
+              <h4 class="user-card__countries-title">Хочет посетить</h4>
+              <ul class="user-card__countries-list--catalog">
+                <li class="user-card__countries-item flag-icon flag-icon--belgium"><span class="country-name">Бельгия</span></li>
+                <li class="user-card__countries-item flag-icon flag-icon--czech"><span class="country-name">Чехия</span></li>
+              </ul>
+              <button class="user__button button" type="button">Позвать!</button>
             </div>
           </div>
-          <div class="user__item">
-            <div class="user__info">
-              <h3 class="user__name">Марк Смолов</h3>
-              <img class="user__pic--mini" src="https://via.placeholder.com/150x150" alt="Марк Смолов">
-              <p class="user__hashtag">
-                #рэп #тату #хайпбист <br>
+          <div class="user-card">
+            <img class="user-card__pic user-card__pic--catalog" src="https://via.placeholder.com/150x150" alt="">
+            <div class="user-card__level user-card__level--catalog">
+              <span class="user-level">25 level</span>
+            </div>
+            <div class="user-card__likes">
+              170
+            </div>
+            <div class="user-card__info user-card__info--catalog">
+              <h3 class="user-card__name user-card__name--catalog">Марк Смолов</h3>
+              <p class="user-card__hashtag user-card__hashtag--catalog">
+                #рэп #тату #хфйпбист
                 #кроссовки #суприм
               </p>
-              <fieldset class="user__transport">
-                <legend class="user__transport__title">Транспорт:</legend>
-                <ul class="user__transport__list">
-                  <li class="user__transport__item user__transport__item--plane"></li>
-                  <li class="user__transport__item user__transport__item--bus"></li>
-                  <li class="user__transport__item user__transport__item--bicycle"></li>
-                  <li class="user__transport__item user__transport__item--run"></li>
-                </ul>
-              </fieldset>
-              <fieldset class="user__countries">
-                <legend class="user__countries__title">Хочет посетить:</legend>
-                <ul class="user__countries__list">
-                  <li class="country__flag country__flag--usa">США</li>
-                  <li class="country__flag country__flag--australia">Австралия</li>
-                  <li class="country__flag country__flag--dominica">Доминика</li>
-                </ul>
-              </fieldset>
-              <fieldset class="user__level">
-                <legend class="user__level__title">Левел:</legend>
-                <div class="user__mark user__mark--1">
-                  <img src="https://via.placeholder.com/150x150" width="60px" height="60px" alt="Уровень участника">
-                </div>
-              </fieldset>
-              <a href="#" class="user__button button">Позвать!</a>
+              <h4 class="user-card__transport-title">Транспорт</h4>
+              <ul class="user-card__transport-list--catalog">
+                <li class="user-card__transport-item user-card__transport-item--plane"></li>
+                <li class="user-card__transport-item user-card__transport-tem--bus"></li>
+                <li class="user-card__transport-item user-card__transport-item--bicycle"></li>
+                <li class="user-card__transport-item user-card__transport-item--run"></li>
+              </ul>
+              <h4 class="user-card__countries-title">Хочет посетить</h4>
+              <ul class="user-card__countries-list--catalog">
+                <li class="user-card__countries-item flag-icon flag-icon--usa"><span class="country-name">США</span></li>
+                <li class="user-card__countries-item flag-icon flag-icon--australia"><span class="country-name">Австралия</span></li>
+                <li class="user-card__countries-item flag-icon flag-icon--dominica"><span class="country-name">Доминика</span></li>
+              </ul>
+              <button class="user__button button" type="button">Позвать!</button>
             </div>
           </div>
-          <div class="user__item">
-            <div class="user__info">
-              <h3 class="user__name">Лариса Роговая</h3>
-              <img class="user__pic--mini" src="https://via.placeholder.com/150x150" alt="Лариса Роговая">
-              <p class="user__hashtag">
-                #образование #карьера <br>
-                #учеба #линкедин
+          <div class="user-card">
+            <img class="user-card__pic user-card__pic--catalog" src="https://via.placeholder.com/150x150" alt="">
+            <div class="user-card__level user-card__level--catalog">
+              <span class="user-level">50 level</span>
+            </div>
+            <div class="user-card__likes">
+              23
+            </div>
+            <div class="user-card__info user-card__info--catalog">
+              <h3 class="user-card__name user-card__name--catalog">Лариса Роговая</h3>
+              <p class="user-card__hashtag user-card__hashtag--catalog">
+                #образование #карьера #учеба #линкедин
               </p>
-              <fieldset class="user__transport">
-                <legend class="user__transport__title">Транспорт:</legend>
-                <ul class="user__transport__list">
-                  <li class="user__transport__item user__transport__item--plane"></li>
-                  <li class="user__transport__item user__transport__item--bus"></li>
-                  <li class="user__transport__item user__transport__item--bicycle"></li>
-                  <li class="user__transport__item user__transport__item--run"></li>
-                </ul>
-              </fieldset>
-              <fieldset class="user__countries">
-                <legend class="user__countries__title">Хочет посетить:</legend>
-                <ul class="user__countries__list">
-                  <li class="country__flag country__flag--uk">Великобритания</li>
-                  <li class="country__flag country__flag--germany">Германия</li>
-                </ul>
-              </fieldset>
-              <fieldset class="user__level">
-                <legend class="user__level__title">Левел:</legend>
-                <div class="user__mark user__mark--1">
-                  <img src="https://via.placeholder.com/150x150" width="60px" height="60px" alt="Уровень участника">
-                </div>
-              </fieldset>
-              <a href="#" class="user__button button">Позвать!</a>
+              <h4 class="user-card__transport-title">Транспорт</h4>
+              <ul class="user-card__transport-list--catalog">
+                <li class="user-card__transport-item user-card__transport-item--plane"></li>
+                <li class="user-card__transport-item user-card__transport-tem--bus"></li>
+                <li class="user-card__transport-item user-card__transport-item--bicycle"></li>
+                <li class="user-card__transport-item user-card__transport-item--run"></li>
+              </ul>
+              <h4 class="user-card__countries-title">Хочет посетить</h4>
+              <ul class="user-card__countries-list--catalog">
+                <li class="user-card__countries-item flag-icon flag-icon--uk"><span class="country-name">Великобритания</span></li>
+                <li class="user-card__countries-item flag-icon flag-icon--germany"><span class="country-name">Германия</span></li>
+              </ul>
+              <button class="user__button button" type="button">Позвать!</button>
             </div>
           </div>
         </div>
-        <a class="users__to-all" href="#">Показать еще</a>
-        <div class="page-main__toggles">
-          <button class="page-main__toggle page-main__toggle--left" type="button"></button>
-          <button class="page-main__toggle page-main__toggle--right" type="button"></button>
+        <a class="users__to-all users-link" href="#">Показать еще</a>
+        <div class="users__toggles pagination">
+          <button class="pagination__toggle pagination__toggle--left" type="button"></button>
+          <button class="pagination__toggle pagination__toggle--right" type="button"></button>
         </div>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page__footer page-footer">
       <a class="page-footer__logo logo">
         <img src="https://via.placeholder.com/150x150" width="96" height="15" alt="Погнали?">
       </a>

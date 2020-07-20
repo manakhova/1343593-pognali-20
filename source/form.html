@@ -1,25 +1,33 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Погнали</title>
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page__header page-header">
       <a class="page-header__logo logo">
-        <img src="https://via.placeholder.com/150x150" width="96" height="15" alt="Погнали?">
+        <img class="logo__image" src="https://via.placeholder.com/150x150" width="96" height="15" alt="Погнали?">
       </a>
-      <nav class="main-navigation">
-        <button class="main-nav__toggle" type="button">
+      <nav class=".page-header__navigation main-navigation">
+        <button class="main-navigation__toggle navigation-button" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </nav>
-      <h1 class="page-header__title">Направления</h1>
+      <div class="page-header__user-actions user-actions">
+        <a href="#" class="user-actions__link user-actions__link--phone button"></a>
+        <a href="#" class="user-actions__link user-actions__link--mail button"></a>
+        <a href="#" class="user-actions__link user-actions__link--authorization button">Авторизация</a>
+      </div>
     </header>
 
-    <main class="page-main"></main>
+    <main class="page__main">
+      <section class="page-subheader">
+        <h1 class="page-subheader__title subheader-title">Направления</h1>
+      </section>
+    </main>
 
-    <footer class="page-footer">
+    <footer class="page__footer page-footer">
       <a class="page-footer__logo logo">
         <img src="https://via.placeholder.com/150x150" width="96" height="15" alt="Погнали?">
       </a>
