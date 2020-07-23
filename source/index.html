@@ -94,7 +94,7 @@
       <section class="countries">
         <div class="countries__info">
           <h2 class="countries__title section-title">Направления</h2>
-          <p class="countries__teaser">
+          <p class="countries__teaser text text--black">
             Мы не продаем туры
             и ничего не рекламируем.
             Люди сами пишут о странах,
@@ -160,19 +160,23 @@
                 #ЗОЖ #ПП #Фитнес #пляж
                 #авокадо #смузи
               </p>
-              <h4 class="user-card__transport-title visualli-hidden">Транспорт</h4>
-              <ul class="user-card__transport-list">
-                <li class="user-card__transport-item user-card__transport-item--plane"></li>
-                <li class="user-card__transport-item user-card__transport-tem--bus"></li>
-                <li class="user-card__transport-item user-card__transport-item--bicycle"></li>
-                <li class="user-card__transport-item user-card__transport-item--run"></li>
-              </ul>
-              <h4 class="user-card__countries-title visualli-hidden">Хочет посетить</h4>
-              <ul class="user-card__countries-list--catalog">
-                <li class="user-card__countries-item flag-icon flag-icon--sri-lanka"><span class="country-name">Шри-Ланка</span></li>
-                <li class="user-card__countries-item flag-icon flag-icon--thailand"><span class="country-name">Таиланд</span></li>
-                <li class="user-card__countries-item flag-icon flag-icon--seychelles"><span class="country-name">Сейшелы</span></li>
-              </ul>
+              <div class="user-card__transport transport">
+                <h4 class="user-card__transport-title transport__title visually-hidden">Транспорт</h4>
+                <ul class="transport__list">
+                  <li class="transport__item transport__item--plane"></li>
+                  <li class="transport__item transport__item--bus"></li>
+                  <li class="transport__item transport__item--bicycle"></li>
+                  <li class="transport__item transport__item--run"></li>
+                </ul>
+              </div>
+              <div class="user-card__countries">
+                <h4 class="user-card__countries-title visually-hidden">Хочет посетить</h4>
+                <ul class="user-card__countries-list">
+                  <li class="user-card__countries-item flag-icon flag-icon--sri-lanka"><span class="country-name">Шри-Ланка</span></li>
+                  <li class="user-card__countries-item flag-icon flag-icon--thailand"><span class="country-name">Таиланд</span></li>
+                  <li class="user-card__countries-item flag-icon flag-icon--seychelles"><span class="country-name">Сейшелы</span></li>
+                </ul>
+              </div>
               <button class="user__button button visualli-hidden" type="button">Позвать!</button>
             </div>
           </div>
@@ -190,18 +194,22 @@
                 #бургер #бар #футбол
                 #концерт #крафт
               </p>
-              <h4 class="user-card__transport-title visualli-hidden">Транспорт</h4>
-              <ul class="user-card__transport-list">
-                <li class="user-card__transport-item user-card__transport-item--plane"></li>
-                <li class="user-card__transport-item user-card__transport-tem--bus"></li>
-                <li class="user-card__transport-item user-card__transport-item--bicycle"></li>
-                <li class="user-card__transport-item user-card__transport-item--run"></li>
-              </ul>
-              <h4 class="user-card__countries-title visualli-hidden">Хочет посетить</h4>
-              <ul class="user-card__countries-list">
-                <li class="user-card__countries-item flag-icon flag-icon--belgium"><span class="country-name">Бельгия</span></li>
-                <li class="user-card__countries-item flag-icon flag-icon--czech"><span class="country-name">Чехия</span></li>
-              </ul>
+              <div class="user-card__transport transport">
+                <h4 class="user-card__transport-title transport__title visually-hidden">Транспорт</h4>
+                <ul class="transport__list">
+                  <li class="transport__item transport__item--plane"></li>
+                  <li class="transport__item transport__item--bus"></li>
+                  <li class="transport__item transport__item--bicycle"></li>
+                  <li class="transport__item transport__item--run"></li>
+                </ul>
+              </div>
+              <div class="user-card__countries">
+                <h4 class="user-card__countries-title visually-hidden">Хочет посетить</h4>
+                <ul class="user-card__countries-list">
+                  <li class="user-card__countries-item flag-icon flag-icon--belgium"><span class="country-name">Бельгия</span></li>
+                  <li class="user-card__countries-item flag-icon flag-icon--czech"><span class="country-name">Чехия</span></li>
+                </ul>
+              </div>
               <button class="user__button button visualli-hidden" type="button">Позвать!</button>
             </div>
           </div>
@@ -219,18 +227,6 @@
           </ul>
           <a class="add-profile__to-all add-profile-link" href="#">Показать тарифы для бизнеса</a>
         </div>
-      </section>
-      <section class="modal">
-        <div class="modal__info">
-          <h2 class="modal__title section-title">Бизнес-тарифы</h2>
-          <ul class="modal__list">
-            <li class="modal__item">Реклама у блоггера 300 000 руб./пост</li>
-            <li class="modal__item">Накрутка подписчиков от 1 руб./шт.</li>
-            <li class="modal__item">Лайки от ботов от 20 коп./лайк</li>
-            <li class="modal__item">Ваш продакт-плейсмент Индивидуально</li>
-          </ul>
-        </div>
-        <button class="modal__button modal-button"type="button"></button>
       </section>
       <section class="feedback">
         <div class="feedback__info">
@@ -300,5 +296,17 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
+    <section class="modal">
+      <div class="modal__info">
+        <h2 class="modal__title section-title">Бизнес-тарифы</h2>
+        <ul class="modal__list">
+          <li class="modal__item">Реклама у блоггера 300 000 руб./пост</li>
+          <li class="modal__item">Накрутка подписчиков от 1 руб./шт.</li>
+          <li class="modal__item">Лайки от ботов от 20 коп./лайк</li>
+          <li class="modal__item">Ваш продакт-плейсмент Индивидуально</li>
+        </ul>
+      </div>
+      <button class="modal__button modal-button"type="button"></button>
+    </section>
   </body>
 </html>
