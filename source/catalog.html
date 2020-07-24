@@ -25,7 +25,7 @@
                 <a class="main-navigation__link" href="#">Попутчики</a>
               </li>
             </ul>
-            <ul class="main-navigation__actions actions">
+            <ul class="main-navigation__actions user-actions">
               <li class="actions__item actions__item--authorization">
                 <a href="#" class="actions__item-link button">Авторизация</a>
               </li>
@@ -64,11 +64,11 @@
         <h1 class="page-subheader__title subheader-title">Попутчики</h1>
       </section>
       <section class="page-filter">
-        <div class="page-filter__dropdown dropdown"><!-- или это модальное окно?-->
+        <div class="page-filter__dropdown dropdown">
           <button class="page-filter__button dropdown__button" type="button">
-            <span class=" page-filter__button-icon dropdown__button-icon"></span>
-            <span class="page-filter__button-name dropdown__button-name">Открыть меню</span>
-            <span class=" page-filter__button-icon dropdown__button-icon cross"></span>
+            <span class="page-filter__button-icon dropdown__button-icon "></span>
+            <span class="page-filter__button-name dropdown__button-name">Фильтр по странам</span>
+            <span class="page-filter__button-icon dropdown__button-icon dropdown__button-icon--times"></span>
           </button>
           <div class="page-filter__dropdown-content dropdown__content countries-filter">
             <ul class="page-filter__dropdown-content-list countries-filter__list">
@@ -79,148 +79,198 @@
             </ul>
             <ul class="page-filter__dropdown-content-list countries-filter__list alphabet">
               <li class="alphabet__item alphabet__item--selected">
-                <a class="alphabet__link alphabet__link--selected" href="#">А</a>
-                <ul class="alphabet__letter-list alphabet__letter-list--selected">
-                  <li class="alphabet__letter-list__item"><a class="alphabet__letter-list__link" href="#">Австралия</a></li>
-                  <li class="alphabet__letter-list__item"><a class="alphabet__letter-list__link" href="#">Австрия</a></li>
-                  <li class="alphabet__letter-list__item"><a class="alphabet__letter-list__link" href="#">Азербайджан</a></li>
-                  <li class="alphabet__letter-list__item"><a class="alphabet__letter-list__link" href="#">Алжир</a></li>
-                  <li class="alphabet__letter-list__item"><a class="alphabet__letter-list__link" href="#">Ангола</a></li>
-                  <li class="alphabet__letter-list__item"><a class="alphabet__letter-list__link" href="#">Андорра</a></li>
-                  <li class="alphabet__letter-list__item"><a class="alphabet__letter-list__link" href="#">Антигуа и Барбуда</a></li>
-                  <li class="alphabet__letter-list__item"><a class="alphabet__letter-list__link" href="#">Аргентина</a></li>
-                  <li class="alphabet__letter-list__item"><a class="alphabet__letter-list__link" href="#">Армения</a></li>
-                  <li class="alphabet__letter-list__item"><a class="alphabet__letter-list__link" href="#">Афганистан</a></li>
-                </ul>
+                <button class="alphabet__button alphabet__button--selected" type="button">А</button>
               </li>
-              <li class="alphabet__item alphabet__item--selected">
-                <a class="alphabet__link alphabet__link--selected" href="#">Б</a>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">Б</button>
               </li>
-              <li class="alphabet__item alphabet__item--selected">
-                <a class="alphabet__link alphabet__link--selected" href="#">В</a>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">В</button>
               </li>
-              <li class="alphabet__item alphabet__item--selected">
-                <a class="alphabet__link alphabet__link--selected" href="#">Г</a>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">Г</button>
               </li>
-              <li class="alphabet__item alphabet__item--selected">
-                <a class="alphabet__link alphabet__link--selected" href="#">Д</a>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">Д</button>
               </li>
-              <li class="alphabet__item alphabet__item--selected">
-                <a class="alphabet__link alphabet__link--selected" href="#">Е</a>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">Е</button>
               </li>
-              <li class="alphabet__item alphabet__item--selected">
-                <a class="alphabet__link alphabet__link--selected" href="#">З</a>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">З</button>
               </li>
-              <li class="alphabet__item alphabet__item--selected">
-                <a class="alphabet__link alphabet__link--selected" href="#">И</a>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">И</button>
               </li>
-              <li class="alphabet__item alphabet__item--selected">
-                <a class="alphabet__link alphabet__link--selected" href="#">К</a>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">К</button>
               </li>
-              <li class="alphabet__item alphabet__item--selected">
-                <a class="alphabet__link alphabet__link--selected" href="#">Л</a>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">Л</button>
               </li>
-              <li class="alphabet__item alphabet__item--selected">
-                <a class="alphabet__link alphabet__link--selected" href="#">М</a>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">М</button>
               </li>
-              <li class="alphabet__item alphabet__item--selected">
-                <a class="alphabet__link alphabet__link--selected" href="#">Н</a>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">Н</button>
               </li>
-              <li class="alphabet__item alphabet__item--selected">
-                <a class="alphabet__link alphabet__link--selected" href="#">О</a>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">О</button>
               </li>
-              <li class="alphabet__item alphabet__item--selected">
-                <a class="alphabet__link alphabet__link--selected" href="#">П</a>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">П</button>
               </li>
-              <li class="alphabet__item alphabet__item--selected">
-                <a class="alphabet__link alphabet__link--selected" href="#">Р</a>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">Р</button>
               </li>
-              <li class="alphabet__item alphabet__item--selected">
-                <a class="alphabet__link alphabet__link--selected" href="#">С</a>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">С</button>
               </li>
-              <li class="alphabet__item alphabet__item--selected">
-                <a class="alphabet__link alphabet__link--selected" href="#">Т</a>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">Т</button>
               </li>
-              <li class="alphabet__item alphabet__item--selected">
-                <a class="alphabet__link alphabet__link--selected" href="#">У</a>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">У</button>
               </li>
-              <li class="alphabet__item alphabet__item--selected">
-                <a class="alphabet__link alphabet__link--selected" href="#">Ф</a>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">Ф</button>
               </li>
-              <li class="alphabet__item alphabet__item--selected">
-                <a class="alphabet__link alphabet__link--selected" href="#">Х</a>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">Х</button>
               </li>
-              <li class="alphabet__item alphabet__item--selected">
-                <a class="alphabet__link alphabet__link--selected" href="#">Ч</a>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">Ч</button>
               </li>
-              <li class="alphabet__item alphabet__item--selected">
-                <a class="alphabet__link alphabet__link--selected" href="#">Ш</a>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">Ш</button>
               </li>
-              <li class="alphabet__item alphabet__item--selected">
-                <a class="alphabet__link alphabet__link--selected" href="#">Э</a>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">Э</button>
               </li>
-              <li class="alphabet__item alphabet__item--selected">
-                <a class="alphabet__link alphabet__link--selected" href="#">Ю</a>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">Ю</button>
               </li>
-              <li class="alphabet__item alphabet__item--selected">
-                <a class="alphabet__link alphabet__link--selected" href="#">Я</a>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">Я</button>
               </li>
             </ul>
-            <button class="page-filter__dropdown-content-button close-button" type="button">Свернуть</button>
+            <ul class="page-filter__dropdown-content-list countries-filter__list ">
+              <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Австралия</a></li>
+              <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Австрия</a></li>
+              <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Азербайджан</a></li>
+              <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Алжир</a></li>
+              <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Ангола</a></li>
+              <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Андорра</a></li>
+              <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Антигуа и Барбуда</a></li>
+              <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Аргентина</a></li>
+              <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Армения</a></li>
+              <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Афганистан</a></li>
+            </ul>
+            <button class="page-filter__dropdown-content-button close-button" type="button">Свернуть
+              <span class="icon icon--times"></span>
+            </button>
           </div>
         </div>
       </section>
       <section class="filter-companions">
         <div class="filter-companions__info">
-          <form class="filter-companions__form filter-form" action="http://echo.htmlacademy.ru" method="post">
-            <h2 class="filter-companions__form-title filter-form__title">Подберите идеального попутчика</h2>
-            <div class="filter-companions__form-item filter-form__item filter-section">
-              <fieldset class="filter-section__item">
-                <legend class="filter-section__item-name">Хобби</legend>
-                <ul class="filter-section__list"></ul>
-              </fieldset>
+          <form class="filter-form" action="http://echo.htmlacademy.ru" method="post">
+            <h2 class="filter-form__title">Подберите идеального попутчика</h2>
+            <div class="filter-form__item filter-section">
+              <h3 class="filter-section__name">Хобби</h3>
+              <ul class="filter-section__list">
+                <li class="filter-section__list-item">
+                  <label>
+                    <input class="filter-section__list-item-checkbox" type="checkbox" checked>
+                    Спортзал
+                  </label>
+                </li>
+                <li class="filter-section__list-item">
+                  <label>
+                    <input class="filter-section__list-item-checkbox" type="checkbox" checked>
+                    Кальян
+                  </label>
+                </li>
+                <li class="filter-section__list-item">
+                  <label>
+                    <input class="filter-section__list-item-checkbox" type="checkbox">
+                    Диван
+                  </label>
+                </li>
+              </ul>
             </div>
             <div class="filter-companions__form-item filter-form__item filter-section">
-              <fieldset class="filter-section__item">
-                <legend class="filter-section__item-name">Музыка</legend>
+              <h3 class="filter-section__name">Музыка</h3>
+              <ul class="filter-section__list">
+                <li class="filter-section__list-item">
+                  <label>
+                    <input class="filter-section__list-item-checkbox" type="checkbox" checked>
+                    Тяжелый рок
+                  </label>
+                </li>
+                <li class="filter-section__list-item">
+                  <label>
+                    <input class="filter-section__list-item-checkbox" type="checkbox" checked>
+                    Русский рэп
+                  </label>
+                </li>
+                <li class="filter-section__list-item">
+                  <label>
+                    <input class="filter-section__list-item-checkbox" type="checkbox">
+                    Евродэнс
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="filter-companions__form-item filter-form__item filter-section">
+                <h3 class="filter-section__name">Еда</h3>
                 <ul class="filter-section__list">
                   <li class="filter-section__list-item">
-                    <input class="filter-section__list-item-checkbox" type="checkbox" id="hardrock" checked>
-                    <label for="hardrock">Тяжелый рок</label>
+                    <label>
+                      <input class="filter-section__list-item-checkbox" type="checkbox" checked>
+                      Мясоед
+                    </label>
                   </li>
                   <li class="filter-section__list-item">
-                    <input class="filter-section__list-item-checkbox" type="checkbox" id="rusrap" checked>
-                    <label for="rusrap">Русский рэп</label>
+                    <label>
+                      <input class="filter-section__list-item-checkbox" type="checkbox" checked>
+                      Сидит на ПП
+                    </label>
                   </li>
                   <li class="filter-section__list-item">
-                    <input class="filter-section__list-item-checkbox" type="checkbox" id="eurodance">
-                    <label for="eurodance">Евродэнс</label>
+                    <label>
+                      <input class="filter-section__list-item-checkbox" type="checkbox">
+                      Веган-сыроед
+                    </label>
                   </li>
                 </ul>
-              </fieldset>
-            </div>
-            <div class="filter-companions__form-item filter-form__item filter-section">
-              <fieldset class="filter-section__item">
-                <legend class="filter-section__item-name">Еда</legend>
-                <ul class="filter-section__list"></ul>
-              </fieldset>
             </div>
             <div class="filter-companions__form-item filter-form__item filter-section">
               <fieldset class="filter-section__item transport">
                 <legend class="filter-section__item-name transport__title">Транспорт</legend>
                 <ul class="filter-section__list transport__list">
-                  <li class="transport__item transport__item--plane"></li><!-- и, видимо, это кнопки?-->
-                  <li class="transport__item transport__item--bus"></li>
-                  <li class="transport__item transport__item--bicycle"></li>
-                  <li class="transport__item transport__item--run"></li>
+                  <li class="transport__item">
+                    <label>
+                      <input class="transport__item-checkbox transport__item-checkbox--plane" type="checkbox">
+                    </label>
+                  </li>
+                  <li class="transport__item">
+                    <input class="transport__item-checkbox transport__item-checkbox--bus" type="checkbox">
+                  </li>
+                  <li class="transport__item">
+                    <input class="transport__item-checkbox transport__item-checkbox--bicycle" type="checkbox">
+                  </li>
+                  <li class="transport__item">
+                    <input class="transport__item-checkbox transport__item-checkbox--run" type="checkbox">
+                  </li>
                 </ul>
               </fieldset>
             </div>
             <div class="filter-companions__form-item filter-form__item filter-section">
-              <fieldset class="filter-section__item filter-slider">
-                <legend class="filter-section__item-name filter-slider__title">Левел</legend>
-                <div class="filter-slider__info">
-                  <div class="filter-slider__item level-controls">
+              <div class="filter-section__item filter-range">
+                <legend class="filter-section__item-name filter-range__title">Левел</legend>
+                <div class="filter-range__info">
+                  <div class="filter-range__item level-controls">
                     <label class="min-level">
                       <input type="number" value="30">
                     </label>
@@ -228,13 +278,13 @@
                       <input type="number" value="100">
                     </label>
                   </div>
-                  <div class="filter-slider__item scale">
-                    <div class="scale__bar"></div>
-                    <div class="scale__toggle toggle toggle--min" tabindex="0"></div>
-                    <div class="scale__toggle toggle toggle-max" tabindex="0"></div>
+                  <div class="filter-range__item range">
+                    <div class="range__bar"></div>
+                    <div class="range__toggle toggle toggle--min" tabindex="0"></div>
+                    <div class="range__toggle toggle toggle-max" tabindex="0"></div>
                   </div>
                 </div>
-              </fieldset>
+              </div>
             </div>
             <button class="filter-companions__form-item filter-form__item filter-button" type="submit">Показать</button>
           </form>

@@ -26,7 +26,7 @@
                 <a class="main-navigation__link" href="#">Попутчики</a>
               </li>
             </ul>
-            <ul class="main-navigation__actions actions">
+            <ul class="main-navigation__actions user-actions">
               <li class="actions__item actions__item--authorization">
                 <a href="#" class="actions__item-link button">Авторизация</a>
               </li>
@@ -39,7 +39,6 @@
             </ul>
           </nav>
           <div class="dropdown__social social">
-            <h2 class="visually-hidden">Соцсети</h2>
             <ul class="dropdown__social-list social__list">
               <li class="dropdown__social-item social__item">
                 <a class="social__link social__link--facebook" href="#"></a>
@@ -54,10 +53,10 @@
           </div>
         </div>
       </div>
-      <div class="page-header__user-actions user-actions">
-        <a href="#" class="user-actions__link user-actions__link--phone button"></a>
-        <a href="#" class="user-actions__link user-actions__link--mail button"></a>
-        <a href="#" class="user-actions__link user-actions__link--authorization button">Авторизация</a>
+      <div class="page-header__user-actions contacts">
+        <a href="#" class="contacts__item contacts__item--phone button"></a>
+        <a href="#" class="contacts__item contacts__item--mail button"></a>
+        <a href="#" class="contacts__item contacts__item--authorization button">Авторизация</a>
       </div>
     </header>
     <main class="page__main">
@@ -228,31 +227,30 @@
           <a class="add-profile__to-all add-profile-link" href="#">Показать тарифы для бизнеса</a>
         </div>
       </section>
-      <section class="feedback">
-        <div class="feedback__info">
-          <h2 class="feedback__title section-title">Заинтересовались?</h2>
-          <p class="feedback__teaser text">
+      <section class="subscription">
+        <div class="subscription__info">
+          <h2 class="subscription__title section-title">Заинтересовались?</h2>
+          <p class="subscription__teaser text">
             Зарегистрируйтесь,
             это быстро и бесплатно!
             Уже зарегистрированы? Тогда
-            скорее <a href="#" class="feedback__link">авторизуйтесь</a>.
+            скорее <a href="#" class="subscription__link">авторизуйтесь</a>.
           </p>
-          <form class="feedback__form feedback-form" action="http://echo.htmlacademy.ru" method="post">
+          <form class="subscription__form subscription-form" action="http://echo.htmlacademy.ru" method="post">
             <label>
-              <input class="feedback-form__input" type="email" placeholder="E-mail" >
-              <span class="visually-hidden">Электронная почта</span>
+              <input class="subscription-form__input" type="email" placeholder="E-mail" >
             </label>
-            <button type="feedback-form__button button"></button>
+            <button type="subscription-form__button button"></button>
           </form>
-          <p class="feedback__teaser text">
+          <p class="subscription__teaser text">
             Остались вопросы?
             Мы с радостью на них ответим!
           </p>
-          <ul class="feedback__actions actions">
-            <li class="feedback__actions-item actions__item--phone">
+          <ul class="subscription__actions contacts">
+            <li class="subscription__actions-item contacts__item contacts__item--phone">
               <a href="#" class="actions__item-link">8 800 555-86-28</a>
             </li>
-            <li class="feedback__actions-item actions__item--mail">
+            <li class="subscription__actions-item contacts__item contacts__item--mail">
               <a class="actions__item-link" href="#">mail@htmlacademy.ru</a>
             </li>
           </ul>
@@ -300,10 +298,10 @@
       <div class="modal__info">
         <h2 class="modal__title section-title">Бизнес-тарифы</h2>
         <ul class="modal__list">
-          <li class="modal__item">Реклама у блоггера 300 000 руб./пост</li>
-          <li class="modal__item">Накрутка подписчиков от 1 руб./шт.</li>
-          <li class="modal__item">Лайки от ботов от 20 коп./лайк</li>
-          <li class="modal__item">Ваш продакт-плейсмент Индивидуально</li>
+          <li class="modal__item"><span class="service">Реклама у блоггера</span><span class="price">300 000 руб./пост</span></li>
+          <li class="modal__item"><span class="service">Накрутка подписчиков</span><span class="price">от 1 руб./шт.</span></li>
+          <li class="modal__item"><span class="service">Лайки от ботов</span><span class="price">от 20 коп./лайк</span></li>
+          <li class="modal__item"><span class="service">Ваш продакт-плейсмент</span><span class="price">Индивидуально</span></li>
         </ul>
       </div>
       <button class="modal__button modal-button"type="button"></button>
