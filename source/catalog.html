@@ -8,9 +8,51 @@
       <a class="page-header__logo logo">
         <img class="logo__image" src="https://via.placeholder.com/150x150" width="96" height="15" alt="Погнали?">
       </a>
-      <button class="page-header__toggle header-button" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+      <div class="dropdown">
+        <button class="navigation-button dropdown__button" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="dropdown__content">
+          <nav class="dropdown__content-nav main-navigation">
+            <ul class="main-navigation__list">
+              <li class="main-navigation__item">
+                <a class="main-navigation__link" href="#">О сервисе</a>
+              </li>
+              <li class="main-navigation__item">
+                <a class="main-navigation__link" href="#">Направления</a>
+              </li>
+              <li class="main-navigation__item">
+                <a class="main-navigation__link" href="#">Попутчики</a>
+              </li>
+            </ul>
+            <ul class="main-navigation__actions user-actions">
+              <li class="actions__item actions__item--authorization">
+                <a href="#" class="actions__item-link button">Авторизация</a>
+              </li>
+              <li class="actions__item actions__item--phone">
+                <a href="#" class="actions__item-link">8 800 555-86-28</a>
+              </li>
+              <li class="actions__item actions__item--mail">
+                <a class="actions__item-link" href="#">mail@htmlacademy.ru</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="dropdown__social social">
+            <h2 class="visually-hidden">Соцсети</h2>
+            <ul class="dropdown__social-list social__list">
+              <li class="dropdown__social-item social__item">
+                <a class="social__link social__link--facebook" href="#"></a>
+              </li>
+              <li class="dropdown__social-item social__item">
+                <a class="social__link--vkontakte" href="#"></a>
+              </li>
+              <li class="dropdown__social-item social__item">
+                <a class="social__link social__link--instagram" href="#"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <div class="page-header__user-actions user-actions">
         <a href="#" class="user-actions__link user-actions__link--phone button"></a>
         <a href="#" class="user-actions__link user-actions__link--mail button"></a>
@@ -20,6 +62,233 @@
     <main class="page__main">
       <section class="page-subheader">
         <h1 class="page-subheader__title subheader-title">Попутчики</h1>
+      </section>
+      <section class="page-filter">
+        <div class="page-filter__dropdown dropdown">
+          <button class="page-filter__button dropdown__button" type="button">
+            <span class="page-filter__button-icon dropdown__button-icon "></span>
+            <span class="page-filter__button-name dropdown__button-name">Фильтр по странам</span>
+            <span class="page-filter__button-icon dropdown__button-icon dropdown__button-icon--times"></span>
+          </button>
+          <div class="page-filter__dropdown-content dropdown__content countries-filter">
+            <ul class="page-filter__dropdown-content-list countries-filter__list">
+              <li class="countries-filter__item"><a class="countries-filter__link countries-filter--selected" href="#">Европа</a></li>
+              <li class="countries-filter__item"><a class="countries-filter__link" href="#">Азия</a></li>
+              <li class="countries-filter__item"><a class="countries-filter__link" href="#">Америка</a></li>
+              <li class="countries-filter__item"><a class="countries-filter__link" href="#">Острова</a></li>
+            </ul>
+            <ul class="page-filter__dropdown-content-list countries-filter__list alphabet">
+              <li class="alphabet__item alphabet__item--selected">
+                <button class="alphabet__button alphabet__button--selected" type="button">А</button>
+              </li>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">Б</button>
+              </li>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">В</button>
+              </li>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">Г</button>
+              </li>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">Д</button>
+              </li>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">Е</button>
+              </li>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">З</button>
+              </li>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">И</button>
+              </li>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">К</button>
+              </li>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">Л</button>
+              </li>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">М</button>
+              </li>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">Н</button>
+              </li>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">О</button>
+              </li>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">П</button>
+              </li>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">Р</button>
+              </li>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">С</button>
+              </li>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">Т</button>
+              </li>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">У</button>
+              </li>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">Ф</button>
+              </li>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">Х</button>
+              </li>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">Ч</button>
+              </li>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">Ш</button>
+              </li>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">Э</button>
+              </li>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">Ю</button>
+              </li>
+              <li class="alphabet__item">
+                <button class="alphabet__button" type="button">Я</button>
+              </li>
+            </ul>
+            <ul class="page-filter__dropdown-content-list countries-filter__list ">
+              <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Австралия</a></li>
+              <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Австрия</a></li>
+              <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Азербайджан</a></li>
+              <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Алжир</a></li>
+              <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Ангола</a></li>
+              <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Андорра</a></li>
+              <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Антигуа и Барбуда</a></li>
+              <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Аргентина</a></li>
+              <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Армения</a></li>
+              <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Афганистан</a></li>
+            </ul>
+            <button class="page-filter__dropdown-content-button close-button" type="button">Свернуть
+              <span class="icon icon--times"></span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="filter-companions">
+        <div class="filter-companions__info">
+          <form class="filter-form" action="http://echo.htmlacademy.ru" method="post">
+            <h2 class="filter-form__title">Подберите идеального попутчика</h2>
+            <div class="filter-form__item filter-section">
+              <h3 class="filter-section__name">Хобби</h3>
+              <ul class="filter-section__list">
+                <li class="filter-section__list-item">
+                  <label>
+                    <input class="filter-section__list-item-checkbox" type="checkbox" checked>
+                    Спортзал
+                  </label>
+                </li>
+                <li class="filter-section__list-item">
+                  <label>
+                    <input class="filter-section__list-item-checkbox" type="checkbox" checked>
+                    Кальян
+                  </label>
+                </li>
+                <li class="filter-section__list-item">
+                  <label>
+                    <input class="filter-section__list-item-checkbox" type="checkbox">
+                    Диван
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="filter-companions__form-item filter-form__item filter-section">
+              <h3 class="filter-section__name">Музыка</h3>
+              <ul class="filter-section__list">
+                <li class="filter-section__list-item">
+                  <label>
+                    <input class="filter-section__list-item-checkbox" type="checkbox" checked>
+                    Тяжелый рок
+                  </label>
+                </li>
+                <li class="filter-section__list-item">
+                  <label>
+                    <input class="filter-section__list-item-checkbox" type="checkbox" checked>
+                    Русский рэп
+                  </label>
+                </li>
+                <li class="filter-section__list-item">
+                  <label>
+                    <input class="filter-section__list-item-checkbox" type="checkbox">
+                    Евродэнс
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="filter-companions__form-item filter-form__item filter-section">
+                <h3 class="filter-section__name">Еда</h3>
+                <ul class="filter-section__list">
+                  <li class="filter-section__list-item">
+                    <label>
+                      <input class="filter-section__list-item-checkbox" type="checkbox" checked>
+                      Мясоед
+                    </label>
+                  </li>
+                  <li class="filter-section__list-item">
+                    <label>
+                      <input class="filter-section__list-item-checkbox" type="checkbox" checked>
+                      Сидит на ПП
+                    </label>
+                  </li>
+                  <li class="filter-section__list-item">
+                    <label>
+                      <input class="filter-section__list-item-checkbox" type="checkbox">
+                      Веган-сыроед
+                    </label>
+                  </li>
+                </ul>
+            </div>
+            <div class="filter-companions__form-item filter-form__item filter-section">
+              <fieldset class="filter-section__item transport">
+                <legend class="filter-section__item-name transport__title">Транспорт</legend>
+                <ul class="filter-section__list transport__list">
+                  <li class="transport__item">
+                    <label>
+                      <input class="transport__item-checkbox transport__item-checkbox--plane" type="checkbox">
+                    </label>
+                  </li>
+                  <li class="transport__item">
+                    <input class="transport__item-checkbox transport__item-checkbox--bus" type="checkbox">
+                  </li>
+                  <li class="transport__item">
+                    <input class="transport__item-checkbox transport__item-checkbox--bicycle" type="checkbox">
+                  </li>
+                  <li class="transport__item">
+                    <input class="transport__item-checkbox transport__item-checkbox--run" type="checkbox">
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="filter-companions__form-item filter-form__item filter-section">
+              <div class="filter-section__item filter-range">
+                <legend class="filter-section__item-name filter-range__title">Левел</legend>
+                <div class="filter-range__info">
+                  <div class="filter-range__item level-controls">
+                    <label class="min-level">
+                      <input type="number" value="30">
+                    </label>
+                    <label class="max-level">
+                      <input type="number" value="100">
+                    </label>
+                  </div>
+                  <div class="filter-range__item range">
+                    <div class="range__bar"></div>
+                    <div class="range__toggle toggle toggle--min" tabindex="0"></div>
+                    <div class="range__toggle toggle toggle-max" tabindex="0"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="filter-companions__form-item filter-form__item filter-button" type="submit">Показать</button>
+          </form>
+        </div>
       </section>
       <section class="users">
         <div class="users__list">
@@ -37,19 +306,23 @@
                 #ЗОЖ #ПП #Фитнес #пляж
                 #авокадо #смузи
               </p>
-              <h4 class="user-card__transport-title">Транспорт</h4>
-              <ul class="user-card__transport-list user-card__transport-list--catalog">
-                <li class="user-card__transport-item user-card__transport-item--plane"></li>
-                <li class="user-card__transport-item user-card__transport-tem--bus"></li>
-                <li class="user-card__transport-item user-card__transport-item--bicycle"></li>
-                <li class="user-card__transport-item user-card__transport-item--run"></li>
-              </ul>
-              <h4 class="user-card__countries-title">Хочет посетить</h4>
-              <ul class="user-card__countries-list user-card__countries-list--catalog">
-                <li class="user-card__countries-item flag-icon flag-icon--sri-lanka"><span class="country-name">Шри-Ланка</span></li>
-                <li class="user-card__countries-item flag-icon flag-icon--thailand"><span class="country-name">Таиланд</span></li>
-                <li class="user-card__countries-item flag-icon flag-icon--seychelles"><span class="country-name">Сейшелы</span></li>
-              </ul>
+              <div class="user-card__transport user-card__transport--catalog transport">
+                <h4 class="user-card__transport-title user-card__transport-title--catalog transport__title">Транспорт</h4>
+                <ul class="transport__list">
+                  <li class="transport__item transport__item--plane"></li>
+                  <li class="transport__item transport__item--bus"></li>
+                  <li class="transport__item transport__item--bicycle"></li>
+                  <li class="transport__item transport__item--run"></li>
+                </ul>
+              </div>
+              <div class="user-card__countries user-card__countries--catalog">
+                <h4 class="user-card__countries-title user-card__countries-title--catalog">Хочет посетить</h4>
+                <ul class="user-card__countries-list user-card__countries-list--catalog">
+                  <li class="user-card__countries-item flag-icon flag-icon--sri-lanka"><span class="country-name">Шри-Ланка</span></li>
+                  <li class="user-card__countries-item flag-icon flag-icon--thailand"><span class="country-name">Таиланд</span></li>
+                  <li class="user-card__countries-item flag-icon flag-icon--seychelles"><span class="country-name">Сейшелы</span></li>
+                </ul>
+              </div>
               <button class="user__button button" type="button">Позвать!</button>
             </div>
           </div>
@@ -67,18 +340,22 @@
                 #бургер #бар #футбол
                 #концерт #крафт
               </p>
-              <h4 class="user-card__transport-title">Транспорт</h4>
-              <ul class="user-card__transport-list user-card__transport-list--catalog">
-                <li class="user-card__transport-item user-card__transport-item--plane"></li>
-                <li class="user-card__transport-item user-card__transport-tem--bus"></li>
-                <li class="user-card__transport-item user-card__transport-item--bicycle"></li>
-                <li class="user-card__transport-item user-card__transport-item--run"></li>
-              </ul>
-              <h4 class="user-card__countries-title">Хочет посетить</h4>
-              <ul class="user-card__countries-list user-card__countries-list--catalog">
-                <li class="user-card__countries-item flag-icon flag-icon--belgium"><span class="country-name">Бельгия</span></li>
-                <li class="user-card__countries-item flag-icon flag-icon--czech"><span class="country-name">Чехия</span></li>
-              </ul>
+              <div class="user-card__transport user-card__transport--catalog transport">
+                <h4 class="user-card__transport-title user-card__transport-title--catalog transport__title">Транспорт</h4>
+                <ul class="transport__list">
+                  <li class="transport__item transport__item--plane"></li>
+                  <li class="transport__item transport__item--bus"></li>
+                  <li class="transport__item transport__item--bicycle"></li>
+                  <li class="transport__item transport__item--run"></li>
+                </ul>
+              </div>
+              <div class="user-card__countries user-card__countries--catalog">
+                <h4 class="user-card__countries-title user-card__countries-title--catalog">Хочет посетить</h4>
+                <ul class="user-card__countries-list user-card__countries-list--catalog">
+                  <li class="user-card__countries-item flag-icon flag-icon--belgium"><span class="country-name">Бельгия</span></li>
+                  <li class="user-card__countries-item flag-icon flag-icon--czech"><span class="country-name">Чехия</span></li>
+                </ul>
+              </div>
               <button class="user__button button" type="button">Позвать!</button>
             </div>
           </div>
@@ -96,19 +373,23 @@
                 #рэп #тату #хфйпбист
                 #кроссовки #суприм
               </p>
-              <h4 class="user-card__transport-title">Транспорт</h4>
-              <ul class="user-card__transport-list user-card__transport-list--catalog">
-                <li class="user-card__transport-item user-card__transport-item--plane"></li>
-                <li class="user-card__transport-item user-card__transport-tem--bus"></li>
-                <li class="user-card__transport-item user-card__transport-item--bicycle"></li>
-                <li class="user-card__transport-item user-card__transport-item--run"></li>
-              </ul>
-              <h4 class="user-card__countries-title">Хочет посетить</h4>
-              <ul class="user-card__countries-list user-card__countries-list--catalog">
-                <li class="user-card__countries-item flag-icon flag-icon--usa"><span class="country-name">США</span></li>
-                <li class="user-card__countries-item flag-icon flag-icon--australia"><span class="country-name">Австралия</span></li>
-                <li class="user-card__countries-item flag-icon flag-icon--dominica"><span class="country-name">Доминика</span></li>
-              </ul>
+              <div class="user-card__transport user-card__transport--catalog transport">
+                <h4 class="user-card__transport-title user-card__transport-title--catalog transport__title">Транспорт</h4>
+                <ul class="transport__list">
+                  <li class="transport__item transport__item--plane"></li>
+                  <li class="transport__item transport__item--bus"></li>
+                  <li class="transport__item transport__item--bicycle"></li>
+                  <li class="transport__item transport__item--run"></li>
+                </ul>
+              </div>
+              <div class="user-card__countries user-card__countries--catalog">
+                <h4 class="user-card__countries-title user-card__countries-title--catalog">Хочет посетить</h4>
+                <ul class="user-card__countries-list user-card__countries-list--catalog">
+                  <li class="user-card__countries-item flag-icon flag-icon--usa"><span class="country-name">США</span></li>
+                  <li class="user-card__countries-item flag-icon flag-icon--australia"><span class="country-name">Австралия</span></li>
+                  <li class="user-card__countries-item flag-icon flag-icon--dominica"><span class="country-name">Доминика</span></li>
+                </ul>
+              </div>
               <button class="user__button button" type="button">Позвать!</button>
             </div>
           </div>
@@ -125,18 +406,21 @@
               <p class="user-card__hashtag user-card__hashtag--catalog">
                 #образование #карьера #учеба #линкедин
               </p>
-              <h4 class="user-card__transport-title">Транспорт</h4>
-              <ul class="user-card__transport-list user-card__transport-list--catalog">
-                <li class="user-card__transport-item user-card__transport-item--plane"></li>
-                <li class="user-card__transport-item user-card__transport-tem--bus"></li>
-                <li class="user-card__transport-item user-card__transport-item--bicycle"></li>
-                <li class="user-card__transport-item user-card__transport-item--run"></li>
-              </ul>
-              <h4 class="user-card__countries-title">Хочет посетить</h4>
-              <ul class="user-card__countries-list user-card__countries-list--catalog">
-                <li class="user-card__countries-item flag-icon flag-icon--uk"><span class="country-name">Великобритания</span></li>
-                <li class="user-card__countries-item flag-icon flag-icon--germany"><span class="country-name">Германия</span></li>
-              </ul>
+              <div class="user-card__transport user-card__transport--catalog transport">
+                <h4 class="user-card__transport-title user-card__transport-title--catalog transport__title">Транспорт</h4>
+                <ul class="transport__list">
+                  <li class="transport__item transport__item--plane"></li>
+                  <li class="transport__item transport__item--bus"></li>
+                  <li class="transport__item transport__item--bicycle"></li>
+                  <li class="transport__item transport__item--run"></li>
+                </ul>
+              </div>
+              <div class="user-card__countries user-card__countries--catalog">
+                <h4 class="user-card__countries-title user-card__countries-title--catalog">Хочет посетить</h4>
+                <ul class="user-card__countries-list user-card__countries-list--catalog">
+                  <li class="user-card__countries-item flag-icon flag-icon--uk"><span class="country-name">Великобритания</span></li>
+                  <li class="user-card__countries-item flag-icon flag-icon--germany"><span class="country-name">Германия</span></li>
+                </ul>
               <button class="user__button button" type="button">Позвать!</button>
             </div>
           </div>

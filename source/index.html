@@ -9,13 +9,54 @@
       <a class="page-header__logo logo">
         <img class="logo__image" src="https://via.placeholder.com/150x150" width="96" height="15" alt="Погнали?">
       </a>
-      <button class="page-header__toggle header-button" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="page-header__user-actions user-actions">
-        <a href="#" class="user-actions__link user-actions__link--phone button"></a>
-        <a href="#" class="user-actions__link user-actions__link--mail button"></a>
-        <a href="#" class="user-actions__link user-actions__link--authorization button">Авторизация</a>
+      <div class="dropdown">
+        <button class="navigation-button dropdown__button" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="dropdown__content">
+          <nav class="dropdown__content-nav main-navigation">
+            <ul class="main-navigation__list">
+              <li class="main-navigation__item">
+                <a class="main-navigation__link" href="#">О сервисе</a>
+              </li>
+              <li class="main-navigation__item">
+                <a class="main-navigation__link" href="#">Направления</a>
+              </li>
+              <li class="main-navigation__item">
+                <a class="main-navigation__link" href="#">Попутчики</a>
+              </li>
+            </ul>
+            <ul class="main-navigation__actions user-actions">
+              <li class="actions__item actions__item--authorization">
+                <a href="#" class="actions__item-link button">Авторизация</a>
+              </li>
+              <li class="actions__item actions__item--phone">
+                <a href="#" class="actions__item-link">8 800 555-86-28</a>
+              </li>
+              <li class="actions__item actions__item--mail">
+                <a class="actions__item-link" href="#">mail@htmlacademy.ru</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="dropdown__social social">
+            <ul class="dropdown__social-list social__list">
+              <li class="dropdown__social-item social__item">
+                <a class="social__link social__link--facebook" href="#"></a>
+              </li>
+              <li class="dropdown__social-item social__item">
+                <a class="social__link--vkontakte" href="#"></a>
+              </li>
+              <li class="dropdown__social-item social__item">
+                <a class="social__link social__link--instagram" href="#"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="page-header__user-actions contacts">
+        <a href="#" class="contacts__item contacts__item--phone button"></a>
+        <a href="#" class="contacts__item contacts__item--mail button"></a>
+        <a href="#" class="contacts__item contacts__item--authorization button">Авторизация</a>
       </div>
     </header>
     <main class="page__main">
@@ -51,8 +92,8 @@
       </section>
       <section class="countries">
         <div class="countries__info">
-          <h2 class="countries__title">Направления</h2>
-          <p class="countries__teaser">
+          <h2 class="countries__title section-title">Направления</h2>
+          <p class="countries__teaser text text--black">
             Мы не продаем туры
             и ничего не рекламируем.
             Люди сами пишут о странах,
@@ -90,7 +131,7 @@
       </section>
       <section class="users">
         <div class="users__info">
-          <h2 class="users__title">Попутчики</h2>
+          <h2 class="users__title section-title">Попутчики</h2>
           <p class="users__teaser text">
             Все мы индивидуальны и у
             каждого свой взгляд на
@@ -118,19 +159,23 @@
                 #ЗОЖ #ПП #Фитнес #пляж
                 #авокадо #смузи
               </p>
-              <h4 class="user-card__transport-title visualli-hidden">Транспорт</h4>
-              <ul class="user-card__transport-list">
-                <li class="user-card__transport-item user-card__transport-item--plane"></li>
-                <li class="user-card__transport-item user-card__transport-tem--bus"></li>
-                <li class="user-card__transport-item user-card__transport-item--bicycle"></li>
-                <li class="user-card__transport-item user-card__transport-item--run"></li>
-              </ul>
-              <h4 class="user-card__countries-title visualli-hidden">Хочет посетить</h4>
-              <ul class="user-card__countries-list">
-                <li class="user-card__countries-item flag-icon flag-icon--sri-lanka"><span class="country-name">Шри-Ланка</span></li>
-                <li class="user-card__countries-item flag-icon flag-icon--thailand"><span class="country-name">Таиланд</span></li>
-                <li class="user-card__countries-item flag-icon flag-icon--seychelles"><span class="country-name">Сейшелы</span></li>
-              </ul>
+              <div class="user-card__transport transport">
+                <h4 class="user-card__transport-title transport__title visually-hidden">Транспорт</h4>
+                <ul class="transport__list">
+                  <li class="transport__item transport__item--plane"></li>
+                  <li class="transport__item transport__item--bus"></li>
+                  <li class="transport__item transport__item--bicycle"></li>
+                  <li class="transport__item transport__item--run"></li>
+                </ul>
+              </div>
+              <div class="user-card__countries">
+                <h4 class="user-card__countries-title visually-hidden">Хочет посетить</h4>
+                <ul class="user-card__countries-list">
+                  <li class="user-card__countries-item flag-icon flag-icon--sri-lanka"><span class="country-name">Шри-Ланка</span></li>
+                  <li class="user-card__countries-item flag-icon flag-icon--thailand"><span class="country-name">Таиланд</span></li>
+                  <li class="user-card__countries-item flag-icon flag-icon--seychelles"><span class="country-name">Сейшелы</span></li>
+                </ul>
+              </div>
               <button class="user__button button visualli-hidden" type="button">Позвать!</button>
             </div>
           </div>
@@ -148,18 +193,22 @@
                 #бургер #бар #футбол
                 #концерт #крафт
               </p>
-              <h4 class="user-card__transport-title visualli-hidden">Транспорт</h4>
-              <ul class="user-card__transport-list">
-                <li class="user-card__transport-item user-card__transport-item--plane"></li>
-                <li class="user-card__transport-item user-card__transport-tem--bus"></li>
-                <li class="user-card__transport-item user-card__transport-item--bicycle"></li>
-                <li class="user-card__transport-item user-card__transport-item--run"></li>
-              </ul>
-              <h4 class="user-card__countries-title visualli-hidden">Хочет посетить</h4>
-              <ul class="user-card__countries-list">
-                <li class="user-card__countries-item flag-icon flag-icon--belgium"><span class="country-name">Бельгия</span></li>
-                <li class="user-card__countries-item flag-icon flag-icon--czech"><span class="country-name">Чехия</span></li>
-              </ul>
+              <div class="user-card__transport transport">
+                <h4 class="user-card__transport-title transport__title visually-hidden">Транспорт</h4>
+                <ul class="transport__list">
+                  <li class="transport__item transport__item--plane"></li>
+                  <li class="transport__item transport__item--bus"></li>
+                  <li class="transport__item transport__item--bicycle"></li>
+                  <li class="transport__item transport__item--run"></li>
+                </ul>
+              </div>
+              <div class="user-card__countries">
+                <h4 class="user-card__countries-title visually-hidden">Хочет посетить</h4>
+                <ul class="user-card__countries-list">
+                  <li class="user-card__countries-item flag-icon flag-icon--belgium"><span class="country-name">Бельгия</span></li>
+                  <li class="user-card__countries-item flag-icon flag-icon--czech"><span class="country-name">Чехия</span></li>
+                </ul>
+              </div>
               <button class="user__button button visualli-hidden" type="button">Позвать!</button>
             </div>
           </div>
@@ -168,7 +217,7 @@
       </section>
       <section class="add-profile">
         <div class="add-profile__info">
-          <h2 class="add-profile__title">Добавьте свой профиль</h2>
+          <h2 class="add-profile__title section-title">Добавьте свой профиль</h2>
           <div class="add-profile__pic"></div>
           <ul class="add-profile__list">
             <li class="add-profile__item">Базовое размещение Бесплатно</li>
@@ -176,8 +225,51 @@
             <li class="add-profile__item">Кастомный цвет карточки 59 руб./мес</li>
           </ul>
           <a class="add-profile__to-all add-profile-link" href="#">Показать тарифы для бизнеса</a>
-        </section>
         </div>
+      </section>
+      <section class="subscription">
+        <div class="subscription__info">
+          <h2 class="subscription__title section-title">Заинтересовались?</h2>
+          <p class="subscription__teaser text">
+            Зарегистрируйтесь,
+            это быстро и бесплатно!
+            Уже зарегистрированы? Тогда
+            скорее <a href="#" class="subscription__link">авторизуйтесь</a>.
+          </p>
+          <form class="subscription__form subscription-form" action="http://echo.htmlacademy.ru" method="post">
+            <label>
+              <input class="subscription-form__input" type="email" placeholder="E-mail" >
+            </label>
+            <button type="subscription-form__button button"></button>
+          </form>
+          <p class="subscription__teaser text">
+            Остались вопросы?
+            Мы с радостью на них ответим!
+          </p>
+          <ul class="subscription__actions contacts">
+            <li class="subscription__actions-item contacts__item contacts__item--phone">
+              <a href="#" class="actions__item-link">8 800 555-86-28</a>
+            </li>
+            <li class="subscription__actions-item contacts__item contacts__item--mail">
+              <a class="actions__item-link" href="#">mail@htmlacademy.ru</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="adress">
+        <div class="adress__info">
+          <h2 class="visualli-hidden">Адрес</h2>
+          <p class="adress__text">
+            ул. Большая
+            Конюшенная, 19/8
+          </p>
+          <a class="adress__button button-big button-big--adress" href="#">Показать всех</a>
+        </div>
+      </section>
+      <section class="map">
+        <h2 class="visually-hidden">Карта</h2>
+        <img class="map__pic" src="https://via.placeholder.com/150x150" alt="ул. Большая Конюшенная, 19/8">
+      </section>
     </main>
     <footer class="page__footer page-footer">
       <a class="page-footer__logo logo">
@@ -202,5 +294,17 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
+    <section class="modal">
+      <div class="modal__info">
+        <h2 class="modal__title section-title">Бизнес-тарифы</h2>
+        <ul class="modal__list">
+          <li class="modal__item"><span class="service">Реклама у блоггера</span><span class="price">300 000 руб./пост</span></li>
+          <li class="modal__item"><span class="service">Накрутка подписчиков</span><span class="price">от 1 руб./шт.</span></li>
+          <li class="modal__item"><span class="service">Лайки от ботов</span><span class="price">от 20 коп./лайк</span></li>
+          <li class="modal__item"><span class="service">Ваш продакт-плейсмент</span><span class="price">Индивидуально</span></li>
+        </ul>
+      </div>
+      <button class="modal__button modal-button"type="button"></button>
+    </section>
   </body>
 </html>
