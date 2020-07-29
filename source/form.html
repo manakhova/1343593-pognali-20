@@ -2,18 +2,20 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Погнали</title>
+    <link href="./css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page__header page-header">
       <a class="page-header__logo logo">
-        <img class="logo__image" src="https://via.placeholder.com/150x150" width="96" height="15" alt="Погнали?">
+        <img class="logo__image" src="./img/logo-mobile-white@1x.png" width="100" height="15" alt="Погнали?">
       </a>
       <div class="dropdown">
         <button class="navigation-button dropdown__button" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="dropdown__content">
+        <div class="dropdown__content visually-hidden">
           <nav class="dropdown__content-nav main-navigation">
             <ul class="main-navigation__list">
               <li class="main-navigation__item">
@@ -39,7 +41,6 @@
             </ul>
           </nav>
           <div class="dropdown__social social">
-            <h2 class="visually-hidden">Соцсети</h2>
             <ul class="dropdown__social-list social__list">
               <li class="dropdown__social-item social__item">
                 <a class="social__link social__link--facebook" href="#"></a>
@@ -54,10 +55,10 @@
           </div>
         </div>
       </div>
-      <div class="page-header__user-actions user-actions">
-        <a href="#" class="user-actions__link user-actions__link--phone button"></a>
-        <a href="#" class="user-actions__link user-actions__link--mail button"></a>
-        <a href="#" class="user-actions__link user-actions__link--authorization button">Авторизация</a>
+      <div class="page-header__user-actions contacts"><!--может, это все-таки не header? По макету блок идет после h1-->
+        <a href="#" class="contacts__item contacts__item--phone button"></a>
+        <a href="#" class="contacts__item contacts__item--mail button"></a>
+        <a href="#" class="contacts__item contacts__item--authorization button">Авторизация</a>
       </div>
     </header>
     <main class="page__main">
@@ -395,7 +396,7 @@
 
     <footer class="page__footer page-footer">
       <a class="page-footer__logo logo">
-        <img src="https://via.placeholder.com/150x150" width="96" height="15" alt="Погнали?">
+        <img src="./img/logo-mobile-blue@1x.png" width="100" height="15" alt="Погнали?" >
       </a>
       <div class="page-footer__social social">
         <h2 class="visually-hidden">Соцсети</h2>
@@ -413,7 +414,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <span class="copyright__text">Разработано:</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="./img/htmlacademy.svg" width="27px" height="33px" alt="HTML Academy"></a>
       </div>
     </footer>
   </body>

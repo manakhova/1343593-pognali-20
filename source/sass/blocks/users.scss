@@ -1,0 +1,47 @@
+.users {
+  background-color: $basic-blue;
+
+  &--catalog {
+    background-color: $basic-blue-light;
+  }
+}
+
+.users__info {
+  padding: 30px 50px;
+  margin-bottom: 30px;
+}
+
+.users__title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.users__teaser {
+  margin: 0;
+}
+
+.users__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0 25px;
+}
+
+.users__to-all {
+  display: inline-block;
+  padding: 23px;
+  margin: 17px 0;
+}
+
+.users__link {
+  display: inline-block;
+  margin: 8px auto;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 17px;
+  color: $basic-blue;
+}
+
+.users__toggles {
+  margin: 8px auto;
+}

@@ -1,0 +1,13 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright__text {
+  display: inline-block;
+  color: $special-grey;
+}
+
+.copyright__link {
+  display: inline-block;
+}

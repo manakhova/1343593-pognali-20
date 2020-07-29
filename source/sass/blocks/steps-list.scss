@@ -1,0 +1,23 @@
+.steps-list {
+  margin: 0;
+}
+
+.steps-list__item {
+  padding: 25px;
+
+  &--1 {
+    background-color: $special_orange;
+  }
+
+  &--2 {
+    background-color: $special-yellow-extra-dark;
+  }
+
+  &--3 {
+    background-color: $special-yellow-dark;
+  }
+
+  &--4 {
+    background-color: $basic-yellow
+  }
+}

@@ -1,0 +1,23 @@
+.user-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 428px;
+  margin-bottom: 10px;
+  background-color: $white;
+}
+
+.user-card__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: $white;
+}
+
+.user-card__pic {
+  padding: 20px;
+
+  &--catalog {
+    border-radius: 50%;
+  }
+}

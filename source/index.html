@@ -2,18 +2,20 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Погнали</title>
+    <link href="./css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page__header page-header">
       <a class="page-header__logo logo">
-        <img class="logo__image" src="https://via.placeholder.com/150x150" width="96" height="15" alt="Погнали?">
+        <img class="logo__image" src="./img/logo-mobile-white@1x.png" width="100" height="15" alt="Погнали?">
       </a>
       <div class="dropdown">
         <button class="navigation-button dropdown__button" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="dropdown__content">
+        <div class="dropdown__content visually-hidden">
           <nav class="dropdown__content-nav main-navigation">
             <ul class="main-navigation__list">
               <li class="main-navigation__item">
@@ -53,7 +55,7 @@
           </div>
         </div>
       </div>
-      <div class="page-header__user-actions contacts">
+      <div class="page-header__user-actions contacts"><!--может, это все-таки не header? По макету блок идет после h1-->
         <a href="#" class="contacts__item contacts__item--phone button"></a>
         <a href="#" class="contacts__item contacts__item--mail button"></a>
         <a href="#" class="contacts__item contacts__item--authorization button">Авторизация</a>
@@ -61,17 +63,19 @@
     </header>
     <main class="page__main">
       <section class="promo">
-        <h1 class="promo__title">В путешествие с крутыми попутчиками!</h1>
-        <div class="promo__review">
-          <p class="promo__review-text text">«Лучшее приложение, что я видел в жизни!»</p>
-          <p class="promo__review-author text--emphasis">Мурат Эльтазин главный редактор газеты «гаджетлайф»</p>
+        <div class="promo__info">
+          <h1 class="promo__title">В путешествие с крутыми попутчиками!</h1>
+          <div class="promo__review">
+            <p class="promo__review-text text">«Лучшее приложение, что я видел в жизни!»</p>
+            <p class="promo__review-author text--emphasis">Мурат Эльтазин главный редактор газеты «гаджетлайф»</p>
+          </div>
+          <ul class="promo__steps steps-list">
+            <li class="steps-list__item steps-list__item--1 text--blue">Выберите направление</li>
+            <li class="steps-list__item steps-list__item--2 text--blue">Изучите идеи путешественников</li>
+            <li class="steps-list__item steps-list__item--3 text--blue">Находите тех, кто похож на вас</li>
+            <li class="steps-list__item steps-list__item--4 text--blue">Путешествуйте вместе!</li>
+          </ul>
         </div>
-        <ul class="promo__steps steps-list">
-          <li class="steps-list__item steps-list__item--1">Выберите направление</li>
-          <li class="steps-list__item steps-list__item--2">Изучите идеи путешественников</li>
-          <li class="steps-list__item steps-list__item--3">Находите тех, кто похож на вас</li>
-          <li class="steps-list__item steps-list__item--4">Путешествуйте вместе!</li>
-        </ul>
       </section>
       <section class="about">
         <div class="about__info">
@@ -102,32 +106,32 @@
           </p>
         </div>
         <div class="countries__list">
-          <div class="coutry-card">
+          <div class="country-card" style="background-image: url(./img/thailand-mobile@1x.jpg)">
             <div class="country-card__info">
               <h3 class="country-card__name">Таиланд</h3>
-              <p class="country-card__slogan">Джунгли зовут!</p>
               <span class="country-card__number">18321</span>
+              <p class="country-card__slogan">Джунгли зовут!</p>
               <div class="country-card__flag flag-icon flag-icon--thailand"></div>
             </div>
           </div>
-          <div class="country-card">
+          <div class="country-card" style="background-image: url(./img/france-mobile@1x.jpg)">
             <div class="country-card__info">
               <h3 class="country-card__name">Франция</h3>
-              <p class="country-card__slogan">Трэ бьен, манифик!</p>
               <span class="country-card__number">12518</span>
+              <p class="country-card__slogan">Трэ бьен, манифик!</p>
               <div class="country-card__flag flag-icon flag-icon--france"></div>
             </div>
           </div>
-          <div class="country-card">
+          <div class="country-card" style="background-image: url(./img/czech-mobile@1x.jpg)">
             <div class="country-card__info">
               <h3 class="country-card__name">Чехия</h3>
-              <p class="country-card__slogan">Закоулки старой Европы</p>
               <span class="country-card__number">5326</span>
+              <p class="country-card__slogan">Закоулки старой Европы</p>
               <div class="country-card__flag flag-icon flag-icon--czech"></div>
             </div>
           </div>
+          <button class="countries__to-all button-big" href="#">Показать все</button>
         </div>
-        <button class="countries__to-all button-big" href="#">Показать все</button>
       </section>
       <section class="users">
         <div class="users__info">
@@ -146,11 +150,11 @@
         </div>
         <div class="users__list">
           <div class="user-card">
-            <img class="user-card__pic" src="https://via.placeholder.com/150x150" alt="">
+            <img class="user-card__pic" src="./img/firsova-mobile@1x.jpg" width="270" height="270" alt="">
             <div class="user-card__level">
               <span class="user-level">99 level</span>
             </div>
-            <div class="user-card__likes user-card__likes--active visualli-hidden">
+            <div class="user-card__likes user-card__likes--active visually-hidden">
               1,5 М
             </div>
             <div class="user-card__info">
@@ -176,15 +180,15 @@
                   <li class="user-card__countries-item flag-icon flag-icon--seychelles"><span class="country-name">Сейшелы</span></li>
                 </ul>
               </div>
-              <button class="user__button button visualli-hidden" type="button">Позвать!</button>
+              <button class="user__button button visually-hidden" type="button">Позвать!</button>
             </div>
           </div>
           <div class="user-card">
-            <img class="user-card__pic" src="https://via.placeholder.com/150x150" alt="">
+            <img class="user-card__pic" src="./img/demin-mobile@1x.jpg" width="270" height="270" alt="">
             <div class="user-card__level">
               <span class="user-level">80 level</span>
             </div>
-            <div class="user-card__likes visualli-hidden">
+            <div class="user-card__likes visually-hidden">
               1500
             </div>
             <div class="user-card__info">
@@ -209,11 +213,11 @@
                   <li class="user-card__countries-item flag-icon flag-icon--czech"><span class="country-name">Чехия</span></li>
                 </ul>
               </div>
-              <button class="user__button button visualli-hidden" type="button">Позвать!</button>
             </div>
+            <button class="user__button button visually-hidden" type="button">Позвать!</button>
           </div>
+          <button class="users__to-all button-big" href="#">Показать всех</button>
         </div>
-        <button class="users__to-all button-big" href="#">Показать всех</button>
       </section>
       <section class="add-profile">
         <div class="add-profile__info">
@@ -224,7 +228,7 @@
             <li class="add-profile__item">Вывод на первых позициях 99 руб./мес</li>
             <li class="add-profile__item">Кастомный цвет карточки 59 руб./мес</li>
           </ul>
-          <a class="add-profile__to-all add-profile-link" href="#">Показать тарифы для бизнеса</a>
+          <a class="add-profile__to-all add-profile__link" href="#">Показать тарифы для бизнеса</a>
         </div>
       </section>
       <section class="subscription">
@@ -273,7 +277,7 @@
     </main>
     <footer class="page__footer page-footer">
       <a class="page-footer__logo logo">
-        <img src="https://via.placeholder.com/150x150" width="96" height="15" alt="Погнали?">
+        <img src="./img/logo-mobile-blue@1x.png" width="100" height="15" alt="Погнали?" >
       </a>
       <div class="page-footer__social social">
         <h2 class="visually-hidden">Соцсети</h2>
@@ -291,10 +295,10 @@
       </div>
       <div class="page-footer__copyright copyright">
         <span class="copyright__text">Разработано:</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="./img/htmlacademy.svg" width="27px" height="33px" alt="HTML Academy"></a>
       </div>
     </footer>
-    <section class="modal">
+    <section class="modal visually-hidden">
       <div class="modal__info">
         <h2 class="modal__title section-title">Бизнес-тарифы</h2>
         <ul class="modal__list">

@@ -1,0 +1,29 @@
+.promo {
+  margin: 0;
+  background-image: url("../img/globe-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.promo__info {
+  padding: 0 25px;
+}
+
+.promo__title {
+  font-size: 36px;
+  line-height: 40px;
+  padding: 0 15px;
+  text-align: center;
+  padding-bottom: 313px;
+}
+
+.promo__review {
+  padding-left: 25px;
+  padding-right: 85px;
+}
+
+.promo__steps {
+  list-style: none;
+  padding: 0;
+  padding-bottom: 40px;
+}

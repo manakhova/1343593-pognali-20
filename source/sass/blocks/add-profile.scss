@@ -1,0 +1,30 @@
+.add-profile {
+  background-color: $basic-blue-light;
+}
+
+.add-profile__info {
+  padding: 30px 50px;
+  margin-bottom: 30px;
+}
+
+.add-profile__title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.add-profile__list {
+  list-style: none;
+  padding: 0;
+  padding-bottom: 40px;
+}
+
+.add-profile__item {
+  font-weight: 300;
+  color: $special-grey;
+}
+
+.add-profile__link {
+  font-weight: 700;
+  text-decoration: none;
+  color: #132576;;
+}
