@@ -3,6 +3,7 @@
   font-size: 16px;
   font-family: "Blogger Sans", "Arial", sans-serif;
   line-height: 22px;
+
 }
 
 .page__body {
@@ -12,4 +13,5 @@
   grid-template-rows: min-content 1fr min-content;
   background-color: $basic-blue-dark;
   color: $white;
+  overflow-x: hidden;
 }

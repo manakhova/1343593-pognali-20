@@ -1,0 +1,36 @@
+.contacts {
+  display: flex;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 223px;
+    right: 80px;
+    width: 192px;
+    height: 255px;
+    background-image: url("../img/traveller-illustration-mobile@1x.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.contacts__item {
+  z-index: 1;
+
+  &--phone {
+    background-color: $special-orange;
+    padding: 10px 11px;
+  }
+
+  &--mail {
+    background-color: $special-yellow-dark;
+    padding: 10px 11px;
+  }
+
+  &--authorization {
+    background-color: $basic-yellow;
+    padding: 11px 30px;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}

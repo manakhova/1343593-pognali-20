@@ -3,7 +3,6 @@
   flex-direction: column-reverse;
   min-height: 180px;
   margin-bottom: 10px;
-  background-color: $basic-blue;
 }
 
 .country-card__info {
@@ -12,6 +11,7 @@
   justify-content: space-between;
   padding: 20px;
   background-color: $white;
+  order: -1;
 }
 
 .country-card__name {
