@@ -1,0 +1,18 @@
+.text {
+  font-weight: 300;
+
+  &--emphasis {
+    font-weight: 700;
+  }
+
+  &--blue {
+    color: $basic-blue;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+  }
+
+  &--black {
+    color: $special-grey;
+  }
+}

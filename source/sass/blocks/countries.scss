@@ -1,0 +1,29 @@
+.countries {
+  background-color: $basic-blue-light;
+}
+
+.countries__info {
+  padding: 30px 50px;
+  margin-bottom: 30px;
+}
+
+.countries__title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.countries__teaser {
+  margin: 0;
+}
+
+.countries__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0 25px;
+}
+
+.countries__to-all {
+  display: inline-block;
+  padding: 23px;
+  margin: 17px 0;
+}

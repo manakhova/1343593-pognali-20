@@ -1,0 +1,17 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px;
+  background-color: $white;
+}
+
+.page-footer__logo {
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.page-footer__social {
+  margin: 0 auto;
+}

@@ -1,0 +1,35 @@
+.country-card {
+  display: flex;
+  flex-direction: column-reverse;
+  min-height: 180px;
+  margin-bottom: 10px;
+}
+
+.country-card__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: $white;
+  order: -1;
+}
+
+.country-card__name {
+  font-size: 21px;
+  font-weight: 700;
+  color: $black;
+  margin: 0;
+}
+
+.country-card__slogan {
+  font-weight: 500;
+  color: $black;
+  opacity: 0.3;
+  margin: 0;
+}
+
+.country-card__number {
+  color: $basic-blue;
+  opacity: 0.3;
+  margin-left: 20px;
+}

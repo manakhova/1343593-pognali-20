@@ -1,0 +1,53 @@
+.user-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 428px;
+  margin-bottom: 10px;
+  background-color: $white;
+}
+
+.user-card__info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: $white;
+  padding: 27px 46px;
+}
+
+.user-card__pic {
+  width: 100%;
+
+  &--catalog {
+    border-radius: 50%;
+  }
+}
+
+.user-card__name {
+  font-size: 21px;
+  font-weight: 700;
+  color: $basic-blue-dark;
+  margin: 0 auto;
+}
+
+.user-card__hashtag {
+  color: $special-grey;
+  text-align: center;
+}
+
+.user-card__transport {
+  background-color: $special-grey;
+}
+
+.user-card__countries {
+  position: absolute;
+  top: -45px;
+  background-color: $special-grey;
+}
+
+.user-card__countries-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
