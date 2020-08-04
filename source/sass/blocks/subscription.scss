@@ -1,0 +1,26 @@
+.subscription__title {
+  margin-bottom: 20px;
+}
+
+.subscription__info {
+  padding: 30px 50px;
+  text-align: center;
+}
+
+.subscription__teaser {
+  margin: 0;
+}
+
+.subscription__form {
+  padding: 0 25px;
+}
+
+.subscription__actions {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.subscription__link {
+  color: $basic-yellow;
+}

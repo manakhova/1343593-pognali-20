@@ -281,25 +281,33 @@
             Уже зарегистрированы? Тогда
             скорее <a href="#" class="subscription__link">авторизуйтесь</a>.
           </p>
-          <form class="subscription__form subscription-form" action="http://echo.htmlacademy.ru" method="post">
-            <label>
-              <input class="subscription-form__input" type="email" placeholder="E-mail" >
-            </label>
-            <button type="subscription-form__button button"></button>
-          </form>
+        </div>
+        <form class="subscription__form subscription-form" action="http://echo.htmlacademy.ru" method="post">
+          <label>
+            <input class="subscription-form__input" type="email" placeholder="E-mail" >
+          </label>
+          <button class="subscription-form__button button button--submit" type="submit">
+            <span>
+              <svg width="12" height="13" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 7L0 13.0622L0 0.937822L12 7Z" fill="#1D2E5B"/>
+              </svg>
+            </span>
+          </button>
+        </form>
+        <div class="subscription__info">
           <p class="subscription__teaser text">
             Остались вопросы?
             Мы с радостью на них ответим!
           </p>
-          <ul class="subscription__actions contacts">
-            <li class="subscription__actions-item contacts__item contacts__item--phone">
-              <a href="#" class="actions__item-link">8 800 555-86-28</a>
-            </li>
-            <li class="subscription__actions-item contacts__item contacts__item--mail">
-              <a class="actions__item-link" href="#">mail@htmlacademy.ru</a>
-            </li>
-          </ul>
         </div>
+        <ul class="subscription__actions contacts">
+          <li class="subscription__actions-item contacts__item contacts__item--phone">
+            <a href="#" class="actions__item-link">8 800 555-86-28</a>
+          </li>
+          <li class="subscription__actions-item contacts__item contacts__item--mail">
+            <a class="actions__item-link" href="#">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
       </section>
       <section class="adress">
         <div class="adress__info">
@@ -394,7 +402,7 @@
           <li class="modal__item"><span class="service">Ваш продакт-плейсмент</span><span class="price">Индивидуально</span></li>
         </ul>
       </div>
-      <button class="modal__button modal-button"type="button"></button>
+      <button class="modal__button modal-button" type="button"></button>
     </section>
   </body>
 </html>
