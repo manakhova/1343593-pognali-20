@@ -1,0 +1,14 @@
+.contacts-alt__item-link {
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $basic-yellow;
+}
+
+.contacts-alt__icon {
+  display: inline-block;
+  padding: 14px;
+  border-radius: 25px;
+  background-color: $basic-blue-dark;
+  fill: $basic-yellow;
+}

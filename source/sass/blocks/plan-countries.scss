@@ -1,0 +1,19 @@
+.plan-countries__input,
+.plan-countries__flag {
+  box-sizing: border-box;
+  padding: 15px 5px;
+  margin-bottom: 22px;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  &--add {
+    background-color: #edeff6;
+  }
+}
+
+.plan-countries__flag {
+  padding: 11px 9px;
+}

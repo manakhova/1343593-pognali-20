@@ -1,0 +1,51 @@
+.field-quantity {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.field-quantity__title {
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.field-quantity__measure {
+  color: $basic-blue;
+  opacity: 0.3;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.field-quantity__number {
+  position: relative;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.field-quantity__input {
+  box-sizing: border-box;
+  padding: 15px;
+  height: 43px;
+  width: 100%;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+}
+
+.field-quantity__button {
+  position: absolute;
+  border: none;
+  background-color: $white;
+  padding: 13px 14px;
+
+  &--less {
+    top: 1px;
+    left: 2px;
+  }
+
+  &--more {
+    top: 1px;
+    right: 2px;
+  }
+}

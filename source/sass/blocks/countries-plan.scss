@@ -1,0 +1,27 @@
+.countries-plan {
+  box-sizing: border-box;
+  padding: 25px;
+}
+
+.countries-plan__coutry {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.countries-plan__companions,
+.countries-plan__dates,
+.countries-plan__link {
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.countries-plan__link {
+  display: inline-block;
+  margin-top: 25px;
+  text-decoration: none;
+  color: #000000;
+  opacity: 0.3;
+}

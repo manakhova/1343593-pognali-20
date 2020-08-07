@@ -3,4 +3,8 @@
   font-weight: 700;
   color: $special_orange;
   margin: 0;
+
+  &--form {
+    color: $basic-blue;
+  }
 }

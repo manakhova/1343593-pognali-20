@@ -1,0 +1,22 @@
+.adress {
+  background-color: $basic-yellow;
+}
+
+.adress__info {
+  padding: 35px 25px;
+}
+
+.adress__text {
+  font-weight: 700;
+  color: $basic-blue;
+}
+
+.adress__button {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 23px;
+  margin: 17px 0;
+  text-decoration: none;
+  border: 3px solid $basic-blue-medium;
+}

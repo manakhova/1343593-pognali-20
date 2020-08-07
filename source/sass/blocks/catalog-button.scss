@@ -1,0 +1,17 @@
+.catalog-button {
+  border: none;
+  border-radius: 25px;
+  padding: 14px;
+  background-color: $basic-yellow;
+  color: $basic-blue-dark;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &--filter {
+    background-color: $white;
+  }
+
+  &--transparent {
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,19 @@
+.entertainment__country {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.entertainment__country-name {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.entertainment__country-plan {
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  min-height: 220px;
+  font-size: 16px;
+  line-height: 22px;
+}

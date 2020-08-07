@@ -1,0 +1,17 @@
+.filter-form {
+  display: flex;
+  flex-direction: column;
+  background-color: $basic-yellow;
+  border-radius: 20px;
+  color: $basic-blue;
+  box-sizing: border-box;
+  padding: 25px;
+}
+
+.filter-form__title {
+  margin: 0;
+}
+
+.filter-form__item {
+  margin-bottom: 25px;
+}
