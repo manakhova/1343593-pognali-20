@@ -145,7 +145,7 @@
         </div>
         <div class="countries__list">
           <div class="country-card">
-            <img src="./img/thailand-mobile@1x.jpg" alt="">
+            <img class="country-card__pic" src="./img/thailand-mobile@1x.jpg" width="270" height="110" alt="">
             <div class="country-card__info">
               <h3 class="country-card__name">Таиланд</h3>
               <span class="country-card__number">18321</span>
@@ -154,7 +154,7 @@
             </div>
           </div>
           <div class="country-card">
-            <img src="./img/france-mobile@1x.jpg" alt="">
+            <img class="country-card__pic" src="./img/france-mobile@1x.jpg" width="270" height="110" alt="">
             <div class="country-card__info">
               <h3 class="country-card__name">Франция</h3>
               <span class="country-card__number">12518</span>
@@ -163,7 +163,7 @@
             </div>
           </div>
           <div class="country-card">
-            <img src="./img/czech-mobile@1x.jpg" alt="">
+            <img class="country-card__pic" src="./img/czech-mobile@1x.jpg" width="270" height="110" alt="">
             <div class="country-card__info">
               <h3 class="country-card__name">Чехия</h3>
               <span class="country-card__number">5326</span>
@@ -282,17 +282,16 @@
             скорее <a href="#" class="subscription__link">авторизуйтесь</a>.
           </p>
         </div>
-        <form class="subscription__form subscription-form" action="http://echo.htmlacademy.ru" method="post">
-          <label>
-            <input class="subscription-form__input" type="email" placeholder="E-mail" >
-          </label>
-          <button class="subscription-form__button button button--submit" type="submit">
-            <span>
+        <form class="subscription__form" action="http://echo.htmlacademy.ru" method="POST">
+          <div class="field field--group-with-button">
+            <label class="field__label" for="subscribe-email"></label>
+            <input class="field__input" type="email" id="subscribe-email" name="subscribe-email" placeholder="E-mail">
+            <button class="field__button button button--submit" type="submit">
               <svg width="12" height="13" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 7L0 13.0622L0 0.937822L12 7Z" fill="#1D2E5B"/>
+                <path d="M12 7L0 13.0622L0 0.937822L12 7Z" fill="#1D2E5B"/>
               </svg>
-            </span>
-          </button>
+            </button>
+          </div>
         </form>
         <div class="subscription__info">
           <p class="subscription__teaser text">
