@@ -1,0 +1,78 @@
+.calendar__month {
+  position: relative;
+  display: flex;
+  margin: 23px auto;
+  border-top: 1px solid #d6d9e6;
+  border-bottom: 1px solid #d6d9e6;
+}
+
+.calendar__month-name {
+  display: inline-block;
+  flex-grow: 1;
+  text-align: center;
+  padding: 12px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.calendar__button {
+  position: absolute;
+  background-color: $white;
+  border: none;
+  padding: 12px 0;
+
+  &--prev {
+    top: 1px;
+    left: 2px;
+  }
+
+  &--next {
+    top: 1px;
+    right: 2px;
+  }
+}
+
+.calendar__week-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 20px 12px 10px;
+}
+
+.calendar__week-item {
+  font-size: 14px;
+  color: $special-grey;
+
+  &--weekend {
+    color: $special-red;
+  }
+}
+
+.calendar__month-table {
+  margin-bottom: 22px;
+  width: 100%;
+  border: 1px solid #d6d9e6;
+  border-collapse: collapse;
+}
+
+.calendar__month-item {
+  border: 1px solid #d6d9e6;
+  box-sizing: border-box;
+  padding: 4px 0;
+  font-weight: 400;
+
+  &:hover {
+    border: 2px solid #ff5c23;
+  }
+
+  &--disabled {
+    color: $special-grey;
+    opacity: 0.3;
+  }
+
+  &--chosen {
+    background-color: $basic-blue;
+    color: $white;
+  }
+}

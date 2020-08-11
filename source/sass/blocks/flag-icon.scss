@@ -1,0 +1,18 @@
+.flag-icon {
+  width: 35px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+
+  &--add {
+    background-color: #edeff6;
+  }
+
+  &--bosnia {
+    background-color: $basic-blue;
+  }
+
+  &--czech {
+    background-color: $basic-blue;
+  }
+}

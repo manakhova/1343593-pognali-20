@@ -4,6 +4,12 @@
   min-height: 428px;
   margin-bottom: 10px;
   background-color: $white;
+
+  &--catalog {
+    position: relative;
+    box-sizing: border-box;
+    padding: 15px;
+  }
 }
 
 .user-card__info {
@@ -12,15 +18,32 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: $white;
   padding: 27px 46px;
+
+  &--catalog {
+    padding: 14px 25px;
+  }
+}
+
+.user-card__level {
+  position: absolute;
+  background-color: $special-grey;
+}
+
+.user-card__likes {
+  position: absolute;
+  top: 54px;
+  left: 68px;
+  background-color: $special-grey;
 }
 
 .user-card__pic {
   width: 100%;
 
   &--catalog {
+    position: absolute;
     border-radius: 50%;
+    width: 70px;
   }
 }
 
@@ -29,25 +52,48 @@
   font-weight: 700;
   color: $basic-blue-dark;
   margin: 0 auto;
+
+  &--catalog {
+    margin-right: 0;
+  }
 }
 
 .user-card__hashtag {
   color: $special-grey;
   text-align: center;
+
+  &--catalog {
+    margin-top: 45px;
+    text-align: left;
+  }
 }
 
 .user-card__transport {
   background-color: $special-grey;
+
+  &--catalog {
+    order: 2;
+  }
 }
 
 .user-card__countries {
-  position: absolute;
-  top: -45px;
   background-color: $special-grey;
+
+  &--catalog {
+    order: 1;
+  }
 }
 
 .user-card__countries-list {
   display: flex;
   list-style: none;
   padding: 0;
+
+  &--catalog {
+    display: block;
+  }
+}
+
+.user-card__button {
+  order: 3;
 }

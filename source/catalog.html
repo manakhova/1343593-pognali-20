@@ -195,7 +195,7 @@
                 </li>
               </ul>
             </div>
-            <div class="filter-companions__form-item filter-form__item filter-section">
+            <div class="filter-form__item filter-section">
               <h3 class="filter-section__name">Музыка</h3>
               <ul class="filter-section__list">
                 <li class="filter-section__list-item">
@@ -218,7 +218,7 @@
                 </li>
               </ul>
             </div>
-            <div class="filter-companions__form-item filter-form__item filter-section">
+            <div class="filter-form__item filter-section">
                 <h3 class="filter-section__name">Еда</h3>
                 <ul class="filter-section__list">
                   <li class="filter-section__list-item">
@@ -241,7 +241,7 @@
                   </li>
                 </ul>
             </div>
-            <div class="filter-companions__form-item filter-form__item filter-section">
+            <div class="filter-form__item filter-section">
               <fieldset class="filter-section__item transport">
                 <legend class="filter-section__item-name transport__title">Транспорт</legend>
                 <ul class="filter-section__list transport__list">
@@ -262,33 +262,33 @@
                 </ul>
               </fieldset>
             </div>
-            <div class="filter-companions__form-item filter-form__item filter-section">
+            <div class="filter-form__item filter-section">
               <div class="filter-section__item filter-range">
                 <legend class="filter-section__item-name filter-range__title">Левел</legend>
                 <div class="filter-range__info">
                   <div class="filter-range__item level-controls">
                     <label class="min-level">
-                      <input type="number" value="30">
+                      <input class="number" type="number" value="30">
                     </label>
                     <label class="max-level">
-                      <input type="number" value="100">
+                      <input class="number" type="number" value="100">
                     </label>
                   </div>
                   <div class="filter-range__item range">
                     <div class="range__bar"></div>
                     <div class="range__toggle toggle toggle--min" tabindex="0"></div>
-                    <div class="range__toggle toggle toggle-max" tabindex="0"></div>
+                    <div class="range__toggle toggle toggle--max" tabindex="0"></div>
                   </div>
                 </div>
               </div>
             </div>
-            <button class="filter-companions__form-item filter-form__item filter-button" type="submit">Показать</button>
+            <button class="filter-form__item catalog-button catalog-button--filter" type="submit">Показать</button>
           </form>
         </div>
       </section>
       <section class="users users--catalog">
         <div class="users__list">
-          <div class="user-card">
+          <div class="user-card user-card--catalog">
             <img class="user-card__pic user-card__pic--catalog" src="./img/firsova-mobile@1x.jpg" width="70" height="70"  alt="Таня Фирсова">
             <div class="user-card__level user-card__level--catalog">
               <span class="user-level">99 level</span>
@@ -319,10 +319,10 @@
                   <li class="user-card__countries-item flag-icon flag-icon--seychelles"><span class="country-name">Сейшелы</span></li>
                 </ul>
               </div>
-              <button class="user__button button" type="button">Позвать!</button>
+              <button class="user-card__button catalog-button" type="button">Позвать!</button>
             </div>
           </div>
-          <div class="user-card">
+          <div class="user-card user-card--catalog">
             <img class="user-card__pic user-card__pic--catalog" src="./img/demin-mobile@1x.jpg" width="70" height="70" alt="Петя Демин">
             <div class="user-card__level user-card__level--catalog">
               <span class="user-level">80 level</span>
@@ -352,10 +352,10 @@
                   <li class="user-card__countries-item flag-icon flag-icon--czech"><span class="country-name">Чехия</span></li>
                 </ul>
               </div>
-              <button class="user__button button" type="button">Позвать!</button>
+              <button class="user-card__button catalog-button" type="button">Позвать!</button>
             </div>
           </div>
-          <div class="user-card">
+          <div class="user-card user-card--catalog">
             <img class="user-card__pic user-card__pic--catalog" src="./img/smolov-mobile@1x.jpg" width="70" height="70" alt="Марк Смолов">
             <div class="user-card__level user-card__level--catalog">
               <span class="user-level">25 level</span>
@@ -386,10 +386,10 @@
                   <li class="user-card__countries-item flag-icon flag-icon--dominica"><span class="country-name">Доминика</span></li>
                 </ul>
               </div>
-              <button class="user__button button" type="button">Позвать!</button>
+              <button class="user-card__button catalog-button" type="button">Позвать!</button>
             </div>
           </div>
-          <div class="user-card">
+          <div class="user-card user-card--catalog">
             <img class="user-card__pic user-card__pic--catalog" src="./img/rogovaya-mobile@1x.jpg" width="70" height="70" alt="Лариса Роговая">
             <div class="user-card__level user-card__level--catalog">
               <span class="user-level">50 level</span>
@@ -417,14 +417,26 @@
                   <li class="user-card__countries-item flag-icon flag-icon--uk"><span class="country-name">Великобритания</span></li>
                   <li class="user-card__countries-item flag-icon flag-icon--germany"><span class="country-name">Германия</span></li>
                 </ul>
-              <button class="user__button button" type="button">Позвать!</button>
-            </div>
+              </div>
+              <button class="user-card__button catalog-button" type="button">Позвать!</button>
           </div>
         </div>
         <a class="users__link" href="#">Показать еще</a>
         <div class="users__toggles pagination">
-          <button class="pagination__toggle pagination__toggle--left" type="button"></button>
-          <button class="pagination__toggle pagination__toggle--right" type="button"></button>
+          <button class="pagination__toggle pagination__toggle--left" type="button">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14" width="10" height="18">
+              <polygon points="0,7.1 10,0.1 10,14 "/>
+              </svg>
+            </span>
+          </button>
+          <button class="pagination__toggle pagination__toggle--right" type="button">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14" width="10" height="18">
+              <polygon points="0,14 0,0.1 10,7.1 "/>
+              </svg>
+            </span>
+          </button>
         </div>
       </section>
     </main>
@@ -437,9 +449,7 @@
         <ul class="social__list">
           <li class="social__item social__item--facebook">
             <a class="social__link" href="#">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="21"
-              x="0px" y="0px"
-                viewBox="0 0 11 21" style="enable-background:new 0 0 11 21;" xml:space="preserve">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="21" viewBox="0 0 11 21">
               <g>
                 <path d="M7.8,21H2.2v-9.8H0V6.4h2.1C2,4.2,2.4,2.6,3.4,1.5C4.2,0.6,5.5,0.1,7.1,0L11,0v4.7H7.9C7.8,4.9,7.7,5.5,7.7,6.4H11v4.8H7.8
                   V21z M3.4,19.9h3.1v-9.8h3.2V7.5H6.5l0-0.6c0-1.5,0-2.9,0.8-3.4l0.2-0.1h2.3V1.1H7.1C5.9,1.2,4.9,1.6,4.3,2.3
@@ -450,8 +460,7 @@
           </li>
           <li class="social__item social__item--vkontakte">
             <a class="social__link" href="#">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="12" x="0px" y="0px"
-                viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;" xml:space="preserve">
+              <svg xmlns="http://www.w3.org/2000/svg"width="22" height="12" viewBox="0 0 30 15.8">
               <g>
                 <path d="M23.9,15.8c-0.4,0-1.2-0.1-2.1-0.6c-0.6-0.4-1.2-1-1.8-1.5c-0.4-0.4-1.2-1.2-1.4-1.2c-0.3,0.1-0.5,0.9-0.5,1.6
                   c0,0.1,0,0.8-0.5,1.2c-0.4,0.4-1.1,0.5-1.2,0.5l-1.9,0c-1,0-4.4-0.2-7.4-3c-3.7-3.4-6.8-9.8-7-10.1C0,2.2-0.1,1.5,0.3,1.1
@@ -475,18 +484,13 @@
           </li>
           <li class="social__item social__item--instagram">
             <a class="social__link" href="#">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" x="0px" y="0px"
-                viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
-              <style type="text/css">
-                .st0{fill:#231F20;}
-              </style>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"viewBox="0 0 23 23">
               <path class="st0" d="M17,1.5c2.5,0,4.5,2,4.5,4.5v11c0,2.5-2,4.5-4.5,4.5H6c-2.5,0-4.5-2-4.5-4.5V6c0-2.5,2-4.5,4.5-4.5L17,1.5
                 M17,0H6C2.7,0,0,2.7,0,6v11c0,3.3,2.7,6,6,6h11c3.3,0,6-2.7,6-6V6C23,2.7,20.3,0,17,0L17,0z"/>
               <path class="st0" d="M11.5,7.1c2.4,0,4.4,2,4.4,4.4c0,2.4-2,4.4-4.4,4.4c-2.4,0-4.4-2-4.4-4.4C7.1,9.1,9.1,7.1,11.5,7.1 M11.5,5.6
                 c-3.3,0-5.9,2.7-5.9,5.9s2.7,5.9,5.9,5.9s5.9-2.7,5.9-5.9S14.8,5.6,11.5,5.6L11.5,5.6z"/>
               <circle class="st0" cx="17.6" cy="5.4" r="1.3"/>
               </svg>
-
             </a>
           </li>
         </ul>

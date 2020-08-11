@@ -1,0 +1,61 @@
+.add-plans {
+  background-color: $special-blue-medium;
+  color: $basic-blue;
+}
+
+.add-plans__info {
+  padding: 25px;
+}
+
+.add-plans__main {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+}
+
+.add-plans__item {
+  background-color: $white;
+  margin-bottom: 10px;
+}
+
+.add-plans__item-info {
+  padding: 25px;
+}
+
+.add-plans__item-title {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.add-plans__item-text {
+  margin: 0;
+}
+
+.add-plans__item-input {
+  margin-top: 20px;
+}
+
+.add-plans__button {
+  margin-bottom: 13px;
+  width: 100%;
+}
+
+.add-plans__item-list {
+  display: flex;
+  margin-top: 21px;
+}
+
+.add-plans__item-countries,
+.add-plans__item-countries-flag {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.add-plans__item-textarea {
+  margin-top: 25px;
+
+  &--last {
+    margin-bottom: 25px;
+  }
+}

@@ -1,0 +1,23 @@
+.field {
+  &--group-with-button {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.field__label {
+  width: 100%;
+}
+
+.field__input {
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding: 22px;
+  height: 62px;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.field__button {
+  padding: 21px;
+}
