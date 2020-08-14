@@ -5,6 +5,16 @@
 .add-profile__info {
   padding: 30px 50px;
   margin-bottom: 30px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    padding: 74px 40px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    padding: 107px 130px;
+  }
 }
 
 .add-profile__title {
@@ -12,10 +22,26 @@
   margin-bottom: 20px;
 }
 
+.add-profile__content {
+  display: flex;
+  justify-content: space-between;
+}
+
 .add-profile__list {
   list-style: none;
   padding: 0;
   padding-bottom: 40px;
+}
+
+.add-profile__list-price {
+  display: none;
+
+  //Tablet
+  @media (min-width: 768px) {
+    display: block;
+    list-style: none;
+    padding: 0;
+  }
 }
 
 .add-profile__item {

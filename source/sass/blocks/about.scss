@@ -4,4 +4,25 @@
 
 .about__info {
   padding: 30px 50px;
+  margin: auto;
+
+  //Tablet
+  @media (min-width: 768px) {
+    padding: 40px 75px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    padding: 60px 130px;
+  }
+}
+
+.about__button {
+  display: none;
+
+  //Tablet
+  @media (min-width: 768px) {
+    display: block;
+    width: 280px;
+  }
 }

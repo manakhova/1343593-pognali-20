@@ -4,6 +4,17 @@
 
 .adress__info {
   padding: 35px 25px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    padding: 48px 75px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    display: flex;
+    padding: 55px 130px;
+  }
 }
 
 .adress__text {

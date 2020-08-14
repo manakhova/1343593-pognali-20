@@ -1,9 +1,25 @@
 .steps-list {
   margin: 0;
+
+  //Tablet
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .steps-list__item {
   padding: 25px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    width: 365px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    width: 280px;
+  }
 
   &--1 {
     background-color: $special_orange;

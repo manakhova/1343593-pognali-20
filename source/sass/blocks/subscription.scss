@@ -3,8 +3,18 @@
 }
 
 .subscription__info {
-  padding: 30px 50px;
+  padding: 30px 55px;
   text-align: center;
+
+  //Tablet
+  @media (min-width: 768px) {
+    padding: 76px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    padding: 107px 130px;
+  }
 }
 
 .subscription__teaser {
@@ -19,6 +29,12 @@
   list-style: none;
   padding: 0 auto;
   margin: 0;
+
+  //Desktop
+  @media (min-width: 1440px) {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .subscription__link {

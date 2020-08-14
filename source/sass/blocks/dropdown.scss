@@ -1,0 +1,26 @@
+.dropdown {
+  display: flex;
+  align-items: baseline;
+}
+
+.dropdown__content {
+  display: none;
+
+  //Tablet & Dektop
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.dropdown__content-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdown__social {
+
+  //Tablet & Desktop
+  @media (min-width: 768px) {
+    display: none;
+  }
+}

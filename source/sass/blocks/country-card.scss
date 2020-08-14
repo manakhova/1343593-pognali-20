@@ -3,6 +3,11 @@
   flex-direction: column-reverse;
   min-height: 180px;
   margin-bottom: 10px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 }
 
 .country-card__pic {

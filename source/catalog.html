@@ -14,7 +14,7 @@
         <button class="navigation-button dropdown__button" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="dropdown__content visually-hidden">
+        <div class="dropdown__content">
           <nav class="dropdown__content-nav main-navigation">
             <ul class="main-navigation__list">
               <li class="main-navigation__item">
@@ -168,277 +168,295 @@
           </div>
         </div>
       </section>
-      <section class="filter-companions">
-        <div class="filter-companions__info">
-          <form class="filter-form" action="http://echo.htmlacademy.ru" method="post">
-            <h2 class="filter-form__title">Подберите идеального попутчика</h2>
-            <div class="filter-form__item filter-section">
-              <h3 class="filter-section__name">Хобби</h3>
-              <ul class="filter-section__list">
-                <li class="filter-section__list-item">
-                  <label>
-                    <input class="filter-section__list-item-checkbox" type="checkbox" checked>
-                    Спортзал
-                  </label>
-                </li>
-                <li class="filter-section__list-item">
-                  <label>
-                    <input class="filter-section__list-item-checkbox" type="checkbox" checked>
-                    Кальян
-                  </label>
-                </li>
-                <li class="filter-section__list-item">
-                  <label>
-                    <input class="filter-section__list-item-checkbox" type="checkbox">
-                    Диван
-                  </label>
-                </li>
-              </ul>
-            </div>
-            <div class="filter-form__item filter-section">
-              <h3 class="filter-section__name">Музыка</h3>
-              <ul class="filter-section__list">
-                <li class="filter-section__list-item">
-                  <label>
-                    <input class="filter-section__list-item-checkbox" type="checkbox" checked>
-                    Тяжелый рок
-                  </label>
-                </li>
-                <li class="filter-section__list-item">
-                  <label>
-                    <input class="filter-section__list-item-checkbox" type="checkbox" checked>
-                    Русский рэп
-                  </label>
-                </li>
-                <li class="filter-section__list-item">
-                  <label>
-                    <input class="filter-section__list-item-checkbox" type="checkbox">
-                    Евродэнс
-                  </label>
-                </li>
-              </ul>
-            </div>
-            <div class="filter-form__item filter-section">
-                <h3 class="filter-section__name">Еда</h3>
+      <div class="page-catalog">
+        <section class="filter-companions">
+          <div class="filter-companions__info">
+            <form class="filter-form" action="http://echo.htmlacademy.ru" method="post">
+              <h2 class="filter-form__title">Подберите идеального попутчика</h2>
+              <div class="filter-form__item filter-section">
+                <h3 class="filter-section__name">Хобби</h3>
                 <ul class="filter-section__list">
                   <li class="filter-section__list-item">
                     <label>
                       <input class="filter-section__list-item-checkbox" type="checkbox" checked>
-                      Мясоед
+                      Спортзал
                     </label>
                   </li>
                   <li class="filter-section__list-item">
                     <label>
                       <input class="filter-section__list-item-checkbox" type="checkbox" checked>
-                      Сидит на ПП
+                      Кальян
                     </label>
                   </li>
                   <li class="filter-section__list-item">
                     <label>
                       <input class="filter-section__list-item-checkbox" type="checkbox">
-                      Веган-сыроед
+                      Диван
                     </label>
                   </li>
                 </ul>
-            </div>
-            <div class="filter-form__item filter-section">
-              <fieldset class="filter-section__item transport">
-                <legend class="filter-section__item-name transport__title">Транспорт</legend>
-                <ul class="filter-section__list transport__list">
-                  <li class="transport__item">
+              </div>
+              <div class="filter-form__item filter-section">
+                <h3 class="filter-section__name">Музыка</h3>
+                <ul class="filter-section__list">
+                  <li class="filter-section__list-item">
                     <label>
-                      <input class="transport__item-checkbox transport__item-checkbox--plane" type="checkbox">
+                      <input class="filter-section__list-item-checkbox" type="checkbox" checked>
+                      Тяжелый рок
                     </label>
                   </li>
-                  <li class="transport__item">
-                    <input class="transport__item-checkbox transport__item-checkbox--bus" type="checkbox">
+                  <li class="filter-section__list-item">
+                    <label>
+                      <input class="filter-section__list-item-checkbox" type="checkbox" checked>
+                      Русский рэп
+                    </label>
                   </li>
-                  <li class="transport__item">
-                    <input class="transport__item-checkbox transport__item-checkbox--bicycle" type="checkbox">
-                  </li>
-                  <li class="transport__item">
-                    <input class="transport__item-checkbox transport__item-checkbox--run" type="checkbox">
+                  <li class="filter-section__list-item">
+                    <label>
+                      <input class="filter-section__list-item-checkbox" type="checkbox">
+                      Евродэнс
+                    </label>
                   </li>
                 </ul>
-              </fieldset>
-            </div>
-            <div class="filter-form__item filter-section">
-              <div class="filter-section__item filter-range">
-                <legend class="filter-section__item-name filter-range__title">Левел</legend>
-                <div class="filter-range__info">
-                  <div class="filter-range__item level-controls">
-                    <label class="min-level">
-                      <input class="number" type="number" value="30">
-                    </label>
-                    <label class="max-level">
-                      <input class="number" type="number" value="100">
-                    </label>
-                  </div>
-                  <div class="filter-range__item range">
-                    <div class="range__bar"></div>
-                    <div class="range__toggle toggle toggle--min" tabindex="0"></div>
-                    <div class="range__toggle toggle toggle--max" tabindex="0"></div>
+              </div>
+              <div class="filter-form__item filter-section">
+                  <h3 class="filter-section__name">Еда</h3>
+                  <ul class="filter-section__list">
+                    <li class="filter-section__list-item">
+                      <label>
+                        <input class="filter-section__list-item-checkbox" type="checkbox" checked>
+                        Мясоед
+                      </label>
+                    </li>
+                    <li class="filter-section__list-item">
+                      <label>
+                        <input class="filter-section__list-item-checkbox" type="checkbox" checked>
+                        Сидит на ПП
+                      </label>
+                    </li>
+                    <li class="filter-section__list-item">
+                      <label>
+                        <input class="filter-section__list-item-checkbox" type="checkbox">
+                        Веган-сыроед
+                      </label>
+                    </li>
+                  </ul>
+              </div>
+              <div class="filter-form__item filter-section">
+                <fieldset class="filter-section__item transport">
+                  <legend class="filter-section__item-name transport__title">Транспорт</legend>
+                  <ul class="filter-section__list transport__list">
+                    <li class="transport__item">
+                      <label>
+                        <input class="transport__item-checkbox transport__item-checkbox--plane" type="checkbox">
+                      </label>
+                    </li>
+                    <li class="transport__item">
+                      <input class="transport__item-checkbox transport__item-checkbox--bus" type="checkbox">
+                    </li>
+                    <li class="transport__item">
+                      <input class="transport__item-checkbox transport__item-checkbox--bicycle" type="checkbox">
+                    </li>
+                    <li class="transport__item">
+                      <input class="transport__item-checkbox transport__item-checkbox--run" type="checkbox">
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
+              <div class="filter-form__item filter-section">
+                <div class="filter-section__item filter-range">
+                  <legend class="filter-section__item-name filter-range__title">Левел</legend>
+                  <div class="filter-range__info">
+                    <div class="filter-range__item level-controls">
+                      <label class="min-level">
+                        <input class="number" type="number" value="30">
+                      </label>
+                      <label class="max-level">
+                        <input class="number" type="number" value="100">
+                      </label>
+                    </div>
+                    <div class="filter-range__item range">
+                      <div class="range__bar"></div>
+                      <div class="range__toggle toggle toggle--min" tabindex="0"></div>
+                      <div class="range__toggle toggle toggle--max" tabindex="0"></div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <button class="filter-form__item catalog-button catalog-button--filter" type="submit">Показать</button>
-          </form>
-        </div>
-      </section>
-      <section class="users users--catalog">
-        <div class="users__list">
-          <div class="user-card user-card--catalog">
-            <img class="user-card__pic user-card__pic--catalog" src="./img/firsova-mobile@1x.jpg" width="70" height="70"  alt="Таня Фирсова">
-            <div class="user-card__level user-card__level--catalog">
-              <span class="user-level">99 level</span>
-            </div>
-            <div class="user-card__likes user-card__likes--active">
-              1,5 М
-            </div>
-            <div class="user-card__info user-card__info--catalog">
-              <h3 class="user-card__name user-card__name--catalog">Таня Фирсова</h3>
-              <p class="user-card__hashtag user-card__hashtag--catalog">
-                #ЗОЖ #ПП #Фитнес #пляж
-                #авокадо #смузи
-              </p>
-              <div class="user-card__transport user-card__transport--catalog transport">
-                <h4 class="user-card__transport-title user-card__transport-title--catalog transport__title">Транспорт</h4>
-                <ul class="transport__list">
-                  <li class="transport__item transport__item--plane"></li>
-                  <li class="transport__item transport__item--bus"></li>
-                  <li class="transport__item transport__item--bicycle"></li>
-                  <li class="transport__item transport__item--run"></li>
-                </ul>
+              <button class="filter-form__item catalog-button catalog-button--filter" type="submit">Показать</button>
+            </form>
+          </div>
+        </section>
+        <section class="users users--catalog">
+          <div class="users__list users__list--catalog">
+            <div class="user-card user-card--catalog">
+              <img class="user-card__pic user-card__pic--catalog" src="./img/firsova-mobile@1x.jpg" width="70" height="70"  alt="Таня Фирсова">
+              <div class="user-card__level user-card__level--catalog">
+                <span class="user-level">99 level</span>
               </div>
-              <div class="user-card__countries user-card__countries--catalog">
-                <h4 class="user-card__countries-title user-card__countries-title--catalog">Хочет посетить</h4>
-                <ul class="user-card__countries-list user-card__countries-list--catalog">
-                  <li class="user-card__countries-item flag-icon flag-icon--sri-lanka"><span class="country-name">Шри-Ланка</span></li>
-                  <li class="user-card__countries-item flag-icon flag-icon--thailand"><span class="country-name">Таиланд</span></li>
-                  <li class="user-card__countries-item flag-icon flag-icon--seychelles"><span class="country-name">Сейшелы</span></li>
-                </ul>
+              <div class="user-card__likes user-card__likes--active">
+                1,5 М
               </div>
-              <button class="user-card__button catalog-button" type="button">Позвать!</button>
+              <div class="user-card__info user-card__info--catalog">
+                <h3 class="user-card__name user-card__name--catalog">Таня Фирсова</h3>
+                <p class="user-card__hashtag user-card__hashtag--catalog">
+                  #ЗОЖ #ПП #Фитнес #пляж
+                  #авокадо #смузи
+                </p>
+                <div class="user-card__transport user-card__transport--catalog transport">
+                  <h4 class="user-card__transport-title user-card__transport-title--catalog transport__title">Транспорт</h4>
+                  <ul class="transport__list">
+                    <li class="transport__item transport__item--plane"></li>
+                    <li class="transport__item transport__item--bus"></li>
+                    <li class="transport__item transport__item--bicycle"></li>
+                    <li class="transport__item transport__item--run"></li>
+                  </ul>
+                </div>
+                <div class="user-card__countries user-card__countries--catalog">
+                  <h4 class="user-card__countries-title user-card__countries-title--catalog">Хочет посетить</h4>
+                  <ul class="user-card__countries-list user-card__countries-list--catalog">
+                    <li class="user-card__countries-item flag-icon flag-icon--sri-lanka"><span class="country-name">Шри-Ланка</span></li>
+                    <li class="user-card__countries-item flag-icon flag-icon--thailand"><span class="country-name">Таиланд</span></li>
+                    <li class="user-card__countries-item flag-icon flag-icon--seychelles"><span class="country-name">Сейшелы</span></li>
+                  </ul>
+                </div>
+                <button class="user-card__button catalog-button" type="button">Позвать!</button>
+              </div>
+            </div>
+            <div class="user-card user-card--catalog">
+              <img class="user-card__pic user-card__pic--catalog" src="./img/demin-mobile@1x.jpg" width="70" height="70" alt="Петя Демин">
+              <div class="user-card__level user-card__level--catalog">
+                <span class="user-level">80 level</span>
+              </div>
+              <div class="user-card__likes">
+                1500
+              </div>
+              <div class="user-card__info user-card__info--catalog">
+                <h3 class="user-card__name user-card__name--catalog">Петя Демин</h3>
+                <p class="user-card__hashtag user-card__hashtag--catalog">
+                  #бургер #бар #футбол
+                  #концерт #крафт
+                </p>
+                <div class="user-card__transport user-card__transport--catalog transport">
+                  <h4 class="user-card__transport-title user-card__transport-title--catalog transport__title">Транспорт</h4>
+                  <ul class="transport__list">
+                    <li class="transport__item transport__item--plane"></li>
+                    <li class="transport__item transport__item--bus"></li>
+                    <li class="transport__item transport__item--bicycle"></li>
+                    <li class="transport__item transport__item--run"></li>
+                  </ul>
+                </div>
+                <div class="user-card__countries user-card__countries--catalog">
+                  <h4 class="user-card__countries-title user-card__countries-title--catalog">Хочет посетить</h4>
+                  <ul class="user-card__countries-list user-card__countries-list--catalog">
+                    <li class="user-card__countries-item flag-icon flag-icon--belgium"><span class="country-name">Бельгия</span></li>
+                    <li class="user-card__countries-item flag-icon flag-icon--czech"><span class="country-name">Чехия</span></li>
+                  </ul>
+                </div>
+                <button class="user-card__button catalog-button" type="button">Позвать!</button>
+              </div>
+            </div>
+            <div class="user-card user-card--catalog">
+              <img class="user-card__pic user-card__pic--catalog" src="./img/smolov-mobile@1x.jpg" width="70" height="70" alt="Марк Смолов">
+              <div class="user-card__level user-card__level--catalog">
+                <span class="user-level">25 level</span>
+              </div>
+              <div class="user-card__likes">
+                170
+              </div>
+              <div class="user-card__info user-card__info--catalog">
+                <h3 class="user-card__name user-card__name--catalog">Марк Смолов</h3>
+                <p class="user-card__hashtag user-card__hashtag--catalog">
+                  #рэп #тату #хфйпбист
+                  #кроссовки #суприм
+                </p>
+                <div class="user-card__transport user-card__transport--catalog transport">
+                  <h4 class="user-card__transport-title user-card__transport-title--catalog transport__title">Транспорт</h4>
+                  <ul class="transport__list">
+                    <li class="transport__item transport__item--plane"></li>
+                    <li class="transport__item transport__item--bus"></li>
+                    <li class="transport__item transport__item--bicycle"></li>
+                    <li class="transport__item transport__item--run"></li>
+                  </ul>
+                </div>
+                <div class="user-card__countries user-card__countries--catalog">
+                  <h4 class="user-card__countries-title user-card__countries-title--catalog">Хочет посетить</h4>
+                  <ul class="user-card__countries-list user-card__countries-list--catalog">
+                    <li class="user-card__countries-item flag-icon flag-icon--usa"><span class="country-name">США</span></li>
+                    <li class="user-card__countries-item flag-icon flag-icon--australia"><span class="country-name">Австралия</span></li>
+                    <li class="user-card__countries-item flag-icon flag-icon--dominica"><span class="country-name">Доминика</span></li>
+                  </ul>
+                </div>
+                <button class="user-card__button catalog-button" type="button">Позвать!</button>
+              </div>
+            </div>
+            <div class="user-card user-card--catalog">
+              <img class="user-card__pic user-card__pic--catalog" src="./img/rogovaya-mobile@1x.jpg" width="70" height="70" alt="Лариса Роговая">
+              <div class="user-card__level user-card__level--catalog">
+                <span class="user-level">50 level</span>
+              </div>
+              <div class="user-card__likes">
+                23
+              </div>
+              <div class="user-card__info user-card__info--catalog">
+                <h3 class="user-card__name user-card__name--catalog">Лариса Роговая</h3>
+                <p class="user-card__hashtag user-card__hashtag--catalog">
+                  #образование #карьера #учеба #линкедин
+                </p>
+                <div class="user-card__transport user-card__transport--catalog transport">
+                  <h4 class="user-card__transport-title user-card__transport-title--catalog transport__title">Транспорт</h4>
+                  <ul class="transport__list">
+                    <li class="transport__item transport__item--plane"></li>
+                    <li class="transport__item transport__item--bus"></li>
+                    <li class="transport__item transport__item--bicycle"></li>
+                    <li class="transport__item transport__item--run"></li>
+                  </ul>
+                </div>
+                <div class="user-card__countries user-card__countries--catalog">
+                  <h4 class="user-card__countries-title user-card__countries-title--catalog">Хочет посетить</h4>
+                  <ul class="user-card__countries-list user-card__countries-list--catalog">
+                    <li class="user-card__countries-item flag-icon flag-icon--uk"><span class="country-name">Великобритания</span></li>
+                    <li class="user-card__countries-item flag-icon flag-icon--germany"><span class="country-name">Германия</span></li>
+                  </ul>
+                </div>
+                <button class="user-card__button catalog-button" type="button">Позвать!</button>
             </div>
           </div>
-          <div class="user-card user-card--catalog">
-            <img class="user-card__pic user-card__pic--catalog" src="./img/demin-mobile@1x.jpg" width="70" height="70" alt="Петя Демин">
-            <div class="user-card__level user-card__level--catalog">
-              <span class="user-level">80 level</span>
-            </div>
-            <div class="user-card__likes">
-              1500
-            </div>
-            <div class="user-card__info user-card__info--catalog">
-              <h3 class="user-card__name user-card__name--catalog">Петя Демин</h3>
-              <p class="user-card__hashtag user-card__hashtag--catalog">
-                #бургер #бар #футбол
-                #концерт #крафт
-              </p>
-              <div class="user-card__transport user-card__transport--catalog transport">
-                <h4 class="user-card__transport-title user-card__transport-title--catalog transport__title">Транспорт</h4>
-                <ul class="transport__list">
-                  <li class="transport__item transport__item--plane"></li>
-                  <li class="transport__item transport__item--bus"></li>
-                  <li class="transport__item transport__item--bicycle"></li>
-                  <li class="transport__item transport__item--run"></li>
-                </ul>
-              </div>
-              <div class="user-card__countries user-card__countries--catalog">
-                <h4 class="user-card__countries-title user-card__countries-title--catalog">Хочет посетить</h4>
-                <ul class="user-card__countries-list user-card__countries-list--catalog">
-                  <li class="user-card__countries-item flag-icon flag-icon--belgium"><span class="country-name">Бельгия</span></li>
-                  <li class="user-card__countries-item flag-icon flag-icon--czech"><span class="country-name">Чехия</span></li>
-                </ul>
-              </div>
-              <button class="user-card__button catalog-button" type="button">Позвать!</button>
-            </div>
-          </div>
-          <div class="user-card user-card--catalog">
-            <img class="user-card__pic user-card__pic--catalog" src="./img/smolov-mobile@1x.jpg" width="70" height="70" alt="Марк Смолов">
-            <div class="user-card__level user-card__level--catalog">
-              <span class="user-level">25 level</span>
-            </div>
-            <div class="user-card__likes">
-              170
-            </div>
-            <div class="user-card__info user-card__info--catalog">
-              <h3 class="user-card__name user-card__name--catalog">Марк Смолов</h3>
-              <p class="user-card__hashtag user-card__hashtag--catalog">
-                #рэп #тату #хфйпбист
-                #кроссовки #суприм
-              </p>
-              <div class="user-card__transport user-card__transport--catalog transport">
-                <h4 class="user-card__transport-title user-card__transport-title--catalog transport__title">Транспорт</h4>
-                <ul class="transport__list">
-                  <li class="transport__item transport__item--plane"></li>
-                  <li class="transport__item transport__item--bus"></li>
-                  <li class="transport__item transport__item--bicycle"></li>
-                  <li class="transport__item transport__item--run"></li>
-                </ul>
-              </div>
-              <div class="user-card__countries user-card__countries--catalog">
-                <h4 class="user-card__countries-title user-card__countries-title--catalog">Хочет посетить</h4>
-                <ul class="user-card__countries-list user-card__countries-list--catalog">
-                  <li class="user-card__countries-item flag-icon flag-icon--usa"><span class="country-name">США</span></li>
-                  <li class="user-card__countries-item flag-icon flag-icon--australia"><span class="country-name">Австралия</span></li>
-                  <li class="user-card__countries-item flag-icon flag-icon--dominica"><span class="country-name">Доминика</span></li>
-                </ul>
-              </div>
-              <button class="user-card__button catalog-button" type="button">Позвать!</button>
+          <a class="users__link" href="#">Показать еще</a>
+          <div class="users__toggles pagination">
+            <ul class="pagination__list">
+              <li class="pagination__item pagination__item--active">
+                <a class="pagination__item-link" href="#">1</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__item-link" href="#">2</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__item-link" href="#">3</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__item-link" href="#">4</a>
+              </li>
+            </ul>
+            <div class="pagination__toggles">
+              <button class="pagination__toggle pagination__toggle--left" type="button">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14" width="10" height="18">
+                  <polygon points="0,7.1 10,0.1 10,14 "/>
+                  </svg>
+                </span>
+              </button>
+              <button class="pagination__toggle pagination__toggle--right" type="button">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14" width="10" height="18">
+                  <polygon points="0,14 0,0.1 10,7.1 "/>
+                  </svg>
+                </span>
+              </button>
             </div>
           </div>
-          <div class="user-card user-card--catalog">
-            <img class="user-card__pic user-card__pic--catalog" src="./img/rogovaya-mobile@1x.jpg" width="70" height="70" alt="Лариса Роговая">
-            <div class="user-card__level user-card__level--catalog">
-              <span class="user-level">50 level</span>
-            </div>
-            <div class="user-card__likes">
-              23
-            </div>
-            <div class="user-card__info user-card__info--catalog">
-              <h3 class="user-card__name user-card__name--catalog">Лариса Роговая</h3>
-              <p class="user-card__hashtag user-card__hashtag--catalog">
-                #образование #карьера #учеба #линкедин
-              </p>
-              <div class="user-card__transport user-card__transport--catalog transport">
-                <h4 class="user-card__transport-title user-card__transport-title--catalog transport__title">Транспорт</h4>
-                <ul class="transport__list">
-                  <li class="transport__item transport__item--plane"></li>
-                  <li class="transport__item transport__item--bus"></li>
-                  <li class="transport__item transport__item--bicycle"></li>
-                  <li class="transport__item transport__item--run"></li>
-                </ul>
-              </div>
-              <div class="user-card__countries user-card__countries--catalog">
-                <h4 class="user-card__countries-title user-card__countries-title--catalog">Хочет посетить</h4>
-                <ul class="user-card__countries-list user-card__countries-list--catalog">
-                  <li class="user-card__countries-item flag-icon flag-icon--uk"><span class="country-name">Великобритания</span></li>
-                  <li class="user-card__countries-item flag-icon flag-icon--germany"><span class="country-name">Германия</span></li>
-                </ul>
-              </div>
-              <button class="user-card__button catalog-button" type="button">Позвать!</button>
-          </div>
-        </div>
-        <a class="users__link" href="#">Показать еще</a>
-        <div class="users__toggles pagination">
-          <button class="pagination__toggle pagination__toggle--left" type="button">
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14" width="10" height="18">
-              <polygon points="0,7.1 10,0.1 10,14 "/>
-              </svg>
-            </span>
-          </button>
-          <button class="pagination__toggle pagination__toggle--right" type="button">
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14" width="10" height="18">
-              <polygon points="0,14 0,0.1 10,7.1 "/>
-              </svg>
-            </span>
-          </button>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
     <footer class="page__footer page-footer">
       <a class="page-footer__logo logo">

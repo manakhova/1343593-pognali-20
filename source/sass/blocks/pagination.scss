@@ -1,5 +1,33 @@
 .pagination {
+  width: 100%;
+  background-color: $white;
   display: flex;
+  justify-content: space-between;
+}
+
+.pagination__list {
+  display: none;
+
+  //Tablet & Destop
+  @media (min-width: 768px) {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+}
+
+.pagination__item-link {
+  text-decoration: none;
+}
+
+
+.pagination__toggles {
+  margin: auto;
+
+  //Tablet & Destop
+  @media (min-width: 768px){
+    margin: 0;
+  }
 }
 
 .pagination__toggle {

@@ -4,12 +4,28 @@
   justify-content: space-between;
   padding: 25px;
   background-color: $white;
+
+  //Tablet
+  @media (min-width: 768px) {
+    padding: 55px 40px;
+    flex-direction: row;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    padding: 50px 58px;
+  }
 }
 
 .page-footer__logo {
   display: inline-block;
   margin: 0 auto;
   margin-top: 10px;
+
+  //Tablet & Desktop
+  @media (min-width: 768px) {
+    margin: 0;
+  }
 }
 
 .page-footer__social {

@@ -1,0 +1,11 @@
+.main-navigation__list,
+.main-navigation__actions {
+  display: flex;
+}
+
+//Tablet
+@media (min-width: 768px)  and (max-width: 1439px) {
+  .main-navigation__list {
+    display: none;
+  }
+}
