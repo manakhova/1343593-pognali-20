@@ -19,8 +19,8 @@
 
 .countries__info {
   display: grid;
-	grid-gap: 25px;
-	margin: auto;
+  grid-gap: 25px;
+  margin: auto;
   padding: 61px 25px 34px;
 
   //Tablet
@@ -31,8 +31,8 @@
   //Desktop
   @media (min-width: 1440px) {
     grid-gap: 15px;
-		grid-template-columns: auto auto;
-		column-gap: 173px;
+  	grid-template-columns: auto auto;
+  	column-gap: 173px;
     padding: 193px 130px 138px;
   }
 }
@@ -84,7 +84,7 @@
   @media (min-width: 1440px) {
     grid-gap: 15px;
     grid-column: 1;
-		grid-row: 1 / span 2;
+  	grid-row: 1 / span 2;
     min-width: 387px;
   }
 }
@@ -98,9 +98,9 @@
   //Desktop
   @media (min-width: 1440px) {
     grid-column: 2;
-		grid-row: 2;
-		align-self: end;
-		justify-self: start;
+  	grid-row: 2;
+  	align-self: end;
+  	justify-self: start;
     width: 275px;
     margin: 0;
   }
