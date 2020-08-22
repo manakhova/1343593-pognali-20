@@ -1,33 +1,68 @@
 .adress {
+  position: relative;
+  z-index: 1;
   background-color: $basic-yellow;
+  border-radius: 0 0 30px 30px;
+  margin-top: -30px;
 }
 
 .adress__info {
-  padding: 35px 25px;
+  padding: 64px 25px 33px;
 
   //Tablet
   @media (min-width: 768px) {
-    padding: 48px 75px;
+    padding: 103px 75px 85px;
   }
 
   //Desktop
   @media (min-width: 1440px) {
     display: flex;
-    padding: 55px 130px;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 93px 135px 60px;
   }
 }
 
 .adress__text {
+  position: relative;
+  margin: 0;
+  margin-left: 62px;
   font-weight: 700;
+  text-transform: uppercase;
   color: $basic-blue;
+
+  //Tablet
+  @media (min-width: 768px) {
+    font-size: 28px;
+    margin-left: 94px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    margin-left: 268px;
+  }
 }
 
 .adress__button {
   display: inline-block;
   box-sizing: border-box;
   width: 100%;
-  padding: 23px;
-  margin: 17px 0;
+  margin: 0;
+  margin-top: 30px;
+  padding: 18px;
   text-decoration: none;
   border: 3px solid $basic-blue-medium;
+
+  //Tablet
+  @media (min-width: 768px) {
+    margin-top: 66px;
+    padding: 25px 35px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    width: 324px;
+    margin: 0;
+    padding: 25px 35px;
+  }
 }

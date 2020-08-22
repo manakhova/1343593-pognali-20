@@ -1,19 +1,48 @@
-.subscription__title {
-  margin-bottom: 20px;
+.subscription {
+  position: relative;
+  z-index: 2;
+  background-color: $basic-blue-medium;
+  margin-top: -30px;
+  border-radius: 0 0 30px 30px;
 }
 
 .subscription__info {
-  padding: 30px 55px;
+  padding: 48px 55px 19px;
   text-align: center;
 
   //Tablet
   @media (min-width: 768px) {
-    padding: 76px;
+    padding: 76px 70px 54px;
   }
 
   //Desktop
   @media (min-width: 1440px) {
-    padding: 107px 130px;
+    padding: 107px 327px 47px;
+  }
+}
+
+.subscription__info:nth-of-type(2) {
+  padding: 19px 55px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    padding: 50px 55px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    padding: 60px 55px;
+  }
+}
+
+.subscription__title {
+  margin-top: 24px;
+  margin-bottom: 20px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    margin-top: 12px;
+    margin-bottom: 68px;
   }
 }
 
@@ -22,18 +51,41 @@
 }
 
 .subscription__form {
-  padding: 0 25px;
+  padding: 10px 25px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    padding: 10px 75px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    padding: 10px 132px;
+  }
 }
 
 .subscription__actions {
   list-style: none;
-  padding: 0 auto;
+  padding: 0 25px 25px;
   margin: 0;
+
+  //Tablet
+  @media (min-width: 768px) {
+    padding: 0 75px 40px;
+  }
 
   //Desktop
   @media (min-width: 1440px) {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 289px 100px;
+  }
+}
+
+.subscription__actions-item {
+  //Tablet
+  @media (min-width: 768px) {
+    margin-bottom: 25px;
   }
 }
 

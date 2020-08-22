@@ -7,15 +7,18 @@
 
 .promo__info {
   padding: 25px;
+  padding-bottom: 0;
 
   //Tablet
   @media (min-width: 768px) {
-    padding: 30px 40px;
+    padding: 30px 40px 0;
   }
 
   //Desktop
   @media (min-width: 1440px) {
-    padding: 47px 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 60px;
   }
 }
 
@@ -24,28 +27,98 @@
   line-height: 40px;
   padding: 0 15px;
   text-align: center;
-  padding-bottom: 230px;
+  padding-bottom: 238px;
   margin: 0 auto;
 
   &::after {
     content: "";
     position: absolute;
-    top: 223px;
-    right: 80px;
+    top: 222px;
+    right: 48px;
     width: 192px;
     height: 255px;
     background-image: url("../img/traveller-illustration-mobile@1x.png");
     background-repeat: no-repeat;
+
+    //Tablet
+    @media (min-width: 768px) {
+      top: 405px;
+      right: 111px;
+      width: 372px;
+      height: 451px;
+      background-image: url("../img/traveller-illustration-tablet@1x.png");
+    }
+
+    //Desktop
+    @media (min-width: 1440px) {
+      top: 110px;
+      right: 405px;
+      width: 431px;
+      height: 640px;
+      background-image: url("../img/traveller-illustration-desktop@1x.png");
+    }
+  }
+
+  //Tablet
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 70px;
+    padding: 0 125px;
+    padding-bottom: 57px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    text-align: left;
+    padding: 47px 66px;
+    padding-right: 360px;
   }
 }
 
 .promo__review {
+  margin-top: 30px;
+  margin-bottom: 28px;
   padding-left: 25px;
   padding-right: 85px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+    padding-left: 33px;
+    padding-right: 364px;
+    padding-bottom: 160px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    padding-right: 28px;
+    padding-left: 66px;
+    padding-bottom: 32px;
+  }
+}
+
+.promo__review-author {
+
+  //Tablet
+  @media (min-width: 768px) {
+    margin-top: 45px;
+  }
 }
 
 .promo__steps {
+  position: relative;
   list-style: none;
+  margin: 0 25px;
   padding: 0;
   padding-bottom: 40px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    margin: 31px 40px 30px;
+    padding: 0;
+  }
+  //Desktop
+  @media (min-width: 1440px) {
+    margin: 29px 60px 106px;
+  }
 }

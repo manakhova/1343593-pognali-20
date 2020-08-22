@@ -1,19 +1,69 @@
 .about {
+  position: relative;
+  z-index: 6;
+  background-color: $basic-blue-medium;
   background-image: url("../img/about-mobile@1x.png");
-}
-
-.about__info {
-  padding: 30px 50px;
-  margin: auto;
+  background-repeat: no-repeat;
+  border-radius: 30px;
 
   //Tablet
   @media (min-width: 768px) {
-    padding: 40px 75px;
+    background-image: url("../img/about-tablet@1x.png");
+    background-position: 98% 57%;
+    background-repeat: no-repeat;
   }
 
   //Desktop
   @media (min-width: 1440px) {
-    padding: 60px 130px;
+    background-image: url("../img/about-desktop@1x.png");
+    background-position: 93% 101%;
+    background-repeat: no-repeat;
+  }
+}
+
+.about__info {
+  padding: 30px 50px 80px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    padding: 120px 75px 85px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    padding: 160px 130px;
+  }
+}
+
+.about__title {
+  margin: 0;
+  margin-bottom: 20px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    margin-bottom: 53px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    margin-bottom: 70px;
+  }
+}
+
+.about__teaser {
+  margin: 0;
+  margin-top: 22px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    margin-bottom: 31px;
+    padding-right: 318px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    margin-bottom: 38px;
+    padding-right: 538px;
   }
 }
 
@@ -23,6 +73,12 @@
   //Tablet
   @media (min-width: 768px) {
     display: block;
-    width: 280px;
+    width: 275px;
+    margin-top: 54px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    margin-top: 82px;
   }
 }

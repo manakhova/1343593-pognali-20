@@ -1,5 +1,9 @@
 .users {
-  background-color: $basic-blue;
+  position: relative;
+  z-index: 4;
+  background-color: $basic-blue-medium;
+  margin-top: -30px;
+  border-radius: 0 0 30px 30px;
 
   &--catalog {
     background-color: $basic-blue-light;
@@ -7,61 +11,110 @@
 }
 
 .users__info {
-  padding: 30px 50px;
-  margin-bottom: 30px;
+  display: grid;
+	grid-gap: 15px;
+	margin: auto;
+  padding: 98px 25px 28px;
 
   //Tablet
   @media (min-width: 768px) {
-    padding: 30px 73px;
+    padding: 183px 73px 83px;
   }
-
   //Desktop
   @media (min-width: 1440px) {
-    padding: 130px 130px;
-    display: flex;
-    justify-content: space-between;
+    grid-gap: 15px;
+		grid-template-columns: auto auto;
+		column-gap: 150px;
+    padding: 164px 60px 133px 130px;
+  }
+}
+
+.users__info-main {
+  margin-bottom: 15px;
+  //Tablet
+  @media (min-width: 768px) {
+    margin: 0;
+    padding-right: 150px;
+  }
+  //Desktop
+  @media (min-width: 1440px) {
+    margin-top: 8px;
+    padding: 0;
   }
 }
 
 .users__title {
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin: 0;
+  margin-bottom: 22px;
+  padding-left: 25px;
+
+  //Tablet & Desktop
+  @media (min-width: 768px) {
+    margin-bottom: 66px;
+    padding-left: 0;
+  }
 }
 
 .users__teaser {
   margin: 0;
+  margin-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 30px;
 
   //Tablet & Desktop
   @media (min-width: 768px) {
-    max-width: 428px;
-  }
-}
+    margin-bottom: 45px;
+    padding-left: 0;
 
-.users__list {
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
-
-  &--catalog {
-    display: block;
-  }
-
-  //Tablet
-  @media (min-width: 768px) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
   }
 
   //Desktop
   @media (min-width: 1440px) {
-    padding: 60px;
+    padding: 0;
+  }
+}
+
+.users__list {
+  display: grid;
+  grid-gap: 8px;
+
+  //Tablet & Desktop
+  @media (min-width: 768px) {
+    grid-gap: 30px;
+    grid-template-columns: auto auto;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    grid-template-columns: auto auto;
+    grid-column: 2;
+		grid-row: 1 / span 2;
+  }
+
+  &--catalog {
+    display: block;
   }
 }
 
 .users__to-all {
   display: inline-block;
   width: 100%;
+  margin-top: 7px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    margin-top: 60px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    grid-column: 1;
+		grid-row: 2;
+		align-self: center;
+		justify-self: start;
+    width: 275px;
+    margin: 0;
+  }
 }
 
 .users__link {
