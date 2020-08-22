@@ -1,0 +1,21 @@
+.main-navigation__list,
+.main-navigation__actions {
+  display: flex;
+}
+
+.main-navigation__list {
+  list-style: none;
+  margin: 0;
+  margin-left: 150px;
+  padding: 0;
+
+  //Tablet only
+  @media (min-width: 768px)  and (max-width: 1439px) {
+    display: none;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    margin-top: 20px;
+  }
+}

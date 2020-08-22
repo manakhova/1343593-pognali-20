@@ -1,0 +1,9 @@
+//Desktop
+@media (min-width: 1440px) {
+  .page-catalog {
+    background-color: $basic-blue-light;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+}

@@ -16,8 +16,20 @@
   height: 62px;
   border: 1px solid black;
   border-radius: 15px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    padding: 40px;
+  }
 }
 
 .field__button {
   padding: 21px;
+  margin-left: -30px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    padding: 33px 35px;
+    margin-left: -30px;
+  }
 }

@@ -1,6 +1,16 @@
 .button-big {
+  text-decoration: none;
+  font-size: 18px;
   font-weight: 700;
   color: $basic-blue;
   background-color: $basic-yellow;
   border: none;
+  box-sizing: border-box;
+  padding: 20px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    font-size: 24px;
+    padding: 28px;
+  }
 }

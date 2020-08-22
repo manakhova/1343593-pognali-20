@@ -5,6 +5,16 @@
 
 .add-plans__info {
   padding: 25px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    padding: 55px 75px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    padding: 55px 60px;
+  }
 }
 
 .add-plans__main {

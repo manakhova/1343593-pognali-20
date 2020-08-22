@@ -3,4 +3,23 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 25px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    background-color: $white;
+    padding: 45px 40px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    padding: 47px 60px;
+    background-color: $basic-blue-medium;
+  }
+}
+
+.page-header__logo {
+  //Tablet
+  @media (min-width: 768px) and (max-width: 1439px) {
+    flex-grow: 1;
+  }
 }

@@ -4,4 +4,14 @@
 
 .filter-companions__info {
   padding: 25px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    padding: 40px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    padding: 60px;
+  }
 }

@@ -1,5 +1,15 @@
 .page-subheader {
   padding: 25px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    padding: 25px 40px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    padding: 25px 125px;
+  }
 }
 
 .page-subheader__title {
