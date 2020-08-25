@@ -1,10 +1,14 @@
 .add-plans {
+  position: relative;
+  z-index: 2;
+  border-radius: 30px 30px 0 0;
+  margin-top: -30px;
   background-color: $special-blue-medium;
   color: $basic-blue;
 }
 
 .add-plans__info {
-  padding: 25px;
+  padding: 25px 25px 60px;
 
   //Tablet
   @media (min-width: 768px) {
@@ -13,46 +17,148 @@
 
   //Desktop
   @media (min-width: 1440px) {
-    padding: 55px 60px;
+    padding: 75px 60px 58px;
   }
 }
 
 .add-plans__main {
   display: flex;
   justify-content: space-between;
-  margin: 30px auto;
+  margin: 8px auto 30px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    margin: 8px auto 63px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    margin: 8px 70px 63px;
+  }
+}
+
+.add-plans__title {
+  margin: 0;
 }
 
 .add-plans__item {
   background-color: $white;
   margin-bottom: 10px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    margin-bottom: 40px;
+  }
 }
 
 .add-plans__item-info {
-  padding: 25px;
+  padding: 22px 25px 17px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    padding: 48px 41px 58px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    padding: 102px 159px 115px;
+  }
 }
 
 .add-plans__item-title {
   margin: 0;
   margin-bottom: 15px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 35px;
+  }
+}
+
+//Desktop
+@media (min-width: 1440px) {
+  .add-plans__item-title br {
+    display: none;
+  }
 }
 
 .add-plans__item-text {
   margin: 0;
 }
 
+.add-plans__item-main {
+  //Tablet
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .add-plans__item-input {
-  margin-top: 20px;
+  margin-top: 16px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    margin-top: 60px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    margin: 0;
+  }
+}
+
+.add-plans__item-checkbox {
+  margin-top: 21px;
+
+  //Tablet
+  @media (min-width: 768px) and (max-width: 1439px) {
+    order: 2;
+    margin-top: 30px;
+  }
+}
+
+.add-plans__buttons {
+  //Tablet
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .add-plans__button {
-  margin-bottom: 13px;
   width: 100%;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+
+  //Tablet
+  @media (min-width: 768px) {
+    width: 54%;
+    padding: 28px;
+    margin-top: 24px;
+    font-size: 24px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    width: 29%;
+  }
 }
 
 .add-plans__item-list {
   display: flex;
   margin-top: 21px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    margin-top: 75px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    margin-top: 142px;
+  }
 }
 
 .add-plans__item-countries,
@@ -62,10 +168,38 @@
   margin: 0;
 }
 
+.add-plans__item-countries-flag {
+  //Tablet
+  @media (min-width: 768px) {
+    margin-left: 30px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    margin-left: 45px;
+  }
+}
+
 .add-plans__item-textarea {
-  margin-top: 25px;
+  margin-top: 15px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    padding-right: 30px;
+    margin-top: 80px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    margin-top: 165px;
+  }
 
   &--last {
-    margin-bottom: 25px;
+    margin-bottom: 12px;
+
+    //Tablet
+    @media (min-width: 768px) {
+      margin-top: 48px;
+    }
   }
 }

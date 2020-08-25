@@ -6,6 +6,10 @@
   @media (min-width: 768px) {
     flex-grow: 1;
   }
+
+  &--catalog {
+    background-color: $basic-blue-medium-light;
+  }
 }
 
 .dropdown__content {
@@ -16,6 +20,15 @@
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
+  }
+
+  &--catalog {
+    display: none;
+
+    //Tablet & Desktop
+    @media (min-width: 768px) {
+      display: block;
+    }
   }
 }
 

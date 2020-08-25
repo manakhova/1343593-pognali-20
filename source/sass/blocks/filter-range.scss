@@ -1,3 +1,39 @@
+.filter-range {
+  //Tablet
+  @media (min-width: 768px) and (max-width: 1439px) {
+    display: flex;
+  }
+}
+
 .filter-range__item {
   display: flex;
+}
+
+.filter-range__item:nth-of-type(2) {
+  display: block;
+  padding: 22px 0;
+
+  //Tablet
+  @media (min-width: 768px) and (max-width: 1439px) {
+    padding: 13px 0;
+    min-width: 182px;
+  }
+}
+
+.filter-range__info {
+  margin-top: 10px;
+
+  //Tablet
+  @media (min-width: 768px) and (max-width: 1439px) {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0;
+  }
+}
+
+.filter-range__title {
+  //Tablet
+  @media (min-width: 768px) and (max-width: 1439px) {
+    margin-top: 5px;
+  }
 }

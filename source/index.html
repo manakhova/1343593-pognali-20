@@ -318,33 +318,38 @@
                     <h4 class="user-card__transport-title transport__title visually-hidden">Транспорт</h4>
                     <ul class="transport__list">
                       <li class="transport__item">
-                        <label>
-                          <input class="transport__item-checkbox transport__item-checkbox--plane" name="plane" type="checkbox" value="plane">
-                        </label>
+                        <input class="transport__item-checkbox transport__item-checkbox--plane visually-hidden" id="plane" name="plane" type="checkbox" value="plane">
+                        <label for="plane"><span class="visually-hidden">Самолет</span></label>
                       </li>
                       <li class="transport__item">
-                        <label>
-                          <input class="transport__item-checkbox transport__item-checkbox--bus" name="bus" type="checkbox" value="bus">
-                        </label>
+                        <input class="transport__item-checkbox transport__item-checkbox--bus visually-hidden" id="bus" name="bus" type="checkbox" value="bus">
+                        <label for="bus"><span class="visually-hidden">Автобус</span></label>
                       </li>
                       <li class="transport__item">
-                        <label>
-                          <input class="transport__item-checkbox transport__item-checkbox--bicycle" name="bicycle" type="checkbox" value="bicycle">
-                        </label>
+                        <input class="transport__item-checkbox transport__item-checkbox--bicycle visually-hidden" id="bicycle" name="bicycle" type="checkbox" value="bicycle">
+                        <label for="bicycle"><span class="visually-hidden">Велосипед</span></label>
                       </li>
                       <li class="transport__item">
-                        <label>
-                          <input class="transport__item-checkbox transport__item-checkbox--run" name="run" type="checkbox" value="run">
-                        </label>
+                        <input class="transport__item-checkbox transport__item-checkbox--run visually-hidden" id="run" name="run" type="checkbox" value="run">
+                        <label for="run"><span class="visually-hidden">Пешком</span></label>
                       </li>
                     </ul>
                   </div>
                   <div class="user-card__countries">
                     <h4 class="user-card__countries-title visually-hidden">Хочет посетить</h4>
                     <ul class="user-card__countries-list">
-                      <li class="user-card__countries-item flag-icon flag-icon--sri-lanka"><span class="country-name">Шри-Ланка</span></li>
-                      <li class="user-card__countries-item flag-icon flag-icon--thailand"><span class="country-name">Таиланд</span></li>
-                      <li class="user-card__countries-item flag-icon flag-icon--seychelles"><span class="country-name">Сейшелы</span></li>
+                      <li class="user-card__countries-item">
+                        <span class="flag-icon flag-icon--sri-lanka"></span>
+                        <span class="user-card__country-name">Шри-Ланка</span>
+                      </li>
+                      <li class="user-card__countries-item">
+                        <span class="flag-icon flag-icon--thailand"></span>
+                        <span class="user-card__country-name">Таиланд</span>
+                      </li>
+                      <li class="user-card__countries-item">
+                        <span class=" flag-icon flag-icon--seychelles"></span>
+                        <span class="user-card__country-name">Сейшелы</span>
+                      </li>
                     </ul>
                   </div>
                   <button class="user-card__button button visually-hidden" type="button">Позвать!</button>
@@ -368,32 +373,34 @@
                     <h4 class="user-card__transport-title transport__title visually-hidden">Транспорт</h4>
                     <ul class="transport__list">
                       <li class="transport__item">
-                        <label>
-                          <input class="transport__item-checkbox transport__item-checkbox--plane" name="plane" type="checkbox" value="plane">
-                        </label>
+                        <input class="transport__item-checkbox transport__item-checkbox--plane visually-hidden" id="plane" name="plane" type="checkbox" value="plane">
+                        <label for="plane"><span class="visually-hidden">Самолет</span></label>
                       </li>
                       <li class="transport__item">
-                        <label>
-                          <input class="transport__item-checkbox transport__item-checkbox--bus" name="bus" type="checkbox" value="bus">
-                        </label>
+                        <input class="transport__item-checkbox transport__item-checkbox--bus visually-hidden" id="bus" name="bus" type="checkbox" value="bus">
+                        <label for="bus"><span class="visually-hidden">Автобус</span></label>
                       </li>
                       <li class="transport__item">
-                        <label>
-                          <input class="transport__item-checkbox transport__item-checkbox--bicycle" name="bicycle" type="checkbox" value="bicycle">
-                        </label>
+                        <input class="transport__item-checkbox transport__item-checkbox--bicycle visually-hidden" id="bicycle" name="bicycle" type="checkbox" value="bicycle">
+                        <label for="bicycle"><span class="visually-hidden">Велосипед</span></label>
                       </li>
                       <li class="transport__item">
-                        <label>
-                          <input class="transport__item-checkbox transport__item-checkbox--run" name="run" type="checkbox" value="run">
-                        </label>
+                        <input class="transport__item-checkbox transport__item-checkbox--run visually-hidden" id="run" name="run" type="checkbox" value="run">
+                        <label for="run"><span class="visually-hidden">Пешком</span></label>
                       </li>
                     </ul>
                   </div>
                   <div class="user-card__countries">
                     <h4 class="user-card__countries-title visually-hidden">Хочет посетить</h4>
                     <ul class="user-card__countries-list">
-                      <li class="user-card__countries-item flag-icon flag-icon--belgium"><span class="country-name">Бельгия</span></li>
-                      <li class="user-card__countries-item flag-icon flag-icon--czech"><span class="country-name">Чехия</span></li>
+                      <li class="user-card__countries-item">
+                        <span class="flag-icon flag-icon--belgium"></span>
+                        <span class="user-card__country-name">Бельгия</span>
+                      </li>
+                      <li class="user-card__countries-item">
+                        <span class="flag-icon flag-icon--czech"></span>
+                        <span class="user-card__country-name">Чехия</span>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -491,7 +498,7 @@
         </section>
         <section class="map">
           <h2 class="visually-hidden">Карта</h2>
-          <iframe class="map__pic" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1597784010622!5m2!1sru!2sru" width="315" height="420" allowfullscreen></iframe>
+          <iframe class="map__pic" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1597784010622!5m2!1sru!2sru" width="315" height="480" allowfullscreen></iframe>
         </section>
       </main>
       <footer class="page__footer page-footer">

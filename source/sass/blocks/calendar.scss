@@ -1,18 +1,39 @@
+.calendar {
+  display: flex;
+  flex-direction: column;
+}
+
 .calendar__month {
   position: relative;
   display: flex;
-  margin: 23px auto;
+  margin: 23px 0 21px;
   border-top: 1px solid #d6d9e6;
   border-bottom: 1px solid #d6d9e6;
+
+  //Tablet
+  @media (min-width: 768px) {
+    margin: 54px 0 30px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    margin: 83px 0 10px;
+  }
 }
 
 .calendar__month-name {
   display: inline-block;
   flex-grow: 1;
   text-align: center;
-  padding: 12px;
+  padding: 10px;
   font-weight: 700;
   font-size: 20px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    font-size: 36px;
+    padding: 34px;
+  }
 }
 
 .calendar__button {
@@ -37,7 +58,18 @@
   justify-content: space-between;
   list-style: none;
   padding: 0;
-  margin: 20px 12px 10px;
+  margin: 0 12px 4px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    justify-content: space-around;
+    margin: 0 12px 7px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    margin: 0 12px 20px;
+  }
 }
 
 .calendar__week-item {
@@ -46,6 +78,11 @@
 
   &--weekend {
     color: $special-red;
+  }
+
+  //Tablet
+  @media (min-width: 768px) {
+    font-size: 18px;
   }
 }
 
@@ -74,5 +111,17 @@
   &--chosen {
     background-color: $basic-blue;
     color: $white;
+  }
+
+  //Tablet
+  @media (min-width: 768px) {
+    padding: 23px 15px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    padding-top: 10px;
+    padding-bottom: 38px;
+    text-align: left;
   }
 }

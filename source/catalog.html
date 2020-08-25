@@ -3,10 +3,34 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Погнали</title>
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url( "./img/Mobile-Catalog.jpg" );
+      }
+      /* Планшет */
+      @media ( min-width: 768px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url( "./img/Tablet-Catalog.jpg" );
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 1440px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "./img/Desktop-Catalog.jpg" );
+        }
+      }
+    </style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
     <link href="./css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
-    <header class="page__header page-header">
+    <header class="page__header page-header page-header--catalog">
       <a class="page-header__logo logo" href="index.html">
         <img class="logo__image" src="./img/logo-mobile-white@1x.png" width="100" height="15" alt="Погнали?">
       </a>
@@ -125,15 +149,37 @@
     <main class="page__main">
       <section class="page-subheader">
         <h1 class="page-subheader__title">Попутчики</h1>
+        <a href="index.html" class="page-subheader__link">На главную</a>
       </section>
       <section class="page-filter">
-        <div class="page-filter__dropdown dropdown">
+        <div class="page-filter__dropdown dropdown dropdown--catalog">
           <button class="page-filter__button dropdown__button" type="button">
-            <span class="page-filter__button-icon dropdown__button-icon "></span>
-            <span class="page-filter__button-name dropdown__button-name">Фильтр по странам</span>
-            <span class="page-filter__button-icon dropdown__button-icon dropdown__button-icon--times"></span>
+            <span class="page-filter__button-icon dropdown__button-icon ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="10"
+                viewBox="0 0 15 10">
+              <rect x="4" width="2" height="2"/>
+              <rect width="3" height="2"/>
+              <rect x="7" width="8" height="2"/>
+              <rect x="4" y="8" width="2" height="2"/>
+              <rect y="8" width="3" height="2"/>
+              <rect x="7" y="8" width="8" height="2"/>
+              <rect x="9" y="4" width="2" height="2"/>
+              <rect x="12" y="4" width="3" height="2"/>
+              <rect y="4" width="8" height="2"/>
+              </svg>
+            </span>
+            <span class="page-filter__button-name dropdown__button-name">Фильтрация по странам</span>
+            <span class="page-filter__button-icon dropdown__button-icon dropdown__button-icon--times">
+              <span class="page-filter__button-icon-title">Показать все</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="3"
+                viewBox="0 0 27 5" >
+              <circle class="st0" cx="2.5" cy="2.5" r="2.5"/>
+              <circle class="st0" cx="13.5" cy="2.5" r="2.5"/>
+              <circle class="st0" cx="24.5" cy="2.5" r="2.5"/>
+              </svg>
+            </span>
           </button>
-          <div class="page-filter__dropdown-content dropdown__content countries-filter">
+          <div class="page-filter__dropdown-content dropdown__content dropdown__content--catalog countries-filter">
             <ul class="page-filter__dropdown-content-list countries-filter__list">
               <li class="countries-filter__item"><a class="countries-filter__link countries-filter--selected" href="#">Европа</a></li>
               <li class="countries-filter__item"><a class="countries-filter__link" href="#">Азия</a></li>
@@ -240,123 +286,103 @@
           <div class="filter-companions__info">
             <form class="filter-form" action="http://echo.htmlacademy.ru" method="post">
               <h2 class="filter-form__title">Подберите идеального попутчика</h2>
-              <div class="filter-form__item filter-section">
-                <h3 class="filter-section__name">Хобби</h3>
-                <ul class="filter-section__list">
-                  <li class="filter-section__list-item">
-                    <label>
-                      <input class="filter-section__list-item-checkbox" name="gym" type="checkbox" value="gym" checked>
-                      Спортзал
-                    </label>
-                  </li>
-                  <li class="filter-section__list-item">
-                    <label>
-                      <input class="filter-section__list-item-checkbox" name="hookah" type="checkbox" value="hookah" checked>
-                      Кальян
-                    </label>
-                  </li>
-                  <li class="filter-section__list-item">
-                    <label>
-                      <input class="filter-section__list-item-checkbox" name="sofa" type="checkbox" value="sofa">
-                      Диван
-                    </label>
-                  </li>
-                </ul>
-              </div>
-              <div class="filter-form__item filter-section">
-                <h3 class="filter-section__name">Музыка</h3>
-                <ul class="filter-section__list">
-                  <li class="filter-section__list-item">
-                    <label>
-                      <input class="filter-section__list-item-checkbox" name="hardrock" type="checkbox" value="hardrock" checked>
-                      Тяжелый рок
-                    </label>
-                  </li>
-                  <li class="filter-section__list-item">
-                    <label>
-                      <input class="filter-section__list-item-checkbox" name="rusrap" type="checkbox" value="rusrap" checked>
-                      Русский рэп
-                    </label>
-                  </li>
-                  <li class="filter-section__list-item">
-                    <label>
-                      <input class="filter-section__list-item-checkbox" name="eurodance" type="checkbox" value="eurodance">
-                      Евродэнс
-                    </label>
-                  </li>
-                </ul>
-              </div>
-              <div class="filter-form__item filter-section">
-                  <h3 class="filter-section__name">Еда</h3>
+              <div class="filter-form__content">
+                <div class="filter-form__item filter-section">
+                  <h3 class="filter-section__name">Хобби</h3>
+                  <ul class="filter-section__list ">
+                    <li class="filter-section__list-item">
+                      <input class="filter-section__list-item-checkbox visually-hidden" id="gym" name="gym" type="checkbox" value="gym" checked>
+                      <label for="gym">Спортзал</label>
+                    </li>
+                    <li class="filter-section__list-item">
+                      <input class="filter-section__list-item-checkbox visually-hidden" id="hookah" name="hookah" type="checkbox" value="hookah" checked>
+                      <label for="hookah">Кальян</label>
+                    </li>
+                    <li class="filter-section__list-item">
+                      <input class="filter-section__list-item-checkbox visually-hidden" id="sofa" name="sofa" type="checkbox" value="sofa">
+                      <label for="sofa">Диван</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="filter-form__item filter-section">
+                  <h3 class="filter-section__name">Музыка</h3>
                   <ul class="filter-section__list">
                     <li class="filter-section__list-item">
-                      <label>
-                        <input class="filter-section__list-item-checkbox" name="meat-eater" type="checkbox" value="meat-eater" checked>
-                        Мясоед
-                      </label>
+                      <input class="filter-section__list-item-checkbox visually-hidden" id="hardrock" name="hardrock" type="checkbox" value="hardrock" checked>
+                      <label for="hardrock">Тяжелый рок</label>
                     </li>
                     <li class="filter-section__list-item">
-                      <label>
-                        <input class="filter-section__list-item-checkbox" name="healthy-food" type="checkbox" value="healthy-food" checked>
-                        Сидит на ПП
-                      </label>
+                      <input class="filter-section__list-item-checkbox visually-hidden" id="rusrap" name="rusrap" type="checkbox" value="rusrap" checked>
+                      <label for="rusrap">Русский рэп</label>
                     </li>
                     <li class="filter-section__list-item">
-                      <label>
-                        <input class="filter-section__list-item-checkbox" name="vegan" type="checkbox" value="vegan">
-                        Веган-сыроед
-                      </label>
+                      <input class="filter-section__list-item-checkbox visually-hidden" id="eurodance" name="eurodance" type="checkbox" value="eurodance">
+                      <label for="eurodance">Евродэнс</label>
                     </li>
                   </ul>
-              </div>
-              <div class="filter-form__item filter-section">
-                <fieldset class="filter-section__item transport">
-                  <legend class="filter-section__item-name transport__title">Транспорт</legend>
-                  <ul class="filter-section__list transport__list">
-                    <li class="transport__item">
-                      <label>
-                        <input class="transport__item-checkbox transport__item-checkbox--plane" name="plane" type="checkbox" value="plane">
-                      </label>
+                </div>
+                <div class="filter-form__item filter-section">
+                    <h3 class="filter-section__name">Еда</h3>
+                    <ul class="filter-section__list ">
+                      <li class="filter-section__list-item">
+                        <input class="filter-section__list-item-checkbox visually-hidden" id="meat-eater" name="meat-eater" type="checkbox" value="meat-eater" checked>
+                        <label for="meat-eater">Мясоед</label>
+                      </li>
+                      <li class="filter-section__list-item">
+                        <input class="filter-section__list-item-checkbox visually-hidden" id="healthy-food" name="healthy-food" type="checkbox" value="healthy-food" checked>
+                        <label for="healthy-food">Сидит на ПП</label>
+                      </li>
+                      <li class="filter-section__list-item">
+                        <input class="filter-section__list-item-checkbox visually-hidden" id="vegan" name="vegan" type="checkbox" value="vegan">
+                        <label for="vegan">Веган-сыроед</label>
+                      </li>
+                    </ul>
+                </div>
+                <div class="filter-form__item filter-form__item--transport filter-section">
+                  <h3 class="filter-section__name filter-section__name--transport transport__title">Транспорт</h3>
+                  <ul class="filter-section__list transport__list transport__list--filter">
+                    <li class="transport__item transport__item--filter">
+                      <input class="transport__item-checkbox transport__item-checkbox--plane visually-hidden" id="plane" name="plane" type="checkbox" value="plane">
+                      <label for="plane"><span class="visually-hidden">Самолет</span></label>
                     </li>
-                    <li class="transport__item">
-                      <label>
-                        <input class="transport__item-checkbox transport__item-checkbox--bus" name="bus" type="checkbox" value="bus">
-                      </label>
+                    <li class="transport__item transport__item--filter">
+                      <input class="transport__item-checkbox transport__item-checkbox--bus visually-hidden" id="bus" name="bus" type="checkbox" value="bus">
+                      <label for="bus"><span class="visually-hidden">Автобус</span></label>
                     </li>
-                    <li class="transport__item">
-                      <label>
-                        <input class="transport__item-checkbox transport__item-checkbox--bicycle" name="bicycle" type="checkbox" value="bicycle">
-                      </label>
+                    <li class="transport__item transport__item--filter">
+                      <input class="transport__item-checkbox transport__item-checkbox--bicycle visually-hidden" id="bicycle" name="bicycle" type="checkbox" value="bicycle">
+                      <label for="bicycle"><span class="visually-hidden">Велосипед</span></label>
                     </li>
-                    <li class="transport__item">
-                      <label>
-                        <input class="transport__item-checkbox transport__item-checkbox--run" name="run" type="checkbox" value="run">
-                      </label>
+                    <li class="transport__item transport__item--filter">
+                      <input class="transport__item-checkbox transport__item-checkbox--run visually-hidden" id="run" name="run" type="checkbox" value="run">
+                      <label for="run"><span class="visually-hidden">Пешком</span></label>
                     </li>
                   </ul>
-                </fieldset>
-              </div>
-              <div class="filter-form__item filter-section">
-                <div class="filter-section__item filter-range">
-                  <legend class="filter-section__item-name filter-range__title">Левел</legend>
-                  <div class="filter-range__info">
-                    <div class="filter-range__item level-controls">
-                      <label class="min-level">
-                        <input class="number" type="number" value="30">
-                      </label>
-                      <label class="max-level">
-                        <input class="number" type="number" value="100">
-                      </label>
-                    </div>
-                    <div class="filter-range__item range">
-                      <div class="range__bar"></div>
-                      <div class="range__toggle toggle toggle--min" tabindex="0"></div>
-                      <div class="range__toggle toggle toggle--max" tabindex="0"></div>
+                </div>
+                <div class="filter-form__item filter-section">
+                  <div class="filter-section__item filter-range">
+                    <h3 class="filter-section__name filter-range__title">Левел</h3>
+                    <div class="filter-range__info">
+                      <div class="filter-range__item level-controls">
+                        <label class="filter-range__min-level">
+                          <input class="number" type="number" value="30">
+                        </label>
+                        <label class="filter-range__max-level">
+                          <input class="number" type="number" value="100">
+                        </label>
+                      </div>
+                      <div class="filter-range__item range">
+                        <div class="range__bar">
+                          <div class="range__bar-active"></div>
+                        </div>
+                        <div class="range__toggle range__toggle--min" tabindex="0"></div>
+                        <div class="range__toggle range__toggle--max" tabindex="0"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <button class="filter-form__item catalog-button catalog-button--filter" type="submit">Показать</button>
               </div>
-              <button class="filter-form__item catalog-button catalog-button--filter" type="submit">Показать</button>
             </form>
           </div>
         </section>
@@ -378,35 +404,40 @@
                 </p>
                 <div class="user-card__transport user-card__transport--catalog transport">
                   <h4 class="user-card__transport-title user-card__transport-title--catalog transport__title">Транспорт</h4>
-                  <ul class="transport__list">
+                  <ul class="transport__list transport__list--catalog">
                     <li class="transport__item">
-                      <label>
-                        <input class="transport__item-checkbox transport__item-checkbox--plane" name="plane" type="checkbox" value="plane">
-                      </label>
+                      <input class="transport__item-checkbox transport__item-checkbox--plane visually-hidden" id="plane" name="plane" type="checkbox" value="plane">
+                      <label for="plane"><span class="visually-hidden">Самолет</span></label>
                     </li>
                     <li class="transport__item">
-                      <label>
-                        <input class="transport__item-checkbox transport__item-checkbox--bus" name="bus" type="checkbox" value="bus">
-                      </label>
+                      <input class="transport__item-checkbox transport__item-checkbox--bus visually-hidden" id="bus" name="bus" type="checkbox" value="bus">
+                      <label for="bus"><span class="visually-hidden">Автобус</span></label>
                     </li>
                     <li class="transport__item">
-                      <label>
-                        <input class="transport__item-checkbox transport__item-checkbox--bicycle" name="bicycle" type="checkbox" value="bicycle">
-                      </label>
+                      <input class="transport__item-checkbox transport__item-checkbox--bicycle visually-hidden" id="bicycle" name="bicycle" type="checkbox" value="bicycle">
+                      <label for="bicycle"><span class="visually-hidden">Велосипед</span></label>
                     </li>
                     <li class="transport__item">
-                      <label>
-                        <input class="transport__item-checkbox transport__item-checkbox--run" name="run" type="checkbox" value="run">
-                      </label>
+                      <input class="transport__item-checkbox transport__item-checkbox--run visually-hidden" id="run" name="run" type="checkbox" value="run">
+                      <label for="run"><span class="visually-hidden">Пешком</span></label>
                     </li>
                   </ul>
                 </div>
                 <div class="user-card__countries user-card__countries--catalog">
                   <h4 class="user-card__countries-title user-card__countries-title--catalog">Хочет посетить</h4>
                   <ul class="user-card__countries-list user-card__countries-list--catalog">
-                    <li class="user-card__countries-item flag-icon flag-icon--sri-lanka"><span class="country-name">Шри-Ланка</span></li>
-                    <li class="user-card__countries-item flag-icon flag-icon--thailand"><span class="country-name">Таиланд</span></li>
-                    <li class="user-card__countries-item flag-icon flag-icon--seychelles"><span class="country-name">Сейшелы</span></li>
+                    <li class="user-card__countries-item">
+                      <span class="flag-icon flag-icon--sri-lanka"></span>
+                      <span class="user-card__country-name user-card__country-name--catalog">Шри-Ланка</span>
+                    </li>
+                    <li class="user-card__countries-item">
+                      <span class="flag-icon flag-icon--thailand"></span>
+                      <span class="user-card__country-name user-card__country-name--catalog">Таиланд</span>
+                    </li>
+                    <li class="user-card__countries-item">
+                      <span class=" flag-icon flag-icon--seychelles"></span>
+                      <span class="user-card__country-name user-card__country-name--catalog">Сейшелы</span>
+                    </li>
                   </ul>
                 </div>
                 <button class="user-card__button catalog-button" type="button">Позвать!</button>
@@ -428,34 +459,36 @@
                 </p>
                 <div class="user-card__transport user-card__transport--catalog transport">
                   <h4 class="user-card__transport-title user-card__transport-title--catalog transport__title">Транспорт</h4>
-                  <ul class="transport__list">
+                  <ul class="transport__list transport__list--catalog">
                     <li class="transport__item">
-                      <label>
-                        <input class="transport__item-checkbox transport__item-checkbox--plane" name="plane" type="checkbox" value="plane">
-                      </label>
+                      <input class="transport__item-checkbox transport__item-checkbox--plane visually-hidden" id="plane" name="plane" type="checkbox" value="plane">
+                      <label for="plane"><span class="visually-hidden">Самолет</span></label>
                     </li>
                     <li class="transport__item">
-                      <label>
-                        <input class="transport__item-checkbox transport__item-checkbox--bus" name="bus" type="checkbox" value="bus">
-                      </label>
+                      <input class="transport__item-checkbox transport__item-checkbox--bus visually-hidden" id="bus" name="bus" type="checkbox" value="bus">
+                      <label for="bus"><span class="visually-hidden">Автобус</span></label>
                     </li>
                     <li class="transport__item">
-                      <label>
-                        <input class="transport__item-checkbox transport__item-checkbox--bicycle" name="bicycle" type="checkbox" value="bicycle">
-                      </label>
+                      <input class="transport__item-checkbox transport__item-checkbox--bicycle visually-hidden" id="bicycle" name="bicycle" type="checkbox" value="bicycle">
+                      <label for="bicycle"><span class="visually-hidden">Велосипед</span></label>
                     </li>
                     <li class="transport__item">
-                      <label>
-                        <input class="transport__item-checkbox transport__item-checkbox--run" name="run" type="checkbox" value="run">
-                      </label>
+                      <input class="transport__item-checkbox transport__item-checkbox--run visually-hidden" id="run" name="run" type="checkbox" value="run">
+                      <label for="run"><span class="visually-hidden">Пешком</span></label>
                     </li>
                   </ul>
                 </div>
                 <div class="user-card__countries user-card__countries--catalog">
                   <h4 class="user-card__countries-title user-card__countries-title--catalog">Хочет посетить</h4>
                   <ul class="user-card__countries-list user-card__countries-list--catalog">
-                    <li class="user-card__countries-item flag-icon flag-icon--belgium"><span class="country-name">Бельгия</span></li>
-                    <li class="user-card__countries-item flag-icon flag-icon--czech"><span class="country-name">Чехия</span></li>
+                    <li class="user-card__countries-item">
+                      <span class="flag-icon flag-icon--belgium"></span>
+                      <span class="user-card__country-name user-card__country-name--catalog">Бельгия</span>
+                    </li>
+                    <li class="user-card__countries-item">
+                      <span class="flag-icon flag-icon--czech"></span>
+                      <span class="user-card__country-name user-card__country-name--catalog">Чехия</span>
+                    </li>
                   </ul>
                 </div>
                 <button class="user-card__button catalog-button" type="button">Позвать!</button>
@@ -477,35 +510,40 @@
                 </p>
                 <div class="user-card__transport user-card__transport--catalog transport">
                   <h4 class="user-card__transport-title user-card__transport-title--catalog transport__title">Транспорт</h4>
-                  <ul class="transport__list">
+                  <ul class="transport__list transport__list--catalog">
                     <li class="transport__item">
-                      <label>
-                        <input class="transport__item-checkbox transport__item-checkbox--plane" name="plane" type="checkbox" value="plane">
-                      </label>
+                      <input class="transport__item-checkbox transport__item-checkbox--plane visually-hidden" id="plane" name="plane" type="checkbox" value="plane">
+                      <label for="plane"><span class="visually-hidden">Самолет</span></label>
                     </li>
                     <li class="transport__item">
-                      <label>
-                        <input class="transport__item-checkbox transport__item-checkbox--bus" name="bus" type="checkbox" value="bus">
-                      </label>
+                      <input class="transport__item-checkbox transport__item-checkbox--bus visually-hidden" id="bus" name="bus" type="checkbox" value="bus">
+                      <label for="bus"><span class="visually-hidden">Автобус</span></label>
                     </li>
                     <li class="transport__item">
-                      <label>
-                        <input class="transport__item-checkbox transport__item-checkbox--bicycle" name="bicycle" type="checkbox" value="bicycle">
-                      </label>
+                      <input class="transport__item-checkbox transport__item-checkbox--bicycle visually-hidden" id="bicycle" name="bicycle" type="checkbox" value="bicycle">
+                      <label for="bicycle"><span class="visually-hidden">Велосипед</span></label>
                     </li>
                     <li class="transport__item">
-                      <label>
-                        <input class="transport__item-checkbox transport__item-checkbox--run" name="run" type="checkbox" value="run">
-                      </label>
+                      <input class="transport__item-checkbox transport__item-checkbox--run visually-hidden" id="run" name="run" type="checkbox" value="run">
+                      <label for="run"><span class="visually-hidden">Пешком</span></label>
                     </li>
                   </ul>
                 </div>
                 <div class="user-card__countries user-card__countries--catalog">
                   <h4 class="user-card__countries-title user-card__countries-title--catalog">Хочет посетить</h4>
                   <ul class="user-card__countries-list user-card__countries-list--catalog">
-                    <li class="user-card__countries-item flag-icon flag-icon--usa"><span class="country-name">США</span></li>
-                    <li class="user-card__countries-item flag-icon flag-icon--australia"><span class="country-name">Австралия</span></li>
-                    <li class="user-card__countries-item flag-icon flag-icon--dominica"><span class="country-name">Доминика</span></li>
+                    <li class="user-card__countries-item">
+                      <span class="flag-icon flag-icon--usa"></span>
+                      <span class="user-card__country-name user-card__country-name--catalog">США</span>
+                    </li>
+                    <li class="user-card__countries-item">
+                      <span class="flag-icon flag-icon--australia"></span>
+                      <span class="user-card__country-name user-card__country-name--catalog">Австралия</span>
+                    </li>
+                    <li class="user-card__countries-item">
+                      <span class="flag-icon flag-icon--dominica"></span>
+                      <span class="user-card__country-name user-card__country-name--catalog">Доминика</span>
+                    </li>
                   </ul>
                 </div>
                 <button class="user-card__button catalog-button" type="button">Позвать!</button>
@@ -526,34 +564,36 @@
                 </p>
                 <div class="user-card__transport user-card__transport--catalog transport">
                   <h4 class="user-card__transport-title user-card__transport-title--catalog transport__title">Транспорт</h4>
-                  <ul class="transport__list">
+                  <ul class="transport__list transport__list--catalog">
                     <li class="transport__item">
-                      <label>
-                        <input class="transport__item-checkbox transport__item-checkbox--plane" name="plane" type="checkbox" value="plane">
-                      </label>
+                      <input class="transport__item-checkbox transport__item-checkbox--plane visually-hidden" id="plane" name="plane" type="checkbox" value="plane">
+                      <label for="plane"><span class="visually-hidden">Самолет</span></label>
                     </li>
                     <li class="transport__item">
-                      <label>
-                        <input class="transport__item-checkbox transport__item-checkbox--bus" name="bus" type="checkbox" value="bus">
-                      </label>
+                      <input class="transport__item-checkbox transport__item-checkbox--bus visually-hidden" id="bus" name="bus" type="checkbox" value="bus">
+                      <label for="bus"><span class="visually-hidden">Автобус</span></label>
                     </li>
                     <li class="transport__item">
-                      <label>
-                        <input class="transport__item-checkbox transport__item-checkbox--bicycle" name="bicycle" type="checkbox" value="bicycle">
-                      </label>
+                      <input class="transport__item-checkbox transport__item-checkbox--bicycle visually-hidden" id="bicycle" name="bicycle" type="checkbox" value="bicycle">
+                      <label for="bicycle"><span class="visually-hidden">Велосипед</span></label>
                     </li>
                     <li class="transport__item">
-                      <label>
-                        <input class="transport__item-checkbox transport__item-checkbox--run" name="run" type="checkbox" value="run">
-                      </label>
+                      <input class="transport__item-checkbox transport__item-checkbox--run visually-hidden" id="run" name="run" type="checkbox" value="run">
+                      <label for="run"><span class="visually-hidden">Пешком</span></label>
                     </li>
                   </ul>
                 </div>
                 <div class="user-card__countries user-card__countries--catalog">
                   <h4 class="user-card__countries-title user-card__countries-title--catalog">Хочет посетить</h4>
                   <ul class="user-card__countries-list user-card__countries-list--catalog">
-                    <li class="user-card__countries-item flag-icon flag-icon--uk"><span class="country-name">Великобритания</span></li>
-                    <li class="user-card__countries-item flag-icon flag-icon--germany"><span class="country-name">Германия</span></li>
+                    <li class="user-card__countries-item">
+                      <span class="flag-icon flag-icon--uk"></span>
+                      <span class="user-card__country-name user-card__country-name--catalog">Великобритания</span>
+                    </li>
+                    <li class="user-card__countries-item">
+                      <span class="flag-icon flag-icon--germany"></span>
+                      <span class="user-card__country-name user-card__country-name--catalog">Германия</span>
+                    </li>
                   </ul>
                 </div>
                 <button class="user-card__button catalog-button" type="button">Позвать!</button>
@@ -595,7 +635,7 @@
         </section>
       </div>
     </main>
-    <footer class="page__footer page-footer">
+    <footer class="page__footer page__footer--catalog page-footer">
       <a class="page-footer__logo logo">
         <img src="./img/logo-mobile-blue@1x.png" width="100" height="15" alt="Погнали?" >
       </a>

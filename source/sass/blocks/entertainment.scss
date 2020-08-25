@@ -2,11 +2,21 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 18px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    margin-bottom: 45px;
+  }
 }
 
 .entertainment__country-name {
   font-weight: 500;
   font-size: 18px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    font-size: 30px;
+  }
 }
 
 .entertainment__country-plan {
@@ -16,4 +26,9 @@
   min-height: 220px;
   font-size: 16px;
   line-height: 22px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    min-height: 140px;
+  }
 }

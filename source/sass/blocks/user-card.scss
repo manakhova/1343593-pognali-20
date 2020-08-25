@@ -7,8 +7,9 @@
 
   &--catalog {
     position: relative;
+    min-height: 390px;
     box-sizing: border-box;
-    padding: 15px;
+    padding: 11px 15px 20px;
   }
 
   //Tablet & Desktop
@@ -27,7 +28,7 @@
   padding: 24px 45px;
 
   &--catalog {
-    padding: 14px 25px;
+    padding: 0;
   }
 }
 
@@ -60,7 +61,7 @@
   margin: 0 auto;
 
   &--catalog {
-    margin-right: 0;
+    margin-right: 20px;
   }
 }
 
@@ -72,24 +73,45 @@
   margin-bottom: 5px;
 
   &--catalog {
-    margin-top: 45px;
+    margin-top: 60px;
+    padding-left: 10px;
     text-align: left;
   }
 }
 
 .user-card__transport {
-  background-color: $special-grey;
+  color: $special-grey;
 
   &--catalog {
-    order: 2;
+    order: 3;
+    padding-left: 10px;
+  }
+}
+
+.user-card__transport-title {
+  &--catalog {
+    margin: 0;
+    margin-bottom: 15px;
   }
 }
 
 .user-card__countries {
-  background-color: $special-grey;
+  color: $special-grey;
   order: -1;
   margin-top: -58px;
   margin-bottom: 5px;
+
+  &--catalog {
+    order: 2;
+    margin: 0;
+    padding-left: 10px;
+  }
+}
+
+.user-card__countries-title {
+  &--catalog {
+    margin: 0;
+  }
 }
 
 .user-card__countries-list {
@@ -99,9 +121,28 @@
 
   &--catalog {
     display: block;
+    margin: 18px 0 5px;
+  }
+}
+
+.user-card__countries-item {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.user-card__country-name {
+  display: none;
+
+  &--catalog {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-left: 15px;
   }
 }
 
 .user-card__button {
-  order: 3;
+  order: 4;
+  margin-top: 53px;
 }

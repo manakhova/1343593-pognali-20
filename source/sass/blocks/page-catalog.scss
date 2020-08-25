@@ -2,8 +2,10 @@
 @media (min-width: 1440px) {
   .page-catalog {
     background-color: $basic-blue-light;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 285px;
+    column-gap: 17px;
+    padding: 60px;
   }
 }

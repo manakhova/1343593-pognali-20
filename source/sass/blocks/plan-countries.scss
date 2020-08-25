@@ -1,10 +1,11 @@
 .plan-countries__input,
 .plan-countries__flag {
   box-sizing: border-box;
-  padding: 15px 5px;
+  padding: 13px 30px 12px 10px;
   margin-bottom: 22px;
   border: 1px solid #cbced9;
   border-radius: 4px;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
@@ -14,6 +15,28 @@
   }
 }
 
+.plan-countries__input {
+  //Tablet
+  @media (min-width: 768px) {
+    min-width: 369px;
+    margin-bottom: 15px;
+    padding: 23px;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    min-width: 730px;
+  }
+}
+
 .plan-countries__flag {
-  padding: 11px 9px;
+  padding: 11px 13px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    margin-bottom: 15px;
+    padding: 25px 55px;
+  }
 }

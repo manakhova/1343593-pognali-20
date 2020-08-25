@@ -7,6 +7,18 @@
 
   &--catalog {
     background-color: $basic-blue-light;
+
+    //Desktop
+    @media (min-width: 1440px) {
+      margin: 0;
+    }
+
+    //Desktop
+    @media (min-width: 1440px) {
+      grid-template-columns: auto;
+      grid-column: 1;
+      grid-row: 1 / span 2;
+    }
   }
 }
 
@@ -91,7 +103,19 @@
   }
 
   &--catalog {
-    display: block;
+    grid-gap: 13px;
+    padding: 25px 25px 100px;
+
+    //Tablet
+    @media (min-width: 768px) {
+      grid-template-columns: auto;
+    }
+
+    //Desktop
+    @media (min-width: 1440px) {
+      grid-column: 1;
+      grid-row: 1 / span 2;
+    }
   }
 }
 

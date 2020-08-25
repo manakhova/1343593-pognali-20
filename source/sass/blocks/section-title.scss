@@ -3,12 +3,17 @@
   font-weight: 700;
   color: $special_orange;
 
-  &--form {
-    color: $basic-blue;
-  }
-
   //Tablet & Desktop
   @media (min-width: 768px) {
     font-size: 45px;
+  }
+
+  &--form {
+    color: $basic-blue;
+
+    //Tablet & Desktop
+    @media (min-width: 768px) {
+      font-size: 36px;
+    }
   }
 }

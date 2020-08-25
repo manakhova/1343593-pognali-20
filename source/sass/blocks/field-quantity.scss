@@ -2,12 +2,38 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  &--companions {
+    //Tablet
+    @media (min-width: 768px) and (max-width: 1439px) {
+      order: 1;
+    }
+  }
+
+  &--days {
+    //Tablet
+    @media (min-width: 768px) and (max-width: 1439px) {
+      order: 3;
+    }
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    justify-content: flex-start;
+    align-items: baseline;
+  }
 }
 
 .field-quantity__title {
   font-weight: 500;
   text-transform: uppercase;
   margin: 0;
+
+  //Tablet
+  @media (min-width: 768px) {
+    font-size: 20px;
+    letter-spacing: 0.1em;
+  }
 }
 
 .field-quantity__measure {
@@ -15,13 +41,37 @@
   opacity: 0.3;
   font-weight: 500;
   text-transform: uppercase;
+
+  //Tablet
+  @media (min-width: 768px) {
+    font-size: 20px;
+    letter-spacing: 0.1em;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    order: 3;
+  }
 }
 
 .field-quantity__number {
   position: relative;
   margin-top: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   flex-grow: 1;
+
+  //Tablet
+  @media (min-width: 768px) {
+    min-width: 400px;
+    margin-top: 23px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    margin: 0;
+    order: 2;
+    flex-grow: 0;
+  }
 }
 
 .field-quantity__input {
@@ -31,6 +81,11 @@
   width: 100%;
   border: 1px solid #cbced9;
   border-radius: 4px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    padding: 35px;
+  }
 }
 
 .field-quantity__button {
