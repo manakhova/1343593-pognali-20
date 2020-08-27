@@ -169,20 +169,20 @@
             <h4 class="profile__transport-title transport__title transport__title--form">Транспорт</h4>
             <ul class="transport__list transport__list--form">
               <li class="transport__item transport__item--form">
-                <input class="transport__item-checkbox transport__item-checkbox--plane visually-hidden" id="plane" name="plane" type="checkbox" value="plane">
-                <label for="plane"><span class="visually-hidden">Самолет</span></label>
+                <input class="visually-hidden" id="plane" name="transport" type="checkbox" value="plane">
+                <label class="transport__item-label transport__item-label--plane" for="plane"><span class="visually-hidden">Самолет</span></label>
               </li>
               <li class="transport__item transport__item--form">
-                <input class="transport__item-checkbox transport__item-checkbox--bus visually-hidden" id="bus" name="bus" type="checkbox" value="bus">
-                <label for="bus"><span class="visually-hidden">Автобус</span></label>
+                <input class="visually-hidden" id="bus" name="transport" type="checkbox" value="bus">
+                <label class="transport__item-label transport__item-label--bus" for="bus"><span class="visually-hidden">Автобус</span></label>
               </li>
               <li class="transport__item transport__item--form">
-                <input class="transport__item-checkbox transport__item-checkbox--bicycle visually-hidden" id="bicycle" name="bicycle" type="checkbox" value="bicycle">
-                <label for="bicycle"><span class="visually-hidden">Велосипед</span></label>
+                <input class="visually-hidden" id="bicycle" name="transport" type="checkbox" value="bicycle">
+                <label class="transport__item-label transport__item-label--bicycle" for="bicycle"><span class="visually-hidden">Велосипед</span></label>
               </li>
               <li class="transport__item transport__item--form">
-                <input class="transport__item-checkbox transport__item-checkbox--run visually-hidden" id="run" name="run" type="checkbox" value="run">
-                <label for="run"><span class="visually-hidden">Пешком</span></label>
+                <input class="visually-hidden" id="run" name="transport" type="checkbox" value="run">
+                <label class="transport__item-label transport__item-label--run" for="run"><span class="visually-hidden">Пешком</span></label>
               </li>
             </ul>
           </div>
@@ -230,7 +230,7 @@
               <div class="add-plans__item">
                 <div class="add-plans__item-info">
                   <h3 class="add-plans__item-title">Шаг 1. <br> Даты пребывания</h3>
-                  <p class="add-plans__item-text text text--form text--black">
+                  <p class="add-plans__item-text text text--form text--grey">
                     Укажите предпочтительное количество попутчиков, которых
                     вы хотели бы позвать в поездку и ее предполагаемую длительность.
                   </p>
@@ -356,7 +356,7 @@
               <div class="add-plans__item">
                 <div class="add-plans__item-info">
                   <h3 class="add-plans__item-title">Шаг 2. <br> Маршрут</h3>
-                  <p class="add-plans__item-text text text--form text--black">
+                  <p class="add-plans__item-text text text--form text--grey">
                     Укажите страны, которые вы хотели посетить.
                     Это может быть одна или сразу несколько.
                   </p>
@@ -513,7 +513,7 @@
               <div class="add-plans__item">
                 <div class="add-plans__item-info">
                   <h3 class="add-plans__item-title">Шаг 3. <br> Развлечения</h3>
-                  <p class="add-plans__item-text text text--form text--black">
+                  <p class="add-plans__item-text text text--form text--grey">
                     Наконец, расскажите о своих планах времяпровождения.
                     Можно писать в свободной форме и ставить тэги.
                   </p>

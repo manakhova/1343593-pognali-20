@@ -9,8 +9,8 @@
 
   //Desktop
   @media (min-width: 1440px) {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: 40px 42px 17px;
   }
 }
@@ -62,11 +62,6 @@
     margin: 0;
     font-size: 20px;
     letter-spacing: 0.1em;
-  }
-
-  //Desktop
-  @media (min-width: 1440px) {
-    margin-right: 80px;
   }
 }
 

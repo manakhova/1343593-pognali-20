@@ -17,7 +17,7 @@
 
   //Desktop
   @media (min-width: 1440px) {
-    margin: 83px 0 10px;
+    margin: 30px 0 10px;
   }
 }
 
@@ -40,7 +40,17 @@
   position: absolute;
   background-color: $white;
   border: none;
-  padding: 12px 0;
+  padding: 10px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    padding: 34px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    padding: 34px;
+  }
 
   &--prev {
     top: 1px;
@@ -94,13 +104,22 @@
 }
 
 .calendar__month-item {
+  position: relative;
   border: 1px solid #d6d9e6;
   box-sizing: border-box;
   padding: 4px 0;
   font-weight: 400;
 
-  &:hover {
-    border: 2px solid #ff5c23;
+  //Tablet
+  @media (min-width: 768px) {
+    padding: 23px 15px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    padding-top: 10px;
+    padding-bottom: 38px;
+    text-align: left;
   }
 
   &--disabled {
@@ -113,15 +132,25 @@
     color: $white;
   }
 
-  //Tablet
-  @media (min-width: 768px) {
-    padding: 23px 15px;
+  &:not(.calendar__month-item--disabled):hover {
+    background-color: $basic-blue;
+    color: $white;
   }
 
-  //Desktop
-  @media (min-width: 1440px) {
-    padding-top: 10px;
-    padding-bottom: 38px;
-    text-align: left;
+  &:not(.calendar__month-item--disabled):hover::after {
+    content: "";
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    left: -1px;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    border: 2px solid $special-red;
+
+    //Tablet
+    @media (min-width: 768px) {
+      border-width: 4px;
+    }
   }
 }

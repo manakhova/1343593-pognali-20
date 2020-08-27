@@ -86,13 +86,21 @@
 
 .add-plans__item-text {
   margin: 0;
+
+  //Desktop
+  @media (min-width: 1440px) {
+    margin-bottom: 50px;
+  }
 }
 
 .add-plans__item-main {
   //Tablet
   @media (min-width: 768px) {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+  }
+  //Desktop
+  @media (min-width: 1440px) {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -117,6 +125,16 @@
   @media (min-width: 768px) and (max-width: 1439px) {
     order: 2;
     margin-top: 30px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0;
+    margin-top: 28px;
+    align-self: center;
+    justify-self: end;
   }
 }
 

@@ -2,5 +2,26 @@
   display: flex;
   list-style: none;
   padding: 0;
-  margin: 40px auto;
+  margin: 15px auto;
+}
+
+.social__item {
+  background-color: $basic-yellow;
+  border-radius: 25px;
+
+  &:hover {
+    background-color: $special-yellow-dark;
+  }
+
+  &--facebook {
+    padding: 12px 18px 5px 17px;
+  }
+
+  &--vkontakte {
+    padding: 14px 11px 9px 12px;
+  }
+
+  &--instagram {
+    padding: 14px 14px 7px;
+  }
 }
