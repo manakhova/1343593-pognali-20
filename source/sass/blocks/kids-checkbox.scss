@@ -1,0 +1,61 @@
+.kids-checkbox {
+  margin-left: 40px;
+
+  //Tablet
+  @media (min-width: 768px) and (max-width: 1439px) {
+    margin-left: 62px;
+  }
+}
+
+.kids-checkbox label {
+  position: relative;
+  display: block;
+
+  //Tablet
+  @media (min-width: 768px) {
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+}
+
+.kids-checkbox__checkbox + label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  left: -40px;
+  top: -4px;
+  height: 26px;
+  width: 26px;
+  background-color: $white;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    height: 36px;
+    width: 36px;
+    left: -59px;
+    top: -7px;
+  }
+}
+
+.kids-checkbox__checkbox:checked + label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  left: -30px;
+  top: 5px;
+  height: 8px;
+  width: 8px;
+  background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 12 12' style='enable-background:new 0 0 12 12;' xml:space='preserve'%3E%3Cpolygon points='12,0 3.8,8 0,4.3 0,8.3 3.8,12 12,4 '/%3E%3C/svg%3E");
+  border-radius: 4px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    left: -45px;
+    top: 10px;
+  }
+}

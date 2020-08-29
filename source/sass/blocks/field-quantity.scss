@@ -1,13 +1,53 @@
 .field-quantity {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  &--companions {
+    //Tablet
+    @media (min-width: 768px) and (max-width: 1439px) {
+      order: 1;
+    }
+    //Desktop
+    @media (min-width: 1440px) {
+      margin-top: 33px;
+    }
+  }
+
+  &--days {
+    //Tablet
+    @media (min-width: 768px) and (max-width: 1439px) {
+      order: 3;
+    }
+    //Desktop
+    @media (min-width: 1440px) {
+      margin-top: 11px;
+    }
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: baseline;
+    grid-column: 1;
+  }
 }
 
 .field-quantity__title {
   font-weight: 500;
   text-transform: uppercase;
   margin: 0;
+
+  //Tablet
+  @media (min-width: 768px) and (max-width: 1439px) {
+    font-size: 20px;
+    letter-spacing: 0.1em;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    font-size: 20px;
+    min-width: 221px;
+  }
 }
 
 .field-quantity__measure {
@@ -15,13 +55,40 @@
   opacity: 0.3;
   font-weight: 500;
   text-transform: uppercase;
+  justify-self: end;
+
+  //Tablet
+  @media (min-width: 768px) {
+    font-size: 20px;
+    letter-spacing: 0.1em;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    order: 3;
+    margin-left: 33px;
+  }
 }
 
 .field-quantity__number {
   position: relative;
   margin-top: 8px;
-  margin-bottom: 20px;
-  flex-grow: 1;
+  margin-bottom: 0;
+  grid-column: 1 / span 2;
+
+  //Tablet
+  @media (min-width: 768px) {
+    min-width: 400px;
+    margin-top: 23px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    grid-column: 2;
+    margin: 0;
+    order: 2;
+    min-width: 180px;
+  }
 }
 
 .field-quantity__input {
@@ -31,6 +98,17 @@
   width: 100%;
   border: 1px solid #cbced9;
   border-radius: 4px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    padding: 35px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    padding: 35px 17px;
+    box-sizing: border-box;
+  }
 }
 
 .field-quantity__button {
@@ -47,5 +125,15 @@
   &--more {
     top: 1px;
     right: 2px;
+  }
+
+  //Tablet
+  @media (min-width: 768px) {
+    padding: 13px 14px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    padding: 27px 18px;
   }
 }

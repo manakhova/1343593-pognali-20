@@ -1,7 +1,7 @@
 .catalog-button {
   border: none;
   border-radius: 25px;
-  padding: 14px;
+  padding: 13px;
   background-color: $basic-yellow;
   color: $basic-blue-dark;
   font-weight: 700;
@@ -9,6 +9,15 @@
 
   &--filter {
     background-color: $white;
+    width: 100%;
+
+    //Tablet
+    @media (min-width: 768px) and (max-width: 1439px) {
+      margin-top: 75px;
+      margin-right: 3px;
+      padding: 18px;
+      min-width: 615px;
+    }
   }
 
   &--transparent {

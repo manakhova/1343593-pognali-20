@@ -1,25 +1,56 @@
+.calendar {
+  display: flex;
+  flex-direction: column;
+}
+
 .calendar__month {
   position: relative;
   display: flex;
-  margin: 23px auto;
+  margin: 23px 0 21px;
   border-top: 1px solid #d6d9e6;
   border-bottom: 1px solid #d6d9e6;
+
+  //Tablet
+  @media (min-width: 768px) {
+    margin: 54px 0 30px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    margin: 30px 0 10px;
+  }
 }
 
 .calendar__month-name {
   display: inline-block;
   flex-grow: 1;
   text-align: center;
-  padding: 12px;
+  padding: 10px;
   font-weight: 700;
   font-size: 20px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    font-size: 36px;
+    padding: 34px;
+  }
 }
 
 .calendar__button {
   position: absolute;
   background-color: $white;
   border: none;
-  padding: 12px 0;
+  padding: 10px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    padding: 34px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    padding: 34px;
+  }
 
   &--prev {
     top: 1px;
@@ -37,7 +68,18 @@
   justify-content: space-between;
   list-style: none;
   padding: 0;
-  margin: 20px 12px 10px;
+  margin: 0 12px 4px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    justify-content: space-around;
+    margin: 0 12px 7px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    margin: 0 12px 20px;
+  }
 }
 
 .calendar__week-item {
@@ -46,6 +88,11 @@
 
   &--weekend {
     color: $special-red;
+  }
+
+  //Tablet
+  @media (min-width: 768px) {
+    font-size: 18px;
   }
 }
 
@@ -57,13 +104,22 @@
 }
 
 .calendar__month-item {
+  position: relative;
   border: 1px solid #d6d9e6;
   box-sizing: border-box;
   padding: 4px 0;
   font-weight: 400;
 
-  &:hover {
-    border: 2px solid #ff5c23;
+  //Tablet
+  @media (min-width: 768px) {
+    padding: 23px 15px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    padding-top: 10px;
+    padding-bottom: 38px;
+    text-align: left;
   }
 
   &--disabled {
@@ -74,5 +130,27 @@
   &--chosen {
     background-color: $basic-blue;
     color: $white;
+  }
+
+  &:not(.calendar__month-item--disabled):hover {
+    background-color: $basic-blue;
+    color: $white;
+  }
+
+  &:not(.calendar__month-item--disabled):hover::after {
+    content: "";
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    left: -1px;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    border: 2px solid $special-red;
+
+    //Tablet
+    @media (min-width: 768px) {
+      border-width: 4px;
+    }
   }
 }

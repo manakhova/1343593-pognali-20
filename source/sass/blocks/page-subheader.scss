@@ -1,17 +1,43 @@
 .page-subheader {
-  padding: 25px;
+  position: relative;
+  z-index: 2;
+  padding: 35px 25px 17px;
+  border-radius: 0 0 30px 30px;
+  background-color: $basic-blue-medium;
 
   //Tablet
   @media (min-width: 768px) {
-    padding: 25px 40px;
+    padding: 108px 73px 88px;
+    display: flex;
+    justify-content: space-between;
   }
 
   //Desktop
   @media (min-width: 1440px) {
-    padding: 25px 125px;
+    padding: 105px 125px 90px;
   }
 }
 
 .page-subheader__title {
   font-size: 36px;
+  margin: 0;
+
+  //Tablet & Desktop
+  @media (min-width: 768px) {
+    font-size: 60px;
+  }
+}
+
+.page-subheader__link {
+  display: none;
+
+  //Tablet & Desktop
+  @media (min-width: 768px) {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $white;
+  }
 }

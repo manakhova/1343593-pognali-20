@@ -1,3 +1,62 @@
 .page-filter {
+  background-color: $basic-blue-light;
+}
+
+.page-filter__button {
+  border: none;
+  background-color: $basic-blue-medium-light;
+  width: 100%;
+  padding: 20px 25px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    padding: 61px 25px;
+  }
+}
+
+.page-filter__button-name {
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $basic-blue-medium;
+
+  //Tablet
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.page-filter__button-icon:nth-of-type(1) {
+  //Tablet
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.page-filter__button-icon-title {
+  display: none;
+
+  //Tablet
+  @media (min-width: 768px) {
+    display: inline-block;
+    font-family: "Blogger Sans", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $basic-blue-medium;
+    margin-right: 15px;
+  }
+}
+
+.page-filter__dropdown {
+  //Tablet
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.page-filter__dropdown-content-button {
   display: none;
 }

@@ -24,7 +24,7 @@
     }
   }
 
-  &--black {
+  &--grey {
     color: $special-grey;
   }
 
@@ -32,5 +32,13 @@
   @media (min-width: 768px) {
     font-size: 28px;
     line-height: 33px;
+  }
+
+  &--form {
+    //Tablet
+    @media (min-width: 768px) {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 }

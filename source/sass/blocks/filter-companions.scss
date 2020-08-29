@@ -3,15 +3,10 @@
 }
 
 .filter-companions__info {
-  padding: 25px;
+  padding: 20px 25px;
 
   //Tablet
-  @media (min-width: 768px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     padding: 40px;
-  }
-
-  //Desktop
-  @media (min-width: 1440px) {
-    padding: 60px;
   }
 }
