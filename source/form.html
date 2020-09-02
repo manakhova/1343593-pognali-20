@@ -30,121 +30,91 @@
     <script src="../node_modules/pixel-glass/script.js"></script>
     <link href="./css/style.css" rel="stylesheet">
   </head>
-  <body class="page__body">
-    <header class="page__header page-header">
+  <body class="page__body page__body--catalog">
+    <header class="page__header page-header page-header--catalog page-header--nojs">
       <a class="page-header__logo logo" href="index.html">
         <img class="logo__image" src="./img/logo-mobile-white@1x.png" width="100" height="15" alt="Погнали?">
       </a>
-      <div class="dropdown">
-        <button class="navigation-button dropdown__button" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="dropdown__content">
-          <nav class="dropdown__content-nav main-navigation">
-            <ul class="main-navigation__list site-navigation">
-              <li class="site-navigation__item">
-                <a class="site-navigation__link" href="#">О сервисе</a>
-              </li>
-              <li class="site-navigation__item">
-                <a class="site-navigation__link" href="form.html">Направления</a>
-              </li>
-              <li class="site-navigation__item">
-                <a class="site-navigation__link" href="catalog.html">Попутчики</a>
-              </li>
-            </ul>
-            <div class="main-navigation__actions contacts">
-              <button class="contacts__item contacts__item--phone button">
-                <span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-                  <g>
-                    <g id="UrwUhy_1_">
-                      <g>
-                        <path d="M12.6,18c-0.3,0-0.5,0-0.8,0c-3.6-0.4-6.2-2.1-8.1-4.3C1.8,11.6,0.3,8.8,0,5c0-0.3,0-0.7,0-1
-                          c0.1-0.7,0.4-1.1,0.8-1.5C1.2,2,2,1.4,2.6,1.3c0.5,0,1.3,0.3,1.6,0.8c0.3,0.4,0.4,1.2,0.6,1.8c0.1,0.6,0.4,1.4,0.4,2
-                          C5,6.8,3.9,7.2,3.5,7.8c1.1,2.8,3,4.8,5.4,6.2c0.6-0.3,1.2-1.4,2-1.4c0.3,0,0.7,0.2,1,0.3c0.3,0.1,0.6,0.2,1,0.4
-                          c0.5,0.2,1.4,0.5,1.7,0.9c0.3,0.4,0.5,1.2,0.4,1.7C14.9,16.7,13.4,17.7,12.6,18z"/>
-                      </g>
-                    </g>
-                    <path class="st0" d="M9.1,1.1c4.3,0,7.8,3.6,7.8,8H18c0-5-4-9.1-8.9-9.1L9.1,1.1z"/>
-                    <path class="st0" d="M9.1,6.9V8c0.6,0,1,0.5,1,1.1h1.1C11.2,7.9,10.3,6.9,9.1,6.9z"/>
-                    <path class="st0" d="M9.1,4.6c2.4,0,4.4,2,4.4,4.5h1.2c0-3.1-2.5-5.7-5.5-5.7V4.6L9.1,4.6z"/>
-                  </g>
-                  </svg>
-                </span>
-              </button>
-              <button class="contacts__item contacts__item--mail button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 14">
-                <g>
-                  <g>
-                    <g>
-                      <path d="M14.9,1.8c1.2-1,0.9-1.8-0.7-1.8H3.7C2.2,0,1.9,0.8,3.1,1.8l3.7,3.1c1.2,1,3.2,1,4.4,0L14.9,1.8z"/>
-                    </g>
-                    <g>
-                      <path d="M11.9,7.1c-1.2,1-2.2,1.8-2.2,1.8c0,0,0,0,0,0C9.6,9,9.5,9,9.4,9c0,0-0.1,0-0.1,0C9.2,9.1,9.1,9.1,9,9.1
-                        c0,0,0,0,0,0c0,0,0,0,0,0l0,0c0,0,0,0,0,0c-0.1,0-0.2,0-0.3-0.1c0,0-0.1,0-0.1,0C8.5,9,8.4,9,8.3,8.9c0,0,0,0,0,0
-                        c0,0-1-0.8-2.2-1.8L2.2,3.8C1,2.8,0,3.3,0,4.8v6.3C0,12.7,1.3,14,2.8,14h12.3c1.6,0,2.8-1.3,2.8-2.8V4.8c0-1.6-1-2-2.2-1
-                        L11.9,7.1z"/>
-                    </g>
-                  </g>
-                </g>
-                </svg>
-              </button>
-              <button class="contacts__item contacts__item--authorization button">
-                Авторизация
-              </button>
-            </div>
-          </nav>
-          <div class="dropdown__social social">
-            <ul class="dropdown__social-list social__list">
-              <li class="social__item social__item--facebook">
-                <a class="social__link" href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="21" viewBox="0 0 11 21">
-                  <g>
-                    <path d="M7.8,21H2.2v-9.8H0V6.4h2.1C2,4.2,2.4,2.6,3.4,1.5C4.2,0.6,5.5,0.1,7.1,0L11,0v4.7H7.9C7.8,4.9,7.7,5.5,7.7,6.4H11v4.8H7.8
-                      V21z M3.4,19.9h3.1v-9.8h3.2V7.5H6.5l0-0.6c0-1.5,0-2.9,0.8-3.4l0.2-0.1h2.3V1.1H7.1C5.9,1.2,4.9,1.6,4.3,2.3
-                      C3.5,3.2,3.2,4.8,3.4,6.9l0.1,0.6H1.2v2.6h2.2V19.9z"/>
-                  </g>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item social__item--vkontakte">
-                <a class="social__link" href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg"width="22" height="12" viewBox="0 0 30 15.8">
-                  <g>
-                    <path d="M23.9,15.8c-0.4,0-1.2-0.1-2.1-0.6c-0.6-0.4-1.2-1-1.8-1.5c-0.4-0.4-1.2-1.2-1.4-1.2c-0.3,0.1-0.5,0.9-0.5,1.6
-                      c0,0.1,0,0.8-0.5,1.2c-0.4,0.4-1.1,0.5-1.2,0.5l-1.9,0c-1,0-4.4-0.2-7.4-3c-3.7-3.4-6.8-9.8-7-10.1C0,2.2-0.1,1.5,0.3,1.1
-                      c0.4-0.4,1.1-0.5,1.4-0.5l4.1,0l0.1,0c0.1,0,0.6,0.1,1,0.3c0.4,0.2,0.6,0.7,0.6,0.7c0,0,0.6,1.4,1.5,2.7c1.3,2,1.9,2.5,2.1,2.6
-                      c0.2-0.4,0.3-1.7,0.2-2.9c0-0.5-0.1-1.1-0.3-1.3c-0.1-0.1-0.4-0.3-0.8-0.3L9.5,1.8c-0.1-0.7,0.6-1.2,1.1-1.4
-                      C11.3,0.1,12.4,0,13.7,0l0.7,0c1.2,0,1.6,0.1,2.1,0.2c1.7,0.4,1.6,1.7,1.6,3.3c0,0.5,0,1,0,1.6c0,0.2,0,0.3,0,0.5
-                      c0,0.4,0,1,0.1,1.3c0.2-0.1,0.9-0.7,2.1-2.5c0.8-1.2,1.4-2.5,1.5-2.8l0,0c0.2-0.4,0.6-0.9,1.6-0.9l4.3,0c0,0,0.2,0,0.4,0
-                      c1,0,1.6,0.3,1.8,0.9c0.3,0.6,0.2,1.7-2.4,4.6c-0.4,0.4-0.7,0.8-1,1.1c-0.6,0.7-1.2,1.4-1.2,1.6C25.4,9,26,9.5,26.6,10
-                      c1.5,1.2,2.5,2.3,3,3.1c0.5,0.8,0.4,1.3,0.3,1.7c-0.4,0.9-1.6,1-1.9,1l-3.8,0C24.1,15.8,24.1,15.8,23.9,15.8z M18.6,10.9
-                      c0.9,0,1.7,0.8,2.5,1.6c0.5,0.5,1,1,1.5,1.3c0.7,0.4,1.3,0.4,1.4,0.4l0.1,0l3.8,0c0.2,0,0.4-0.1,0.5-0.1c0,0,0-0.1-0.1-0.2
-                      c-0.4-0.7-1.4-1.7-2.7-2.7c-1.2-1-1.8-1.5-1.9-2.2c-0.1-0.8,0.5-1.4,1.6-2.7c0.3-0.3,0.6-0.7,1-1.1c1.6-1.8,2-2.6,2.1-3
-                      c-0.2,0-0.6,0-0.7,0l-4.4,0c-0.2,0-0.2,0-0.2,0c-0.2,0.4-0.8,1.8-1.6,3c-1.9,2.8-2.8,3.2-3.4,3.2c-0.2,0-0.4,0-0.6-0.1
-                      c-1-0.6-1-1.8-0.9-2.8c0-0.1,0-0.3,0-0.4c0-0.6,0-1.2,0-1.7c0.1-1.7,0-1.7-0.4-1.8c-0.4-0.1-0.7-0.1-1.9-0.2l-0.7,0
-                      c-0.6,0-1.3,0-1.9,0.1c0.1,0.1,0.2,0.2,0.3,0.3c0.6,0.7,0.6,2,0.6,2.2c0.1,1.6,0.1,3.8-1,4.3c-0.2,0.1-0.4,0.1-0.6,0.1
-                      c-0.9,0-1.9-0.9-3.4-3.3C6.8,3.9,6.1,2.4,6.1,2.3c0,0-0.1-0.1-0.1-0.1C5.9,2.2,5.8,2.1,5.7,2.1l-4,0c0,0,0,0-0.1,0
-                      C2.2,3.3,5,8.7,8.1,11.6c2.7,2.5,5.8,2.6,6.4,2.6l1.9,0c0,0,0.2-0.1,0.3-0.1c0,0,0-0.1,0-0.1c0-0.3,0-2.6,1.6-3
-                      C18.4,10.9,18.5,10.9,18.6,10.9z"/>
-                  </g>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item social__item--instagram">
-                <a class="social__link" href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"viewBox="0 0 23 23">
-                  <path class="st0" d="M17,1.5c2.5,0,4.5,2,4.5,4.5v11c0,2.5-2,4.5-4.5,4.5H6c-2.5,0-4.5-2-4.5-4.5V6c0-2.5,2-4.5,4.5-4.5L17,1.5
-                    M17,0H6C2.7,0,0,2.7,0,6v11c0,3.3,2.7,6,6,6h11c3.3,0,6-2.7,6-6V6C23,2.7,20.3,0,17,0L17,0z"/>
-                  <path class="st0" d="M11.5,7.1c2.4,0,4.4,2,4.4,4.4c0,2.4-2,4.4-4.4,4.4c-2.4,0-4.4-2-4.4-4.4C7.1,9.1,9.1,7.1,11.5,7.1 M11.5,5.6
-                    c-3.3,0-5.9,2.7-5.9,5.9s2.7,5.9,5.9,5.9s5.9-2.7,5.9-5.9S14.8,5.6,11.5,5.6L11.5,5.6z"/>
-                  <circle class="st0" cx="17.6" cy="5.4" r="1.3"/>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+      <button class="page-header__button page-header__button--closed" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="page-header__navigation site-navigation">
+        <li class="site-navigation__item site-navigation__item--scroll">
+          <a class="site-navigation__link site-navigation__link--scroll" href="#">О сервисе</a>
+        </li>
+        <li class="site-navigation__item site-navigation__item--scroll">
+          <a class="site-navigation__link site-navigation__link--scroll" href="form.html">Направления</a>
+        </li>
+        <li class="site-navigation__item site-navigation__item--scroll">
+          <a class="site-navigation__link site-navigation__link--scroll" href="catalog.html">Попутчики</a>
+        </li>
+      </ul>
+      <ul class="page-header__actions contacts">
+        <li class="contacts__item contacts__item--phone contacts__item--scroll">
+          <a class="contacts__item-link contacts__item-link--scroll" href="tel:88005558628">
+            <span class="contacts__icon contacts__icon--scroll contacts__icon--phone contacts__icon--scroll-phone icon"></span>
+            <span class="contacts__tel">8 800 555-86-28</span>
+          </a>
+        </li>
+        <li class="contacts__item contacts__item--scroll">
+          <a class="contacts__item-link contacts__item-link--scroll" href="#">
+            <span class="contacts__icon contacts__icon--scroll contacts__icon--mail contacts__icon--scroll-mail icon"></span>
+            <span class="contacts__mail">mail@htmlacademy.ru</span>
+          </a>
+        </li>
+      </ul>
+      <a class="page-header__authorization page-header__authorization--scroll contacts__item-link contacts__item-link--authorization">
+        Авторизация
+      </a>
+      <div class="page-header__social social social--scroll">
+        <ul class="social__list social__list--scroll">
+          <li class="social__item social__item--scroll social__item--facebook">
+            <a class="social__link" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="21" viewBox="0 0 11 21">
+              <g>
+                <path d="M7.8,21H2.2v-9.8H0V6.4h2.1C2,4.2,2.4,2.6,3.4,1.5C4.2,0.6,5.5,0.1,7.1,0L11,0v4.7H7.9C7.8,4.9,7.7,5.5,7.7,6.4H11v4.8H7.8
+                  V21z M3.4,19.9h3.1v-9.8h3.2V7.5H6.5l0-0.6c0-1.5,0-2.9,0.8-3.4l0.2-0.1h2.3V1.1H7.1C5.9,1.2,4.9,1.6,4.3,2.3
+                  C3.5,3.2,3.2,4.8,3.4,6.9l0.1,0.6H1.2v2.6h2.2V19.9z"/>
+              </g>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item social__item--scroll social__item--vkontakte">
+            <a class="social__link" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg"width="22" height="12" viewBox="0 0 30 15.8">
+              <g>
+                <path d="M23.9,15.8c-0.4,0-1.2-0.1-2.1-0.6c-0.6-0.4-1.2-1-1.8-1.5c-0.4-0.4-1.2-1.2-1.4-1.2c-0.3,0.1-0.5,0.9-0.5,1.6
+                  c0,0.1,0,0.8-0.5,1.2c-0.4,0.4-1.1,0.5-1.2,0.5l-1.9,0c-1,0-4.4-0.2-7.4-3c-3.7-3.4-6.8-9.8-7-10.1C0,2.2-0.1,1.5,0.3,1.1
+                  c0.4-0.4,1.1-0.5,1.4-0.5l4.1,0l0.1,0c0.1,0,0.6,0.1,1,0.3c0.4,0.2,0.6,0.7,0.6,0.7c0,0,0.6,1.4,1.5,2.7c1.3,2,1.9,2.5,2.1,2.6
+                  c0.2-0.4,0.3-1.7,0.2-2.9c0-0.5-0.1-1.1-0.3-1.3c-0.1-0.1-0.4-0.3-0.8-0.3L9.5,1.8c-0.1-0.7,0.6-1.2,1.1-1.4
+                  C11.3,0.1,12.4,0,13.7,0l0.7,0c1.2,0,1.6,0.1,2.1,0.2c1.7,0.4,1.6,1.7,1.6,3.3c0,0.5,0,1,0,1.6c0,0.2,0,0.3,0,0.5
+                  c0,0.4,0,1,0.1,1.3c0.2-0.1,0.9-0.7,2.1-2.5c0.8-1.2,1.4-2.5,1.5-2.8l0,0c0.2-0.4,0.6-0.9,1.6-0.9l4.3,0c0,0,0.2,0,0.4,0
+                  c1,0,1.6,0.3,1.8,0.9c0.3,0.6,0.2,1.7-2.4,4.6c-0.4,0.4-0.7,0.8-1,1.1c-0.6,0.7-1.2,1.4-1.2,1.6C25.4,9,26,9.5,26.6,10
+                  c1.5,1.2,2.5,2.3,3,3.1c0.5,0.8,0.4,1.3,0.3,1.7c-0.4,0.9-1.6,1-1.9,1l-3.8,0C24.1,15.8,24.1,15.8,23.9,15.8z M18.6,10.9
+                  c0.9,0,1.7,0.8,2.5,1.6c0.5,0.5,1,1,1.5,1.3c0.7,0.4,1.3,0.4,1.4,0.4l0.1,0l3.8,0c0.2,0,0.4-0.1,0.5-0.1c0,0,0-0.1-0.1-0.2
+                  c-0.4-0.7-1.4-1.7-2.7-2.7c-1.2-1-1.8-1.5-1.9-2.2c-0.1-0.8,0.5-1.4,1.6-2.7c0.3-0.3,0.6-0.7,1-1.1c1.6-1.8,2-2.6,2.1-3
+                  c-0.2,0-0.6,0-0.7,0l-4.4,0c-0.2,0-0.2,0-0.2,0c-0.2,0.4-0.8,1.8-1.6,3c-1.9,2.8-2.8,3.2-3.4,3.2c-0.2,0-0.4,0-0.6-0.1
+                  c-1-0.6-1-1.8-0.9-2.8c0-0.1,0-0.3,0-0.4c0-0.6,0-1.2,0-1.7c0.1-1.7,0-1.7-0.4-1.8c-0.4-0.1-0.7-0.1-1.9-0.2l-0.7,0
+                  c-0.6,0-1.3,0-1.9,0.1c0.1,0.1,0.2,0.2,0.3,0.3c0.6,0.7,0.6,2,0.6,2.2c0.1,1.6,0.1,3.8-1,4.3c-0.2,0.1-0.4,0.1-0.6,0.1
+                  c-0.9,0-1.9-0.9-3.4-3.3C6.8,3.9,6.1,2.4,6.1,2.3c0,0-0.1-0.1-0.1-0.1C5.9,2.2,5.8,2.1,5.7,2.1l-4,0c0,0,0,0-0.1,0
+                  C2.2,3.3,5,8.7,8.1,11.6c2.7,2.5,5.8,2.6,6.4,2.6l1.9,0c0,0,0.2-0.1,0.3-0.1c0,0,0-0.1,0-0.1c0-0.3,0-2.6,1.6-3
+                  C18.4,10.9,18.5,10.9,18.6,10.9z"/>
+              </g>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item social__item--scroll social__item--instagram">
+            <a class="social__link" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"viewBox="0 0 23 23">
+              <path class="st0" d="M17,1.5c2.5,0,4.5,2,4.5,4.5v11c0,2.5-2,4.5-4.5,4.5H6c-2.5,0-4.5-2-4.5-4.5V6c0-2.5,2-4.5,4.5-4.5L17,1.5
+                M17,0H6C2.7,0,0,2.7,0,6v11c0,3.3,2.7,6,6,6h11c3.3,0,6-2.7,6-6V6C23,2.7,20.3,0,17,0L17,0z"/>
+              <path class="st0" d="M11.5,7.1c2.4,0,4.4,2,4.4,4.4c0,2.4-2,4.4-4.4,4.4c-2.4,0-4.4-2-4.4-4.4C7.1,9.1,9.1,7.1,11.5,7.1 M11.5,5.6
+                c-3.3,0-5.9,2.7-5.9,5.9s2.7,5.9,5.9,5.9s5.9-2.7,5.9-5.9S14.8,5.6,11.5,5.6L11.5,5.6z"/>
+              <circle class="st0" cx="17.6" cy="5.4" r="1.3"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
     <main class="page__main">
@@ -362,25 +332,114 @@
                   </p>
                   <div class="add-plans__item-list">
                     <ul class="add-plans__item-countries plan-countries">
-                      <li class="plan-countries__item">
-                        <label>
-                            <input class="plan-countries__input plan-countries__input--chosen" type="text" value="Босния и Герцеговина">
-                        </label>
+                      <li class="plan-countries__item plan-countries__item--chosen">
+                        <span>Босния и Герцеговина</span>
+                        <button class="plan-countries__button-choose" type="button"></button>
                       </li>
-                      <li class="plan-countries__item">
-                        <label>
-                            <input class="plan-countries__input plan-countries__input--chosen" type="text" value="Чехия">
-                        </label>
+                      <li class="plan-countries__item plan-countries__item--chosen">
+                        <span>Чехия</span>
+                        <button class="plan-countries__button-choose" type="button"></button>
                       </li>
-                      <li class="plan-countries__item">
-                        <label>
-                            <input class="plan-countries__input plan-countries__input--new" type="text" placeholder="Выберите страну">
-                        </label>
+                      <li class="plan-countries__item plan-countries__item--choose plan-countries__item--choose-active">
+                        <span>Выберите страну</span>
+                        <button class="plan-countries__button-choose" type="button"></button>
+                        <div class="plan-countries__dropdown-content plan-countries__dropdown-content--show">
+                          <ul class="plan-countries__dropdown-content-list alphabet">
+                            <li class="alphabet__item alphabet__item--selected">
+                              <button class="alphabet__button alphabet__button--selected" type="button">А</button>
+                              <ul class="alphabet__letter alphabet__letter--selected">
+                                <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Австралия</a></li>
+                                <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Австрия</a></li>
+                                <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Азербайджан</a></li>
+                                <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Албания</a></li>
+                                <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Алжир</a></li>
+                                <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Ангола</a></li>
+                                <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Андорра</a></li>
+                                <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Антигуа и Барбуда</a></li>
+                                <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Аргентина</a></li>
+                                <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Армения</a></li>
+                                <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Афганистан</a></li>
+                              </ul>
+                            </li>
+                            <li class="alphabet__item">
+                              <button class="alphabet__button" type="button">Б</button>
+                            </li>
+                            <li class="alphabet__item">
+                              <button class="alphabet__button" type="button">В</button>
+                            </li>
+                            <li class="alphabet__item">
+                              <button class="alphabet__button" type="button">Г</button>
+                            </li>
+                            <li class="alphabet__item">
+                              <button class="alphabet__button" type="button">Д</button>
+                            </li>
+                            <li class="alphabet__item">
+                              <button class="alphabet__button" type="button">Е</button>
+                            </li>
+                            <li class="alphabet__item">
+                              <button class="alphabet__button" type="button">З</button>
+                            </li>
+                            <li class="alphabet__item">
+                              <button class="alphabet__button" type="button">И</button>
+                            </li>
+                            <li class="alphabet__item">
+                              <button class="alphabet__button" type="button">К</button>
+                            </li>
+                            <li class="alphabet__item">
+                              <button class="alphabet__button" type="button">Л</button>
+                            </li>
+                            <li class="alphabet__item">
+                              <button class="alphabet__button" type="button">М</button>
+                            </li>
+                            <li class="alphabet__item">
+                              <button class="alphabet__button" type="button">Н</button>
+                            </li>
+                            <li class="alphabet__item">
+                              <button class="alphabet__button" type="button">О</button>
+                            </li>
+                            <li class="alphabet__item">
+                              <button class="alphabet__button" type="button">П</button>
+                            </li>
+                            <li class="alphabet__item">
+                              <button class="alphabet__button" type="button">Р</button>
+                            </li>
+                            <li class="alphabet__item">
+                              <button class="alphabet__button" type="button">С</button>
+                            </li>
+                            <li class="alphabet__item">
+                              <button class="alphabet__button" type="button">Т</button>
+                            </li>
+                            <li class="alphabet__item">
+                              <button class="alphabet__button" type="button">У</button>
+                            </li>
+                            <li class="alphabet__item">
+                              <button class="alphabet__button" type="button">Ф</button>
+                            </li>
+                            <li class="alphabet__item">
+                              <button class="alphabet__button" type="button">Х</button>
+                            </li>
+                            <li class="alphabet__item">
+                              <button class="alphabet__button" type="button">Ч</button>
+                            </li>
+                            <li class="alphabet__item">
+                              <button class="alphabet__button" type="button">Ш</button>
+                            </li>
+                            <li class="alphabet__item">
+                              <button class="alphabet__button" type="button">Э</button>
+                            </li>
+                            <li class="alphabet__item">
+                              <button class="alphabet__button" type="button">Ю</button>
+                            </li>
+                            <li class="alphabet__item">
+                              <button class="alphabet__button" type="button">Я</button>
+                            </li>
+                          </ul>
+                        </div>
                       </li>
-                      <li class="plan-countries__item plan-countries__item">
-                        <label>
-                            <input class="plan-countries__input plan-countries__input--add" type="text" placeholder="Добавьте страну">
-                        </label>
+                      <li class="plan-countries__item plan-countries__item--add">
+                        <button class="plan-countries__item-name plan-countries__button" type="button">
+                          Добавьте страну
+                        </button>
                       </li>
                     </ul>
                     <ul class="add-plans__item-countries-flag plan-countries">
@@ -390,117 +449,11 @@
                       <li class="plan-countries__flag">
                         <div class="flag-icon flag-icon--czech"></div>
                       </li>
-                      <li class="plan-countries__flag">
-                        <button class="flag-icon flag-icon--place" type="button" name="button">
-                          <span class="flag-icon__icon icon">
-                            <svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 17 9" width="16" height="12">
-                            <path d="M8.5,7.2l-7.2-7C1-0.1,0.5-0.1,0.2,0.2c-0.3,0.3-0.3,0.8,0,1L8,8.8c0.3,0.3,0.8,0.3,1.1,0l7.7-7.5C16.9,1.1,17,0.9,17,0.7
-                              s-0.1-0.4-0.2-0.5c-0.3-0.3-0.8-0.3-1.1,0L8.5,7.2z"/>
-                            </svg>
-                          </span>
-                        </button>
+                      <li class="plan-countries__flag plan-countries__flag--choose plan-countries__flag--choose-active">
+                        <button class="flag-icon flag-icon--place-open" type="button" name="button"></button>
                       </li>
                       <li class="plan-countries__flag plan-countries__flag--add flag-place">
-                        <div class="plan-countries__dropdown dropdown">
-                          <button class="flag-icon flag-icon flag-icon--place" type="button" name="button">
-                            <span class="flag-icon__icon icon">
-                              <svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 14 14" width="14" height="14">
-                              <polygon points="8,6 8,0 6,0 6,6 0,6 0,8 6,8 6,14 8,14 8,8 14,8 14,6 "/>
-                              </svg>
-                            </span>
-                          </button>
-                          <div class="plan-countries__dropdown-content dropdown__content countries-filter  visually-hidden">
-                            <ul class="plan-countries__dropdown-content-list countries-filter__list alphabet">
-                              <li class="alphabet__item alphabet__item--selected">
-                                <a class="alphabet__link alphabet__link--selected" href="#">А</a>
-                                <ul class="alphabet__letter-list alphabet__letter-list--selected">
-                                  <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Австралия</a></li>
-                                  <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Австрия</a></li>
-                                  <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Азербайджан</a></li>
-                                  <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Алжир</a></li>
-                                  <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Ангола</a></li>
-                                  <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Андорра</a></li>
-                                  <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Антигуа и Барбуда</a></li>
-                                  <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Аргентина</a></li>
-                                  <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Армения</a></li>
-                                  <li class="alphabet__letter-item"><a class="alphabet__letter-link" href="#">Афганистан</a></li>
-                                </ul>
-                              </li>
-                              <li class="alphabet__item alphabet__item--selected">
-                                <a class="alphabet__link alphabet__link--selected" href="#">Б</a>
-                              </li>
-                              <li class="alphabet__item alphabet__item--selected">
-                                <a class="alphabet__link alphabet__link--selected" href="#">В</a>
-                              </li>
-                              <li class="alphabet__item alphabet__item--selected">
-                                <a class="alphabet__link alphabet__link--selected" href="#">Г</a>
-                              </li>
-                              <li class="alphabet__item alphabet__item--selected">
-                                <a class="alphabet__link alphabet__link--selected" href="#">Д</a>
-                              </li>
-                              <li class="alphabet__item alphabet__item--selected">
-                                <a class="alphabet__link alphabet__link--selected" href="#">Е</a>
-                              </li>
-                              <li class="alphabet__item alphabet__item--selected">
-                                <a class="alphabet__link alphabet__link--selected" href="#">З</a>
-                              </li>
-                              <li class="alphabet__item alphabet__item--selected">
-                                <a class="alphabet__link alphabet__link--selected" href="#">И</a>
-                              </li>
-                              <li class="alphabet__item alphabet__item--selected">
-                                <a class="alphabet__link alphabet__link--selected" href="#">К</a>
-                              </li>
-                              <li class="alphabet__item alphabet__item--selected">
-                                <a class="alphabet__link alphabet__link--selected" href="#">Л</a>
-                              </li>
-                              <li class="alphabet__item alphabet__item--selected">
-                                <a class="alphabet__link alphabet__link--selected" href="#">М</a>
-                              </li>
-                              <li class="alphabet__item alphabet__item--selected">
-                                <a class="alphabet__link alphabet__link--selected" href="#">Н</a>
-                              </li>
-                              <li class="alphabet__item alphabet__item--selected">
-                                <a class="alphabet__link alphabet__link--selected" href="#">О</a>
-                              </li>
-                              <li class="alphabet__item alphabet__item--selected">
-                                <a class="alphabet__link alphabet__link--selected" href="#">П</a>
-                              </li>
-                              <li class="alphabet__item alphabet__item--selected">
-                                <a class="alphabet__link alphabet__link--selected" href="#">Р</a>
-                              </li>
-                              <li class="alphabet__item alphabet__item--selected">
-                                <a class="alphabet__link alphabet__link--selected" href="#">С</a>
-                              </li>
-                              <li class="alphabet__item alphabet__item--selected">
-                                <a class="alphabet__link alphabet__link--selected" href="#">Т</a>
-                              </li>
-                              <li class="alphabet__item alphabet__item--selected">
-                                <a class="alphabet__link alphabet__link--selected" href="#">У</a>
-                              </li>
-                              <li class="alphabet__item alphabet__item--selected">
-                                <a class="alphabet__link alphabet__link--selected" href="#">Ф</a>
-                              </li>
-                              <li class="alphabet__item alphabet__item--selected">
-                                <a class="alphabet__link alphabet__link--selected" href="#">Х</a>
-                              </li>
-                              <li class="alphabet__item alphabet__item--selected">
-                                <a class="alphabet__link alphabet__link--selected" href="#">Ч</a>
-                              </li>
-                              <li class="alphabet__item alphabet__item--selected">
-                                <a class="alphabet__link alphabet__link--selected" href="#">Ш</a>
-                              </li>
-                              <li class="alphabet__item alphabet__item--selected">
-                                <a class="alphabet__link alphabet__link--selected" href="#">Э</a>
-                              </li>
-                              <li class="alphabet__item alphabet__item--selected">
-                                <a class="alphabet__link alphabet__link--selected" href="#">Ю</a>
-                              </li>
-                              <li class="alphabet__item alphabet__item--selected">
-                                <a class="alphabet__link alphabet__link--selected" href="#">Я</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
+                        <button class="flag-icon flag-icon--add" type="button"></button>
                       </li>
                     </ul>
                   </div>
@@ -603,5 +556,7 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="./img/htmlacademy.svg" width="27" height="33" alt="HTML Academy"></a>
       </div>
     </footer>
+    <script src="./js/choose-country.js"></script>
+    <script src="./js/main-menu.js"></script>
   </body>
 </html>

@@ -48,10 +48,10 @@
 }
 
 .transport__item {
-  margin: 10px;
+  margin: 0 10px;
 
   &--filter {
-    margin: 15px;
+    margin: 0 15px;
     //Tablet
     @media (min-width: 768px) and (max-width: 1439px) {
       margin: 0;

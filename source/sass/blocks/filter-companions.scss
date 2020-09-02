@@ -1,12 +1,13 @@
 .filter-companions {
-  background-color: $basic-blue-light;
+  margin-top: -30px;
+
 }
 
 .filter-companions__info {
-  padding: 20px 25px;
+  padding: 75px 25px 20px;
 
   //Tablet
   @media (min-width: 768px) and (max-width: 1439px) {
-    padding: 40px;
+    padding: 77px 40px;
   }
 }

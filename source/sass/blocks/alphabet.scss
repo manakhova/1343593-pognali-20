@@ -1,0 +1,250 @@
+.alphabet {
+  display: grid;
+  grid-template-columns: max-content max-content max-content max-content max-content;
+  grid-column: 1 / 3;
+  list-style: none;
+  margin: 0;
+  margin-left: 25px;
+  padding: 0;
+  padding-bottom: 262px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column: 1 / 2;
+    grid-row: 2;
+    grid-row-gap: 10px;
+    margin: 0;
+    margin-left: 8px;
+    padding: 0;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    grid-column: 1 / span 4;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: max-content max-content max-content 1fr max-content;
+    margin: 0 41px 0 26px;
+    grid-row-gap: 43px;
+  }
+}
+
+.plan-countries__dropdown-content  .alphabet {
+  position: relative;
+  margin: 0;
+  padding-bottom: 316px;
+  grid-gap: 0;
+
+  //Tablet
+  @media (min-width: 768px) {
+    padding: 34px 79px 33px 28px;
+    border-right: 1px solid #d6d9e6;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    grid-column: 1;
+    padding: 34px 90px 24px 28px;
+  }
+}
+
+.alphabet__item {
+  position: relative;
+  border: 1px solid $special-grey-light;
+  background-color: $white;
+  padding: 9px 11px;
+  margin: -1px;
+
+  &--selected {
+    background-color: $basic-blue-medium;
+  }
+
+  //Tablet
+  @media (min-width: 768px) {
+    border: none;
+    background-color: transparent;
+    padding: 0 0 10px 21px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    padding: 0 0 10px 14px;
+  }
+}
+
+//Desktop
+@media (min-width: 1440px) {
+  .alphabet__item:nth-of-type(16),
+  .alphabet__item:nth-of-type(17),
+  .alphabet__item:nth-of-type(18),
+  .alphabet__item:nth-of-type(19),
+  .alphabet__item:nth-of-type(20) {
+    margin-top: 35px;
+  }
+}
+
+.plan-countries__dropdown-content .alphabet__item {
+  padding: 10px 10px 9px 11px;
+  border: 1px solid $special-grey-light;
+  background-color: $white;
+  margin: -1px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    padding: 25px 17px 22px 21px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    padding: 25px 23px 22px 21px;
+    margin: 0 14px 13px 0;
+  }
+
+  &--selected {
+    background-color: #edeff6;
+
+    //Tablet
+    @media (min-width: 768px) {
+      background-color: $basic-blue-medium;
+    }
+  }
+}
+
+.alphabet__button {
+  border: none;
+  background-color: transparent;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: $basic-blue-medium;
+
+
+  //Tablet
+  @media (min-width: 768px) {
+    font-size: 60px;
+    color: $basic-blue-medium;
+    opacity: 0.3;
+    padding: 0;
+  }
+
+  //Desktop
+  @media (min-width: 768px) {
+    opacity: 1;
+  }
+
+  &--selected {
+    color: $white;
+
+    //Tablet
+    @media (min-width: 768px) {
+      color: $basic-blue-medium;
+      opacity: 1;
+
+    }
+  }
+}
+
+.plan-countries__dropdown-content .alphabet__button {
+  font-weight: 500;
+  font-size: 14px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
+
+  &--selected {
+    color: $basic-blue;
+
+    //Tablet
+    @media (min-width: 768px) {
+      color: $white;
+    }
+  }
+}
+
+
+.alphabet__letter {
+  display: none;
+  list-style: none;
+  padding: 0;
+
+  &--selected {
+    position: absolute;
+    display: grid;
+    grid-template-columns: max-content;
+    right: -82px;
+    top: 219px;
+
+    //Tablet
+    @media (min-width: 768px) {
+      grid-gap: 7px;
+      grid-column: 2;
+      grid-row: 2;
+      right: -539px;
+      top: 2px;
+      padding: 0;
+    }
+
+    //Desktop
+    @media (min-width: 1440px) {
+      position: static;
+    }
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    margin-top: 31px;
+    display: block;
+    display: grid;
+    grid-gap: 7px;
+  }
+}
+
+.plan-countries__dropdown-content .alphabet__letter {
+  &--selected {
+    position: absolute;
+    display: grid;
+    grid-template-columns: max-content;
+    right: -100px;
+    top: 225px;
+    grid-gap: 4px;
+
+    //Tablet
+    @media (min-width: 768px) {
+      grid-gap: 8px;
+      right: -470px;
+      top: 2px;
+      padding: 0;
+    }
+
+    //Desktop
+    @media (min-width: 1440px) {
+      right: -582px;
+    top: -31px
+    }
+  }
+}
+
+
+.alphabet__letter-link {
+  text-decoration: none;
+  color: $special-grey;
+
+  //Tablet
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.plan-countries__dropdown-content .alphabet__letter-link {
+  text-transform: none;
+  font-weight: 400;
+  font-size: 16px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    font-size: 20px;
+    letter-spacing: normal;
+  }
+}

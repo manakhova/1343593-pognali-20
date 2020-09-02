@@ -139,6 +139,7 @@
 }
 
 .add-plans__buttons {
+  margin-top: 25px;
   //Tablet
   @media (min-width: 768px) {
     display: flex;
@@ -165,7 +166,8 @@
 }
 
 .add-plans__item-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr max-content;
   margin-top: 21px;
 
   //Tablet
@@ -175,18 +177,28 @@
 
   //Desktop
   @media (min-width: 1440px) {
-    margin-top: 142px;
+    margin-top: 140px;
+    grid-gap: 90px;
   }
 }
 
 .add-plans__item-countries,
 .add-plans__item-countries-flag {
+  display: grid;
+  grid-row-gap: 21px;
   list-style: none;
   padding: 0;
   margin: 0;
+
+  //Tablet
+  @media (min-width: 768px) {
+    grid-template-rows: max-content max-content max-content max-content;
+    grid-row-gap: 14px;
+  }
 }
 
 .add-plans__item-countries-flag {
+  z-index: 1;
   //Tablet
   @media (min-width: 768px) {
     margin-left: 30px;

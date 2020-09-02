@@ -1,6 +1,6 @@
 .page-subheader {
   position: relative;
-  z-index: 2;
+  z-index: 6;
   padding: 35px 25px 17px;
   border-radius: 0 0 30px 30px;
   background-color: $basic-blue-medium;
@@ -8,6 +8,7 @@
   //Tablet
   @media (min-width: 768px) {
     padding: 108px 73px 88px;
+    border-radius: 0 0 56px 56px;
     display: flex;
     justify-content: space-between;
   }

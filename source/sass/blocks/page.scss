@@ -13,10 +13,23 @@
   background-color: $basic-blue-medium;
   color: $white;
   overflow-x: hidden;
+
+  &--catalog {
+    background-color: $basic-blue-light;
+  }
 }
 
 .page__body-container {
   min-width: 320px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    min-width: 768px;
+  }
+}
+
+.page__main {
+  position: relative;
 }
 
 .page__footer {

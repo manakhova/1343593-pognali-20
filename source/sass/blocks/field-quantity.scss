@@ -1,6 +1,6 @@
 .field-quantity {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr max-content;
 
   &--companions {
     //Tablet
@@ -92,16 +92,21 @@
 }
 
 .field-quantity__input {
+  text-align: center;
   box-sizing: border-box;
+  font-size: 15px;
+  font-weight: 500;
   padding: 15px;
   height: 43px;
   width: 100%;
-  border: 1px solid #cbced9;
+  color: $basic-blue;
+  border: 1px solid $special-grey-light;
   border-radius: 4px;
 
   //Tablet
   @media (min-width: 768px) {
     padding: 35px;
+    font-size: 20px;
   }
 
   //Desktop

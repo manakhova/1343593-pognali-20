@@ -3,13 +3,10 @@
 @import "global.scss";
 @import "blocks/page.scss";
 @import "blocks/page-filter.scss";
-@import "blocks/dropdown.scss";
-@import "blocks/main-navigation.scss";
 @import "blocks/filter-companions.scss";
 @import "blocks/filter-form.scss";
 @import "blocks/filter-section.scss";
 @import "blocks/filter-range.scss";
-@import "blocks/countries-filter.scss";
 @import "blocks/range.scss";
 @import "blocks/number.scss";
 @import "blocks/kids-checkbox.scss";
@@ -19,11 +16,12 @@
 @import "blocks/promo.scss";
 @import "blocks/site-navigation.scss";
 @import "blocks/contacts.scss";
-@import "blocks/contacts-alt.scss";
 @import "blocks/steps-list.scss";
 @import "blocks/text.scss";
 @import "blocks/section-title.scss";
 @import "blocks/about.scss";
+@import "blocks/alphabet.scss";
+@import "blocks/places-list.scss";
 @import "blocks/countries.scss";
 @import "blocks/countries-plan.scss";
 @import "blocks/country-card.scss";
@@ -51,3 +49,4 @@
 @import "blocks/transport.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/copyright.scss";
+@import "blocks/modal.scss";
