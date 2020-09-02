@@ -29,7 +29,7 @@
   }
 }
 
-.plan-countries__dropdown-content  .alphabet {
+.plan-countries__dropdown-content .alphabet {
   position: relative;
   margin: 0;
   padding-bottom: 316px;
@@ -139,7 +139,6 @@
     @media (min-width: 768px) {
       color: $basic-blue-medium;
       opacity: 1;
-
     }
   }
 }
@@ -195,7 +194,6 @@
   //Desktop
   @media (min-width: 1440px) {
     margin-top: 31px;
-    display: block;
     display: grid;
     grid-gap: 7px;
   }
@@ -221,7 +219,7 @@
     //Desktop
     @media (min-width: 1440px) {
       right: -582px;
-    top: -31px
+      top: -31px;
     }
   }
 }

@@ -25,12 +25,10 @@
   display: flex;
   justify-content: space-between;
   margin: 8px auto 30px;
-
   //Tablet
   @media (min-width: 768px) {
     margin: 8px auto 63px;
   }
-
   //Desktop
   @media (min-width: 1440px) {
     margin: 8px 70px 63px;
@@ -44,7 +42,6 @@
 .add-plans__item {
   background-color: $white;
   margin-bottom: 10px;
-
   //Tablet
   @media (min-width: 768px) {
     margin-bottom: 40px;
