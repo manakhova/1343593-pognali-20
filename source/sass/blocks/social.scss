@@ -23,6 +23,12 @@
   padding: 0;
   margin: 15px auto;
 
+  //Tablet
+  @media (min-width: 768px) {
+    margin-top: -12px;
+    margin-left: -10px;
+  }
+
   &--scroll {
     margin: 0;
     margin-top: -20px;
@@ -36,25 +42,60 @@
 
 .social__item {
   background-color: $basic-yellow;
-  border-radius: 25px;
-
-  &--scroll {
-    background-color: transparent;
-  }
+  border-radius: 50px;
 
   &:hover {
     background-color: $special-yellow-dark;
   }
 
+  .social__link-icon {
+    fill: $basic-blue-dark;
+  }
+
+  &--scroll {
+    background-color: transparent;
+
+    &:hover {
+      background-color: transparent;
+    }
+
+    .social__link-icon:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &--down {
+    background-color: $special-yellow-dark;
+
+    .social__link-icon {
+      fill: #ba8e36;
+    }
+  }
+
   &--facebook {
     padding: 12px 18px 5px 17px;
+
+    //Tablet
+    @media (min-width: 768px) {
+      padding: 20px 26px 13px 24px;
+    }
   }
 
   &--vkontakte {
     padding: 14px 11px 9px 12px;
+
+    //Tablet
+    @media (min-width: 768px) {
+      padding: 21px 19px 5px 18px;
+    }
   }
 
   &--instagram {
     padding: 14px 14px 7px;
+
+    //Tablet
+    @media (min-width: 768px) {
+      padding: 21px 21px 5px 21px;
+    }
   }
 }

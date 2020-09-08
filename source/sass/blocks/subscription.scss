@@ -4,6 +4,11 @@
   background-color: $basic-blue-medium;
   margin-top: -30px;
   border-radius: 0 0 30px 30px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    border-radius: 0 0 60px 60px;
+  }
 }
 
 .subscription__info {
@@ -42,7 +47,7 @@
   //Tablet
   @media (min-width: 768px) {
     margin-top: 12px;
-    margin-bottom: 68px;
+    margin-bottom: 71px;
   }
 }
 
@@ -66,7 +71,7 @@
 
 .subscription__actions {
   list-style: none;
-  padding: 0 25px 25px;
+  padding: 0 25px 30px;
   margin: 0;
 
   //Tablet
@@ -78,7 +83,7 @@
   @media (min-width: 1440px) {
     display: flex;
     justify-content: space-between;
-    padding: 0 289px 100px;
+    padding: 0 292px 103px 284px;
   }
 }
 
@@ -91,4 +96,13 @@
 
 .subscription__link {
   color: $basic-yellow;
+
+  &:hover {
+    color: $special-orange;
+  }
+
+  &--down {
+    color: $special-orange;
+    opacity: 0.4;
+  }
 }

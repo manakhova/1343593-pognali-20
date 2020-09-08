@@ -1,21 +1,76 @@
 .page-subheader {
   position: relative;
-  z-index: 6;
+  z-index: 9;
   padding: 35px 25px 17px;
-  border-radius: 0 0 30px 30px;
+  border-radius: 0 0 20px 20px;
   background-color: $basic-blue-medium;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 25px;
+    display: block;
+    width: 173px;
+    height: 5px;
+    background-color: $special_orange;
+    border-radius: 4px;
+
+    //Tablet
+    @media (min-width: 768px) {
+      bottom: -5px;
+      left: 78px;
+      width: 286px;
+      height: 8px;
+    }
+
+    //Desktop
+    @media (min-width: 1440px) {
+      left: 127px;
+    }
+  }
+
+  &--form {
+    position: relative;
+    margin-top: -1px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 25px;
+      display: block;
+      width: 214px;
+      height: 5px;
+      background-color: $special_orange;
+      border-radius: 4px;
+
+      //Tablet
+      @media (min-width: 768px) {
+        bottom: -5px;
+        left: 78px;
+        width: 354px;
+        height: 8px;
+      }
+
+      //Desktop
+      @media (min-width: 1440px) {
+        left: 127px;
+      }
+    }
+  }
 
   //Tablet
   @media (min-width: 768px) {
-    padding: 108px 73px 88px;
-    border-radius: 0 0 56px 56px;
+    padding: 106px 73px 84px;
+    border-radius: 0 0 60px 60px;
     display: flex;
     justify-content: space-between;
   }
 
   //Desktop
   @media (min-width: 1440px) {
-    padding: 105px 125px 90px;
+    padding: 102px 125px 83px;
   }
 }
 
@@ -40,5 +95,18 @@
     text-transform: uppercase;
     text-decoration: none;
     color: $white;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &--down {
+      opacity: 0.3;
+    }
+
+    .page-subheader__icon {
+      fill: $white;
+      margin-left: 22px;
+    }
   }
 }

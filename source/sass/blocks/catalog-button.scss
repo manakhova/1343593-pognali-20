@@ -1,26 +1,70 @@
 .catalog-button {
   border: none;
   border-radius: 25px;
-  padding: 13px;
+  padding: 12px;
   background-color: $basic-yellow;
   color: $basic-blue-dark;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-weight: 700;
+  font-size: 17px;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: $special-yellow-dark;
+  }
+
+  &:focus {
+    outline: none;
+  }
 
   &--filter {
     background-color: $white;
-    width: 100%;
+    width: 104%;
+    margin-top: -4px;
+    margin-left: -4px;
 
     //Tablet
-    @media (min-width: 768px) and (max-width: 1439px) {
+    @media (min-width: 768px) {
+      font-size: 20px;
       margin-top: 75px;
       margin-right: 3px;
-      padding: 18px;
-      min-width: 615px;
+      padding: 18px 18px 9px;
+      width: 98%;
+    }
+
+    //Desktop
+    @media (min-width: 1440px) {
+      margin: 0;
+      margin-top: 11px;
+      margin-left: 4px;
+      width: 100%;
     }
   }
 
   &--transparent {
     background-color: transparent;
+    padding-top: 15px;
+    padding-bottom: 0;
+  }
+}
+
+.add-plans__item .catalog-button {
+  //Tablet
+  @media (min-width: 768px) {
+    text-transform: none;
+    position: relative;
+    text-align: left;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 33px;
+      right: 14px;
+      width: 35px;
+      height: 24px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 14' fill='%231d2e5b'%3E%3Cpolygon points='0,14 0,0.1 10,7.1 '/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-size: 9px;
+    }
   }
 }

@@ -17,7 +17,7 @@
 
 .countries-plan__country {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   font-weight: 700;
 
   //Tablet
@@ -32,13 +32,26 @@
 .countries-plan__country-main {
   //Tablet
   @media (min-width: 768px) {
+    position: relative;
     display: flex;
     justify-content: space-between;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: -17px;
+      left: -36px;
+      width: 621px;
+      height: 1px;
+      background-color: $special-grey-light;
+      opacity: 0.3;
+    }
   }
 }
 
-.countries-plan__country-number,
 .countries-plan__country-name {
+  margin-right: 2px;
   //Tablet
   @media (min-width: 768px) {
     font-size: 24px;
@@ -54,14 +67,23 @@
 .countries-plan__dates,
 .countries-plan__link {
   font-weight: 500;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: 0;
+  font-size: 14px;
 
   //Tablet
   @media (min-width: 768px) {
     margin: 0;
     font-size: 20px;
     letter-spacing: 0.1em;
+  }
+}
+
+.countries-plan__dates {
+  //Tablet
+  @media (min-width: 768px) {
+    margin-left: -25px;
   }
 }
 

@@ -1,0 +1,42 @@
+.slider-toggle {
+  //Tablet
+  @media (min-width: 768px) {
+    margin-right: -25px;
+  }
+}
+
+.slider-toggle__item {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 9px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 4px;
+    left: -3px;
+    width: 5px;
+    height: 5px;
+    background-color: $basic-blue;
+    border-radius: 25px;
+    opacity: 0.3;
+  }
+
+  &--current {
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  //Tablet
+  @media (min-width: 768px) {
+    padding: 14px;
+  }
+}

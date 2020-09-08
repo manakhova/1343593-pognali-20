@@ -52,10 +52,37 @@
 }
 
 .modal__list {
+  position: relative;
   display: grid;
   grid-gap: 22px;
   list-style: none;
   padding: 0;
+
+  &::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: -12px;
+    right: 3px;
+    width: 227px;
+    height: 1px;
+    background-color: #f2f2f2;
+    box-shadow: 0 64px 0 0 #f2f2f2, 0 132px 0 0 #f2f2f2, 0 199px 0 0 #f2f2f2, 0 264px 0 0 #f2f2f2;
+
+    //Tablet
+    @media (min-width: 768px) {
+      top: -15px;
+      width: 510px;
+      box-shadow: 0 55px 0 0 #f2f2f2, 0 110px 0 0 #f2f2f2, 0 164px 0 0 #f2f2f2, 0 220px 0 0 #f2f2f2;
+    }
+
+    //Desktop
+    @media (min-width: 1440px) {
+      top: -17px;
+      width: 630px;
+      box-shadow: 0 56px 0 0 #f2f2f2, 0 111px 0 0 #f2f2f2, 0 167px 0 0 #f2f2f2, 0 220px 0 0 #f2f2f2;
+    }
+  }
 
   //Tablet
   @media (min-width: 768px) {
@@ -101,6 +128,10 @@
   background-color: #f3f4f8;
   border: none;
   border-radius: 0 0 20px 20px;
+
+  &:focus {
+    outline: none;
+  }
 
   //Tablet
   @media (min-width: 768px) {

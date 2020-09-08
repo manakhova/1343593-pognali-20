@@ -1,4 +1,5 @@
 .user-card {
+  justify-content: center;
   display: flex;
   flex-direction: column;
   min-height: 428px;
@@ -15,7 +16,7 @@
   //Tablet & Desktop
   @media (min-width: 768px) {
     min-height: 485px;
-    min-width: 285px;
+    max-width: 285px;
   }
 }
 

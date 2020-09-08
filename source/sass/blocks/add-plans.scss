@@ -9,6 +9,7 @@
 
 .add-plans__info {
   padding: 25px 25px 60px;
+  margin-bottom: 81px;
 
   //Tablet
   @media (min-width: 768px) {
@@ -27,7 +28,7 @@
   margin: 8px auto 30px;
   //Tablet
   @media (min-width: 768px) {
-    margin: 8px auto 63px;
+    margin: 8px auto 58px;
   }
   //Desktop
   @media (min-width: 1440px) {
@@ -42,18 +43,21 @@
 .add-plans__item {
   background-color: $white;
   margin-bottom: 10px;
+  border-radius: 10px;
+
   //Tablet
   @media (min-width: 768px) {
     margin-bottom: 40px;
+    border-radius: 30px;
   }
 }
 
 .add-plans__item-info {
-  padding: 22px 25px 17px;
+  padding: 22px 25px 16px;
 
   //Tablet
   @media (min-width: 768px) {
-    padding: 48px 41px 58px;
+    padding: 48px 41px 53px;
   }
 
   //Desktop
@@ -64,7 +68,8 @@
 
 .add-plans__item-title {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
+  font-size: 20px;
 
   //Tablet
   @media (min-width: 768px) {
@@ -87,6 +92,15 @@
   //Desktop
   @media (min-width: 1440px) {
     margin-bottom: 50px;
+  }
+}
+
+.add-plans__item-text br {
+  display: none;
+
+  //Tablet
+  @media (min-width: 768px) {
+    display: block;
   }
 }
 
@@ -116,7 +130,7 @@
 }
 
 .add-plans__item-checkbox {
-  margin-top: 21px;
+  margin-top: 24px;
 
   //Tablet
   @media (min-width: 768px) and (max-width: 1439px) {
@@ -144,6 +158,10 @@
   }
 }
 
+.entertainment ~ .add-plans__buttons {
+  margin-top: 12px;
+}
+
 .add-plans__button {
   width: 100%;
   font-family: "Blogger Sans", "Arial", sans-serif;
@@ -151,7 +169,7 @@
   //Tablet
   @media (min-width: 768px) {
     width: 54%;
-    padding: 28px;
+    padding: 28px 37px;
     margin-top: 24px;
     font-size: 24px;
   }
@@ -161,6 +179,7 @@
     width: 29%;
   }
 }
+
 
 .add-plans__item-list {
   display: grid;

@@ -1,7 +1,23 @@
+.entertainment:first-of-type {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 14px;
+    left: -15px;
+    width: 2px;
+    height: 285px;
+    background-color: $basic-blue-dark;
+  }
+}
+
 .entertainment__country {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 18px;
+  align-items: center;
+  margin-bottom: 13px;
 
   //Tablet
   @media (min-width: 768px) {
@@ -10,8 +26,33 @@
 }
 
 .entertainment__country-name {
+  position: relative;
   font-weight: 500;
   font-size: 18px;
+  margin-left: 11px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 9px;
+    left: -13px;
+    width: 6px;
+    height: 6px;
+    background-color: $basic-blue-dark;
+    border-radius: 50px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 11px;
+    left: -24px;
+    width: 13px;
+    height: 2px;
+    background-color: $basic-blue-dark;
+  }
 
   //Tablet
   @media (min-width: 768px) {
@@ -21,12 +62,23 @@
 
 .entertainment__country-plan {
   box-sizing: border-box;
-  padding: 10px;
+  padding: 10px 13px;
   width: 100%;
   min-height: 220px;
   font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
+  border: 1px solid $special-grey-light;
+  border-radius: 4px;
+
+  &:hover {
+    border-color: #959bb2;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $basic-blue-dark;
+  }
 
   //Tablet
   @media (min-width: 768px) {

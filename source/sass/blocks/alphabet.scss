@@ -25,7 +25,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: max-content max-content max-content 1fr max-content;
     margin: 0 41px 0 26px;
-    grid-row-gap: 43px;
+    grid-row-gap: 42px;
   }
 }
 
@@ -52,7 +52,7 @@
   position: relative;
   border: 1px solid $special-grey-light;
   background-color: $white;
-  padding: 9px 11px;
+  padding: 9px 11px 10px;
   margin: -1px;
 
   &--selected {
@@ -84,7 +84,7 @@
 }
 
 .plan-countries__dropdown-content .alphabet__item {
-  padding: 10px 10px 9px 11px;
+  padding: 10px 10.2px 9px 11.5px;
   border: 1px solid $special-grey-light;
   background-color: $white;
   margin: -1px;
@@ -193,7 +193,7 @@
 
   //Desktop
   @media (min-width: 1440px) {
-    margin-top: 31px;
+    margin-top: 32px;
     display: grid;
     grid-gap: 7px;
   }

@@ -20,6 +20,11 @@
       grid-row: 1 / span 2;
     }
   }
+
+  //Tablet
+  @media (min-width: 768px) {
+    border-radius: 0 0 60px 60px;
+  }
 }
 
 .users__info {
@@ -30,19 +35,48 @@
 
   //Tablet
   @media (min-width: 768px) {
-    padding: 183px 73px 83px;
+    padding: 183px 73px 87px;
   }
   //Desktop
   @media (min-width: 1440px) {
     grid-gap: 15px;
     grid-template-columns: auto auto;
     column-gap: 150px;
-    padding: 164px 60px 133px 130px;
+    padding: 157px 60px 133px 130px;
   }
 }
 
 .users__info-main {
-  margin-bottom: 15px;
+  margin-bottom: 23px;
+
+  &::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    display: block;
+    top: 336px;
+    left: -10px;
+    width: 73px;
+    height: 71px;
+    background-image: url("../img/rogovaya-back-mobile@1x.png");
+    background-repeat: no-repeat;
+    border-radius: 12px;
+
+    //Tablet
+    @media (min-width: 768px) {
+      top: 107px;
+      left: 409px;
+      width: 285px;
+      height: 285px;
+      background-image: url("../img/rogovaya-back-desktop@1x.png");
+    }
+
+    //Desktop
+    @media (min-width: 1440px) {
+      top: 416px;
+      left: 190px;
+    }
+  }
   //Tablet
   @media (min-width: 768px) {
     margin: 0;
@@ -50,15 +84,69 @@
   }
   //Desktop
   @media (min-width: 1440px) {
-    margin-top: 8px;
+    margin-top: 15px;
     padding: 0;
   }
 }
 
 .users__title {
+  position: relative;
   margin: 0;
   margin-bottom: 22px;
   padding-left: 25px;
+
+  &::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    display: block;
+    top: -36px;
+    left: -44px;
+    width: 132px;
+    height: 132px;
+    background-color: #141b3b;
+    border-radius: 12px;
+
+    //Tablet
+    @media (min-width: 768px) {
+      top: -83px;
+      left: -33px;
+      width: 212px;
+      height: 212px;
+    }
+
+    //Desktop
+    @media (min-width: 1440px) {
+      top: -69px;
+      left: -69px;
+    }
+  }
+
+  &::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    display: block;
+    top: -34px;
+    right: 0;
+    width: 143px;
+    height: 132px;
+    background-image: url("../img/smolov-back-desktop@1x.png");
+    background-repeat: no-repeat;
+    border-radius: 12px;
+
+    //Tablet
+    @media (min-width: 768px) {
+      top: 270px;
+      left: -33px;
+    }
+
+    //Desktop
+    @media (min-width: 1440px) {
+      top: -8px;
+      left: 417px;
+    }
+  }
 
   //Tablet & Desktop
   @media (min-width: 768px) {
@@ -75,7 +163,7 @@
 
   //Tablet & Desktop
   @media (min-width: 768px) {
-    margin-bottom: 45px;
+    margin-bottom: 40px;
     padding-left: 0;
   }
 
@@ -85,21 +173,31 @@
   }
 }
 
+.users__teaser br {
+  display: none;
+
+  //Tablet & Desktop
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
 .users__list {
   display: grid;
   grid-gap: 8px;
 
-  //Tablet & Desktop
+  //Tablet
   @media (min-width: 768px) {
-    grid-gap: 30px;
+    margin-top: 7px;
+    grid-gap: 50px;
     grid-template-columns: auto auto;
   }
 
   //Desktop
   @media (min-width: 1440px) {
-    grid-template-columns: auto auto;
     grid-column: 2;
     grid-row: 1 / span 2;
+    grid-gap: 60px;
   }
 
   &--catalog {
@@ -122,11 +220,11 @@
 .users__to-all {
   display: inline-block;
   width: 100%;
-  margin-top: 7px;
+  margin-top: 11px;
 
   //Tablet
   @media (min-width: 768px) {
-    margin-top: 60px;
+    margin-top: 70px;
   }
 
   //Desktop
@@ -135,8 +233,9 @@
     grid-row: 2;
     align-self: center;
     justify-self: start;
-    width: 275px;
+    width: 280px;
     margin: 0;
+    margin-bottom: -10px;
   }
 }
 

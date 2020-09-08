@@ -21,7 +21,7 @@
       @media ( min-width: 1440px ) {
         HTML {
           /* Десктопный макет */
-          background-image: url( "./img/Desktop-Catalog.jpg" );
+          background-image: url( "./img/Desktop-Catalog-Filter.jpg" );
         }
       }
     </style>
@@ -30,9 +30,67 @@
     <link href="./css/style.css" rel="stylesheet">
   </head>
   <body class="page__body page__body--catalog">
+    <svg style="display:none;">
+      <symbol id="vkontakte" viewBox="0 0 30 15.8">
+        <g>
+          <path d="M23.9,15.8c-0.4,0-1.2-0.1-2.1-0.6c-0.6-0.4-1.2-1-1.8-1.5c-0.4-0.4-1.2-1.2-1.4-1.2c-0.3,0.1-0.5,0.9-0.5,1.6
+            c0,0.1,0,0.8-0.5,1.2c-0.4,0.4-1.1,0.5-1.2,0.5l-1.9,0c-1,0-4.4-0.2-7.4-3c-3.7-3.4-6.8-9.8-7-10.1C0,2.2-0.1,1.5,0.3,1.1
+            c0.4-0.4,1.1-0.5,1.4-0.5l4.1,0l0.1,0c0.1,0,0.6,0.1,1,0.3c0.4,0.2,0.6,0.7,0.6,0.7c0,0,0.6,1.4,1.5,2.7c1.3,2,1.9,2.5,2.1,2.6
+            c0.2-0.4,0.3-1.7,0.2-2.9c0-0.5-0.1-1.1-0.3-1.3c-0.1-0.1-0.4-0.3-0.8-0.3L9.5,1.8c-0.1-0.7,0.6-1.2,1.1-1.4
+            C11.3,0.1,12.4,0,13.7,0l0.7,0c1.2,0,1.6,0.1,2.1,0.2c1.7,0.4,1.6,1.7,1.6,3.3c0,0.5,0,1,0,1.6c0,0.2,0,0.3,0,0.5
+            c0,0.4,0,1,0.1,1.3c0.2-0.1,0.9-0.7,2.1-2.5c0.8-1.2,1.4-2.5,1.5-2.8l0,0c0.2-0.4,0.6-0.9,1.6-0.9l4.3,0c0,0,0.2,0,0.4,0
+            c1,0,1.6,0.3,1.8,0.9c0.3,0.6,0.2,1.7-2.4,4.6c-0.4,0.4-0.7,0.8-1,1.1c-0.6,0.7-1.2,1.4-1.2,1.6C25.4,9,26,9.5,26.6,10
+            c1.5,1.2,2.5,2.3,3,3.1c0.5,0.8,0.4,1.3,0.3,1.7c-0.4,0.9-1.6,1-1.9,1l-3.8,0C24.1,15.8,24.1,15.8,23.9,15.8z M18.6,10.9
+            c0.9,0,1.7,0.8,2.5,1.6c0.5,0.5,1,1,1.5,1.3c0.7,0.4,1.3,0.4,1.4,0.4l0.1,0l3.8,0c0.2,0,0.4-0.1,0.5-0.1c0,0,0-0.1-0.1-0.2
+            c-0.4-0.7-1.4-1.7-2.7-2.7c-1.2-1-1.8-1.5-1.9-2.2c-0.1-0.8,0.5-1.4,1.6-2.7c0.3-0.3,0.6-0.7,1-1.1c1.6-1.8,2-2.6,2.1-3
+            c-0.2,0-0.6,0-0.7,0l-4.4,0c-0.2,0-0.2,0-0.2,0c-0.2,0.4-0.8,1.8-1.6,3c-1.9,2.8-2.8,3.2-3.4,3.2c-0.2,0-0.4,0-0.6-0.1
+            c-1-0.6-1-1.8-0.9-2.8c0-0.1,0-0.3,0-0.4c0-0.6,0-1.2,0-1.7c0.1-1.7,0-1.7-0.4-1.8c-0.4-0.1-0.7-0.1-1.9-0.2l-0.7,0
+            c-0.6,0-1.3,0-1.9,0.1c0.1,0.1,0.2,0.2,0.3,0.3c0.6,0.7,0.6,2,0.6,2.2c0.1,1.6,0.1,3.8-1,4.3c-0.2,0.1-0.4,0.1-0.6,0.1
+            c-0.9,0-1.9-0.9-3.4-3.3C6.8,3.9,6.1,2.4,6.1,2.3c0,0-0.1-0.1-0.1-0.1C5.9,2.2,5.8,2.1,5.7,2.1l-4,0c0,0,0,0-0.1,0
+            C2.2,3.3,5,8.7,8.1,11.6c2.7,2.5,5.8,2.6,6.4,2.6l1.9,0c0,0,0.2-0.1,0.3-0.1c0,0,0-0.1,0-0.1c0-0.3,0-2.6,1.6-3
+            C18.4,10.9,18.5,10.9,18.6,10.9z"/>
+        </g>
+      </symbol>
+      <symbol id="facebook" viewBox="0 0 11 21">
+        <g>
+          <path d="M7.8,21H2.2v-9.8H0V6.4h2.1C2,4.2,2.4,2.6,3.4,1.5C4.2,0.6,5.5,0.1,7.1,0L11,0v4.7H7.9C7.8,4.9,7.7,5.5,7.7,6.4H11v4.8H7.8
+            V21z M3.4,19.9h3.1v-9.8h3.2V7.5H6.5l0-0.6c0-1.5,0-2.9,0.8-3.4l0.2-0.1h2.3V1.1H7.1C5.9,1.2,4.9,1.6,4.3,2.3
+            C3.5,3.2,3.2,4.8,3.4,6.9l0.1,0.6H1.2v2.6h2.2V19.9z"/>
+        </g>
+      </symbol>
+      <symbol id="instagram" viewBox="0 0 23 23">
+        <path d="M17,1.5c2.5,0,4.5,2,4.5,4.5v11c0,2.5-2,4.5-4.5,4.5H6c-2.5,0-4.5-2-4.5-4.5V6c0-2.5,2-4.5,4.5-4.5L17,1.5
+      M17,0H6C2.7,0,0,2.7,0,6v11c0,3.3,2.7,6,6,6h11c3.3,0,6-2.7,6-6V6C23,2.7,20.3,0,17,0L17,0z"/>
+        <path class="st0" d="M11.5,7.1c2.4,0,4.4,2,4.4,4.4c0,2.4-2,4.4-4.4,4.4c-2.4,0-4.4-2-4.4-4.4C7.1,9.1,9.1,7.1,11.5,7.1 M11.5,5.6
+      c-3.3,0-5.9,2.7-5.9,5.9s2.7,5.9,5.9,5.9s5.9-2.7,5.9-5.9S14.8,5.6,11.5,5.6L11.5,5.6z"/>
+        <circle class="st0" cx="17.6" cy="5.4" r="1.3"/>
+      </symbol>
+      <symbol id="return" viewBox="0 0 32 16.1">
+        <path d="M27.6,2.1H10L10,0L0,3l10,2.9l0-1.8h17.6c0.4,0,2.4,0,2.4,2v6.1c0,0.5-0.1,0.9-0.4,1.2C29,14,28,14.1,27.6,14.1
+        H4v2h23.6c0,0,0,0,0.1,0c0.4,0,2.1-0.1,3.2-1.2c0.7-0.7,1.1-1.6,1.1-2.7V6.1C32,4.1,29.4,2.1,27.6,2.1z"/>
+      </symbol>
+      <symbol id="dots" viewBox="0 0 27 5">
+        <circle class="st0" cx="2.5" cy="2.5" r="2.5"/>
+        <circle class="st0" cx="13.5" cy="2.5" r="2.5"/>
+        <circle class="st0" cx="24.5" cy="2.5" r="2.5"/>
+      </symbol>
+      <symbol id="filter-close" viewBox="0 0 12 12">
+        <path class="st0" d="M6.9,6l4.9-4.9c0.2-0.2,0.2-0.6,0-0.9s-0.6-0.2-0.9,0L6,5.1L1.1,0.2c-0.2-0.2-0.6-0.2-0.9,0s-0.2,0.6,0,0.9
+        L5.1,6l-4.9,4.9c-0.2,0.2-0.2,0.6,0,0.9v0c0.2,0.2,0.6,0.2,0.9,0L6,6.9l4.9,4.9c0.2,0.2,0.6,0.2,0.9,0v0c0.2-0.2,0.2-0.6,0-0.9
+        L6.9,6z"/>
+      </symbol>
+      <symbol id="close" viewBox="0 0 18.6 18.6">
+        <path d="M11.4,9.3l6.7-6.7c0.6-0.6,0.6-1.5,0-2.1s-1.5-0.6-2.1,0L9.3,7.2L2.6,0.4C2-0.1,1-0.1,0.4,0.4C-0.1,1-0.1,2,0.4,2.6l6.7,6.7
+        L0.4,16c-0.6,0.6-0.6,1.5,0,2.1s1.5,0.6,2.1,0l6.7-6.7l6.7,6.7c0.6,0.6,1.5,0.6,2.1,0s0.6-1.5,0-2.1L11.4,9.3z"/>
+      </symbol>
+    </svg>
     <header class="page__header page-header page-header--catalog page-header--nojs">
-      <a class="page-header__logo logo" href="index.html">
-        <img class="logo__image" src="./img/logo-mobile-white@1x.png" width="100" height="15" alt="Погнали?">
+      <a class="page-header__logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1400px)" srcset="./img/logo-desktop-white@1x.png">
+          <source media="(min-width: 768px)" srcset="./img/logo-tablet-white@1x.png">
+          <img class="page-header__logo-image" src="./img/logo-mobile-white@1x.png" width="100" height="15" alt="Погнали?">
+        </picture>
       </a>
       <button class="page-header__button page-header__button--closed" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -50,66 +108,43 @@
       </ul>
       <ul class="page-header__actions contacts">
         <li class="contacts__item contacts__item--phone contacts__item--scroll">
-          <a class="contacts__item-link contacts__item-link--scroll" href="tel:88005558628">
-            <span class="contacts__icon contacts__icon--scroll contacts__icon--phone contacts__icon--scroll-phone icon"></span>
+          <a class="contacts__item-link contacts__item-link--menu contacts__item-link--menu-down  contacts__item-link--scroll contacts__item-link--scroll" href="tel:88005558628">
+            <span class="contacts__icon contacts__icon--scroll contacts__icon--phone contacts__icon--scroll-phone contacts__icon--scroll-phone-down"></span>
             <span class="contacts__tel">8 800 555-86-28</span>
           </a>
         </li>
         <li class="contacts__item contacts__item--scroll">
-          <a class="contacts__item-link contacts__item-link--scroll" href="#">
-            <span class="contacts__icon contacts__icon--scroll contacts__icon--mail contacts__icon--scroll-mail icon"></span>
+          <a class="contacts__item-link contacts__item-link--menu contacts__item-link--scroll contacts__item-link--scroll" href="#">
+            <span class="contacts__icon contacts__icon--scroll contacts__icon--mail contacts__icon--scroll-mail"></span>
             <span class="contacts__mail">mail@htmlacademy.ru</span>
           </a>
         </li>
       </ul>
-      <a class="page-header__authorization page-header__authorization--scroll contacts__item-link contacts__item-link--authorization">
+      <a class="page-header__authorization page-header__authorization--scroll contacts__item-link  contacts__item-link--menu contacts__item-link--authorization">
         Авторизация
       </a>
       <div class="page-header__social social social--scroll">
         <ul class="social__list social__list--scroll">
           <li class="social__item social__item--scroll social__item--facebook">
             <a class="social__link" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="21" viewBox="0 0 11 21">
-              <g>
-                <path d="M7.8,21H2.2v-9.8H0V6.4h2.1C2,4.2,2.4,2.6,3.4,1.5C4.2,0.6,5.5,0.1,7.1,0L11,0v4.7H7.9C7.8,4.9,7.7,5.5,7.7,6.4H11v4.8H7.8
-                  V21z M3.4,19.9h3.1v-9.8h3.2V7.5H6.5l0-0.6c0-1.5,0-2.9,0.8-3.4l0.2-0.1h2.3V1.1H7.1C5.9,1.2,4.9,1.6,4.3,2.3
-                  C3.5,3.2,3.2,4.8,3.4,6.9l0.1,0.6H1.2v2.6h2.2V19.9z"/>
-              </g>
+              <svg class="social__link-icon" width="11" height="20">
+                <use xlink:href="#facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social__item social__item--scroll social__item--vkontakte">
             <a class="social__link" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg"width="22" height="12" viewBox="0 0 30 15.8">
-              <g>
-                <path d="M23.9,15.8c-0.4,0-1.2-0.1-2.1-0.6c-0.6-0.4-1.2-1-1.8-1.5c-0.4-0.4-1.2-1.2-1.4-1.2c-0.3,0.1-0.5,0.9-0.5,1.6
-                  c0,0.1,0,0.8-0.5,1.2c-0.4,0.4-1.1,0.5-1.2,0.5l-1.9,0c-1,0-4.4-0.2-7.4-3c-3.7-3.4-6.8-9.8-7-10.1C0,2.2-0.1,1.5,0.3,1.1
-                  c0.4-0.4,1.1-0.5,1.4-0.5l4.1,0l0.1,0c0.1,0,0.6,0.1,1,0.3c0.4,0.2,0.6,0.7,0.6,0.7c0,0,0.6,1.4,1.5,2.7c1.3,2,1.9,2.5,2.1,2.6
-                  c0.2-0.4,0.3-1.7,0.2-2.9c0-0.5-0.1-1.1-0.3-1.3c-0.1-0.1-0.4-0.3-0.8-0.3L9.5,1.8c-0.1-0.7,0.6-1.2,1.1-1.4
-                  C11.3,0.1,12.4,0,13.7,0l0.7,0c1.2,0,1.6,0.1,2.1,0.2c1.7,0.4,1.6,1.7,1.6,3.3c0,0.5,0,1,0,1.6c0,0.2,0,0.3,0,0.5
-                  c0,0.4,0,1,0.1,1.3c0.2-0.1,0.9-0.7,2.1-2.5c0.8-1.2,1.4-2.5,1.5-2.8l0,0c0.2-0.4,0.6-0.9,1.6-0.9l4.3,0c0,0,0.2,0,0.4,0
-                  c1,0,1.6,0.3,1.8,0.9c0.3,0.6,0.2,1.7-2.4,4.6c-0.4,0.4-0.7,0.8-1,1.1c-0.6,0.7-1.2,1.4-1.2,1.6C25.4,9,26,9.5,26.6,10
-                  c1.5,1.2,2.5,2.3,3,3.1c0.5,0.8,0.4,1.3,0.3,1.7c-0.4,0.9-1.6,1-1.9,1l-3.8,0C24.1,15.8,24.1,15.8,23.9,15.8z M18.6,10.9
-                  c0.9,0,1.7,0.8,2.5,1.6c0.5,0.5,1,1,1.5,1.3c0.7,0.4,1.3,0.4,1.4,0.4l0.1,0l3.8,0c0.2,0,0.4-0.1,0.5-0.1c0,0,0-0.1-0.1-0.2
-                  c-0.4-0.7-1.4-1.7-2.7-2.7c-1.2-1-1.8-1.5-1.9-2.2c-0.1-0.8,0.5-1.4,1.6-2.7c0.3-0.3,0.6-0.7,1-1.1c1.6-1.8,2-2.6,2.1-3
-                  c-0.2,0-0.6,0-0.7,0l-4.4,0c-0.2,0-0.2,0-0.2,0c-0.2,0.4-0.8,1.8-1.6,3c-1.9,2.8-2.8,3.2-3.4,3.2c-0.2,0-0.4,0-0.6-0.1
-                  c-1-0.6-1-1.8-0.9-2.8c0-0.1,0-0.3,0-0.4c0-0.6,0-1.2,0-1.7c0.1-1.7,0-1.7-0.4-1.8c-0.4-0.1-0.7-0.1-1.9-0.2l-0.7,0
-                  c-0.6,0-1.3,0-1.9,0.1c0.1,0.1,0.2,0.2,0.3,0.3c0.6,0.7,0.6,2,0.6,2.2c0.1,1.6,0.1,3.8-1,4.3c-0.2,0.1-0.4,0.1-0.6,0.1
-                  c-0.9,0-1.9-0.9-3.4-3.3C6.8,3.9,6.1,2.4,6.1,2.3c0,0-0.1-0.1-0.1-0.1C5.9,2.2,5.8,2.1,5.7,2.1l-4,0c0,0,0,0-0.1,0
-                  C2.2,3.3,5,8.7,8.1,11.6c2.7,2.5,5.8,2.6,6.4,2.6l1.9,0c0,0,0.2-0.1,0.3-0.1c0,0,0-0.1,0-0.1c0-0.3,0-2.6,1.6-3
-                  C18.4,10.9,18.5,10.9,18.6,10.9z"/>
-              </g>
-              </svg>
+              <a class="social__link" href="#">
+                <svg class="social__link-icon" width="22" height="12">
+                  <use xlink:href="#vkontakte"></use>
+                </svg>
+              </a>
             </a>
           </li>
           <li class="social__item social__item--scroll social__item--instagram">
             <a class="social__link" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"viewBox="0 0 23 23">
-              <path class="st0" d="M17,1.5c2.5,0,4.5,2,4.5,4.5v11c0,2.5-2,4.5-4.5,4.5H6c-2.5,0-4.5-2-4.5-4.5V6c0-2.5,2-4.5,4.5-4.5L17,1.5
-                M17,0H6C2.7,0,0,2.7,0,6v11c0,3.3,2.7,6,6,6h11c3.3,0,6-2.7,6-6V6C23,2.7,20.3,0,17,0L17,0z"/>
-              <path class="st0" d="M11.5,7.1c2.4,0,4.4,2,4.4,4.4c0,2.4-2,4.4-4.4,4.4c-2.4,0-4.4-2-4.4-4.4C7.1,9.1,9.1,7.1,11.5,7.1 M11.5,5.6
-                c-3.3,0-5.9,2.7-5.9,5.9s2.7,5.9,5.9,5.9s5.9-2.7,5.9-5.9S14.8,5.6,11.5,5.6L11.5,5.6z"/>
-              <circle class="st0" cx="17.6" cy="5.4" r="1.3"/>
+              <svg class="social__link-icon" width="18" height="18">
+                <use xlink:href="#instagram"></use>
               </svg>
             </a>
           </li>
@@ -119,13 +154,27 @@
     <main class="page__main">
       <section class="page-subheader">
         <h1 class="page-subheader__title">Попутчики</h1>
-        <a href="index.html" class="page-subheader__link">На главную</a>
+        <a href="index.html" class="page-subheader__link">
+          На главную
+          <svg class="page-subheader__icon" width="33" height="20">
+            <use xlink:href="#return"></use>
+          </svg>
+        </a>
       </section>
       <section class="page-filter page-filter--scroll page-filter--nojs">
+        <h2 class="visually-hidden">Фильтрация по странам</h2>
         <span class="page-filter__title">Фильтрация по странам<span class="page-filter__title-colon">:</span></span>
         <button class="page-filter__button page-filter__button--opened" type="button">
-          <span class="page-filter__button-title page-filter__button-title--closed page-filter__button-title--blocked">Показать все</span>
+          <span class="page-filter__button-title page-filter__button-title--closed page-filter__button-title--blocked">
+            Показать все
+          </span>
+          <svg class="page-filter__button-icon page-filter__button-icon--closed page-filter__button-icon--closed-blocked" width="17" height="3">
+            <use xlink:href="#dots"></use>
+          </svg>
           <span class="page-filter__button-title page-filter__button-title--opened">Свернуть</span>
+          <svg class="page-filter__button-icon  page-filter__button-icon--opened" width="16" height="16">
+            <use xlink:href="#filter-close"></use>
+          </svg>
         </button>
         <ul class="page-filter__places-list places-list">
           <li class="places-list__item"><a class="places-list__link places-list__link--selected" href="#">Европа</a></li>
@@ -423,9 +472,11 @@
             </ul>
           </li>
         </ul>
-
-        <button class="page-filter__button-close" type="button">Свернуть
-          <span class="icon icon--times"></span>
+        <button class="page-filter__button-close" type="button">
+          <svg class="page-filter__button-icon" width="16" height="16">
+            <use xlink:href="#close"></use>
+          </svg>
+          <span class="page-filter__button-close-title">Свернуть</span>
         </button>
       </section>
       <div class="page-catalog">
@@ -436,7 +487,8 @@
               <div class="filter-form__content">
                 <div class="filter-form__item filter-section">
                   <h3 class="filter-section__name">Хобби</h3>
-                  <ul class="filter-section__list ">
+                  <button class="filter-section__button filter-section__button--open" type="button"></button>
+                  <ul class="filter-section__list filter-section__list--blocked">
                     <li class="filter-section__list-item">
                       <input class="filter-section__list-item-checkbox visually-hidden" id="gym" name="gym" type="checkbox" value="gym" checked>
                       <label for="gym">Спортзал</label>
@@ -453,6 +505,7 @@
                 </div>
                 <div class="filter-form__item filter-section">
                   <h3 class="filter-section__name">Музыка</h3>
+                  <button class="filter-section__button filter-section__button--close" type="button"></button>
                   <ul class="filter-section__list">
                     <li class="filter-section__list-item">
                       <input class="filter-section__list-item-checkbox visually-hidden" id="hardrock" name="hardrock" type="checkbox" value="hardrock" checked>
@@ -469,24 +522,26 @@
                   </ul>
                 </div>
                 <div class="filter-form__item filter-section">
-                    <h3 class="filter-section__name">Еда</h3>
-                    <ul class="filter-section__list ">
-                      <li class="filter-section__list-item">
-                        <input class="filter-section__list-item-checkbox visually-hidden" id="meat-eater" name="meat-eater" type="checkbox" value="meat-eater" checked>
-                        <label for="meat-eater">Мясоед</label>
-                      </li>
-                      <li class="filter-section__list-item">
-                        <input class="filter-section__list-item-checkbox visually-hidden" id="healthy-food" name="healthy-food" type="checkbox" value="healthy-food" checked>
-                        <label for="healthy-food">Сидит на ПП</label>
-                      </li>
-                      <li class="filter-section__list-item">
-                        <input class="filter-section__list-item-checkbox visually-hidden" id="vegan" name="vegan" type="checkbox" value="vegan">
-                        <label for="vegan">Веган-сыроед</label>
-                      </li>
-                    </ul>
+                  <h3 class="filter-section__name">Еда</h3>
+                  <button class="filter-section__button filter-section__button--open" type="button"></button>
+                  <ul class="filter-section__list filter-section__list--blocked">
+                    <li class="filter-section__list-item">
+                      <input class="filter-section__list-item-checkbox visually-hidden" id="meat-eater" name="meat-eater" type="checkbox" value="meat-eater" checked>
+                      <label for="meat-eater">Мясоед</label>
+                    </li>
+                    <li class="filter-section__list-item">
+                      <input class="filter-section__list-item-checkbox visually-hidden" id="healthy-food" name="healthy-food" type="checkbox" value="healthy-food" checked>
+                      <label for="healthy-food">Сидит на ПП</label>
+                    </li>
+                    <li class="filter-section__list-item">
+                      <input class="filter-section__list-item-checkbox visually-hidden" id="vegan" name="vegan" type="checkbox" value="vegan">
+                      <label for="vegan">Веган-сыроед</label>
+                    </li>
+                  </ul>
                 </div>
                 <div class="filter-form__item filter-form__item--transport filter-section">
                   <h3 class="filter-section__name filter-section__name--transport transport__title">Транспорт</h3>
+                  <button class="filter-section__button filter-section__button--close" type="button"></button>
                   <ul class="filter-section__list transport__list transport__list--filter">
                     <li class="transport__item transport__item--filter">
                       <input class="visually-hidden" id="plane" name="transport" type="checkbox" value="plane">
@@ -507,24 +562,23 @@
                   </ul>
                 </div>
                 <div class="filter-form__item filter-section">
-                  <div class="filter-section__item filter-range">
-                    <h3 class="filter-section__name filter-range__title">Левел</h3>
-                    <div class="filter-range__info">
-                      <div class="filter-range__item level-controls">
-                        <label class="filter-range__min-level">
-                          <input class="number" type="number" value="30">
-                        </label>
-                        <label class="filter-range__max-level">
-                          <input class="number" type="number" value="100">
-                        </label>
+                  <h3 class="filter-section__name filter-range__title">Левел</h3>
+                  <button class="filter-section__button filter-section__button--close" type="button"></button>
+                  <div class="filter-section__item filter-section__list filter-range">
+                    <div class="filter-range__item">
+                      <label class="filter-range__min-level">
+                        <input class="filter-range__number" type="number" min="0" max="100" value="30">
+                      </label>
+                      <label class="filter-range__max-level">
+                        <input class="filter-range__number" type="number" min="0" max="100" value="100">
+                      </label>
+                    </div>
+                    <div class="filter-range__item range">
+                      <div class="range__bar">
+                        <div class="range__bar-active"></div>
                       </div>
-                      <div class="filter-range__item range">
-                        <div class="range__bar">
-                          <div class="range__bar-active"></div>
-                        </div>
-                        <div class="range__toggle range__toggle--min" tabindex="0"></div>
-                        <div class="range__toggle range__toggle--max" tabindex="0"></div>
-                      </div>
+                      <div class="range__toggle range__toggle--min" tabindex="0"></div>
+                      <div class="range__toggle range__toggle--max" tabindex="0"></div>
                     </div>
                   </div>
                 </div>
@@ -766,24 +820,43 @@
                 <p class="user-card__hashtag user-card__hashtag--catalog">
                   #образование #карьера #учеба #линкедин
                 </p>
-                <div class="user-card__transport user-card__transport--catalog transport">
-                  <h4 class="user-card__transport-title user-card__transport-title--catalog transport__title">Транспорт</h4>
-                  <ul class="transport__list transport__list--catalog">
-                    <li class="transport__item">
-                      <input class="transport__item-checkbox transport__item-checkbox--plane visually-hidden" id="plane" name="plane" type="checkbox" value="plane">
-                      <label for="plane"><span class="visually-hidden">Самолет</span></label>
+                <div class="user-card__transport transport">
+                  <h4 class="user-card__transport-title transport__title visually-hidden">Транспорт</h4>
+                  <ul class="transport__list">
+                    <li class="transport__item transport__item--plane">
+                      <svg viewBox="0 0 18 20" xmlns="http://www.w3.org/2000/svg" width="18" height="20">
+                        <path d="M15.7831 0.0931422C15.0546 0.266353 14.3227 0.440377 14.0504 0.917233L11.9433 5.11585L0.629163 7.8059L0.170763 9.14743L8.82861 9.96616L7.35967 13.6009L4.07624 14.3816L3.25187 15.8101L5.62062 16.0673L5.89073 17.2357C6.01174 17.6498 6.43649 17.9263 6.79903 17.8401L7.89351 17.5799L9.16224 19.7433L9.98661 18.3148L9.17628 14.8098L11.5535 11.7795L16.0895 19.741L17.0042 18.7031L14.2128 6.62921L16.7762 2.73424C17.0519 2.25657 16.8721 1.47891 16.6914 0.697594C16.6019 0.310588 16.1457 0.00694332 15.7831 0.0931422Z" fill="#101D41"/>
+                      </svg>
                     </li>
-                    <li class="transport__item">
-                      <input class="transport__item-checkbox transport__item-checkbox--bus visually-hidden" id="bus" name="bus" type="checkbox" value="bus">
-                      <label for="bus"><span class="visually-hidden">Автобус</span></label>
+                    <li class="transport__item transport__item--bus">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 21" width="17" height="19">
+                        <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
+                        c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
+                        C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
+                        M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
+                        H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
+                      </svg>
                     </li>
-                    <li class="transport__item">
-                      <input class="transport__item-checkbox transport__item-checkbox--bicycle visually-hidden" id="bicycle" name="bicycle" type="checkbox" value="bicycle">
-                      <label for="bicycle"><span class="visually-hidden">Велосипед</span></label>
+                    <li class="transport__item transport__item--bicycle">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 21" width="23" height="20">
+                        <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
+                        S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
+                        l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
+                        l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
+                        s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
+                      </svg>
                     </li>
-                    <li class="transport__item">
-                      <input class="transport__item-checkbox transport__item-checkbox--run visually-hidden" id="run" name="run" type="checkbox" value="run">
-                      <label for="run"><span class="visually-hidden">Пешком</span></label>
+                    <li class="transport__item transport__item--run">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21" width="20" height="21">
+                        <g>
+                          <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
+                          <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
+                            C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
+                            c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
+                            c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
+                            z"/>
+                        </g>
+                      </svg>
                     </li>
                   </ul>
                 </div>
@@ -839,9 +912,13 @@
         </section>
       </div>
     </main>
-    <footer class="page__footer page__footer--catalog page-footer">
-      <a class="page-footer__logo logo">
-        <img src="./img/logo-mobile-blue@1x.png" width="100" height="15" alt="Погнали?" >
+    <footer class="page__footer page-footer">
+      <a class="page-footer__logo">
+        <picture>
+          <source media="(min-width: 1400px)" srcset="./img/logo-desktop-blue@1x.png">
+          <source media="(min-width: 768px)" srcset="./img/logo-tablet-blue@1x.png">
+          <img class="page-footer__logo-image" src="./img/logo-mobile-blue@1x.png" width="100" height="15" alt="Погнали?">
+        </picture>
       </a>
       <div class="page-footer__social social">
         <h2 class="visually-hidden">Соцсети</h2>
@@ -859,7 +936,7 @@
           </li>
           <li class="social__item social__item--vkontakte">
             <a class="social__link" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg"width="22" height="12" viewBox="0 0 30 15.8">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="12" viewBox="0 0 30 15.8">
               <g>
                 <path d="M23.9,15.8c-0.4,0-1.2-0.1-2.1-0.6c-0.6-0.4-1.2-1-1.8-1.5c-0.4-0.4-1.2-1.2-1.4-1.2c-0.3,0.1-0.5,0.9-0.5,1.6
                   c0,0.1,0,0.8-0.5,1.2c-0.4,0.4-1.1,0.5-1.2,0.5l-1.9,0c-1,0-4.4-0.2-7.4-3c-3.7-3.4-6.8-9.8-7-10.1C0,2.2-0.1,1.5,0.3,1.1
@@ -883,7 +960,7 @@
           </li>
           <li class="social__item social__item--instagram">
             <a class="social__link" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"viewBox="0 0 23 23">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 23 23">
               <path class="st0" d="M17,1.5c2.5,0,4.5,2,4.5,4.5v11c0,2.5-2,4.5-4.5,4.5H6c-2.5,0-4.5-2-4.5-4.5V6c0-2.5,2-4.5,4.5-4.5L17,1.5
                 M17,0H6C2.7,0,0,2.7,0,6v11c0,3.3,2.7,6,6,6h11c3.3,0,6-2.7,6-6V6C23,2.7,20.3,0,17,0L17,0z"/>
               <path class="st0" d="M11.5,7.1c2.4,0,4.4,2,4.4,4.4c0,2.4-2,4.4-4.4,4.4c-2.4,0-4.4-2-4.4-4.4C7.1,9.1,9.1,7.1,11.5,7.1 M11.5,5.6
@@ -896,10 +973,11 @@
       </div>
       <div class="page-footer__copyright copyright">
         <span class="copyright__text">Разработано:</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="./img/htmlacademy.svg" width="27px" height="33px" alt="HTML Academy"></a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="./img/htmlacademy.svg" width="27" height="33" alt="HTML Academy"></a>
       </div>
     </footer>
     <script src="./js/country-filter.js"></script>
+    <script src="./js/companions-filter.js"></script>
     <script src="./js/main-menu.js"></script>
   </body>
 </html>
