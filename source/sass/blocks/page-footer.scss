@@ -1,14 +1,17 @@
 .page-footer {
+  z-index: 4;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 25px;
+  padding: 35px 25px 25px;
   background-color: $white;
+  border-radius: 30px 30px 0 0;
 
   //Tablet
   @media (min-width: 768px) {
     padding: 55px 40px;
     flex-direction: row;
+    border-radius: 60px 60px 0 0;
   }
 
   //Desktop
@@ -19,7 +22,7 @@
 
 .page-footer__logo {
   display: inline-block;
-  margin: 10px auto 20px;
+  margin: 0 auto 20px;
 
   //Tablet & Desktop
   @media (min-width: 768px) {
@@ -27,6 +30,48 @@
   }
 }
 
+.page-footer__logo-image {
+  display: inline-block;
+  position: relative;
+
+  //Tablet
+  @media (min-width: 768px) {
+    width: 166px;
+    height: 42px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    width: 200px;
+    height: 52px;
+  }
+}
+
 .page-footer__social {
   margin: 0 auto;
+
+  //Tablet
+  @media (min-width: 768px) {
+    margin: 0;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    margin-right: 38px;
+    margin-top: 10px;
+  }
+}
+
+.page-footer__copyright {
+  margin-top: 21px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    margin: 0;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    margin-top: 13px;
+  }
 }

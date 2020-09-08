@@ -9,6 +9,7 @@
 
 .add-plans__info {
   padding: 25px 25px 60px;
+  margin-bottom: 81px;
 
   //Tablet
   @media (min-width: 768px) {
@@ -25,12 +26,10 @@
   display: flex;
   justify-content: space-between;
   margin: 8px auto 30px;
-
   //Tablet
   @media (min-width: 768px) {
-    margin: 8px auto 63px;
+    margin: 8px auto 58px;
   }
-
   //Desktop
   @media (min-width: 1440px) {
     margin: 8px 70px 63px;
@@ -44,19 +43,21 @@
 .add-plans__item {
   background-color: $white;
   margin-bottom: 10px;
+  border-radius: 10px;
 
   //Tablet
   @media (min-width: 768px) {
     margin-bottom: 40px;
+    border-radius: 30px;
   }
 }
 
 .add-plans__item-info {
-  padding: 22px 25px 17px;
+  padding: 22px 25px 16px;
 
   //Tablet
   @media (min-width: 768px) {
-    padding: 48px 41px 58px;
+    padding: 48px 41px 53px;
   }
 
   //Desktop
@@ -67,7 +68,8 @@
 
 .add-plans__item-title {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
+  font-size: 20px;
 
   //Tablet
   @media (min-width: 768px) {
@@ -90,6 +92,15 @@
   //Desktop
   @media (min-width: 1440px) {
     margin-bottom: 50px;
+  }
+}
+
+.add-plans__item-text br {
+  display: none;
+
+  //Tablet
+  @media (min-width: 768px) {
+    display: block;
   }
 }
 
@@ -119,7 +130,7 @@
 }
 
 .add-plans__item-checkbox {
-  margin-top: 21px;
+  margin-top: 24px;
 
   //Tablet
   @media (min-width: 768px) and (max-width: 1439px) {
@@ -139,11 +150,16 @@
 }
 
 .add-plans__buttons {
+  margin-top: 25px;
   //Tablet
   @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
   }
+}
+
+.entertainment ~ .add-plans__buttons {
+  margin-top: 12px;
 }
 
 .add-plans__button {
@@ -153,7 +169,7 @@
   //Tablet
   @media (min-width: 768px) {
     width: 54%;
-    padding: 28px;
+    padding: 28px 37px;
     margin-top: 24px;
     font-size: 24px;
   }
@@ -164,8 +180,10 @@
   }
 }
 
+
 .add-plans__item-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr max-content;
   margin-top: 21px;
 
   //Tablet
@@ -175,18 +193,28 @@
 
   //Desktop
   @media (min-width: 1440px) {
-    margin-top: 142px;
+    margin-top: 140px;
+    grid-gap: 90px;
   }
 }
 
 .add-plans__item-countries,
 .add-plans__item-countries-flag {
+  display: grid;
+  grid-row-gap: 21px;
   list-style: none;
   padding: 0;
   margin: 0;
+
+  //Tablet
+  @media (min-width: 768px) {
+    grid-template-rows: max-content max-content max-content max-content;
+    grid-row-gap: 14px;
+  }
 }
 
 .add-plans__item-countries-flag {
+  z-index: 1;
   //Tablet
   @media (min-width: 768px) {
     margin-left: 30px;

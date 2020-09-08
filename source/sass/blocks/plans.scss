@@ -35,6 +35,7 @@
 .plans__item {
   background-color: $white;
   margin-bottom: 10px;
+  border-radius: 10px;
 
   //Desktop
   @media (min-width: 1440px) {

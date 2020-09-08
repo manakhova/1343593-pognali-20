@@ -1,0 +1,142 @@
+.modal {
+  position: fixed;
+  z-index: 10;
+  top: 12.5%;
+  left: 25px;
+  right: 25px;
+  min-height: 443px;
+  background-color: $white;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(29, 46, 91, 0.14);
+  //Tablet
+  @media (min-width: 768px) {
+    left: 39px;
+    right: 41px;
+    min-height: 525px;
+  }
+  //Desktop
+  @media (min-width: 1440px) {
+    left: 346px;
+    right: 342px;
+    border-radius: 25px;
+  }
+
+  &--closed {
+    display: none;
+  }
+}
+
+.modal__info {
+  padding: 35px 25px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    padding: 65px 90px 55px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    padding: 65px 60px 55px;
+  }
+}
+
+.modal__title {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 40px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    margin-bottom: 72px;
+  }
+}
+
+.modal__list {
+  position: relative;
+  display: grid;
+  grid-gap: 22px;
+  list-style: none;
+  padding: 0;
+
+  &::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: -12px;
+    right: 3px;
+    width: 227px;
+    height: 1px;
+    background-color: #f2f2f2;
+    box-shadow: 0 64px 0 0 #f2f2f2, 0 132px 0 0 #f2f2f2, 0 199px 0 0 #f2f2f2, 0 264px 0 0 #f2f2f2;
+
+    //Tablet
+    @media (min-width: 768px) {
+      top: -15px;
+      width: 510px;
+      box-shadow: 0 55px 0 0 #f2f2f2, 0 110px 0 0 #f2f2f2, 0 164px 0 0 #f2f2f2, 0 220px 0 0 #f2f2f2;
+    }
+
+    //Desktop
+    @media (min-width: 1440px) {
+      top: -17px;
+      width: 630px;
+      box-shadow: 0 56px 0 0 #f2f2f2, 0 111px 0 0 #f2f2f2, 0 167px 0 0 #f2f2f2, 0 220px 0 0 #f2f2f2;
+    }
+  }
+
+  //Tablet
+  @media (min-width: 768px) {
+    grid-gap: 34px;
+  }
+}
+
+.modal-service,
+.modal-price {
+  font-weight: 300;
+  color: $special-grey;
+
+  //Tablet
+  @media (min-width: 768px) {
+    font-size: 22px;
+  }
+}
+
+.modal-price {
+  //Tablet
+  @media (min-width: 768px) {
+    justify-self: end;
+  }
+}
+
+.modal__item {
+  display: grid;
+
+  //Tablet
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.modal__button {
+  width: 100%;
+  padding: 18px;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $basic-blue;
+  background-color: #f3f4f8;
+  border: none;
+  border-radius: 0 0 20px 20px;
+
+  &:focus {
+    outline: none;
+  }
+
+  //Tablet
+  @media (min-width: 768px) {
+    padding: 40px;
+    font-size: 24px;
+    text-transform: none;
+  }
+}

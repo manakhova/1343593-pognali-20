@@ -1,11 +1,120 @@
 .flag-icon {
+  position: relative;
+  padding: 0;
   display: block;
-  width: 26px;
-  height: 18px;
   border: none;
-  background-color: $basic-blue;
+
+  &:focus {
+    outline: none;
+  }
+
+  &--bosnia {
+    width: 70px;
+    height: 48px;
+    transform: scale(0.5);
+    margin: -4px -10px -12px -10px;
+
+    //Tablet
+    @media (min-width: 768px) {
+      transform: none;
+    }
+  }
+
+  &--czech {
+    width: 70px;
+    height: 48px;
+    transform: scale(0.5);
+    margin: -4px -10px -12px -10px;
+
+    //Tablet
+    @media (min-width: 768px) {
+      transform: none;
+    }
+  }
+
 
   &--add {
+    position: relative;
     background-color: #edeff6;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 18px;
+      right: -37px;
+      width: 14px;
+      height: 2px;
+      background-color: $grey;
+      transform: rotate(90deg);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 18px;
+      right: -37px;
+      width: 14px;
+      height: 2px;
+      background-color: $grey;
+    }
+
+    //Tablet
+    @media (min-width: 768px) {
+      display: none;
+    }
   }
+
+  &--place-open {
+    position: relative;
+    background-color: transparent;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 18px;
+      left: 25px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 17 9' fill='grey'%3E%3Cpath d='M8.5,7.2l-7.2-7C1-0.1,0.5-0.1,0.2,0.2c-0.3,0.3-0.3,0.8,0,1L8,8.8c0.3,0.3,0.8,0.3,1.1,0l7.7-7.5C16.9,1.1,17,0.9,17,0.7 s-0.1-0.4-0.2-0.5c-0.3-0.3-0.8-0.3-1.1,0L8.5,7.2z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      width: 11px;
+      height: 7px;
+      padding: 0;
+    }
+
+    //Tablet
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &--place-close {
+    position: relative;
+    background-color: transparent;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 22px;
+      right: -36px;
+      width: 11px;
+      height: 1px;
+      background-color: $white;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 22px;
+      right: -36px;
+      width: 11px;
+      height: 1px;
+      background-color: $white;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.entertainment .flag-icon--bosnia,
+.entertainment .flag-icon--czech {
+  margin: -8px -15px -12px -18px;
 }

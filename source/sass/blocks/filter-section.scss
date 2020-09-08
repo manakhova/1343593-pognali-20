@@ -1,27 +1,43 @@
 .filter-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   border-top: 1px solid #f3c72b;
 
   //Tablet
-  @media (min-width: 768px) and (max-width: 1439px) {
-    display: flex;
+  @media (min-width: 768px) {
     border: none;
+    justify-content: flex-start;
   }
 }
 
 .filter-section__list {
+  display: grid;
   list-style: none;
   margin: 0;
   margin-top: 10px;
   padding: 0;
+  width: 79%;
 
-  &--closed {
+  &--blocked {
     display: none;
+
+    //Tablet
+    @media (min-width: 768px) and (max-width: 1439px) {
+      display: grid;
+    }
   }
 
   //Tablet
   @media (min-width: 768px) and (max-width: 1439px) {
-    display: flex;
     margin: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    margin-top: 24px;
+    grid-gap: 11px;
   }
 }
 
@@ -33,6 +49,11 @@
   @media (min-width: 768px) and (max-width: 1439px) {
     margin-bottom: 0;
     margin-left: 36px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    margin-left: 39px;
   }
 }
 
@@ -46,6 +67,7 @@
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 700;
+  width: 90%;
   margin: 0;
   padding: 0;
 
@@ -53,6 +75,13 @@
   @media (min-width: 768px) and (max-width: 1439px) {
     font-size: 20px;
     min-width: 128px;
+    margin-right: 0;
+    width: auto;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    font-size: 20px;
   }
 
   &--transport {
@@ -63,12 +92,65 @@
   }
 }
 
+.filter-section__button {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  padding: 9px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &--open::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: -1px;
+    width: 10px;
+    height: 6px;
+    background-size: 10px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 5' fill='%23192144'%3E%3Cpolygon points='5,5 0,0 10,0 '/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+
+    //Desktop
+    @media (min-width: 1440px) {
+      top: 7px;
+      right: 1px;
+    }
+  }
+
+  &--close::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: -1px;
+    width: 10px;
+    height: 6px;
+    background-size: 10px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 5' fill='%23192144'%3E%3Cpolygon points='5,5 0,0 10,0 '/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+
+    //Desktop
+    @media (min-width: 1440px) {
+      top: 4px;
+      right: 0;
+    }
+  }
+
+  //Tablet
+  @media (min-width: 768px) and (max-width: 1439px) {
+    display: none;
+  }
+}
+
 .filter-section__list-item label {
   position: relative;
   display: block;
 
   //Tablet
-  @media (min-width: 768px) and (max-width: 1439px) {
+  @media (min-width: 768px) {
     font-size: 20px;
     width: 133px;
   }
@@ -87,7 +169,7 @@
   border-radius: 4px;
 
   //Tablet
-  @media (min-width: 768px) and (max-width: 1439px) {
+  @media (min-width: 768px) {
     height: 24px;
     width: 24px;
     left: -36px;
@@ -106,4 +188,14 @@
   width: 8px;
   background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 12 12' style='enable-background:new 0 0 12 12;' xml:space='preserve'%3E%3Cpolygon points='12,0 3.8,8 0,4.3 0,8.3 3.8,12 12,4 '/%3E%3C/svg%3E");
   border-radius: 4px;
+  background-repeat: no-repeat;
+
+  //Tablet
+  @media (min-width: 768px) {
+    left: -31px;
+    top: 4px;
+    height: 13px;
+    width: 12px;
+    background-size: 12px;
+  }
 }

@@ -5,7 +5,7 @@
   border-radius: 20px;
   color: $basic-blue;
   box-sizing: border-box;
-  padding: 25px 25px 18px;
+  padding: 25px 25px 22px;
   min-width: 270px;
 
   //Tablet
@@ -15,25 +15,35 @@
 
   //Desktop
   @media (min-width: 1440px) {
-    padding: 25px;
+    padding: 45px;
+    min-width: 285px;
   }
 }
 
 .filter-form__title {
+  font-size: 22px;
   margin: 0;
   margin-bottom: 20px;
+  letter-spacing: 0.02em;
 
   //Tablet
   @media (min-width: 768px) and (max-width: 1439px) {
     font-size: 30px;
     margin-bottom: 40px;
+    letter-spacing: 0;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    font-size: 30px;
+    line-height: 30px;
   }
 }
 
 .filter-form__content {
   //Tablet
   @media (min-width: 768px) and (max-width: 1439px) {
-    padding: 5px 0;
+    padding: 9px 0;
     border-top: 1px solid #f3c72b;
   }
 }
@@ -45,7 +55,12 @@
   //Tablet
   @media (min-width: 768px) and (max-width: 1439px) {
     padding: 0;
-    padding-top: 30px;
+    padding-top: 29px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    padding: 14px 0 7px;
   }
 
   &--transport {

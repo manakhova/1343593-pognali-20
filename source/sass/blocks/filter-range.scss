@@ -1,12 +1,35 @@
 .filter-range {
+  display: grid;
+  width: 100%;
+  margin-top: 10px;
+
   //Tablet
   @media (min-width: 768px) and (max-width: 1439px) {
-    display: flex;
+    grid-column-gap: 60px;
+    margin: 0;
+    width: 77%;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    margin-top: 17px;
   }
 }
 
 .filter-range__item {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  //Tablet
+  @media (min-width: 768px) and (max-width: 1439px) {
+    grid-column: 2 / span 3;
+    margin-top: -7px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    grid-template-columns: 96px 96px;
+  }
 }
 
 .filter-range__item:nth-of-type(2) {
@@ -15,19 +38,17 @@
 
   //Tablet
   @media (min-width: 768px) and (max-width: 1439px) {
+    align-self: center;
+    grid-column: 1;
+    grid-row: 1;
     padding: 13px 0;
-    min-width: 182px;
+    min-width: 281px;
   }
-}
 
-.filter-range__info {
-  margin-top: 10px;
-
-  //Tablet
-  @media (min-width: 768px) and (max-width: 1439px) {
-    display: flex;
-    flex-direction: row-reverse;
-    margin: 0;
+  //Desktop
+  @media (min-width: 1440px) {
+    min-width: 192px;
+    padding: 26px 0;
   }
 }
 
@@ -36,4 +57,48 @@
   @media (min-width: 768px) and (max-width: 1439px) {
     margin-top: 5px;
   }
+}
+
+.filter-range__min-level {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 9px;
+    right: -12px;
+    width: 16px;
+    height: 1px;
+    border: 5px solid $white;
+    background-color: $special-grey-light;
+
+    //Tablet
+    @media (min-width: 768px) {
+      top: 16px;
+      right: -15px;
+      width: 19px;
+    }
+  }
+}
+
+.filter-range__number {
+  border: 1px solid $special-grey-light;
+  border-radius: 4px 0 0 4px;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  width: 100%;
+  padding: 8px;
+  text-align: center;
+
+  //Tablet
+  @media (min-width: 768px) {
+    font-size: 20px;
+    padding: 13px 5px 8px 19px;
+  }
+}
+
+.filter-range__max-level .filter-range__number {
+  border-radius: 0 4px 4px 0;
 }
