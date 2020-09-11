@@ -84,19 +84,17 @@
 }
 
 .plan-countries__dropdown-content .alphabet__item {
-  padding: 10px 10.2px 9px 11.5px;
+  padding: 0;
   border: 1px solid $special-grey-light;
   background-color: $white;
   margin: -1px;
 
-  //Tablet
-  @media (min-width: 768px) {
-    padding: 25px 17px 22px 21px;
+  &:hover {
+    border-color: #959bb2;
   }
 
   //Desktop
   @media (min-width: 1440px) {
-    padding: 25px 23px 22px 21px;
     margin: 0 14px 13px 0;
   }
 
@@ -118,6 +116,11 @@
   font-size: 14px;
   color: $basic-blue-medium;
 
+  &:focus {
+    outline: none;
+    background-color: $basic-blue-medium;
+    color: $white;
+  }
 
   //Tablet
   @media (min-width: 768px) {
@@ -146,10 +149,19 @@
 .plan-countries__dropdown-content .alphabet__button {
   font-weight: 500;
   font-size: 14px;
+  width: 44px;
+  height: 41px;
 
   //Tablet
   @media (min-width: 768px) {
     font-size: 20px;
+    width: 52px;
+    height: 69px;
+  }
+
+  //Desktop
+  @media (min-width: 768px) {
+    width: 59px;
   }
 
   &--selected {
@@ -228,6 +240,15 @@
 .alphabet__letter-link {
   text-decoration: none;
   color: $special-grey;
+
+  &:hover {
+    color: $basic-blue;
+  }
+
+  &--down,
+  &--down:hover {
+    opacity: 0.3;
+  }
 
   //Tablet
   @media (min-width: 768px) {

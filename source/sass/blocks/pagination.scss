@@ -1,8 +1,21 @@
 .pagination {
-  width: 100%;
-  background-color: $white;
   display: flex;
   justify-content: space-between;
+  padding: 5px;
+  margin-bottom: 106px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    background-color: $white;
+    margin: 23px 40px 106px;
+    padding: 23px;
+    border-radius: 20px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    margin: 9px 43px 40px 0;
+  }
 }
 
 .pagination__list {
@@ -12,12 +25,38 @@
   @media (min-width: 768px) {
     display: flex;
     list-style: none;
+    margin: 3px 6px;
     padding: 0;
   }
 }
 
+.pagination__item {
+  //Tablet & Destop
+  @media (min-width: 768px) {
+    padding: 15px 19px 11px 20px;
+  }
+
+  &--active {
+    //Tablet & Destop
+    @media (min-width: 768px) {
+      background-color: $basic-yellow;
+      border-radius: 50px;
+    }
+  }
+}
+
 .pagination__item-link {
-  text-decoration: none;
+  //Tablet & Destop
+  @media (min-width: 768px) {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: $basic-blue;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
 }
 
 
@@ -33,5 +72,57 @@
 .pagination__toggle {
   border: none;
   background-color: $white;
-  padding: 15px 60px;
+  padding: 16px 60px;
+
+  //Tablet & Desktop
+  @media (min-width: 768px) {
+    padding: 16px 13px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    padding: 16px 17px;
+  }
+
+  .pagination__toggle-icon {
+    fill: $basic-blue;
+  }
+
+  &:hover {
+    .pagination__toggle-icon {
+      opacity: 0.6;
+    }
+  }
+
+  &:disabled {
+    .pagination__toggle-icon {
+      opacity: 0.3;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &--left {
+    margin-right: -2px;
+    border-radius: 20px 0 0 20px;
+    border-right: 1px solid $special-grey-light;
+
+    //Tablet & Desktop
+    @media (min-width: 768px) {
+      margin: 0;
+      border: none;
+    }
+  }
+
+  &--right {
+    margin-left: -2px;
+    border-radius: 0 20px 20px 0;
+
+    //Tablet & Desktop
+    @media (min-width: 768px) {
+      margin: -1px;
+    }
+  }
 }

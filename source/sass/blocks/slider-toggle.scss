@@ -27,16 +27,35 @@
     background-color: $basic-blue;
     border-radius: 25px;
     opacity: 0.3;
-  }
 
-  &--current {
-    &::after {
-      opacity: 1;
+    //Desktop
+    @media (min-width: 1440px) {
+      top: 22px;
+      left: -28px;
     }
   }
+
 
   //Tablet
   @media (min-width: 768px) {
     padding: 14px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    font-size: 20px;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: black;
+    opacity: 0.6;
+    padding-bottom: 7px;
+  }
+
+  &--current {
+    opacity: 1;
+
+    &::after {
+      opacity: 1;
+    }
   }
 }

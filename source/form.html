@@ -15,7 +15,7 @@
       @media ( min-width: 768px ) {
         HTML {
           /* Планшетный макет */
-          background-image: url( "./img/Tablet-Form-No.jpg" );
+          background-image: url( "./img/Tablet-Form.jpg" );
         }
       }
       /* Десктоп */
@@ -118,7 +118,7 @@
       </button>
       <ul class="page-header__navigation site-navigation">
         <li class="site-navigation__item site-navigation__item--scroll">
-          <a class="site-navigation__link site-navigation__link--scroll" href="#">О сервисе</a>
+          О сервисе
         </li>
         <li class="site-navigation__item site-navigation__item--scroll">
           <a class="site-navigation__link site-navigation__link--scroll" href="form.html">Направления</a>
@@ -173,10 +173,10 @@
       </div>
     </header>
     <main class="page__main">
-      <section class="page-subheader page-subheader--form">
-        <h1 class="page-subheader__title subheader-title">Направления</h1>
-      </section>
       <section class="profile user-profile">
+        <div class="profile__page-subheader profile__page-subheader--form">
+          <h1 class="profile__page-subheader__title">Направления</h1>
+        </div>
         <div class="profile__info">
           <div class="profile__level user-profile__level">
             <span class="user-profile__level-number">80</span>
@@ -184,9 +184,12 @@
           </div>
         </div>
         <img class="profile__pic user-profile__pic" src="./img/demin-desktop@1x.jpg" width="100" height="100" alt="Петя Демин">
-        <button class="profile__button user-profile__button" type="button">Сменить фото</button>
+        <button class="profile__button user-profile__button" type="button">
+          <span class="user-profile__button-1">Сменить фото</span>
+          <span class="user-profile__button-2">Фото</span>
+        </button>
         <div class="profile__tags user-profile__tags">
-          <h4 class="user-profile__title">Тэги</h4>
+          <h4 class="user-profile__tags-title">Тэги</h4>
           <textarea class="user-profile__hashtag" placeholder="Коротко о себе в виде 5-8 хештэгов">#бургер #бар #футбол #концерт #крафт</textarea>
         </div>
         <div class="profile__transport transport transport--form">
@@ -253,6 +256,11 @@
               <div class="add-plans__item">
                 <div class="add-plans__item-info">
                   <h3 class="add-plans__item-title">Шаг 1. <br> Даты пребывания</h3>
+                  <div class="add-plans__slider add-plans__slider--desktop slider-toggle">
+                    <span class="slider-toggle__item  slider-toggle__item--current" type="button">Даты</span>
+                    <span class="slider-toggle__item">Маршрут</span>
+                    <span class="slider-toggle__item" type="button">Развлечения</span>
+                  </div>
                   <p class="add-plans__item-text text text--form text--grey">
                     Укажите предпочтительное количество попутчиков, которых <br>
                     вы хотели бы позвать в поездку и ее предполагаемую длительность.
@@ -268,7 +276,7 @@
                           </svg>
                         </button>
                         <label>
-                          <input class="field-quantity__input" type="text" id="companions">
+                          <input class="field-quantity__input" type="text" id="companions" value="2">
                         </label>
                         <button class="field-quantity__button field-quantity__button--more" type="button">
                           <svg class="field-quantity__button-icon" width="14" height="14">
@@ -287,7 +295,7 @@
                           </svg>
                         </button>
                         <label>
-                          <input class="field-quantity__input" type="text" id="measure">
+                          <input class="field-quantity__input" type="text" id="measure" value="2">
                         </label>
                         <button class="field-quantity__button field-quantity__button--more" type="button">
                           <svg class="field-quantity__button-icon" width="14" height="14">
@@ -410,6 +418,11 @@
               <div class="add-plans__item">
                 <div class="add-plans__item-info">
                   <h3 class="add-plans__item-title">Шаг 2. <br> Маршрут</h3>
+                  <div class="add-plans__slider add-plans__slider--desktop slider-toggle">
+                    <span class="slider-toggle__item" type="button">Даты</span>
+                    <span class="slider-toggle__item slider-toggle__item--current">Маршрут</span>
+                    <span class="slider-toggle__item" type="button">Развлечения</span>
+                  </div>
                   <p class="add-plans__item-text text text--form text--grey">
                     Укажите страны, которые вы хотели посетить. <br>
                     Это может быть одна или сразу несколько.
@@ -554,11 +567,16 @@
               <div class="add-plans__item">
                 <div class="add-plans__item-info">
                   <h3 class="add-plans__item-title">Шаг 3. <br> Развлечения</h3>
+                  <div class="add-plans__slider add-plans__slider--desktop slider-toggle">
+                    <span class="slider-toggle__item" type="button">Даты</span>
+                    <span class="slider-toggle__item">Маршрут</span>
+                    <span class="slider-toggle__item slider-toggle__item--current" type="button">Развлечения</span>
+                  </div>
                   <p class="add-plans__item-text text text--form text--grey">
-                    Наконец, расскажите о своих планах времяпровождения.
+                    Наконец, расскажите о своих планах времяпровождения. <br>
                     Можно писать в свободной форме и ставить тэги.
                   </p>
-                  <div class="add-plans__item-textarea entertainment">
+                  <div class="add-plans__item-textarea entertainment entertainment--first">
                     <div class="entertainment__country">
                       <label class="entertainment__country-name" for="coutry-1">Босния&nbsp;и&nbsp;Герцеговина</label>
                       <svg class="flag-icon--bosnia" width="35" height="24">
@@ -578,7 +596,7 @@
                     </textarea>
                   </div>
                   <div class="add-plans__buttons">
-                    <button class="add-plans__button catalog-button" type="submit">Отправить</button>
+                    <button class="add-plans__button catalog-button" type="submit" disabled>Отправить</button>
                     <button class="add-plans__button catalog-button catalog-button--transparent" type="button">На шаг назад</button>
                   </div>
                 </div>

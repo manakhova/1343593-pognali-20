@@ -49,11 +49,26 @@
 
   &--catalog {
     z-index: 4;
-    margin-top: -63px;
+    margin-top: -68px;
+
+    //Tablet
+    @media (min-width: 768px) {
+      margin-top: -44px;
+    }
   }
 
   &--form {
     z-index: 3;
-    margin-top: -112px;
+    margin-top: -109px;
+
+    //Tablet
+    @media (min-width: 768px) {
+      margin-top: -128px;
+    }
+
+    //Desktop
+    @media (min-width: 1440px) {
+      margin-top: -111px;
+    }
   }
 }

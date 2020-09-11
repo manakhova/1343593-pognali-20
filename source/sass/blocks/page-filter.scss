@@ -27,8 +27,11 @@
 
   &--scroll {
     position: absolute;
+    left: 0;
+    right: 0;
     //Desktop
     @media (min-width: 1440px) {
+      position: static;
       background-color: $basic-blue-light;
     }
   }

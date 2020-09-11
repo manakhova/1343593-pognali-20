@@ -3,15 +3,28 @@
   padding: 20px 25px;
 
   //Tablet
-  @media (min-width: 768px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     padding: 44px 34px 17px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      bottom: 53px;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background-color: $special-grey-light;
+      opacity: 0.3;
+    }
   }
 
   //Desktop
   @media (min-width: 1440px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 40px 42px 17px;
+    padding: 38px 42px 22px;
   }
 }
 
@@ -32,21 +45,8 @@
 .countries-plan__country-main {
   //Tablet
   @media (min-width: 768px) {
-    position: relative;
     display: flex;
     justify-content: space-between;
-
-    &::before {
-      content: "";
-      position: absolute;
-      display: block;
-      top: -17px;
-      left: -36px;
-      width: 621px;
-      height: 1px;
-      background-color: $special-grey-light;
-      opacity: 0.3;
-    }
   }
 }
 
@@ -59,7 +59,7 @@
 
   //Desktop
   @media (min-width: 1440px) {
-    margin-right: 33px;
+    margin-left: 40px;
   }
 }
 
@@ -84,6 +84,11 @@
   //Tablet
   @media (min-width: 768px) {
     margin-left: -25px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    margin-left: -80px;
   }
 }
 

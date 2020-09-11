@@ -81,9 +81,26 @@
   }
 }
 
+.page-header__logo {
+  position: relative;
+
+  &::before {
+    //Desktop
+    @media (min-width: 1440px) {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 24px;
+      right: 47px;
+      width: 62px;
+      height: 2px;
+      background-color: $white;
+    }
+  }
+}
+
 .page-header__logo-image {
   display: inline-block;
-  position: relative;
 
   //Tablet
   @media (min-width: 768px) {

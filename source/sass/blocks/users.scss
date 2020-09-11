@@ -36,6 +36,7 @@
   //Tablet
   @media (min-width: 768px) {
     padding: 183px 73px 87px;
+    grid-gap: 12px;
   }
   //Desktop
   @media (min-width: 1440px) {
@@ -185,6 +186,7 @@
 .users__list {
   display: grid;
   grid-gap: 8px;
+  justify-items: center;
 
   //Tablet
   @media (min-width: 768px) {
@@ -201,18 +203,22 @@
   }
 
   &--catalog {
-    grid-gap: 13px;
-    padding: 25px 25px 100px;
+    grid-gap: 10px;
+    padding: 25px 25px 18px;
 
     //Tablet
     @media (min-width: 768px) {
       grid-template-columns: auto;
+      grid-gap: 39px;
     }
 
     //Desktop
     @media (min-width: 1440px) {
       grid-column: 1;
       grid-row: 1 / span 2;
+      margin-top: 18px;
+      padding: 0;
+      grid-gap: 32px;
     }
   }
 }
@@ -224,7 +230,7 @@
 
   //Tablet
   @media (min-width: 768px) {
-    margin-top: 70px;
+    margin-top: 67px;
   }
 
   //Desktop
@@ -240,15 +246,96 @@
 }
 
 .users__link {
-  display: inline-block;
-  margin: 8px auto;
+  position: relative;
+  display: block;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 17px;
   color: $basic-blue;
+  margin-left: 30px;
+  padding: 10px 15px;
+  margin-top: -5px;
+
+  &:hover {
+    &::before,
+    &::after {
+      opacity: 0.6;
+    }
+  }
+
+  &--down {
+    &::before,
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 55px;
+    width: 18px;
+    height: 2px;
+    background-color: $basic-blue;
+    transform: rotate(90deg);
+
+    //Tablet
+    @media (min-width: 768px) {
+      top: 37px;
+      left: 246px;
+      width: 25px;
+    }
+
+    //Desktop
+    @media (min-width: 1440px) {
+      top: 71px;
+      left: 411px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 55px;
+    width: 18px;
+    height: 2px;
+    background-color: $basic-blue;
+    transform: rotate(180deg);
+
+    //Tablet
+    @media (min-width: 768px) {
+      top: 37px;
+      left: 246px;
+      width: 25px;
+    }
+
+    //Desktop
+    @media (min-width: 1440px) {
+      top: 71px;
+      left: 411px;
+    }
+  }
+
+  //Tablet
+  @media (min-width: 768px) {
+    font-size: 20px;
+    margin: 0;
+    margin-left: 43px;
+    padding: 29px 15px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    margin-left: -64px;
+    padding: 63px 15px;
+  }
 }
 
 .users__toggles {
   margin: 8px auto;
+  padding: 25px;
 }

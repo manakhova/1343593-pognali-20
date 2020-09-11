@@ -2,9 +2,15 @@
   position: relative;
   z-index: 2;
   border-radius: 30px 30px 0 0;
-  margin-top: -30px;
+  margin-top: -23px;
   background-color: $special-blue-medium;
   color: $basic-blue;
+
+  //Desktop
+  @media (min-width: 1440px) {
+    border-radius: 60px 60px 0 0;
+    margin-top: -28px;
+  }
 }
 
 .add-plans__info {
@@ -13,12 +19,31 @@
 
   //Tablet
   @media (min-width: 768px) {
-    padding: 55px 75px;
+    padding: 55px 75px 70px;
   }
 
   //Desktop
   @media (min-width: 1440px) {
-    padding: 75px 60px 58px;
+    padding: 54px 60px 58px;
+  }
+}
+
+.add-plans__slider {
+  //Desktop
+  @media (min-width: 1440px) {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+    //Desktop
+    @media (min-width: 1440px) {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 92px;
+      right: 214px;
+    }
   }
 }
 
@@ -28,7 +53,7 @@
   margin: 8px auto 30px;
   //Tablet
   @media (min-width: 768px) {
-    margin: 8px auto 58px;
+    margin: 8px auto 55px;
   }
   //Desktop
   @media (min-width: 1440px) {
@@ -50,6 +75,47 @@
     margin-bottom: 40px;
     border-radius: 30px;
   }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    border-radius: 60px;
+    margin-bottom: 44px;
+  }
+}
+
+.add-plans__item:last-of-type {
+  //Tablet
+  @media (min-width: 768px) and (max-width: 1439px) {
+    margin-top: 51px;
+  }
+}
+
+.add-plans__item-main {
+  position: relative;
+
+  //Tablet
+  @media (min-width: 768px) {
+    display: grid;
+  }
+  //Desktop
+  @media (min-width: 1440px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+  &::before {
+    //Desktop
+    @media (min-width: 1440px) {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 3px;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background-color: #e1e3e9;
+    }
+  }
 }
 
 .add-plans__item-info {
@@ -57,12 +123,27 @@
 
   //Tablet
   @media (min-width: 768px) {
-    padding: 48px 41px 53px;
+    padding: 48px 43px 53px;
   }
 
   //Desktop
   @media (min-width: 1440px) {
-    padding: 102px 159px 115px;
+    padding: 98px 159px 104px;
+    position: relative;
+  }
+}
+
+.add-plans__item:first-of-type .add-plans__item-info {
+  padding-bottom: 22px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    padding-bottom: 53px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    padding-bottom: 105px;
   }
 }
 
@@ -70,6 +151,7 @@
   margin: 0;
   margin-bottom: 14px;
   font-size: 20px;
+  line-height: 20px;
 
   //Tablet
   @media (min-width: 768px) {
@@ -92,6 +174,27 @@
   //Desktop
   @media (min-width: 1440px) {
     margin-bottom: 50px;
+    padding-right: 300px;
+  }
+}
+
+.add-plans__item:last-of-type .add-plans__item-text {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 79px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #e1e3e9;
+
+    //Desktop
+    @media (min-width: 1440px) {
+      top: 102px;
+    }
   }
 }
 
@@ -104,23 +207,12 @@
   }
 }
 
-.add-plans__item-main {
-  //Tablet
-  @media (min-width: 768px) {
-    display: grid;
-  }
-  //Desktop
-  @media (min-width: 1440px) {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 .add-plans__item-input {
   margin-top: 16px;
 
   //Tablet
   @media (min-width: 768px) {
-    margin-top: 60px;
+    margin-top: 59px;
   }
 
   //Desktop
@@ -135,7 +227,7 @@
   //Tablet
   @media (min-width: 768px) and (max-width: 1439px) {
     order: 2;
-    margin-top: 30px;
+    margin-top: 33px;
   }
 
   //Desktop
@@ -151,15 +243,30 @@
 
 .add-plans__buttons {
   margin-top: 25px;
+
   //Tablet
   @media (min-width: 768px) {
     display: flex;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
     justify-content: space-between;
   }
 }
 
 .entertainment ~ .add-plans__buttons {
   margin-top: 12px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    margin-top: 17px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    margin-top: 13px;
+  }
 }
 
 .add-plans__button {
@@ -177,6 +284,7 @@
   //Desktop
   @media (min-width: 1440px) {
     width: 29%;
+    margin-top: 34px;
   }
 }
 
@@ -188,13 +296,59 @@
 
   //Tablet
   @media (min-width: 768px) {
+    position: relative;
     margin-top: 75px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: -44px;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background-color: #e1e3e9;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: -44px;
+      bottom: -28px;
+      right: 138px;
+      width: 1px;
+      background-color: #e1e3e9;
+    }
   }
 
   //Desktop
   @media (min-width: 1440px) {
-    margin-top: 140px;
-    grid-gap: 90px;
+    position: relative;
+    margin-top: 117px;
+    grid-gap: 62px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: -63px;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background-color: #e1e3e9;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: -63px;
+      bottom: -154px;
+      right: 226px;
+      width: 1px;
+      background-color: #e1e3e9;
+    }
   }
 }
 
@@ -222,30 +376,32 @@
 
   //Desktop
   @media (min-width: 1440px) {
-    margin-left: 45px;
+    margin-left: 0;
+    margin-right: 73px;
   }
 }
 
 .add-plans__item-textarea {
-  margin-top: 15px;
+  margin-top: 20px;
 
   //Tablet
   @media (min-width: 768px) {
     padding-right: 30px;
-    margin-top: 80px;
+    margin-top: 69px;
   }
 
   //Desktop
   @media (min-width: 1440px) {
-    margin-top: 165px;
+    margin-top: 137px;
   }
 
   &--last {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
+    margin-top: 12px;
 
     //Tablet
     @media (min-width: 768px) {
-      margin-top: 48px;
+      margin-top: 49px;
     }
   }
 }

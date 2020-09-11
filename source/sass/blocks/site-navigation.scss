@@ -1,5 +1,4 @@
 .site-navigation {
-  position: relative;
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -21,27 +20,29 @@
       margin-top: 30px;
       padding: 0 57px;
     }
-  }
 
-  &::before {
     //Desktop
     @media (min-width: 1440px) {
-      content: "";
-      position: absolute;
-      display: block;
-      top: 24px;
-      left: -72px;
-      width: 62px;
-      height: 2px;
-      background-color: $white;
+      grid-column: 2;
+      flex-direction: row;
+      margin: 0;
+      margin-left: -37px;
     }
   }
 }
 
 .site-navigation__item {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $white;
+
   &--scroll {
     text-align: center;
     margin-bottom: 9px;
+    font-size: 30px;
+    color: $basic-blue-dark;
 
     //Tablet
     @media (min-width: 768px) {
@@ -51,10 +52,22 @@
 
     //Desktop
     @media (min-width: 1440px) {
+      font-size: 20px;
+      color: $white;
       margin: 0;
       margin-left: 34px;
       align-self: center;
     }
+  }
+
+  //Tablet
+  @media (min-width: 768px) {
+    font-size: 60px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    font-size: 20px;
   }
 }
 
