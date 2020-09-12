@@ -1,13 +1,15 @@
 .catalog-button {
   border: none;
   border-radius: 25px;
-  padding: 12px;
+  padding: 9px;
   background-color: $basic-yellow;
   color: $basic-blue-dark;
   font-family: "Blogger Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
   text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
 
   &:hover {
     background-color: $special-yellow-dark;
@@ -71,6 +73,7 @@
 }
 
 .add-plans__item .catalog-button {
+
   //Tablet
   @media (min-width: 768px) {
     text-transform: none;
@@ -101,7 +104,7 @@
       &::after {
         content: "";
         position: absolute;
-        top: 24px;
+        top: 22px;
         right: 171px;
         width: 35px;
         height: 24px;

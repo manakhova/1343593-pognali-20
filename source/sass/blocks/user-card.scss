@@ -11,14 +11,14 @@
   //Tablet & Desktop
   @media (min-width: 768px) {
     min-height: 485px;
-    max-width: 285px;
+    width: 285px;
     border-radius: 20px;
   }
 
   &--catalog {
     position: relative;
     min-height: 390px;
-    min-width: 270px;
+    width: 270px;
     box-sizing: border-box;
     padding: 18px 16px 20px;
     display: grid;
@@ -31,7 +31,7 @@
       grid-column-gap: 25px;
       grid-row-gap: 19px;
       min-height: 333px;
-      min-width: 687px;
+      width: 687px;
       padding: 35px;
     }
 
@@ -40,7 +40,7 @@
       grid-template-columns: 285px 1fr 1fr;
       grid-column-gap: 53px;
       min-height: 285px;
-      min-width: 950px;
+      width: 950px;
       padding: 0;
       justify-self: baseline;
     }
@@ -64,32 +64,42 @@
 
 .user-card__likes {
   position: absolute;
-  top: 59px;
-  left: 77px;
+  top: 42px;
+  left: 51px;
+  padding: 15px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    display: block;
-    top: -6px;
-    left: -9px;
-    width: 30px;
-    height: 30px;
-    background-color: $light-blue;
+  .user-card__likes-button {
+    cursor: pointer;
+    padding: 10px 10px 7px;
     border-radius: 50px;
+    background-color: $basic-blue-light;
+    border: none;
 
     //Tablet
     @media (min-width: 768px) {
-      top: -15px;
-      left: -18px;
-      width: 50px;
-      height: 50px;
+      padding: 19px 19px 16px;
+    }
+
+    &:hover {
+      background-color: $light-blue;
+
+      .user-card__likes-icon {
+        fill: $basic-blue-dark;
+        opacity: 0.6;
+      }
+    }
+
+    &:active {
+      .user-card__likes-icon {
+        fill: $basic-blue-dark;
+        opacity: 0.3;
+      }
     }
   }
 
   .user-card__likes-icon {
-    position: relative;
     fill: #7e839b;
+    cursor: pointer;
 
     //Tablet
     @media (min-width: 768px) {
@@ -98,28 +108,35 @@
   }
 
   &--active {
-    &::before {
-      content: "";
-      position: absolute;
-      display: block;
-      top: -6px;
-      left: -9px;
-      width: 30px;
-      height: 30px;
-      background-color: #f9eaea;
+    .user-card__likes-button {
+      padding: 10px 10px 7px;
       border-radius: 50px;
+      background-color: #f9eaea;
+      position: relative;
 
       //Tablet
       @media (min-width: 768px) {
-        top: -15px;
-        left: -18px;
-        width: 50px;
-        height: 50px;
+        padding: 19px 19px 16px;
+      }
+
+      &:hover {
+        background-color: #f9d8d8;
+
+        .user-card__likes-icon {
+          fill: $special-red;
+          opacity: 1;
+        }
+      }
+
+      &:active {
+        .user-card__likes-icon {
+          fill: $special-red;
+          opacity: 0.6;
+        }
       }
     }
 
     .user-card__likes-icon {
-      position: relative;
       fill: $special-red;
 
       //Tablet
@@ -134,12 +151,10 @@
     font-weight: 700;
     text-transform: uppercase;
     color: $basic-blue-dark;
-    margin-left: 10px;
 
     //Tablet
     @media (min-width: 768px) {
       font-size: 20px;
-      margin-left: 20px;
     }
   }
 
@@ -148,20 +163,21 @@
     position: relative;
     grid-column: 2;
     grid-row: 1;
-    top: 153px;
-    left: 174px;
+    top: 124px;
+    left: 141px;
   }
 
   //Desktop
   @media (min-width: 1440px) {
-    top: 204px;
-    left: 171px;
+    top: 175px;
+    left: 137px;
   }
 }
 
 .user-card__pic {
   border-radius: 12px 12px 0 0;
   margin-top: -1px;
+  object-fit: cover;
 
   //Tablet
   @media (min-width: 768px) {
@@ -201,6 +217,15 @@
   color: $basic-blue-dark;
   margin: 0 auto;
   margin-top: -15px;
+
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &::before {
     content: "";
@@ -313,7 +338,7 @@
 
       //Tablet & Desktop
       @media (min-width: 768px) {
-        top: 1px;
+        top: 3px;
         left: 245px;
         height: 7px;
         width: 7px;
@@ -448,6 +473,11 @@
   order: -1;
   margin-top: -58px;
   margin-bottom: 5px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    margin-top: -88px;
+  }
 
   &--catalog {
     margin: 0;
@@ -649,13 +679,13 @@
   .user-card__likes {
     //Tablet
     @media (min-width: 768px) {
-      top: 153px;
+      top: 124px;
     }
 
     //Desktop
     @media (min-width: 1440px) {
-      top: 204px;
-      left: 171px;
+      top: 175px;
+      left: 136px;
     }
   }
 }
@@ -709,4 +739,9 @@
   @media (min-width: 1440px) {
     margin-top: 142px;
   }
+}
+
+.user-card__link {
+  text-decoration: none;
+  align-self: flex-start;
 }

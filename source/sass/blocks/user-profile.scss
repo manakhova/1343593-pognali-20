@@ -25,6 +25,7 @@
   font-weight: 500;
   font-size: 20px;
   text-transform: uppercase;
+  text-align: center;
 
   &:hover {
     background-color: #d1d7e9;
@@ -455,6 +456,21 @@
 
     @media (min-width: 768px) {
       display: block;
+      position: relative;
+    }
+
+    &::before {
+      @media (min-width: 768px) {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 2px;
+        left: -6px;
+        width: 33px;
+        height: 1px;
+        background-color: black;
+        opacity: 0.1;
+      }
     }
   }
 }

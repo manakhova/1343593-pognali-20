@@ -55,7 +55,10 @@
   margin: 0;
 
   span {
-    margin-left: 19px;
+    //Tablet
+    @media (min-width: 768px) {
+      margin-left: 19px;
+    }
   }
 }
 

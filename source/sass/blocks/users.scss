@@ -186,7 +186,6 @@
 .users__list {
   display: grid;
   grid-gap: 8px;
-  justify-items: center;
 
   //Tablet
   @media (min-width: 768px) {
@@ -205,9 +204,11 @@
   &--catalog {
     grid-gap: 10px;
     padding: 25px 25px 18px;
+    justify-items: center;
 
     //Tablet
     @media (min-width: 768px) {
+      margin-top: 22px;
       grid-template-columns: auto;
       grid-gap: 39px;
     }
