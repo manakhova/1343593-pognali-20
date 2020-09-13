@@ -20,7 +20,7 @@
     min-height: 390px;
     width: 270px;
     box-sizing: border-box;
-    padding: 18px 16px 20px;
+    padding: 18px 16px 23px;
     display: grid;
     grid-template-columns: max-content 1fr;
     border-radius: 20px;
@@ -629,7 +629,7 @@
   }
 
   .user-card__button {
-    margin-top: 36px;
+    margin-top: 37px;
 
     //Tablet
     @media (min-width: 768px) {

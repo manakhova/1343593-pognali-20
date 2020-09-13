@@ -1,6 +1,22 @@
 .kids-checkbox {
   margin-left: 40px;
 
+  &:hover {
+    .kids-checkbox__checkbox + label::before {
+      border-color: #959bb2;
+    }
+  }
+
+  &:active {
+    .kids-checkbox__checkbox + label::before {
+      background-color: $light-blue;
+    }
+
+    .kids-checkbox__checkbox:checked + label::after {
+      opacity: 0.3;
+    }
+  }
+
   //Tablet
   @media (min-width: 768px) and (max-width: 1439px) {
     margin-left: 64px;
@@ -11,6 +27,7 @@
   position: relative;
   display: block;
   letter-spacing: -0.03em;
+
 
   //Tablet
   @media (min-width: 768px) {

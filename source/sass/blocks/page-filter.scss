@@ -86,6 +86,7 @@
   position: relative;
   border: none;
   background-color: transparent;
+  align-self: baseline;
   justify-self: end;
 
   &:focus {
@@ -96,7 +97,7 @@
     opacity: 0.6;
   }
 
-  &:disabled {
+  &:active {
     opacity: 0.4;
   }
 
@@ -174,7 +175,7 @@
 
   &--opened {
     margin-left: 16px;
-    margin-top: -5px;
+    margin-top: 0;
 
     //Tablet
     @media (min-width: 768px) {

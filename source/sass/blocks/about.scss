@@ -7,12 +7,22 @@
   background-repeat: no-repeat;
   border-radius: 0 0 30px 30px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/about-mobile@2x.png");
+    background-size: 91%;
+  }
+
   //Tablet
   @media (min-width: 768px) {
     background-image: url("../img/about-tablet@1x.png");
     background-position: 98% 57%;
     background-repeat: no-repeat;
     border-radius: 0 0 60px 60px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/about-tablet@2x.png");
+      background-size: 49%;
+    }
   }
 
   //Desktop
@@ -21,6 +31,11 @@
     background-position: 93% 102%;
     background-repeat: no-repeat;
     margin-top: -100px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/about-desktop@2x.png");
+      background-size: 44%;
+    }
   }
 }
 

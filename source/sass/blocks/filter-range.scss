@@ -40,9 +40,8 @@
     position: absolute;
     display: block;
     top: 9px;
-    right: 50%;
-    left: 48%;
-    width: 16px;
+    right: 44%;
+    left: 44%;
     height: 1px;
     border: 5px solid $white;
     background-color: $special-grey-light;
@@ -50,6 +49,8 @@
     //Tablet
     @media (min-width: 768px) {
       top: 16px;
+      right: 40%;
+      left: 40%;
     }
   }
 }
@@ -88,7 +89,7 @@
   font-weight: 500;
   font-size: 14px;
   width: 100%;
-  padding: 8px;
+  padding: 8px 0;
   text-align: center;
   resize: none;
   cursor: pointer;

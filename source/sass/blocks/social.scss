@@ -6,7 +6,8 @@
     //Tablet
     @media (min-width: 768px) {
       grid-column: 1;
-      margin-top: 50px;
+      align-self: end;
+      margin-top: 42px;
     }
 
     //Desktop
@@ -36,6 +37,9 @@
     //Tablet
     @media (min-width: 768px) {
       justify-content: flex-end;
+      margin-top: -28px;
+      margin-left: 59px;
+      margin-bottom: -6px;
     }
   }
 }
@@ -48,8 +52,21 @@
     background-color: $special-yellow-dark;
   }
 
+  &:active {
+    background-color: $special-yellow-dark;
+
+    .social__link-icon {
+      opacity: 0.3;
+    }
+  }
+
   .social__link-icon {
     fill: $basic-blue-dark;
+
+    //Tablet
+    @media (min-width: 768px) {
+      transform: scale(1.2);
+    }
   }
 
   &--scroll {
