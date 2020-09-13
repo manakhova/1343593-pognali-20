@@ -2,22 +2,45 @@
   position: relative;
   z-index: 1;
   background-color: $basic-yellow;
-  border-radius: 0 0 30px 30px;
   margin-top: -30px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -25px;
+    left: 0;
+    right: 0;
+    height: 27px;
+    border-radius: 0 0 30px 30px;
+    background-color: $basic-yellow;
+
+    //Tablet
+    @media (min-width: 768px) {
+      bottom: -50px;
+      height: 60px;
+      border-radius: 0 0 60px 60px;
+    }
+
+    //Desktop
+    @media (min-width: 1440px) {
+      height: 50px;
+      bottom: -40px;
+    }
+  }
 
   //Tablet
   @media (min-width: 768px) {
     margin-top: -50px;
-    border-radius: 0 0 60px 60px;
   }
 }
 
 .adress__info {
-  padding: 64px 25px 33px;
+  padding: 64px 25px 10px;
 
   //Tablet
   @media (min-width: 768px) {
-    padding: 123px 75px 85px;
+    padding: 123px 75px 33px;
   }
 
   //Desktop
@@ -25,7 +48,7 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding: 111px 135px 60px;
+    padding: 111px 135px 20px;
   }
 }
 
