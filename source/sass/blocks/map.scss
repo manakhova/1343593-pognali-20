@@ -1,4 +1,5 @@
 .map {
+  z-index: -1;
   position: relative;
   min-height: 420px;
   background-image: url("../img/map-mobile@1x.jpg");
@@ -41,5 +42,10 @@
   //Tablet
   @media (min-width: 768px) {
     height: 520px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    height: 600px;
   }
 }
