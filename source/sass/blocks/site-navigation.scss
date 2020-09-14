@@ -92,8 +92,6 @@
     @media (min-width: 1440px) {
       position: relative;
       display: inline-block;
-      -webkit-transition: -webkit-transform 0.3s;
-      -moz-transition: -moz-transform 0.3s;
       transition: transform 0.3s;
     }
 
@@ -105,8 +103,7 @@
         top: 100%;
         content: attr(data-hover);
         color: #ffd74b;
-        -webkit-transform: translate3d(0,0,0);
-        transform: translate3d(0,0,0);
+        transform: translate3d(0, 0, 0);
       }
     }
   }
