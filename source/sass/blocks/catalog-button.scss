@@ -28,6 +28,10 @@
 
   &:active {
     color: rgba(22, 28, 53, 0.3);
+
+    svg {
+      opacity: 0.3;
+    }
   }
 
   &:focus {

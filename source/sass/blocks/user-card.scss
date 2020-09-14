@@ -178,6 +178,7 @@
   border-radius: 12px 12px 0 0;
   margin-top: -1px;
   object-fit: cover;
+  width: 100%;
 
   //Tablet
   @media (min-width: 768px) {
@@ -357,8 +358,7 @@
   color: $special-grey;
   text-align: center;
   max-width: 223px;
-  margin-top: 15px;
-  margin-bottom: 17px;
+  margin: 15px auto 17px;
   line-height: 18px;
 
   //Tablet & Desktop

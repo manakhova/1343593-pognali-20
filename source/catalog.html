@@ -34,7 +34,10 @@
     <header class="page__header page-header page-header--catalog page-header--nojs">
       <a class="page-header__logo" href="index.html">
         <picture>
-          <source media="(min-width: 1400px)" srcset="./img/logo-desktop-white@1x.png 1x, ./img/logo-desktop-white@2x.png 2x">
+          <source type="image/webp" media="(min-width: 1440px)" srcset="./img/logo-desktop-white@1x.webp 1x, ./img/logo-desktop-white@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="./img/logo-tablet-white@1x.webp 1x, ./img/logo-tablet-white@2x.webp 2x">
+          <source type="image/webp" srcset="./img/logo-mobile-white@1x.webp 1x, ./img/logo-mobile-white@2x.webp 2x">
+          <source media="(min-width: 1440px)" srcset="./img/logo-desktop-white@1x.png 1x, ./img/logo-desktop-white@2x.png 2x">
           <source media="(min-width: 768px)" srcset="./img/logo-tablet-white@1x.png 1x, ./img/logo-tablet-white@2x.png 2x">
           <img class="page-header__logo-image" src="./img/logo-mobile-white@1x.png" srcset="./img/logo-mobile-white@2x.png 2x" alt="Погнали?">
         </picture>
@@ -451,7 +454,7 @@
                 <div class="filter-form__item filter-section">
                   <h3 class="filter-section__name">Хобби</h3>
                   <button class="filter-section__button filter-section__button--close" type="button"></button>
-                  <ul class="filter-section__list filter-section__list--blocked ">
+                  <ul class="filter-section__list">
                     <li class="filter-section__list-item">
                       <input class="filter-section__list-item-checkbox visually-hidden" id="gym" name="gym" type="checkbox" value="gym" checked>
                       <label for="gym">Спортзал</label>
@@ -487,7 +490,7 @@
                 <div class="filter-form__item filter-section">
                   <h3 class="filter-section__name">Еда</h3>
                   <button class="filter-section__button filter-section__button--close" type="button"></button>
-                  <ul class="filter-section__list filter-section__list--blocked">
+                  <ul class="filter-section__list">
                     <li class="filter-section__list-item">
                       <input class="filter-section__list-item-checkbox visually-hidden" id="meat-eater" name="meat-eater" type="checkbox" value="meat-eater" checked>
                       <label for="meat-eater">Мясоед</label>
@@ -567,6 +570,8 @@
             <div class="user-card user-card--catalog">
               <a class="user-card__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/firsova-desktop@1x.webp 1x, ./img/firsova-desktop@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/firsova-mobile@1x.webp 1x, ./img/firsova-mobile@2x.webp 2x">
                   <source media="(min-width: 768px)" srcset="./img/firsova-desktop@1x.jpg 1x, ./img/firsova-desktop@2x.jpg 2x">
                   <img class="user-card__pic user-card__pic--catalog" src="./img/firsova-mobile@1x.jpg" srcset="./img/firsova-mobile@2x.jpg 2x" alt="Таня Фирсова">
                 </picture>
@@ -642,6 +647,8 @@
             <div class="user-card user-card--catalog">
               <a class="user-card__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/demin-desktop@1x.webp 1x, ./img/demin-desktop@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/demin-mobile@1x.webp 1x, ./img/demin-mobile@2x.webp 2x">
                   <source media="(min-width: 768px)" srcset="./img/demin-desktop@1x.jpg 1x, ./img/demin-desktop@2x.jpg 2x">
                   <img class="user-card__pic user-card__pic--catalog" src="./img/demin-mobile@1x.jpg" srcset="./img/demin-mobile@2x.jpg 2x" alt="Петя Демин">
                 </picture>
@@ -711,6 +718,8 @@
             <div class="user-card user-card--catalog">
               <a class="user-card__link" href="">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/smolov-desktop@1x.webp 1x, ./img/smolov-desktop@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/smolov-mobile@1x.webp 1x, ./img/smolov-mobile@2x.webp 2x">
                   <source media="(min-width: 768px)" srcset="./img/smolov-desktop@1x.jpg 1x, ./img/smolov-desktop@2x.jpg 2x">
                   <img class="user-card__pic user-card__pic--catalog" src="./img/smolov-mobile@1x.jpg" srcset="./img/smolov-mobile@2x.jpg 2x" alt="Марк Смолов">
                 </picture>
@@ -786,6 +795,8 @@
             <div class="user-card user-card--catalog">
               <a class="user-card__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/rogovaya-desktop@1x.webp 1x, ./img/rogovaya-desktop@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/rogovaya-mobile@1x.webp 1x, ./img/rogovaya-mobile@2x.webp 2x">
                   <source media="(min-width: 768px)" srcset="./img/rogovaya-desktop@1x.jpg 1x, ./img/rogovaya-desktop@2x.jpg 2x">
                   <img class="user-card__pic user-card__pic--catalog" src="./img/rogovaya-mobile@1x.jpg" srcset="./img/rogovaya-mobile@2x.jpg 2x" alt="Лариса Роговая">
                 </picture>
@@ -890,7 +901,10 @@
     <footer class="page__footer page__footer--catalog page-footer">
       <a class="page-footer__logo">
         <picture>
-          <source media="(min-width: 1400px)" srcset="./img/logo-desktop-blue@1x.png 1x, ./img/logo-desktop-blue@2x.png 2x">
+          <source type="image/webp" media="(min-width: 1440px)" srcset="./img/logo-desktop-blue@1x.webp 1x, ./img/logo-desktop-blue@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="./img/logo-tablet-blue@1x.webp 1x, ./img/logo-tablet-blue@2x.webp 2x">
+          <source type="image/webp" srcset="./img/logo-mobile-blue@1x.webp 1x, ./img/logo-mobile-blue@2x.webp 2x">
+          <source media="(min-width: 1440px)" srcset="./img/logo-desktop-blue@1x.png 1x, ./img/logo-desktop-blue@2x.png 2x">
           <source media="(min-width: 768px)" srcset="./img/logo-tablet-blue@1x.png 1x, ./img/logo-tablet-blue@2x.png 2x">
           <img class="page-header__logo-image" src="./img/logo-mobile-blue@1x.png" srcset="./img/logo-mobile-blue@2x.png 2x" alt="Погнали?">
         </picture>
