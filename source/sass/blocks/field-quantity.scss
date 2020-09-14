@@ -109,7 +109,11 @@
     }
   }
 
-  &:focus {
+  &:active {
+    .field-quantity__input {
+      border-color: $basic-blue-dark;
+    }
+
     .field-quantity__button-icon {
       fill: $basic-blue-dark;
     }
@@ -143,9 +147,9 @@
   border: 1px solid $special-grey-light;
   border-radius: 4px;
 
+
   &:focus {
     outline: none;
-    border-color: $basic-blue-dark;
   }
 
   //Tablet
@@ -167,15 +171,13 @@
   background-color: transparent;
   padding: 13px 14px;
 
-
   &:focus {
     outline: none;
   }
 
-  &:disabled {
+  &:active {
     .field-quantity__button-icon {
-      fill: $special-grey-light;
-      opacity: 0.5;
+      fill: #e5e5e5;
     }
   }
 

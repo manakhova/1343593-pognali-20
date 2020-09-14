@@ -46,7 +46,7 @@
     outline: none;
   }
 
-  &:disabled {
+  &:active {
     .calendar__button-icon {
       opacity: 0.1;
     }
@@ -204,6 +204,41 @@
   &--chosen {
     background-color: $basic-blue;
     color: $white;
+
+    //Desktop
+    @media (min-width: 1440px) {
+      padding-top: 11px;
+      padding-bottom: 37px;
+    }
+
+    span {
+      display: none;
+
+      //Desktop
+      @media (min-width: 1440px) {
+        display: block;
+        margin-top: 7px;
+        margin-bottom: -26px;
+        margin-right: -31px;
+      }
+    }
+  }
+
+  &--apr {
+    white-space: nowrap;
+
+    span {
+      display: none;
+
+      //Desktop
+      @media (min-width: 1440px) {
+        display: inline-block;
+        font-size: 18px;
+        margin-top: 1px;
+        margin-bottom: -26px;
+        margin-right: -22px;
+      }
+    }
   }
 
   &:not(.calendar__month-item--disabled):hover {

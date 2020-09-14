@@ -2,7 +2,7 @@
   position: relative;
   z-index: 4;
   background-color: $basic-blue-medium;
-  margin-top: -30px;
+  margin-top: -17px;
   border-radius: 0 0 30px 30px;
 
   &--catalog {
@@ -31,7 +31,7 @@
   display: grid;
   grid-gap: 10px;
   margin: auto;
-  padding: 98px 25px 28px;
+  padding: 85px 25px 28px;
 
   //Tablet
   @media (min-width: 768px) {
@@ -208,7 +208,7 @@
 
     //Tablet
     @media (min-width: 768px) {
-      margin-top: 22px;
+      margin-top: 13px;
       grid-template-columns: auto;
       grid-gap: 39px;
     }

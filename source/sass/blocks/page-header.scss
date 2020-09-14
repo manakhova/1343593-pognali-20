@@ -41,7 +41,7 @@
       left: 0;
       right: 0;
       z-index: 10;
-      min-height: 80vh;
+      min-height: 77vh;
       display: grid;
       grid-template-columns: 1fr 1fr;
       row-gap: 52px;
@@ -51,7 +51,7 @@
     //Tablet
     @media (min-width: 768px) {
       grid-template-columns: 1fr 1fr 1fr;
-      row-gap: 90px;
+      row-gap: 99px;
       padding: 47px 40px 80px;
     }
 
@@ -140,7 +140,7 @@
   @media (min-width: 768px) {
     padding: 15px 20px;
     justify-self: center;
-    align-self: center;
+    align-self: baseline;
   }
 
   //Desktop

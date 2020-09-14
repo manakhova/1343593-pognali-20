@@ -99,6 +99,14 @@
   color: #000000;
   opacity: 0.3;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+
   //Tablet
   @media (min-width: 768px) {
     margin: 0;

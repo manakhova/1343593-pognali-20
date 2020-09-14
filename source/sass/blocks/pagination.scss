@@ -36,6 +36,14 @@
     padding: 15px 19px 11px 20px;
   }
 
+  &:active {
+    //Tablet & Destop
+    @media (min-width: 768px) {
+      background-color: $basic-yellow;
+      border-radius: 50px;
+    }
+  }
+
   &--active {
     //Tablet & Destop
     @media (min-width: 768px) {

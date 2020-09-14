@@ -43,6 +43,25 @@
   @media (min-width: 1440px) {
     padding: 31px 32px;
   }
+
+  &--adress {
+    &:hover {
+      background-color: $basic-blue;
+      color: $white;
+
+      svg {
+        fill: $white;
+      }
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+
+      svg {
+        opacity: 0.3;
+      }
+    }
+  }
 }
 
 .about .button-big {
