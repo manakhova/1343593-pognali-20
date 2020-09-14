@@ -40,9 +40,9 @@
 }
 
 .field__button {
-  padding: 21px 23px;
+  padding: 18px 23px;
   margin: 0;
-  margin-left: -58px;
+  margin-left: -57px;
 
   &:focus {
     outline: none;
@@ -50,16 +50,17 @@
 
   //Tablet
   @media (min-width: 768px) {
-    padding: 32px 35px;
-    margin-left: -82px;
+    padding: 28px 35px;
+    margin-left: -81px;
   }
 
   //Desktop
   @media (min-width: 1440px) {
     display: flex;
     align-items: baseline;
-    padding: 27px 35px;
-    margin-left: -326px;
+    padding: 26px 35px;
+    margin-left: -325px;
+    height: 80px;
   }
 }
 
