@@ -38,6 +38,21 @@
   border-radius: 50%;
   cursor: pointer;
 
+  &:hover {
+    width: 19px;
+    height: 19px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    width: 19px;
+    height: 19px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.24);
+  }
+
   &--min {
     top: 19px;
     left: 67px;
@@ -72,7 +87,7 @@
     //Desktop
     @media (min-width: 1440px) {
       top: 20px;
-      right: 1px;
+      right: 0;
     }
   }
 }

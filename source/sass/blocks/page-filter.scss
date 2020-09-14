@@ -27,8 +27,11 @@
 
   &--scroll {
     position: absolute;
+    left: 0;
+    right: 0;
     //Desktop
     @media (min-width: 1440px) {
+      position: static;
       background-color: $basic-blue-light;
     }
   }
@@ -136,6 +139,7 @@
     //Tablet
     @media (min-width: 768px) {
       margin-top: 7px;
+      white-space: nowrap;
     }
 
     //Desktop
@@ -215,6 +219,7 @@
   margin-bottom: 15px;
   padding: 17px 10px 10px 12px;
   border-radius: 25px;
+  cursor: pointer;
 
   &:focus {
     outline: none;
@@ -224,11 +229,12 @@
     background-color: #c8cee8;
   }
 
-  &:disabled {
+  &:active {
     background-color: #c8cee8;
+    color: rgba(148, 154, 183, 1);
 
     .page-filter__button-icon {
-      opacity: 0.4;
+      opacity: 0.3;
     }
   }
 

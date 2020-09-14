@@ -1,18 +1,18 @@
-.user-profile {
-  padding: 53px 25px 65px;
-
-  //Tablet
-  @media (min-width: 768px) {
-    padding: 97px 73px 80px;
-  }
-}
-
 .user-profile__pic {
   border-radius: 50px;
 
   //Tablet
   @media (min-width: 768px) {
     border-radius: 5px;
+    width: 96px;
+    height: 96px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    width: 190px;
+    height: 190px;
+    border-radius: 5px 5px 0 0;
   }
 }
 
@@ -25,6 +25,7 @@
   font-weight: 500;
   font-size: 20px;
   text-transform: uppercase;
+  text-align: center;
 
   &:hover {
     background-color: #d1d7e9;
@@ -36,15 +37,38 @@
 
   //Tablet
   @media (min-width: 768px) {
-    padding: 22px;
+    padding: 19px;
     letter-spacing: 0.09em;
+    border-radius: 15px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    letter-spacing: 0;
+    padding: 13px;
+    border-radius: 0 0 15px 15px;
   }
 }
 
-.user-profile__title {
+.user-profile__button-1 {
+  //Desktop
+  @media (min-width: 1440px) {
+    display: none;
+  }
+}
+
+.user-profile__button-2 {
+  display: none;
+  //Desktop
+  @media (min-width: 1440px) {
+    display: block;
+  }
+}
+
+.user-profile__tags-title {
   z-index: 1;
   position: absolute;
-  top: 12px;
+  top: 3px;
   left: 102px;
   margin: 0;
   padding: 0 15px;
@@ -60,6 +84,12 @@
     left: 270px;
     letter-spacing: 0.09em;
   }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    top: 84px;
+    left: 22px;
+  }
 }
 
 .user-profile__tags {
@@ -71,7 +101,7 @@
   font-size: 16px;
   line-height: 18px;
   box-sizing: border-box;
-  margin-top: 20px;
+  margin-top: 11px;
   padding: 25px;
   width: 100%;
   height: 90px;
@@ -81,22 +111,27 @@
   color: $special-grey;
   opacity: 0.6;
 
+  &:focus {
+    outline: none;
+    border-color: $basic-blue-dark;
+    opacity: 1;
+  }
+
   //Tablet
   @media (min-width: 768px) {
     padding: 39px;
-    margin-top: 14px;
+    margin-top: 9px;
     font-size: 20px;
     height: 95px;
   }
 
   //Desktop
   @media (min-width: 1440px) {
-    min-width: 732px;
-    margin-left: -75px;
+    margin: 0;
   }
 }
 
-.user-profile__level {
+.profile__info .user-profile__level {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -122,6 +157,12 @@
       width: 92px;
       height: 92px;
     }
+
+    //Desktop
+    @media (min-width: 1440px) {
+      bottom: 12px;
+      left: 3px;
+    }
   }
 
   &::after {
@@ -133,6 +174,189 @@
     width: 50px;
     height: 30px;
     background-color: $basic-blue-light;
+
+    //Desktop
+    @media (min-width: 1440px) {
+      background-color: $basic-blue-medium;
+    }
+  }
+}
+
+//это уже на карточках пользователей на главной
+.user-card .user-profile__level {
+  position: absolute;
+  top: 31px;
+  left: 33px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  //Tablet
+  @media (min-width: 768px) {
+    top: 36px;
+    left: 38px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -16px;
+    left: -16px;
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    border-radius: 50px;
+    opacity: 0.6;
+  }
+
+
+  &--80 {
+    position: absolute;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -16px;
+      left: -16px;
+      width: 60px;
+      height: 60px;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.74236 17.9148C2.16557 23.3002 1.37757 29.3683 2.4934 35.2332C3.60922 41.0982 6.57045 46.4529 10.9448 50.5159C15.3192 54.5788 20.8777 57.1372 26.8089 57.8176C32.7402 58.498 38.7336 57.2647 43.9144 54.2979C49.0952 51.3311 53.1921 46.786 55.607 41.3261C58.022 35.8662 58.6285 29.7773 57.3382 23.9483C56.0478 18.1193 52.9282 12.8553 48.4345 8.92466C43.9408 4.99408 38.3084 2.6027 32.3595 2.0996' stroke='%23FF8D30' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--99 {
+    position: absolute;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -16px;
+      left: -16px;
+      width: 60px;
+      height: 60px;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.5503 3.00922C15.7757 4.87906 9.95203 9.22814 6.23551 15.1929C2.51899 21.1577 1.18146 28.302 2.48848 35.2073C3.7955 42.1126 7.65149 48.2739 13.2908 52.4678C18.9302 56.6618 25.9405 58.5817 32.9298 57.8463C39.9191 57.1109 46.3763 53.7741 51.0193 48.4983C55.6623 43.2226 58.1516 36.3937 57.9929 29.3676C57.8341 22.3415 55.039 15.632 50.1625 10.5713C45.2859 5.51057 38.6846 2.46876 31.6692 2.0498' stroke='%23FF8D30' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+//А это в каталоге
+.user-card--catalog .user-profile__level {
+  position: relative;
+  grid-column: 2;
+  margin-left: -20px;
+  margin-top: -10px;
+
+  &::before {
+    display: none;
+  }
+
+  &--80 {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 40px;
+      width: 45px;
+      height: 45px;
+      background-size: 45px;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.74236 17.9148C2.16557 23.3002 1.37757 29.3683 2.4934 35.2332C3.60922 41.0982 6.57045 46.4529 10.9448 50.5159C15.3192 54.5788 20.8777 57.1372 26.8089 57.8176C32.7402 58.498 38.7336 57.2647 43.9144 54.2979C49.0952 51.3311 53.1921 46.786 55.607 41.3261C58.022 35.8662 58.6285 29.7773 57.3382 23.9483C56.0478 18.1193 52.9282 12.8553 48.4345 8.92466C43.9408 4.99408 38.3084 2.6027 32.3595 2.0996' stroke='%23FF8D30' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+
+      //Tablet
+      @media (min-width: 768px) {
+        top: -15px;
+        left: -18px;
+        width: 62px;
+        height: 62px;
+        background-size: 62px;
+      }
+    }
+  }
+
+  &--99 {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 40px;
+      width: 45px;
+      height: 45px;
+      background-size: 45px;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.5503 3.00922C15.7757 4.87906 9.95203 9.22814 6.23551 15.1929C2.51899 21.1577 1.18146 28.302 2.48848 35.2073C3.7955 42.1126 7.65149 48.2739 13.2908 52.4678C18.9302 56.6618 25.9405 58.5817 32.9298 57.8463C39.9191 57.1109 46.3763 53.7741 51.0193 48.4983C55.6623 43.2226 58.1516 36.3937 57.9929 29.3676C57.8341 22.3415 55.039 15.632 50.1625 10.5713C45.2859 5.51057 38.6846 2.46876 31.6692 2.0498' stroke='%23FF8D30' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+
+      //Tablet
+      @media (min-width: 768px) {
+        top: -15px;
+        left: -18px;
+        width: 62px;
+        height: 62px;
+        background-size: 62px;
+      }
+    }
+  }
+
+  &--23 {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 60px;
+      width: 45px;
+      height: 45px;
+      background-size: 25px;
+      background-image: url("data:image/svg+xml,%3Csvg width='25' height='24' viewBox='0 0 25 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.35644 1.5C5.1142 1.5 7.84496 2.04318 10.3928 3.09853C12.9406 4.15388 15.2557 5.70073 17.2057 7.65076C19.1557 9.60079 20.7026 11.9158 21.7579 14.4636C22.8133 17.0115 23.3564 19.7422 23.3564 22.5' stroke='%23FF8D30' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+
+      //Tablet
+      @media (min-width: 768px) {
+        top: -15px;
+        left: 11px;
+        width: 62px;
+        height: 62px;
+        background-size: 33px;
+      }
+    }
+  }
+
+  &--50 {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 61px;
+      width: 45px;
+      height: 45px;
+      background-size: 24px;
+      background-image: url("data:image/svg+xml,%3Csvg width='26' height='47' viewBox='0 0 26 47' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.35645 1.60522C8.0586 1.60522 13.5272 3.8704 17.5592 7.90243C21.5913 11.9345 23.8564 17.4031 23.8564 23.1052C23.8564 28.8074 21.5913 34.276 17.5592 38.308C13.5272 42.34 8.05861 44.6052 2.35646 44.6052' stroke='%23FF8D30' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+
+      //Tablet
+      @media (min-width: 768px) {
+        top: -17px;
+        left: 10px;
+        width: 62px;
+        height: 62px;
+        background-size: 35px;
+      }
+    }
+  }
+
+  //Tablet
+  @media (min-width: 768px) {
+    position: absolute;
+    top: 192px;
+    left: 390px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    top: 208px;
+    left: 546px;
   }
 }
 
@@ -153,11 +377,100 @@
     height: 1px;
     background-color: $special-grey;
     opacity: 0.3;
+
+    //Desktop
+    @media (min-width: 1440px) {
+      background-color: $white;
+    }
   }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    color: $white;
+  }
+}
+
+.user-card .user-profile__level-number {
+  z-index: 1;
+  position: relative;
+  color: $white;
+  font-weight: 700;
+  font-size: 24px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 1px;
+    left: 0;
+    width: 30px;
+    height: 1px;
+    background-color: $white;
+    opacity: 0.3;
+  }
+}
+
+.user-card--catalog .user-profile__level-number {
+  color: $basic-blue-dark;
 }
 
 .user-profile__level-text {
   font-size: 18px;
   color: $special-grey;
   margin-top: 13px;
+
+  //Desktop
+  @media (min-width: 1440px) {
+    color: $white;
+  }
+}
+
+.user-card .user-profile__level-text {
+  z-index: 1;
+  font-size: 14px;
+  color: $white;
+  margin-top: -3px;
+}
+
+.user-card--catalog .user-profile__level-text {
+  color: $basic-blue-dark;
+  font-size: 14px;
+
+  &--1 {
+    //Mobile only
+    @media (max-width: 767px) {
+      position: absolute;
+      background-color: $white;
+      padding: 7px;
+      top: -27px;
+      left: 39px;
+    }
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &--2 {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+      position: relative;
+    }
+
+    &::before {
+      @media (min-width: 768px) {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 2px;
+        left: -6px;
+        width: 33px;
+        height: 1px;
+        background-color: black;
+        opacity: 0.1;
+      }
+    }
+  }
 }

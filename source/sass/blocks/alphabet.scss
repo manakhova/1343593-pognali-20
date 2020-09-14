@@ -52,7 +52,6 @@
   position: relative;
   border: 1px solid $special-grey-light;
   background-color: $white;
-  padding: 9px 11px 10px;
   margin: -1px;
 
   &--selected {
@@ -63,12 +62,11 @@
   @media (min-width: 768px) {
     border: none;
     background-color: transparent;
-    padding: 0 0 10px 21px;
   }
 
   //Desktop
   @media (min-width: 1440px) {
-    padding: 0 0 10px 14px;
+    padding: 0 0 10px 10px;
   }
 }
 
@@ -84,28 +82,43 @@
 }
 
 .plan-countries__dropdown-content .alphabet__item {
-  padding: 10px 10.2px 9px 11.5px;
+  position: relative;
+  padding: 0;
   border: 1px solid $special-grey-light;
   background-color: $white;
   margin: -1px;
 
-  //Tablet
-  @media (min-width: 768px) {
-    padding: 25px 17px 22px 21px;
+  &:hover {
+    &::after {
+      z-index: 1;
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border: 1px solid #959bb2;
+    }
+  }
+
+  &:active {
+    background-color: $basic-blue-medium;
+    color: $white;
   }
 
   //Desktop
   @media (min-width: 1440px) {
-    padding: 25px 23px 22px 21px;
-    margin: 0 14px 13px 0;
+    margin: 0 19px 15px 0;
   }
 
   &--selected {
     background-color: #edeff6;
+    opacity: 1;
 
     //Tablet
     @media (min-width: 768px) {
       background-color: $basic-blue-medium;
+      color: $white;
     }
   }
 }
@@ -114,54 +127,86 @@
   border: none;
   background-color: transparent;
   font-family: "Blogger Sans", "Arial", sans-serif;
+  color: $basic-blue;
   font-weight: 500;
   font-size: 14px;
-  color: $basic-blue-medium;
+  width: 44px;
+  height: 41px;
+  cursor: pointer;
 
-
-  //Tablet
-  @media (min-width: 768px) {
-    font-size: 60px;
-    color: $basic-blue-medium;
-    opacity: 0.3;
-    padding: 0;
-  }
-
-  //Desktop
-  @media (min-width: 768px) {
-    opacity: 1;
-  }
-
-  &--selected {
+  &:active {
+    background-color: $basic-blue-medium;
     color: $white;
 
     //Tablet
     @media (min-width: 768px) {
-      color: $basic-blue-medium;
+      background-color: transparent;
+      color: $basic-blue;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  //Tablet
+  @media (min-width: 768px) {
+    font-size: 60px;
+    opacity: 0.6;
+    height: 73px;
+    width: 77px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    padding: 0;
+    opacity: 1;
+    height: 55px;
+    width: 45px;
+  }
+
+  &--selected {
+    background-color: $basic-blue-medium;
+    color: $white;
+
+    //Tablet
+    @media (min-width: 768px) {
+      color: $basic-blue;
+      background-color: transparent;
       opacity: 1;
     }
   }
 }
 
 .plan-countries__dropdown-content .alphabet__button {
-  font-weight: 500;
-  font-size: 14px;
-
-  //Tablet
-  @media (min-width: 768px) {
-    font-size: 20px;
-  }
+  width: 44px;
+  height: 41px;
 
   &--selected {
-    color: $basic-blue;
+    background-color: #edeff6;
+    color: $basic-blue-medium;
+    opacity: 1;
 
     //Tablet
     @media (min-width: 768px) {
+      background-color: $basic-blue-medium;
       color: $white;
     }
   }
-}
 
+  //Tablet
+  @media (min-width: 768px) {
+    opacity: 1;
+    font-size: 20px;
+    width: 52px;
+    height: 69px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    width: 54px;
+  }
+}
 
 .alphabet__letter {
   display: none;
@@ -193,7 +238,8 @@
 
   //Desktop
   @media (min-width: 1440px) {
-    margin-top: 32px;
+    margin-top: 42px;
+    margin-left: 9px;
     display: grid;
     grid-gap: 7px;
   }
@@ -218,16 +264,23 @@
 
     //Desktop
     @media (min-width: 1440px) {
-      right: -582px;
-      top: -31px;
+      right: -587px;
+      top: -37px;
     }
   }
 }
 
-
 .alphabet__letter-link {
   text-decoration: none;
   color: $special-grey;
+
+  &:hover {
+    color: $basic-blue;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   //Tablet
   @media (min-width: 768px) {

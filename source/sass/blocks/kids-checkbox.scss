@@ -3,7 +3,7 @@
 
   //Tablet
   @media (min-width: 768px) and (max-width: 1439px) {
-    margin-left: 62px;
+    margin-left: 64px;
   }
 }
 
@@ -15,6 +15,7 @@
   //Tablet
   @media (min-width: 768px) {
     font-size: 20px;
+    font-weight: 500;
     letter-spacing: 0.1em;
     text-transform: uppercase;
   }
@@ -39,6 +40,11 @@
     width: 36px;
     left: -63px;
     top: -7px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    left: -59px;
   }
 }
 
@@ -65,8 +71,8 @@
 
   //Desktop
   @media (min-width: 768px) {
-    left: -51px;
-    top: 4px;
+    left: -46px;
+    top: 6px;
     width: 13px;
     height: 13px;
   }

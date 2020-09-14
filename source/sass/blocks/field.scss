@@ -1,16 +1,15 @@
 .field {
   &--group-with-button {
     display: flex;
-    flex-wrap: wrap;
   }
 }
 
-.field__label {
+.field label {
   width: 100%;
 }
 
 .field__input {
-  flex-grow: 1;
+  width: 100%;
   box-sizing: border-box;
   padding: 22px;
   height: 62px;
@@ -42,7 +41,8 @@
 
 .field__button {
   padding: 21px 23px;
-  margin-left: -46px;
+  margin: 0;
+  margin-left: -58px;
 
   &:focus {
     outline: none;
@@ -51,7 +51,7 @@
   //Tablet
   @media (min-width: 768px) {
     padding: 32px 35px;
-    margin-left: -30px;
+    margin-left: -82px;
   }
 
   //Desktop
@@ -59,6 +59,7 @@
     display: flex;
     align-items: baseline;
     padding: 27px 35px;
+    margin-left: -326px;
   }
 }
 

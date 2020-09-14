@@ -117,4 +117,41 @@
 .entertainment .flag-icon--bosnia,
 .entertainment .flag-icon--czech {
   margin: -8px -15px -12px -18px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    margin: -10px 2px -12px -18px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    margin: -9px 86px -12px -26px;
+  }
+}
+
+//Флаги в карточках пользователей на главной
+.user-card__countries-item .flag-icon {
+  transform: scale(0.5);
+  margin: -4px -8px -9px;
+}
+
+//Флаги в карточках в каталоге
+.user-card__countries--catalog .flag-icon {
+  transform: scale(0.4);
+  margin: -17px -23px -9px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    transform: scale(0.5);
+    margin: -16px -25px -9px;
+  }
+
+  &--germany {
+    transform: scale(0.6);
+
+    //Tablet
+    @media (min-width: 768px) {
+      transform: scale(0.75);
+    }
+  }
 }

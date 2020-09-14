@@ -35,101 +35,6 @@
   order: -1;
   border-radius: 12px;
 
-  &--thailand {
-    &::before {
-      content: "";
-      position: absolute;
-      top: -13px;
-      left: 25px;
-      width: 35px;
-      height: 24px;
-      background-image: url("data:image/svg+xml,%3Csvg width='71' height='48' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill-rule='nonzero' fill='none'%3E%3Crect fill='%23ED5565' x='.25' y='.07' width='70' height='47' rx='6.36'/%3E%3Cpath fill='%23FFF' d='M.25 9.57h70v28h-70z'/%3E%3Cpath fill='%234758A9' d='M.25 13.57h70v20h-70z'/%3E%3C/g%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-      background-size: 35px;
-
-      //Tablet
-      @media (min-width: 768px) {
-        top: 17px;
-        left: 398px;
-        width: 70px;
-        height: 47px;
-        background-size: 71px;
-      }
-
-      //Desktop
-      @media (min-width: 1440px) {
-        top: 23px;
-        left: 338px;
-      }
-    }
-  }
-
-  &--france {
-    &::before {
-      content: "";
-      position: absolute;
-      top: -13px;
-      left: 25px;
-      width: 35px;
-      height: 24px;
-      background-image: url("data:image/svg+xml,%3Csvg width='71' height='48' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill-rule='nonzero' fill='none'%3E%3Cpath d='M6.51.11A6.36 6.36 0 0 0 .15 6.47v34.27a6.36 6.36 0 0 0 6.36 6.36h17V.1l-17 .01z' fill='%234758A9'/%3E%3Cpath d='M23.49.11v47h23.35v-47H23.49z' fill='%23FFF'/%3E%3Cpath d='M63.78.11H46.83v47h16.95a6.36 6.36 0 0 0 6.36-6.36V6.48A6.36 6.36 0 0 0 63.78.11z' fill='%23ED5565'/%3E%3C/g%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-      background-size: 35px;
-
-      //Tablet
-      @media (min-width: 768px) {
-        top: 17px;
-        left: 398px;
-        width: 70px;
-        height: 47px;
-        background-size: 71px;
-      }
-
-      //Desktop
-      @media (min-width: 1440px) {
-        top: 23px;
-        left: 338px;
-      }
-    }
-  }
-
-  &--czech {
-    padding-bottom: 4px;
-    padding-right: 32px;
-    //Tablet
-    br {
-      @media (min-width: 768px) {
-        display: none;
-      }
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: -13px;
-      left: 25px;
-      width: 35px;
-      height: 24px;
-      background-image: url("data:image/svg+xml,%3Csvg width='71' height='48' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill-rule='nonzero' fill='none'%3E%3Cpath d='M63.92.55H6.65A6.36 6.36 0 0 0 .29 6.91v17.64h70V6.91A6.36 6.36 0 0 0 63.92.55z' fill='%23FFF'/%3E%3Cpath d='M.28 41.18a6.36 6.36 0 0 0 6.36 6.36h57.28a6.36 6.36 0 0 0 6.36-6.36V24.55h-70v16.63z' fill='%23ED5565'/%3E%3Cpath d='M2.19 2.38a6.34 6.34 0 0 0-1.9 4.54v34.27a6.34 6.34 0 0 0 1.95 4.57l23.05-21.21L2.19 2.38z' fill='%234758A9'/%3E%3C/g%3E%3C/svg%3E");
-      background-size: 35px;
-
-      //Tablet
-      @media (min-width: 768px) {
-        top: 17px;
-        left: 398px;
-        width: 70px;
-        height: 47px;
-        background-size: 71px;
-      }
-
-      //Desktop
-      @media (min-width: 1440px) {
-        top: 23px;
-        left: 338px;
-      }
-    }
-  }
-
   //Tablet
   @media (min-width: 768px) {
     flex-direction: column;
@@ -142,6 +47,27 @@
   @media (min-width: 1440px) {
     margin: 0;
     padding: 26px 30px 21px;
+  }
+}
+
+.countries-card__flag {
+  position: absolute;
+  transform: scale(0.5);
+  left: 7px;
+  top: -26px;
+
+  //Tablet
+  @media (min-width: 768px) {
+    align-self: flex-end;
+    transform: scale(1);
+    top: 17px;
+    left: auto;
+    right: -37px;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    top: 23px;
   }
 }
 
@@ -202,5 +128,15 @@
     font-size: 20px;
     margin-left: 29px;
     order: 3;
+  }
+}
+
+.country-card:last-of-type {
+  .country-card__slogan {
+    margin-bottom: -18px;
+  }
+
+  .country-card__number {
+    margin-right: 10px;
   }
 }
