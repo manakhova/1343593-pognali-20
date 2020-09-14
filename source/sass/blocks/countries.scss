@@ -12,10 +12,16 @@
     background-position: 92% 24%;
     background-repeat: no-repeat;
     border-radius: 0 0 60px 60px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/flags-back@2x.png");
+      background-size: 38%;
+    }
   }
   //Desktop
   @media (min-width: 1440px) {
-    background-position: 95% 58%;
+    background-position: 95% 61%;
+    background-size: 20%;
   }
 }
 
