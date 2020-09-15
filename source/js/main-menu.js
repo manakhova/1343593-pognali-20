@@ -7,13 +7,13 @@ header.classList.remove('page-header--nojs');
 
 headerButton.addEventListener('click', function() {
   if (headerButton.classList.contains('page-header__button--closed')) {
-    header.classList.add('page-header--scroll');
+    header.classList.add('page-header--open');
     headerButton.classList.remove('page-header__button--closed');
     headerButton.classList.add('page-header__button--opened');
-    headerNav.classList.add('site-navigation--scroll');
-    headerCont.classList.add('contacts--scroll');
+    headerNav.classList.add('site-navigation--open');
+    headerCont.classList.add('contacts--open');
   } else {
-    header.classList.remove('page-header--scroll');
+    header.classList.remove('page-header--open');
     headerButton.classList.remove('page-header__button--opened');
     headerButton.classList.add('page-header__button--closed');
   }

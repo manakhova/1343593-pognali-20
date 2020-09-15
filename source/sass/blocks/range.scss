@@ -41,6 +41,7 @@
   &:hover {
     width: 19px;
     height: 19px;
+    top: 4px;
   }
 
   &:focus {
@@ -50,6 +51,7 @@
   &:active {
     width: 19px;
     height: 19px;
+    top: 4px;
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.24);
   }
 
@@ -63,12 +65,24 @@
       height: 13px;
       top: 7px;
       left: 66px;
+
+      &:hover {
+        width: 19px;
+        height: 19px;
+        top: 5px;
+      }
     }
 
     //Desktop
     @media (min-width: 1440px) {
       top: 21px;
       left: 62px;
+
+      &:hover {
+        width: 19px;
+        height: 19px;
+        top: 16px;
+      }
     }
   }
 
@@ -82,12 +96,24 @@
       height: 13px;
       top: 7px;
       right: 0;
+
+      &:hover {
+        width: 19px;
+        height: 19px;
+        top: 5px;
+      }
     }
 
     //Desktop
     @media (min-width: 1440px) {
       top: 20px;
       right: 0;
+
+      &:hover {
+        width: 19px;
+        height: 19px;
+        top: 16px;
+      }
     }
   }
 }

@@ -90,6 +90,7 @@
     order: 3;
     margin-left: 12px;
     justify-self: center;
+    opacity: 1;
   }
 }
 
@@ -170,6 +171,7 @@
   border: none;
   background-color: transparent;
   padding: 13px 14px;
+  user-select: none;
 
   &:focus {
     outline: none;

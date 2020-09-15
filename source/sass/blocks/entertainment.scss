@@ -53,6 +53,7 @@
 
 .entertainment__country {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 13px;
@@ -146,4 +147,16 @@
     padding: 24px 25px;
     padding-right: 18px;
   }
+
+  &--error {
+    border-color: #f47e7e;
+  }
+}
+
+.entertainment__country-plan-text-error {
+  height: 60px;
+  padding: 10px;
+  color: red;
+  background-color: #ffefef;
+  border-radius: 0 0 4px 4px;
 }

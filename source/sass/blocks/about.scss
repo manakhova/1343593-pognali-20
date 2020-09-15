@@ -103,6 +103,7 @@
 
 .about__button {
   display: none;
+  user-select: none;
 
   //Tablet
   @media (min-width: 768px) {
