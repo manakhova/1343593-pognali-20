@@ -182,14 +182,17 @@
   position: relative;
 
   &::after {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 79px;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background-color: #e1e3e9;
+    //Tablet
+    @media (min-width: 768px) {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 79px;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background-color: #e1e3e9;
+    }
 
     //Desktop
     @media (min-width: 1440px) {

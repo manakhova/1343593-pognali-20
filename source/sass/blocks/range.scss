@@ -96,12 +96,24 @@
       height: 13px;
       top: 7px;
       right: 0;
+
+      &:hover {
+        width: 19px;
+        height: 19px;
+        top: 5px;
+      }
     }
 
     //Desktop
     @media (min-width: 1440px) {
       top: 20px;
       right: 0;
+
+      &:hover {
+        width: 19px;
+        height: 19px;
+        top: 16px;
+      }
     }
   }
 }

@@ -3,31 +3,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML Academy: Погнали</title>
-    <style>
-      HTML {
-        background-repeat: no-repeat;
-        background-position:  50% 0;
-        /* По умолчанию показывается мобильный макет */
-        background-image: url( "./img/Mobile-Catalog.jpg" );
-      }
-      /* Планшет */
-      @media ( min-width: 768px ) {
-        HTML {
-          /* Планшетный макет */
-          background-image: url( "./img/Tablet-Catalog.jpg" );
-        }
-      }
-      /* Десктоп */
-      @media ( min-width: 1440px ) {
-        HTML {
-          /* Десктопный макет */
-          background-image: url( "./img/Desktop-Catalog.jpg" );
-        }
-      }
-    </style>
-    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
     <link rel="preload" href="fonts/bloggersans.woff2" as="font">
     <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font">
     <link rel="preload" href="fonts/bloggersans-bolditalic.woff2" as="font">
@@ -36,8 +11,7 @@
     <link rel="preload" href="fonts/bloggersans-lightitalic.woff2" as="font">
     <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font">
     <link rel="preload" href="fonts/bloggersans-mediumitalic.woff2" as="font">
-    <script src="../node_modules/pixel-glass/script.js"></script>
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/styles.min.css" rel="stylesheet">
   </head>
   <body class="page__body page__body--catalog">
     <header class="page__header page-header page-header--catalog page-header--nojs">
@@ -963,7 +937,6 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <span class="copyright__text">Разработано</span>
         <span class="copyright__text">Разработано</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg width="27" height="34">

@@ -53,6 +53,7 @@
 
 .entertainment__country {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 13px;
@@ -149,20 +150,13 @@
 
   &--error {
     border-color: #f47e7e;
-    position: relative;
-
-    &::after {
-      content: "Это поле должно быть заполнено";
-      position: absolute;
-      display: block;
-      left: 1px;
-      right: 1px;
-      bottom: 1px;
-      height: 60px;
-      padding: 10px;
-      color: red;
-      background-color: #ffefef;
-      border-radius: 0 0 4px 4px;
-    }
   }
+}
+
+.entertainment__country-plan-text-error {
+  height: 60px;
+  padding: 10px;
+  color: red;
+  background-color: #ffefef;
+  border-radius: 0 0 4px 4px;
 }
