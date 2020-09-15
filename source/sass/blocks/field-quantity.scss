@@ -171,6 +171,7 @@
   border: none;
   background-color: transparent;
   padding: 13px 14px;
+  user-select: none;
 
   &:focus {
     outline: none;

@@ -1,6 +1,7 @@
 .button {
   border: none;
   border-radius: 25px;
+  user-select: none;
 
   &--submit {
     border-radius: 12px;

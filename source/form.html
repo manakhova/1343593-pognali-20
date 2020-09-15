@@ -27,6 +27,15 @@
       }
     </style>
     <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <link rel="preload" href="fonts/bloggersans.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-bolditalic.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-italic.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-light.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-lightitalic.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-mediumitalic.woff2" as="font">
     <script src="../node_modules/pixel-glass/script.js"></script>
     <link href="./css/style.css" rel="stylesheet">
   </head>
@@ -55,7 +64,7 @@
       </button>
       <ul class="page-header__navigation site-navigation">
         <li class="site-navigation__item site-navigation__item--open">
-          <a class="site-navigation__link site-navigation__link--open" href="form.html">
+          <a class="site-navigation__link site-navigation__link--open" href="index.html">
             <span data-hover="О сервисе">О сервисе</span>
           </a>
         </li>
@@ -573,7 +582,7 @@
                         <use xlink:href="#bosnia"></use>
                       </svg>
                     </div>
-                    <textarea class="entertainment__country-plan" id="coutry-1" placeholder="План действий"></textarea>
+                    <textarea class="entertainment__country-plan entertainment__country-plan--error" id="coutry-1" placeholder="План действий" required></textarea>
                   </div>
                   <div class="add-plans__item-textarea add-plans__item-textarea--last entertainment">
                     <div class="entertainment__country">

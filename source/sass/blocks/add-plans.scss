@@ -275,6 +275,7 @@
 
 .add-plans__button {
   font-family: "Blogger Sans", "Arial", sans-serif;
+  user-select: none;
 
   //Tablet
   @media (min-width: 768px) {

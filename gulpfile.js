@@ -105,10 +105,10 @@ exports.clean = clean;
 const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/*.html",
     "source/img/**",
     "source/js/**",
-    "source/*.ico"
+    "source/*.ico",
+    "source/*.html"
   ], {
       base: "source"
   })
@@ -120,11 +120,10 @@ exports.copy = copy;
 //Build
 
 const build = gulp.series(
-  "clean",
-  "copy",
-  "css",
-  "sprite",
-  "html"
+  clean,
+  copy,
+  styles,
+  sprite
 );
 
 exports.build = build;
