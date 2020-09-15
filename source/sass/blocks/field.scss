@@ -44,6 +44,20 @@
   margin: 0;
   margin-left: -57px;
   user-select: none;
+  cursor: pointer;
+
+
+  &:active {
+
+    .field__button-name {
+      color: rgba(22, 28, 53, 0.3);
+    }
+
+
+    svg {
+      opacity: 0.3;
+    }
+  }
 
   &:focus {
     outline: none;

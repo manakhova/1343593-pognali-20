@@ -11,6 +11,8 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
+const uglify = require("gulp-uglify");
+const htmlmin = require("gulp-htmlmin");
 
 // Styles
 
@@ -64,6 +66,27 @@ const createWebp = () => {
 }
 
 exports.webp = createWebp;
+
+
+//JS
+
+const js = () => {
+  return gulp.src("source/js/*.js")
+    .pipe(uglify())
+    .pipe(gulp.dest("build/js"))
+}
+
+exports.js = js
+
+//HTML
+
+const html = () => {
+  return gulp.src('src/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('build'));
+}
+
+exports.html = html
 
 // Server
 
@@ -123,7 +146,9 @@ const build = gulp.series(
   clean,
   copy,
   styles,
-  sprite
+  sprite,
+  html,
+  js
 );
 
 exports.build = build;
