@@ -81,9 +81,9 @@ exports.js = js
 //HTML
 
 const html = () => {
-  return gulp.src('src/*.html')
+  return gulp.src("source/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest('build'));
+    .pipe(gulp.dest("build"));
 }
 
 exports.html = html
@@ -130,8 +130,7 @@ const copy = () => {
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/js/**",
-    "source/*.ico",
-    "source/*.html"
+    "source/*.ico"
   ], {
       base: "source"
   })
