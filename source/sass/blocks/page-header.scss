@@ -34,7 +34,16 @@
     }
   }
 
-  &--scroll {
+  //Это октрытое меню для мобильной и планшетной версии
+  &--open {
+    .page-header__logo-image {
+      display: none;
+
+      &--open {
+        display: block;
+      }
+    }
+
     @media (max-width: 1439px) {
       position: absolute;
       top: 0;
@@ -60,6 +69,24 @@
       grid-template-columns: auto auto auto min-content;
       background-color: $basic-blue-dark;
       padding: 50px 60px 38px;
+    }
+  }
+
+  //Это меню, когда сайт скролится
+  &--scroll {
+    background-color: $white;
+
+    .page-header__logo-image {
+      display: none;
+
+      &--open {
+        display: block;
+      }
+    }
+
+    .page-header__button--closed::before {
+      background-color: #cccccc;
+      box-shadow: 0 8px 0 0 #cccccc;
     }
   }
 
@@ -108,6 +135,24 @@
   }
 }
 
+.page-header--scroll .page-header__logo {
+  position: relative;
+
+  &::before {
+    //Desktop
+    @media (min-width: 1440px) {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 24px;
+      right: 47px;
+      width: 62px;
+      height: 2px;
+      background-color: $basic-blue-dark;
+    }
+  }
+}
+
 .page-header__logo-image {
   display: inline-block;
 
@@ -121,6 +166,10 @@
   @media (min-width: 1440px) {
     width: 200px;
     height: 52px;
+  }
+
+  &--open {
+    display: none;
   }
 }
 
@@ -227,7 +276,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1439px) {
-  .page-header__button--closed ~ .page-header__authorization--scroll {
+  .page-header__button--closed ~ .page-header__authorization--open {
     display: block;
   }
 }
@@ -235,7 +284,7 @@
 .page-header__navigation {
   padding: 25px;
 
-  &--scroll {
+  &--open {
     grid-gap: 49px;
 
     //Tablet
@@ -246,7 +295,7 @@
 }
 
 .page-header__authorization {
-  &--scroll {
+  &--open {
     grid-column: 1 / 3;
 
     //Tablet
@@ -261,13 +310,19 @@
   .page-header--nojs .site-navigation {
     grid-column: 1 / 3;
     display: grid;
-    grid-gap: 10px;
     margin-top: 24px;
 
     //Tablet
     @media (min-width: 768px) {
-      grid-gap: 49px;
       padding: 0 57px;
+    }
+  }
+
+  .page-header--nojs .page-header__logo-image {
+    display: none;
+
+    &--open {
+      display: block;
     }
   }
 
@@ -288,7 +343,7 @@
     display: block;
   }
 
-  .page-header--nojs .social--scroll {
+  .page-header--nojs .social--open {
     display: block;
   }
 }

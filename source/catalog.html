@@ -41,22 +41,30 @@
           <source media="(min-width: 768px)" srcset="./img/logo-tablet-white@1x.png 1x, ./img/logo-tablet-white@2x.png 2x">
           <img class="page-header__logo-image" src="./img/logo-mobile-white@1x.png" srcset="./img/logo-mobile-white@2x.png 2x" alt="Погнали?">
         </picture>
+        <picture>
+          <source type="image/webp" media="(min-width: 1440px)" srcset="./img/logo-desktop-blue@1x.webp 1x, ./img/logo-desktop-blue@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="./img/logo-tablet-blue@1x.webp 1x, ./img/logo-tablet-blue@2x.webp 2x">
+          <source type="image/webp" srcset="./img/logo-mobile-blue@1x.webp 1x, ./img/logo-mobile-blue@2x.webp 2x">
+          <source media="(min-width: 1440px)" srcset="./img/logo-desktop-blue@1x.png 1x, ./img/logo-desktop-blue@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="./img/logo-tablet-blue@1x.png 1x, ./img/logo-tablet-blue@2x.png 2x">
+          <img class="page-header__logo-image page-header__logo-image--open" src="./img/logo-mobile-blue@1x.png" srcset="./img/logo-mobile-blue@2x.png 2x" alt="Погнали?">
+        </picture>
       </a>
       <button class="page-header__button page-header__button--closed" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="page-header__navigation site-navigation">
-        <li class="site-navigation__item site-navigation__item--scroll">
-          <a class="site-navigation__link site-navigation__link--scroll" href="index.html">
+        <li class="site-navigation__item site-navigation__item--open">
+          <a class="site-navigation__link site-navigation__link--open" href="form.html">
             <span data-hover="О сервисе">О сервисе</span>
           </a>
         </li>
-        <li class="site-navigation__item site-navigation__item--scroll">
-          <a class="site-navigation__link site-navigation__link--scroll" href="form.html">
+        <li class="site-navigation__item site-navigation__item--open">
+          <a class="site-navigation__link site-navigation__link--open" href="form.html">
             <span data-hover="Направления">Направления</span>
           </a>
         </li>
-        <li class="site-navigation__item site-navigation__item--scroll">
+        <li class="site-navigation__item site-navigation__item--open">
           Попутчики
         </li>
       </ul>
@@ -88,26 +96,26 @@
           </a>
         </li>
       </ul>
-      <a class="page-header__authorization page-header__authorization--scroll contacts__item-link contacts__item-link--menu contacts__item-link--authorization">
+      <a class="page-header__authorization page-header__authorization--open contacts__item-link  contacts__item-link--menu contacts__item-link--authorization">
         Авторизация
       </a>
-      <div class="page-header__social social social--scroll">
-        <ul class="social__list social__list--scroll">
-          <li class="social__item social__item--scroll social__item--facebook">
+      <div class="page-header__social social social--open">
+        <ul class="social__list social__list--open">
+          <li class="social__item social__item--open social__item--facebook">
             <a class="social__link" href="#">
               <svg class="social__link-icon" width="11" height="20">
                 <use xlink:href="#facebook"></use>
               </svg>
             </a>
           </li>
-          <li class="social__item social__item--scroll social__item--vkontakte">
+          <li class="social__item social__item--open social__item--vkontakte">
             <a class="social__link" href="#">
               <svg class="social__link-icon" width="22" height="12">
                 <use xlink:href="#vkontakte"></use>
               </svg>
             </a>
           </li>
-          <li class="social__item social__item--scroll social__item--instagram">
+          <li class="social__item social__item--open social__item--instagram">
             <a class="social__link" href="#">
               <svg class="social__link-icon" width="18" height="18">
                 <use xlink:href="#instagram"></use>
@@ -452,8 +460,10 @@
               <h2 class="filter-form__title">Подберите идеального попутчика</h2>
               <div class="filter-form__content">
                 <div class="filter-form__item filter-section">
-                  <h3 class="filter-section__name">Хобби</h3>
-                  <button class="filter-section__button filter-section__button--close" type="button"></button>
+                  <div class="filter-section__item">
+                    <span class="filter-section__name">Хобби</span>
+                    <button class="filter-section__button filter-section__button--close" type="button"></button>
+                  </div>
                   <ul class="filter-section__list">
                     <li class="filter-section__list-item">
                       <input class="filter-section__list-item-checkbox visually-hidden" id="gym" name="gym" type="checkbox" value="gym" checked>
@@ -470,8 +480,10 @@
                   </ul>
                 </div>
                 <div class="filter-form__item filter-section">
-                  <h3 class="filter-section__name">Музыка</h3>
-                  <button class="filter-section__button filter-section__button--close" type="button"></button>
+                  <div class="filter-section__item">
+                    <span class="filter-section__name">Музыка</span>
+                    <button class="filter-section__button filter-section__button--close" type="button"></button>
+                  </div>
                   <ul class="filter-section__list">
                     <li class="filter-section__list-item">
                       <input class="filter-section__list-item-checkbox visually-hidden" id="hardrock" name="hardrock" type="checkbox" value="hardrock" checked>
@@ -488,8 +500,10 @@
                   </ul>
                 </div>
                 <div class="filter-form__item filter-section">
-                  <h3 class="filter-section__name">Еда</h3>
-                  <button class="filter-section__button filter-section__button--close" type="button"></button>
+                  <div class="filter-section__item">
+                    <span class="filter-section__name">Еда</span>
+                    <button class="filter-section__button filter-section__button--close" type="button"></button>
+                  </div>
                   <ul class="filter-section__list">
                     <li class="filter-section__list-item">
                       <input class="filter-section__list-item-checkbox visually-hidden" id="meat-eater" name="meat-eater" type="checkbox" value="meat-eater" checked>
@@ -506,8 +520,10 @@
                   </ul>
                 </div>
                 <div class="filter-form__item filter-form__item--transport filter-section">
-                  <h3 class="filter-section__name filter-section__name--transport transport__title">Транспорт</h3>
-                  <button class="filter-section__button filter-section__button--close" type="button"></button>
+                  <div class="filter-section__item">
+                    <span class="filter-section__name filter-section__name--transport transport__title">Транспорт</span>
+                    <button class="filter-section__button filter-section__button--close" type="button"></button>
+                  </div>
                   <ul class="filter-section__list transport__list transport__list--filter">
                     <li class="transport__item transport__item--filter" data-tooltip="Авиаперелет">
                       <input class="transport__item-checkbox visually-hidden" id="plane" name="transport" type="checkbox" value="plane">
@@ -544,8 +560,10 @@
                   </ul>
                 </div>
                 <div class="filter-form__item filter-section">
-                  <h3 class="filter-section__name filter-range__title">Левел</h3>
-                  <button class="filter-section__button filter-section__button--close" type="button"></button>
+                  <div class="filter-section__item">
+                    <span class="filter-section__name filter-range__title">Левел</span>
+                    <button class="filter-section__button filter-section__button--close" type="button"></button>
+                  </div>
                   <div class="filter-section__item filter-section__list filter-range">
                     <div class="filter-range__item">
                       <textarea class="filter-range__min-level filter-range__number" rows="1" cols="1">30</textarea>
@@ -906,7 +924,7 @@
           <source type="image/webp" srcset="./img/logo-mobile-blue@1x.webp 1x, ./img/logo-mobile-blue@2x.webp 2x">
           <source media="(min-width: 1440px)" srcset="./img/logo-desktop-blue@1x.png 1x, ./img/logo-desktop-blue@2x.png 2x">
           <source media="(min-width: 768px)" srcset="./img/logo-tablet-blue@1x.png 1x, ./img/logo-tablet-blue@2x.png 2x">
-          <img class="page-header__logo-image" src="./img/logo-mobile-blue@1x.png" srcset="./img/logo-mobile-blue@2x.png 2x" alt="Погнали?">
+          <img class="page-footer__logo-image" src="./img/logo-mobile-blue@1x.png" srcset="./img/logo-mobile-blue@2x.png 2x" alt="Погнали?">
         </picture>
       </a>
       <div class="page-footer__social social">
@@ -937,10 +955,15 @@
       </div>
       <div class="page-footer__copyright copyright">
         <span class="copyright__text">Разработано</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="./img/htmlacademy.svg" width="27" height="33" alt="HTML Academy"></a>
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg width="27" height="34">
+            <use xlink:href="#htmlacademy"></use>
+          </svg>
+        </a>
       </div>
     </footer>
-    <svg style="display:none;"><!--спрайт!-->
+    <svg style="display: none;">
       <symbol id="vkontakte" viewBox="0 0 30 15.8">
         <g>
           <path d="M23.9,15.8c-0.4,0-1.2-0.1-2.1-0.6c-0.6-0.4-1.2-1-1.8-1.5c-0.4-0.4-1.2-1.2-1.4-1.2c-0.3,0.1-0.5,0.9-0.5,1.6
@@ -1060,7 +1083,7 @@
         <polygon points="0,14 0,0.1 10,7.1 "/>
       </symbol>
       <symbol id="htmlacademy" viewBox="0 0 27 34">
-        <path class="st0" d="M13.6,0l-0.2,0L0,1.4V26l13.5,8L27,26l0,0V1.4L13.6,0z M19.3,16.8l-0.9,0.5l-5-3l0,1.4l3.8,2.3l-0.8,0.5l-3-1.8
+        <path d="M13.6,0l-0.2,0L0,1.4V26l13.5,8L27,26l0,0V1.4L13.6,0z M19.3,16.8l-0.9,0.5l-5-3l0,1.4l3.8,2.3l-0.8,0.5l-3-1.8
         l0,1.4l1.9,1.1l-1.8,1.1L2,13.6l11.4-6.8L25,13.5l-4.5,2.6l-7.1-4.2l0,1.4L19.3,16.8z M1.9,15.1l11.4,6.8l0,1l-8-4.7l0,1.4l8,4.8
         l0,1.1l-8-4.7l0,1.4l8,4.8l0,0l8.2-4.9v-1.3l0-0.1V17l3.4-2v10l-11.6,6.9L1.9,24.9V15.1z M1.9,12.1V3.1l11.6-1.2l11.6,1.2v9
         L13.5,5.3l0-0.1l-0.1,0l-0.1,0v0.1L1.9,12.1z"/>
@@ -1075,10 +1098,10 @@
         <g>
           <g>
             <g>
-              <path class="st0" d="M14.9,1.8c1.2-1,0.9-1.8-0.7-1.8H3.7C2.2,0,1.9,0.8,3.1,1.8l3.7,3.1c1.2,1,3.2,1,4.4,0L14.9,1.8z"/>
+              <path  d="M14.9,1.8c1.2-1,0.9-1.8-0.7-1.8H3.7C2.2,0,1.9,0.8,3.1,1.8l3.7,3.1c1.2,1,3.2,1,4.4,0L14.9,1.8z"/>
             </g>
             <g>
-              <path class="st0" d="M11.9,7.1c-1.2,1-2.2,1.8-2.2,1.8c0,0,0,0,0,0C9.6,9,9.5,9,9.4,9c0,0-0.1,0-0.1,0C9.2,9.1,9.1,9.1,9,9.1
+              <path d="M11.9,7.1c-1.2,1-2.2,1.8-2.2,1.8c0,0,0,0,0,0C9.6,9,9.5,9,9.4,9c0,0-0.1,0-0.1,0C9.2,9.1,9.1,9.1,9,9.1
                 c0,0,0,0,0,0c0,0,0,0,0,0l0,0c0,0,0,0,0,0c-0.1,0-0.2,0-0.3-0.1c0,0-0.1,0-0.1,0C8.5,9,8.4,9,8.3,8.9c0,0,0,0,0,0
                 c0,0-1-0.8-2.2-1.8L2.2,3.8C1,2.8,0,3.3,0,4.8v6.3C0,12.7,1.3,14,2.8,14h12.3c1.6,0,2.8-1.3,2.8-2.8V4.8c0-1.6-1-2-2.2-1
                 L11.9,7.1z"/>
@@ -1090,15 +1113,15 @@
         <g>
           <g id="UrwUhy_1_">
             <g>
-              <path class="st0" d="M12.6,18c-0.3,0-0.5,0-0.8,0c-3.6-0.4-6.2-2.1-8.1-4.3C1.8,11.6,0.3,8.8,0,5c0-0.3,0-0.7,0-1
+              <path d="M12.6,18c-0.3,0-0.5,0-0.8,0c-3.6-0.4-6.2-2.1-8.1-4.3C1.8,11.6,0.3,8.8,0,5c0-0.3,0-0.7,0-1
                 c0.1-0.7,0.4-1.1,0.8-1.5C1.2,2,2,1.4,2.6,1.3c0.5,0,1.3,0.3,1.6,0.8c0.3,0.4,0.4,1.2,0.6,1.8c0.1,0.6,0.4,1.4,0.4,2
                 C5,6.8,3.9,7.2,3.5,7.8c1.1,2.8,3,4.8,5.4,6.2c0.6-0.3,1.2-1.4,2-1.4c0.3,0,0.7,0.2,1,0.3c0.3,0.1,0.6,0.2,1,0.4
                 c0.5,0.2,1.4,0.5,1.7,0.9c0.3,0.4,0.5,1.2,0.4,1.7C14.9,16.7,13.4,17.7,12.6,18z"/>
             </g>
           </g>
-          <path class="st0" d="M9.1,1.1c4.3,0,7.8,3.6,7.8,8H18c0-5-4-9.1-8.9-9.1L9.1,1.1z"/>
-          <path class="st0" d="M9.1,6.9V8c0.6,0,1,0.5,1,1.1h1.1C11.2,7.9,10.3,6.9,9.1,6.9z"/>
-          <path class="st0" d="M9.1,4.6c2.4,0,4.4,2,4.4,4.5h1.2c0-3.1-2.5-5.7-5.5-5.7V4.6L9.1,4.6z"/>
+          <path d="M9.1,1.1c4.3,0,7.8,3.6,7.8,8H18c0-5-4-9.1-8.9-9.1L9.1,1.1z"/>
+          <path d="M9.1,6.9V8c0.6,0,1,0.5,1,1.1h1.1C11.2,7.9,10.3,6.9,9.1,6.9z"/>
+          <path d="M9.1,4.6c2.4,0,4.4,2,4.4,4.5h1.2c0-3.1-2.5-5.7-5.5-5.7V4.6L9.1,4.6z"/>
         </g>
       </symbol>
     </svg>

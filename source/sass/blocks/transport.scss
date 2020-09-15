@@ -74,7 +74,6 @@
 .transport__item {
   margin: 0 7px;
   position: relative;
-  cursor: pointer;
 
   &:hover::before {//Это всплывающие подсказки для транспорта
     z-index: 1;
@@ -130,6 +129,7 @@
     padding: 7px 8px 0 6px;
     background-color: $white;
     border-radius: 50px;
+    cursor: pointer;
 
     .transport__item-icon {
       fill: #616d8c;
