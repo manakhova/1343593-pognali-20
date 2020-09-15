@@ -38,11 +38,6 @@
   border-radius: 50%;
   cursor: pointer;
 
-  &:hover {
-    width: 19px;
-    height: 19px;
-    top: 4px;
-  }
 
   &:focus {
     outline: none;
@@ -58,6 +53,12 @@
   &--min {
     top: 19px;
     left: 67px;
+
+    &:hover {
+      width: 19px;
+      height: 19px;
+      top: 13px;
+    }
 
     //Tablet
     @media (min-width: 768px) {
@@ -89,6 +90,12 @@
   &--max {
     top: 19px;
     right: 0;
+
+    &:hover {
+      width: 19px;
+      height: 19px;
+      top: 13px;
+    }
 
     //Tablet
     @media (min-width: 768px) {

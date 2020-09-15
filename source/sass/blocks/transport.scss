@@ -23,7 +23,7 @@
   padding: 0;
 
   &--filter {
-    justify-content: flex-start;
+    justify-content: space-between;
     margin: 0;
     margin-top: 15px;
 
@@ -147,6 +147,13 @@
 
       .transport__item-icon {
         fill: #b2b2b2;
+        cursor: pointer;
+      }
+
+      .transport__item-checkbox:checked + label {
+        .transport__item-icon {
+          opacity: 0.7;
+        }
       }
     }
 
@@ -197,6 +204,12 @@
       .transport__item-icon {
         fill: #b2b2b2;
       }
+
+      .transport__item-checkbox:checked + label {
+        .transport__item-icon {
+          opacity: 0.7;
+        }
+      }
     }
 
     &:active {
@@ -229,17 +242,16 @@
   }
 }
 
+.transport__item-label {
+  cursor: pointer;
+}
+
 //Это состояния для чекбоксов (активных)
 .transport__item-checkbox:checked + label {
   .transport__item-icon {
     fill: $basic-blue;
   }
 
-  &:hover {
-    .transport__item-icon {
-      opacity: 0.7;
-    }
-  }
 
   &:active {
     background-color: $light-blue;
