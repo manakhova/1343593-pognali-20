@@ -8,20 +8,7 @@
   //Tablet
   @media (min-width: 768px) {
     margin-top: -55px;
-    background-image: url("../img/flags-back@1x.png");
-    background-position: 92% 24%;
-    background-repeat: no-repeat;
     border-radius: 0 0 60px 60px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/flags-back@2x.png");
-      background-size: 38%;
-    }
-  }
-  //Desktop
-  @media (min-width: 1440px) {
-    background-position: 95% 61%;
-    background-size: 20%;
   }
 }
 
@@ -35,6 +22,14 @@
   @media (min-width: 768px) {
     grid-gap: 54px;
     padding: 100px 75px 83px;
+    background-image: url("../img/flags-back@1x.png");
+    background-position: 92% 24%;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/flags-back@2x.png");
+      background-size: 38%;
+    }
   }
   //Desktop
   @media (min-width: 1440px) {
@@ -42,6 +37,9 @@
     grid-template-columns: 1fr max-content;
     column-gap: 174px;
     padding: 216px 130px 149px;
+    max-width: 1180px;
+    background-position: 95% 61%;
+    background-size: 20%;
   }
 }
 

@@ -5,7 +5,6 @@
   grid-column-gap: 36px;
   position: relative;
   z-index: 1;
-  background-color: $basic-blue-light;
   color: $basic-blue;
   margin-top: -30px;
   padding-bottom: 64px;
@@ -24,6 +23,8 @@
     grid-column-gap: 44px;
     grid-row-gap: 74px;
     padding-bottom: 87px;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }
 
@@ -56,6 +57,7 @@
 
     //Desktop
     @media (min-width: 1440px) {
+      bottom: -2px;
       left: 127px;
       width: 360px;
     }
@@ -74,7 +76,8 @@
 
   //Desktop
   @media (min-width: 1440px) {
-    padding: 133px 125px 86px;
+    padding: 103px 125px 86px;
+    background-color: transparent;
   }
 }
 
@@ -113,7 +116,7 @@
     z-index: 9;
     justify-self: end;
     align-self: center;
-    margin-top: 54px;
+    margin-top: 23px;
   }
 }
 

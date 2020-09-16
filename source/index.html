@@ -4,6 +4,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Погнали</title>
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url( "./img/Mobile-Index.jpg" );
+      }
+      /* Планшет */
+      @media ( min-width: 768px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url( "./img/Tablet-Index.jpg" );
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 1440px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "./img/Desktop-Index-Modal.jpg" );
+        }
+      }
+    </style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
     <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font">
     <link rel="preload" href="fonts/bloggersans-bolditalic.woff2" as="font">
     <link rel="preload" href="fonts/bloggersans-italic.woff2" as="font">
@@ -11,7 +35,7 @@
     <link rel="preload" href="fonts/bloggersans-lightitalic.woff2" as="font">
     <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font">
     <link rel="preload" href="fonts/bloggersans-mediumitalic.woff2" as="font">
-    <link href="./css/styles.min.css" rel="stylesheet">
+    <link href="css/styles.min.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <div class="page__body-container">
@@ -80,7 +104,7 @@
             </a>
           </li>
         </ul>
-        <a class="page-header__authorization page-header__authorization--open contacts__item-link  contacts__item-link--menu contacts__item-link--authorization">
+        <a class="page-header__authorization page-header__authorization--contacts page-header__authorization--open">
           Авторизация
         </a>
         <div class="page-header__social social social--open">
@@ -112,7 +136,7 @@
       <main class="page__main">
         <section class="promo">
           <div class="promo__info">
-            <h1 class="promo__title">В путешествие <br> с крутыми попутчиками!</h1>
+            <h1 class="promo__title">В&nbsp;путешествие <br> с крутыми попутчиками!</h1>
             <div class="promo__contacts">
               <ul class="contacts contacts--main">
                 <li class="contacts__item">
@@ -134,36 +158,38 @@
                   </a>
                 </li>
               </ul>
-              <a class="contacts__item-link contacts__item-link--menu contacts__item-link--authorization-main">
-                Авторизация
-              </a>
+              <div class="contacts">
+                <a class="contacts__item-link contacts__item-link--menu contacts__item-link--authorization-main">
+                  Авторизация
+                </a>
+              </div>
             </div>
             <div class="promo__review">
               <p class="promo__review-text text">«Лучшее приложение, <br> что я видел в жизни!»</p>
-              <p class="promo__review-author text--emphasis">Мурат Эльтазин <br> главный редактор газеты «гаджетлайф»</p>
+              <p class="promo__review-author text text--emphasis">Мурат Эльтазин <br> главный редактор газеты «гаджетлайф»</p>
             </div>
           </div>
           <ul class="promo__steps steps-list">
             <li class="steps-list__item steps-list__item--1">
-              <p class="steps-list__item-text text--blue">
+              <p class="steps-list__item-text text text--blue">
                 Выберите направление
               </p>
               <span class="steps-list__item-number">1</span>
             </li>
             <li class="steps-list__item steps-list__item--2">
-              <p class="steps-list__item-text text--blue">
+              <p class="steps-list__item-text text text--blue">
                 Изучите идеи путешественников
               </p>
               <span class="steps-list__item-number">2</span>
             </li>
             <li class="steps-list__item steps-list__item--3">
-              <p class="steps-list__item-text text--blue">
+              <p class="steps-list__item-text text text--blue">
                 Находите тех, <br> кто похож на вас
               </p>
               <span class="steps-list__item-number">3</span>
             </li>
             <li class="steps-list__item steps-list__item--4">
-              <p class="steps-list__item-text text--blue">
+              <p class="steps-list__item-text text text--blue">
                 Путешествуйте вместе!
               </p>
               <span class="steps-list__item-number">4</span>
@@ -177,10 +203,10 @@
               Любое путешествие веселее
               с&nbsp;попутчиками, которые на
               одной волне с тобой! Делитесь
-              своими идеями путешествий <br class="about__teaser-br"> и
+              своими идеями путешествий&nbsp;<br class="about__teaser-br"> и
               черпайте вдохновение в чужих.
             </p>
-            <p class="about__teaser text--emphasis">
+            <p class="about__teaser text text--emphasis">
               А если найдете кого-то
               близкого по духу &mdash;<br class="about__teaser-br-2"> скорее
               зовите в совместный трип!
@@ -216,7 +242,7 @@
                 </div>
                 <div class="country-card__info country-card__info--thailand">
                   <h3 class="country-card__name">Таиланд</h3>
-                  <svg class="countries-card__flag" width="71" height="48">
+                  <svg class="country-card__flag" width="71" height="48">
                     <use xlink:href="#thailand"></use>
                   </svg>
                   <span class="country-card__number">18321</span>
@@ -234,7 +260,7 @@
                 </div>
                 <div class="country-card__info country-card__info--france">
                   <h3 class="country-card__name">Франция</h3>
-                  <svg class="countries-card__flag" width="71" height="48">
+                  <svg class="country-card__flag" width="71" height="48">
                     <use xlink:href="#france"></use>
                   </svg>
                   <span class="country-card__number">12518</span>
@@ -252,7 +278,7 @@
                 </div>
                 <div class="country-card__info country-card__info--czech">
                   <h3 class="country-card__name">Чехия</h3>
-                  <svg class="countries-card__flag" width="71" height="48">
+                  <svg class="country-card__flag" width="71" height="48">
                     <use xlink:href="#czech"></use>
                   </svg>
                   <span class="country-card__number">5326</span>
@@ -278,13 +304,13 @@
                 нужен пляж и коктейль, <br> а
                 другому маршрут для хайкинга.
               </p>
-              <p class="users__teaser text--emphasis">
+              <p class="users__teaser text text--emphasis">
                 Теперь можно легко <br> найти
                 единомышленников!
               </p>
             </div>
             <div class="users__list">
-              <div class="user-card">
+              <div class="user-card user-profile">
                 <picture>
                   <source type="image/webp" srcset="./img/firsova-desktop@1x.webp 1x, ./img/firsova-desktop@2x.webp 2x">
                   <img class="user-card__pic" src="./img/firsova-desktop@1x.jpg" srcset="./img/firsova-desktop@2x.jpg 2x" alt="Таня Фирсова">
@@ -353,7 +379,7 @@
                   <button class="user-card__button button visually-hidden" type="button">Позвать!</button>
                 </div>
               </div>
-              <div class="user-card">
+              <div class="user-card user-profile">
                 <picture>
                   <source type="image/webp" srcset="./img/demin-desktop@1x.webp 1x, ./img/demin-desktop@2x.webp 2x">
                   <img class="user-card__pic" src="./img/demin-desktop@1x.jpg" srcset="./img/demin-desktop@2x.jpg 2x" alt="Петя Демин">
@@ -453,10 +479,7 @@
           <div class="subscription__info">
             <h2 class="subscription__title section-title">Заинтересовались?</h2>
             <p class="subscription__teaser text">
-              Зарегистрируйтесь,
-              это&nbsp;быстро&nbsp;и бесплатно!
-              <span>Уже&nbsp;зарегистрированы?&nbsp;Тогда
-              скорее <a href="#" class="subscription__link">авторизуйтесь</a>.</span>
+              Зарегистрируйтесь, <br>это быстро и бесплатно! <span>Уже зарегистрированы? Тогда скорее <a href="#" class="subscription__link">авторизуйтесь</a>.</span>
             </p>
           </div>
           <form class="subscription__form" action="http://echo.htmlacademy.ru" method="POST">
@@ -472,8 +495,7 @@
           </form>
           <div class="subscription__info">
             <p class="subscription__teaser text">
-              Остались вопросы?
-              Мы&nbsp;с&nbsp;радостью&nbsp;на&nbsp;них&nbsp;ответим!
+              Остались вопросы? Мы&nbsp;с&nbsp;радостью&nbsp;на&nbsp;них&nbsp;ответим!
             </p>
           </div>
           <ul class="subscription__actions contacts">
@@ -503,8 +525,7 @@
           <div class="adress__info">
             <h2 class="visually-hidden">Адрес</h2>
             <p class="adress__text">
-              ул. Большая
-              Конюшенная, 19/8
+              ул. Большая Конюшенная, 19/8
             </p>
             <a class="adress__button button-big button-big--adress" href="https://yandex.com/maps/2/saint-petersburg/?ll=30.323613%2C59.938779&mode=routes&rtext=59.933310%2C30.322794~59.938635%2C30.323118&rtt=pd&ruri=~ymapsbm1%3A%2F%2Fgeo%3Fll%3D30.323%252C59.939%26spn%3D0.001%252C0.001%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%25A1%25D0%25B0%25D0%25BD%25D0%25BA%25D1%2582-%25D0%259F%25D0%25B5%25D1%2582%25D0%25B5%25D1%2580%25D0%25B1%25D1%2583%25D1%2580%25D0%25B3%252C%2520%25D0%2591%25D0%25BE%25D0%25BB%25D1%258C%25D1%2588%25D0%25B0%25D1%258F%2520%25D0%259A%25D0%25BE%25D0%25BD%25D1%258E%25D1%2588%25D0%25B5%25D0%25BD%25D0%25BD%25D0%25B0%25D1%258F%2520%25D1%2583%25D0%25BB%25D0%25B8%25D1%2586%25D0%25B0%252C%252019%252F8&z=18.16">
               Проложить маршрут
@@ -516,64 +537,65 @@
         </section>
         <section class="map">
           <h2 class="visually-hidden">Карта</h2>
-          <iframe class="map__pic" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1600074188993!5m2!1sru!2sru" allowfullscreen></iframe>
-        </section>
+        <iframe class="map__pic" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1600254635031!5m2!1sru!2sru" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </main>
       <footer class="page__footer page-footer">
-        <a class="page-footer__logo">
-          <picture>
-            <source type="image/webp" media="(min-width: 1440px)" srcset="./img/logo-desktop-blue@1x.webp 1x, ./img/logo-desktop-blue@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="./img/logo-tablet-blue@1x.webp 1x, ./img/logo-tablet-blue@2x.webp 2x">
-            <source type="image/webp" srcset="./img/logo-mobile-blue@1x.webp 1x, ./img/logo-mobile-blue@2x.webp 2x">
-            <source media="(min-width: 1440px)" srcset="./img/logo-desktop-blue@1x.png 1x, ./img/logo-desktop-blue@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="./img/logo-tablet-blue@1x.png 1x, ./img/logo-tablet-blue@2x.png 2x">
-            <img class="page-footer__logo-image" src="./img/logo-mobile-blue@1x.png" srcset="./img/logo-mobile-blue@2x.png 2x" alt="Погнали?">
-          </picture>
-        </a>
-        <div class="page-footer__social social">
-          <h2 class="visually-hidden">Соцсети</h2>
-          <ul class="social__list">
-            <li class="social__item social__item--facebook">
-              <a class="social__link" href="#">
-                <svg class="social__link-icon" width="11" height="20">
-                  <use xlink:href="#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item social__item--vkontakte">
-              <a class="social__link" href="#">
-                <svg class="social__link-icon" width="22" height="11">
-                  <use xlink:href="#vkontakte"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item social__item--instagram">
-              <a class="social__link" href="#">
-                <svg class="social__link-icon" width="17" height="16">
-                  <use xlink:href="#instagram"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <span class="copyright__text">Разработано</span>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg width="27" height="34">
-              <use xlink:href="#htmlacademy"></use>
-            </svg>
+        <div class="page-footer__container">
+          <a class="page-footer__logo">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="./img/logo-desktop-blue@1x.webp 1x, ./img/logo-desktop-blue@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="./img/logo-tablet-blue@1x.webp 1x, ./img/logo-tablet-blue@2x.webp 2x">
+              <source type="image/webp" srcset="./img/logo-mobile-blue@1x.webp 1x, ./img/logo-mobile-blue@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="./img/logo-desktop-blue@1x.png 1x, ./img/logo-desktop-blue@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="./img/logo-tablet-blue@1x.png 1x, ./img/logo-tablet-blue@2x.png 2x">
+              <img class="page-footer__logo-image" src="./img/logo-mobile-blue@1x.png" srcset="./img/logo-mobile-blue@2x.png 2x" alt="Погнали?">
+            </picture>
           </a>
+          <div class="page-footer__social social">
+            <h2 class="visually-hidden">Соцсети</h2>
+            <ul class="social__list">
+              <li class="social__item social__item--facebook">
+                <a class="social__link" href="#">
+                  <svg class="social__link-icon" width="11" height="20">
+                    <use xlink:href="#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item social__item--vkontakte">
+                <a class="social__link" href="#">
+                  <svg class="social__link-icon" width="22" height="11">
+                    <use xlink:href="#vkontakte"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item social__item--instagram">
+                <a class="social__link" href="#">
+                  <svg class="social__link-icon" width="17" height="16">
+                    <use xlink:href="#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <span class="copyright__text">Разработано</span>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <svg width="27" height="34">
+                <use xlink:href="#htmlacademy"></use>
+              </svg>
+            </a>
+          </div>
         </div>
       </footer>
       <section class="modal modal--closed">
         <div class="modal__info">
           <h2 class="modal__title section-title">Бизнес-тарифы</h2>
-          <ul class="modal__list">
-            <li class="modal__item"><span class="modal-service">Реклама у блоггера</span><span class="modal-price">300 000 руб./пост</span></li>
-            <li class="modal__item"><span class="modal-service">Накрутка подписчиков</span><span class="modal-price">от 1 руб./шт.</span></li>
-            <li class="modal__item"><span class="modal-service">Лайки от ботов</span><span class="modal-price">от 20 коп./лайк</span></li>
-            <li class="modal__item"><span class="modal-service">Ваш продакт-плейсмент</span><span class="modal-price">Индивидуально</span></li>
-          </ul>
+          <div class="modal__list">
+            <a class="modal__item" href="#"><span class="modal-service">Реклама у блоггера</span><span class="modal-price">300 000 руб./пост</span></a>
+            <a class="modal__item" href="#"><span class="modal-service">Накрутка подписчиков</span><span class="modal-price">от 1 руб./шт.</span></a>
+            <a class="modal__item" href="#"><span class="modal-service">Лайки от ботов</span><span class="modal-price">от 20 коп./лайк</span></a>
+            <a class="modal__item" href="#"><span class="modal-service">Ваш продакт-плейсмент</span><span class="modal-price">Индивидуально</span></a>
+          </div>
         </div>
         <button class="modal__button" type="button">Закрыть окно</button>
       </section>

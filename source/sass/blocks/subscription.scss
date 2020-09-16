@@ -22,7 +22,9 @@
 
   //Desktop
   @media (min-width: 1440px) {
-    padding: 107px 327px 47px;
+    padding: 137px 327px 47px;
+    max-width: 1180px;
+    margin: 0 auto;
   }
 }
 
@@ -36,7 +38,9 @@
 
   //Desktop
   @media (min-width: 1440px) {
-    padding: 60px 55px 45px;
+    padding: 60px 55px 45px 35px;
+    max-width: 1180px;
+    margin: 0 auto;
   }
 }
 
@@ -55,9 +59,19 @@
   margin: 0;
 
   span {
+    display: block;
     //Tablet
     @media (min-width: 768px) {
       margin-left: 19px;
+    }
+  }
+}
+
+.subscription__teaser:first-of-type {
+  br {
+    //Tablet
+    @media (min-width: 768px) {
+      display: none;
     }
   }
 }
@@ -73,6 +87,8 @@
   //Desktop
   @media (min-width: 1440px) {
     padding: 10px 132px;
+    max-width: 1180px;
+    margin: 0 auto;
   }
 }
 
@@ -91,6 +107,8 @@
     display: flex;
     justify-content: space-between;
     padding: 0 289px 104px 285px;
+    max-width: 1180px;
+    margin: 0 auto;
   }
 }
 

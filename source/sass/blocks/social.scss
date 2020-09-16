@@ -19,6 +19,7 @@
 
 .social__list {
   display: flex;
+  max-width: 200px;
   justify-content: center;
   list-style: none;
   padding: 0;
@@ -42,6 +43,10 @@
       margin-bottom: -6px;
     }
   }
+}
+
+.page-footer .social__list {
+  flex-wrap: wrap;
 }
 
 .social__item {

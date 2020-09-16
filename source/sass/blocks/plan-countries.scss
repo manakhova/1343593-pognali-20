@@ -347,7 +347,11 @@
     border: none;
   }
 
-  &--choose,
+  //Desktop
+  @media (min-width: 1440px) {
+    margin-top: 3px;
+  }
+
   &--add {
     border-left: none;
     border-radius: 0 4px 4px 0;
@@ -355,6 +359,17 @@
     //Tablet
     @media (min-width: 768px) {
       display: none;
+    }
+  }
+
+  &--choose {
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+
+    //Tablet
+    @media (min-width: 768px) {
+      background-color: transparent;
+      margin-top: 8px;
     }
   }
 
@@ -371,7 +386,23 @@
   }
 }
 
-.plan-countries__flag:not(:last-of-type) {
+.plan-countries__flag-button {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+
+  //Tablet
+  @media (min-width: 768px) {
+    top: 27px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
   &::before {
     @media (max-width: 767px) {
       z-index: 2;
@@ -385,7 +416,29 @@
       background-repeat: no-repeat;
       background-size: 21px;
     }
+
+    //Tablet
+    @media (min-width: 768px) {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -4px;
+      width: 21px;
+      height: 21px;
+      background-size: 21px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 9' fill='%23E5E5E5'%3E%3Cpath d='M5.2,4.5l3.7-3.7C9,0.6,9,0.3,8.9,0.1S8.4,0,8.2,0.1L4.5,3.8L0.8,0.1C0.6,0,0.3,0,0.1,0.1S0,0.6,0.1,0.8l3.7,3.7L0.1,8.2 C0,8.4,0,8.7,0.1,8.9C0.2,9,0.4,9,0.5,9s0.2,0,0.3-0.1l3.7-3.7l3.7,3.7C8.3,9,8.4,9,8.5,9s0.2,0,0.3-0.1C9,8.7,9,8.4,8.9,8.2 L5.2,4.5z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-color: transparent
+    }
+
+    //Desktop
+    @media (min-width: 1440px) {
+      right: -67px;
+    }
   }
+}
+
+.plan-countries__flag:not(:last-of-type) {
 
   &::after {
     @media (max-width: 767px) {
@@ -397,48 +450,6 @@
       height: 11px;
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 5 10' fill='%23cbced9'%3E%3Cpolygon class='st0' points='3,8.1 3,0 2,0 2,8.1 0,6.1 0,7.5 2.5,10 5,7.5 5,6.1 '/%3E%3C/svg%3E");
       background-repeat: no-repeat;
-    }
-    //Tablet
-    @media (min-width: 768px) {
-      content: "";
-      position: absolute;
-      top: 21px;
-      right: -4px;
-      width: 21px;
-      height: 21px;
-      background-size: 21px;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 9' fill='%23E5E5E5'%3E%3Cpath d='M5.2,4.5l3.7-3.7C9,0.6,9,0.3,8.9,0.1S8.4,0,8.2,0.1L4.5,3.8L0.8,0.1C0.6,0,0.3,0,0.1,0.1S0,0.6,0.1,0.8l3.7,3.7L0.1,8.2 C0,8.4,0,8.7,0.1,8.9C0.2,9,0.4,9,0.5,9s0.2,0,0.3-0.1l3.7-3.7l3.7,3.7C8.3,9,8.4,9,8.5,9s0.2,0,0.3-0.1C9,8.7,9,8.4,8.9,8.2 L5.2,4.5z'/%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-    }
-
-    //Desktop
-    @media (min-width: 1440px) {
-      right: -67px;
-    }
-  }
-}
-
-//это для третьего шага, так как на планшетной ширине уже нет блока из правого столбика
-.plan-countries__item--choose {
-  position: relative;
-
-  &::after {
-    //Tablet
-    @media (min-width: 768px) {
-      content: "";
-      position: absolute;
-      top: 24px;
-      right: -170px;
-      width: 21px;
-      height: 21px;
-      background-size: 21px;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 9' fill='%23E5E5E5'%3E%3Cpath d='M5.2,4.5l3.7-3.7C9,0.6,9,0.3,8.9,0.1S8.4,0,8.2,0.1L4.5,3.8L0.8,0.1C0.6,0,0.3,0,0.1,0.1S0,0.6,0.1,0.8l3.7,3.7L0.1,8.2 C0,8.4,0,8.7,0.1,8.9C0.2,9,0.4,9,0.5,9s0.2,0,0.3-0.1l3.7-3.7l3.7,3.7C8.3,9,8.4,9,8.5,9s0.2,0,0.3-0.1C9,8.7,9,8.4,8.9,8.2 L5.2,4.5z'/%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-    }
-
-    //Desktop
-    @media (min-width: 1440px) {
-      right: -266px;
     }
   }
 }
@@ -456,13 +467,13 @@
   //Tablet
   @media (min-width: 768px) {
     top: 69px;
-    min-width: 576px;
+    width: 576px;
     box-shadow: 0 8px 16px rgba(54, 80, 148, 0.18);
   }
 
   //Desktop
   @media (min-width: 1440px) {
-    min-width: 730px;
+    width: 730px;
   }
 
   &--hidden {

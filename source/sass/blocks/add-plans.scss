@@ -24,7 +24,9 @@
 
   //Desktop
   @media (min-width: 1440px) {
-    padding: 54px 60px 58px;
+    padding: 54px 60px 100px;
+    max-width: 1320px;
+    margin: 0 auto;
   }
 }
 
@@ -202,12 +204,13 @@
   }
 }
 
-.add-plans__item-text br {
-  display: none;
-
-  //Tablet
-  @media (min-width: 768px) {
-    display: block;
+.add-plans__item:nth-of-type(2) .add-plans__item-text {
+  br {
+    display: none;
+    //Tablet
+    @media (min-width: 768px) {
+      display: block;
+    }
   }
 }
 

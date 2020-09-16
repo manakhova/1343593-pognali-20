@@ -238,10 +238,38 @@
 
   //Desktop
   @media (min-width: 1440px) {
-    margin-top: 42px;
+    margin-top: 43px;
     margin-left: 9px;
     display: grid;
     grid-gap: 7px;
+  }
+}
+
+
+.alphabet__item:nth-child(5n+1) {
+  .alphabet__letter {
+    //Desktop
+    @media (min-width: 1440px) {
+      margin-left: 3px;
+    }
+  }
+}
+
+.alphabet__item:nth-child(5n+2) {
+  .alphabet__letter {
+    //Desktop
+    @media (min-width: 1440px) {
+      margin-left: 3px;
+    }
+  }
+}
+
+.alphabet__item:nth-child(5n+5) {
+  .alphabet__letter {
+    //Desktop
+    @media (min-width: 1440px) {
+      margin-left: 4px;
+    }
   }
 }
 

@@ -1,6 +1,13 @@
 .text {
   font-weight: 300;
 
+  //Tablet & Desktop
+  @media (min-width: 768px) {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+
   &--emphasis {
     font-weight: 700;
 
@@ -26,12 +33,6 @@
 
   &--grey {
     color: $special-grey;
-  }
-
-  //Tablet & Desktop
-  @media (min-width: 768px) {
-    font-size: 28px;
-    line-height: 33px;
   }
 
   &--form {

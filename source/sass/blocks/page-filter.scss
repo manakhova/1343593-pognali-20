@@ -22,13 +22,16 @@
     grid-template-columns: max-content 1fr min-content;
     grid-row-gap: 70px;
     grid-column-gap: 30px;
-    padding: 90px 62px 53px 58px;
+    padding: 110px 62px 53px 58px;
+    max-width: 1320px;
+    margin: 0 auto;
   }
 
   &--scroll {
     position: absolute;
     left: 0;
     right: 0;
+
     //Desktop
     @media (min-width: 1440px) {
       position: static;
