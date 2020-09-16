@@ -1,14 +1,31 @@
 .site-navigation {
+  position: relative;
   display: flex;
   flex-direction: column;
   list-style: none;
   padding: 0;
   margin: 0;
 
+  &::before {
+    //Desktop
+    @media (min-width: 1440px) {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 24px;
+      left: -70px;
+      width: 62px;
+      height: 2px;
+      background-color: $white;
+    }
+  }
+
   //Desktop
   @media (min-width: 1440px) {
     flex-direction: row;
-    margin-left: -37px;
+    flex-wrap: wrap;
+    max-width: 427px;
+    margin-left: -31px;
   }
 
   &--open {

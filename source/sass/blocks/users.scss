@@ -44,6 +44,7 @@
     grid-template-columns: auto auto;
     column-gap: 150px;
     padding: 146px 60px 130px 130px;
+    max-width: 1250px;
   }
 }
 
@@ -231,7 +232,7 @@
     @media (min-width: 1440px) {
       grid-column: 1;
       grid-row: 1 / span 2;
-      margin-top: 18px;
+      margin-top: 14px;
       padding: 0;
       grid-gap: 32px;
     }

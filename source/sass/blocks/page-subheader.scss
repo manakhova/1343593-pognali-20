@@ -5,31 +5,6 @@
   border-radius: 0 0 20px 20px;
   background-color: $basic-blue-medium;
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -1px;
-    left: 25px;
-    display: block;
-    width: 173px;
-    height: 5px;
-    background-color: $special_orange;
-    border-radius: 4px;
-
-    //Tablet
-    @media (min-width: 768px) {
-      bottom: -5px;
-      left: 78px;
-      width: 286px;
-      height: 8px;
-    }
-
-    //Desktop
-    @media (min-width: 1440px) {
-      left: 127px;
-    }
-  }
-
   &--form {
     position: relative;
     margin-top: -1px;
@@ -71,6 +46,48 @@
   //Desktop
   @media (min-width: 1440px) {
     padding: 102px 125px 83px;
+  }
+}
+
+.page-subheader__main {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -19px;
+    left: 1px;
+    display: block;
+    width: 173px;
+    height: 5px;
+    background-color: #ff8d30;
+    border-radius: 4px;
+
+    //Tablet
+    @media (min-width: 768px) {
+      bottom: -86px;
+      left: 6px;
+      width: 288px;
+      height: 8px;
+    }
+
+    //Desktop
+    @media (min-width: 1440px) {
+      left: 2px;
+    }
+  }
+
+  //Tablet
+  @media (min-width: 768px) {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+
+  //Desktop
+  @media (min-width: 1440px) {
+    max-width: 1190px;
+    margin: 0 auto;
   }
 }
 

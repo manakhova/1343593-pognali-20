@@ -5,19 +5,24 @@
   left: 25px;
   right: 25px;
   min-height: 443px;
+  width: 270px;
   background-color: $white;
   border-radius: 20px;
   box-shadow: 0 2px 8px rgba(29, 46, 91, 0.14);
+  margin: 0 auto;
+
   //Tablet
   @media (min-width: 768px) {
     left: 39px;
     right: 41px;
     min-height: 525px;
+    width: 688px;
   }
   //Desktop
   @media (min-width: 1440px) {
     left: 346px;
     right: 342px;
+    width: 759px;
     border-radius: 25px;
   }
 
@@ -27,16 +32,16 @@
 }
 
 .modal__info {
-  padding: 35px 25px;
+  padding: 35px 25px 50px;
 
   //Tablet
   @media (min-width: 768px) {
-    padding: 65px 90px 55px;
+    padding: 65px 90px 70px;
   }
 
   //Desktop
   @media (min-width: 1440px) {
-    padding: 65px 60px 55px;
+    padding: 65px 60px 70px;
   }
 }
 
@@ -110,6 +115,7 @@
 
 .modal__item {
   display: grid;
+  text-decoration: none;
 
   //Tablet
   @media (min-width: 768px) {

@@ -10,12 +10,17 @@
   margin: 0;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
-  background-color: $basic-blue-medium;
+  background-color: $basic-blue-dark;
   color: $white;
   overflow-x: hidden;
 
   &--catalog {
     background-color: $basic-blue-light;
+
+    //Desktop
+    @media (min-width: 1440px) {
+      background-color: $basic-blue-medium;
+    }
   }
 }
 
@@ -30,6 +35,55 @@
 
 .page__main {
   position: relative;
+
+  &--catalog {
+    background-color: $basic-blue-light;
+    position: relative;
+  }
+}
+
+.page__filter {
+  background-color: $basic-blue-light;
+
+  //Desktop
+  @media (min-width: 1440px) {
+    border-radius: 0 0 56px 56px;
+    margin-top: -50px;
+  }
+}
+
+.page__catalog {
+  background-color: $basic-blue-light;
+
+  //Desktop
+  @media (min-width: 1440px) {
+    margin-top: -50px;
+  }
+}
+
+.page__main-form {
+  background-color: $basic-blue-light;
+  color: $basic-blue;
+  margin-top: -30px;
+}
+
+.page__profile {
+  background-color: $basic-blue-light;
+  position: relative;
+
+  &::after {
+    //Desktop
+    @media (min-width: 1440px) {
+      content: "";
+      position: absolute;
+      top: -1px;
+      left: 0;
+      right: 0;
+      height: 211px;
+      background-color: $basic-blue-medium;
+      border-radius: 0 0 60px 60px;
+    }
+  }
 }
 
 .page__footer {
@@ -68,7 +122,7 @@
 
     //Desktop
     @media (min-width: 1440px) {
-      margin-top: -111px;
+      margin-top: -70px;
     }
   }
 }
